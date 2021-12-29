@@ -23,8 +23,6 @@ jobs:
         pip install -r requirements.txt 
     - name: Grab Needed Data
       run: |
-         mkdir -p jsondata
-         cd jsondata
          wget https://nvd.nist.gov/feeds/json/cve/1.1/nvdcve-1.1-{2002..2021}.json.zip 
          unzip -o "*.zip" 
     - name: Run Notebooks
