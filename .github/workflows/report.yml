@@ -29,11 +29,12 @@ jobs:
       env:
         GH_TOKEN:  ${{ secrets.GH_TOKEN }}
       run: |
-         # jupyter nbconvert --to notebook --execute 2021.ipynb
-         # jupyter nbconvert --to html --TemplateExporter.exclude_input=True --no-prompt 2021.nbconvert.ipynb --output 2021.html
+         jupyter nbconvert --to notebook --execute cveicu2021.ipynb
+         jupyter nbconvert --to html --TemplateExporter.exclude_input=True --no-prompt cveicu2021.nbconvert.ipynb --output 2021.html
          jupyter nbconvert --to notebook --execute cveicu.ipynb
          jupyter nbconvert --to html --TemplateExporter.exclude_input=True --no-prompt cveicu.nbconvert.ipynb --output index.html
          sed -i 's/cveicu.nbconvert/cve.icu/g' index.html
+         sed -i 's/cveicu2021.nbconvert/cve.icu 2021/g' 2021.html
          mv *.html docs/
     - name: Commit changes
       uses: EndBug/add-and-commit@v4
