@@ -25,6 +25,7 @@ jobs:
       env:
         GH_TOKEN:  ${{ secrets.GH_TOKEN }}
       run: |
+         apt-get install wget
          jupyter nbconvert --to notebook --execute 2022.ipynb
          jupyter nbconvert --to html --TemplateExporter.exclude_input=True --no-prompt 2022.ipynb --output 2022.html
          mv *.html reports/
