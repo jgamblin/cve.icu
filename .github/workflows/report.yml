@@ -34,7 +34,10 @@ jobs:
          jupyter nbconvert --to notebook --execute cveicu.ipynb
          jupyter nbconvert --to html --TemplateExporter.exclude_input=True --no-prompt cveicu.nbconvert.ipynb --output index.html
          sed -i 's/cveicu.nbconvert/cve.icu/g' index.html
+         sed -i 's/cveicu2022.nbconvert/cve.icu 2022/g' 2022.html
          sed -i 's/cveicu2021.nbconvert/cve.icu 2021/g' 2021.html
+         sed -i 's/cveicu2020.nbconvert/cve.icu 2021/g' 2020.html
+         sed -i 's/cveicu2019.nbconvert/cve.icu 2021/g' 2019.html
          mv *.html docs/
     - name: Commit changes
       uses: EndBug/add-and-commit@v4
