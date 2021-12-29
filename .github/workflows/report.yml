@@ -1,0 +1,42 @@
+
+   
+name: Create Report
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  schedule: 
+    - cron: "0 0 * * *" 
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+    steps:
+    - uses: actions/checkout@v1
+    - uses: actions/setup-python@v1
+      with:
+        python-version: '3.9'
+        architecture: 'x64'
+        ref: 'traffic'
+    - name: Install library and other requirements
+      run: |
+        pip install jupyter nbconvert altair 
+        pip install git+https://github.com/jgamblin/2022CVEReports
+    - name: Execute report notebook
+      env:
+        GH_TOKEN:  ${{ secrets.GH_TOKEN }}
+      run: |
+         jupyter nbconvert --to notebook --execute 2022.ipynb
+         jupyter nbconvert --to html --TemplateExporter.exclude_input=True --no-prompt 2022.ipynb --output 2022.html
+         mv *.html reports/
+         jupyter nbconvert --to notebook --execute 2021.ipynb
+         jupyter nbconvert --to html --TemplateExporter.exclude_input=True --no-prompt 2021.ipynb --output 2021.html
+         mv *.html reports/
+    - name: Commit changes
+      uses: EndBug/add-and-commit@v4
+      with:
+        author_name: Jerry Gamblin
+        message: "Update CVE Reports"
+        add: "."
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
