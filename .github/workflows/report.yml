@@ -17,11 +17,9 @@ jobs:
       with:
         python-version: '3.9'
         architecture: 'x64'
-        ref: 'traffic'
     - name: Install library and other requirements
       run: |
-        pip install jupyter nbconvert altair 
-        pip install git+https://github.com/jgamblin/2022CVEReports
+        pip install jupyter nbconvert
     - name: Execute report notebook
       env:
         GH_TOKEN:  ${{ secrets.GH_TOKEN }}
