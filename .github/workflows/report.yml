@@ -36,7 +36,7 @@ jobs:
          jupyter nbconvert --to notebook --execute cveicu2020.ipynb
          jupyter nbconvert --to html --TemplateExporter.exclude_input=True --no-prompt cveicu2020.nbconvert.ipynb --output 2020.html
          jupyter nbconvert --to notebook --execute cveicu2019.ipynb
-         jupyter nbconvert --to html --TemplateExporter.exclude_input=True --no-prompt cveicu2020.nbconvert.ipynb --output 2019.html
+         jupyter nbconvert --to html --TemplateExporter.exclude_input=True --no-prompt cveicu2019.nbconvert.ipynb --output 2019.html
          jupyter nbconvert --to notebook --execute cveicu.ipynb
          jupyter nbconvert --to html --TemplateExporter.exclude_input=True --no-prompt cveicu.nbconvert.ipynb --output index.html
          sed -i 's/cveicu.nbconvert/cve.icu/g' index.html

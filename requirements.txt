@@ -2,3 +2,4 @@ ipython
 matplotlib
 numpy
 pandas
+calplot
