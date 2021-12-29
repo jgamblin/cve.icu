@@ -1,2 +1,3 @@
-# 2022CVEReports
-2022 CVE Report
+# CVE.icu
+
+This is the Repo for CVE.ICU
