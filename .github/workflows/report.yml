@@ -21,11 +21,16 @@ jobs:
       run: |
         pip install jupyter nbconvert
         pip install -r requirements.txt 
-    - name: Execute report notebook
+    - name: Grab Needed Data
+      run: |
+         mkdir -p jsondata
+         cd jsondata
+         wget https://nvd.nist.gov/feeds/json/cve/1.1/nvdcve-1.1-{2002..2021}.json.zip 
+         unzip -o "*.zip" 
+    - name: Run Notebooks
       env:
         GH_TOKEN:  ${{ secrets.GH_TOKEN }}
       run: |
-         sudo apt-get install wget -y
          jupyter nbconvert --to notebook --execute 2022.ipynb
          jupyter nbconvert --to html --TemplateExporter.exclude_input=True --no-prompt 2022.ipynb --output 2022.html
          mv *.html reports/
