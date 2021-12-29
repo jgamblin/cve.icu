@@ -3,4 +3,3 @@ matplotlib
 numpy
 pandas
 calplot
-seaborn
