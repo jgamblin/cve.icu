@@ -33,11 +33,20 @@ jobs:
          # jupyter nbconvert --to html --TemplateExporter.exclude_input=True --no-prompt cveicu2022.nbconvert.ipynb --output 2022.html
          jupyter nbconvert --to notebook --execute cveicu2021.ipynb
          jupyter nbconvert --to html --TemplateExporter.exclude_input=True --no-prompt cveicu2021.nbconvert.ipynb --output 2021.html
+         jupyter nbconvert --to notebook --execute cveicu2020.ipynb
+         jupyter nbconvert --to html --TemplateExporter.exclude_input=True --no-prompt cveicu2020.nbconvert.ipynb --output 2020.html
+         jupyter nbconvert --to notebook --execute cveicu2019.ipynb
+         jupyter nbconvert --to html --TemplateExporter.exclude_input=True --no-prompt cveicu2019.nbconvert.ipynb --output 2019.html
          jupyter nbconvert --to notebook --execute cveicu.ipynb
          jupyter nbconvert --to html --TemplateExporter.exclude_input=True --no-prompt cveicu.nbconvert.ipynb --output index.html
+         jupyter nbconvert --to notebook --execute CVEProphet.ipynb
+         jupyter nbconvert --to html --TemplateExporter.exclude_input=True --no-prompt CVEProphet.nbconvert.ipynb --output prophet.html
          sed -i 's/cveicu.nbconvert/cve.icu/g' index.html
          # sed -i 's/cveicu2022.nbconvert/cve.icu 2022/g' 2022.html
          sed -i 's/cveicu2021.nbconvert/cve.icu 2021/g' 2021.html
+         sed -i 's/cveicu2020.nbconvert/cve.icu 2020/g' 2020.html
+         sed -i 's/cveicu2019.nbconvert/cve.icu 2019/g' 2019.html
+         sed -i 's/CVEProphet.nbconvert/cve.icu Prophet/g' prophet.html
          mv *.html docs/
     - name: Commit changes
       uses: EndBug/add-and-commit@v4
