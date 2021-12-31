@@ -41,7 +41,7 @@ jobs:
          jupyter nbconvert --to html --TemplateExporter.exclude_input=True --no-prompt cveicu.nbconvert.ipynb --output index.html
          jupyter nbconvert --to notebook --execute CVEProphet.ipynb
          jupyter nbconvert --to html --TemplateExporter.exclude_input=True --no-prompt CVEProphet.nbconvert.ipynb --output prophet.html
-         jupyter nbconvert --to notebook --execute CVEPCalendar.ipynb
+         jupyter nbconvert --to notebook --execute CVECalendar.ipynb
          jupyter nbconvert --to html --TemplateExporter.exclude_input=True --no-prompt CVECalendar.nbconvert.ipynb --output calendar.html
          sed -i 's/cveicu.nbconvert/cve.icu/g' index.html
          # sed -i 's/cveicu2022.nbconvert/cve.icu 2022/g' 2022.html
