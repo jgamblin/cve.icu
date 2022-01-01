@@ -23,14 +23,14 @@ jobs:
         pip install -r requirements.txt 
     - name: Grab Needed Data
       run: |
-         wget https://nvd.nist.gov/feeds/json/cve/1.1/nvdcve-1.1-{2002..2021}.json.zip 
+         wget https://nvd.nist.gov/feeds/json/cve/1.1/nvdcve-1.1-{2002..2022}.json.zip 
          unzip -o "*.zip" 
     - name: Run Notebooks
       env:
         GH_TOKEN:  ${{ secrets.GH_TOKEN }}
       run: |
-         # jupyter nbconvert --to notebook --execute cveicu2022.ipynb
-         # jupyter nbconvert --to html --TemplateExporter.exclude_input=True --no-prompt cveicu2022.nbconvert.ipynb --output 2022.html
+         jupyter nbconvert --to notebook --execute cveicu2022.ipynb
+         jupyter nbconvert --to html --TemplateExporter.exclude_input=True --no-prompt cveicu2022.nbconvert.ipynb --output 2022.html
          jupyter nbconvert --to notebook --execute cveicu2021.ipynb
          jupyter nbconvert --to html --TemplateExporter.exclude_input=True --no-prompt cveicu2021.nbconvert.ipynb --output 2021.html
          jupyter nbconvert --to notebook --execute cveicu2020.ipynb
@@ -44,7 +44,7 @@ jobs:
          jupyter nbconvert --to notebook --execute CVECalendar.ipynb
          jupyter nbconvert --to html --TemplateExporter.exclude_input=True --no-prompt CVECalendar.nbconvert.ipynb --output calendar.html
          sed -i 's/cveicu.nbconvert/cve.icu/g' index.html
-         # sed -i 's/cveicu2022.nbconvert/cve.icu 2022/g' 2022.html
+         sed -i 's/cveicu2022.nbconvert/cve.icu 2022/g' 2022.html
          sed -i 's/cveicu2021.nbconvert/cve.icu 2021/g' 2021.html
          sed -i 's/cveicu2020.nbconvert/cve.icu 2020/g' 2020.html
          sed -i 's/cveicu2019.nbconvert/cve.icu 2019/g' 2019.html
