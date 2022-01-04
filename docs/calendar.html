@@ -14454,25 +14454,74 @@ all of MD as it is not optimized for dense, information rich UIs.
 </style>
 
 <style type="text/css">
+/* Misc */
 a.anchor-link {
-   display: none;
+  display: none;
 }
+
 .highlight  {
-    margin: 0.4em;
+  margin: 0.4em;
 }
 
 /* Input area styling */
 .jp-InputArea {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .jp-InputArea-editor {
-    overflow: hidden;
+  overflow: hidden;
+}
+
+/* Using table instead of flexbox so that we can use break-inside property */
+/* CSS rules under this comment should not be required anymore after we move to the JupyterLab 4.0 CSS */
+
+
+.jp-CodeCell.jp-mod-outputsScrolled .jp-OutputArea-prompt {
+  min-width: calc(
+    var(--jp-cell-prompt-width) - var(--jp-private-cell-scrolling-output-offset)
+  );
+}
+
+.jp-OutputArea-child {
+  display: table;
+  width: 100%;
+}
+
+.jp-OutputPrompt {
+  display: table-cell;
+  vertical-align: top;
+  min-width: var(--jp-cell-prompt-width);
+}
+
+body[data-format='mobile'] .jp-OutputPrompt {
+  display: table-row;
+}
+
+.jp-OutputArea-output {
+  display: table-cell;
+  width: 100%;
+}
+
+body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
+  display: table-row;
+}
+
+.jp-OutputArea-output.jp-OutputArea-executeResult {
+  width: 100%;
 }
 
 @media print {
-  body {
-    margin: 0;
+  .jp-Collapser {
+    display: none;
+  }
+
+  .jp-Cell-inputWrapper,
+  .jp-Cell-outputWrapper {
+    display: block;
+  }
+
+  .jp-OutputArea-child {
+    break-inside: avoid-page;
   }
 }
 </style>
@@ -14513,12 +14562,15 @@ a.anchor-link {
     <!-- End of mathjax configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 
-<div class="jp-Cell-inputWrapper"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h1 id="CVE.ICU---Calendar">CVE.ICU - Calendar<a class="anchor-link" href="#CVE.ICU---Calendar">&#182;</a></h1><hr>
 
 </div>
 </div>
-<div class="jp-Cell-inputWrapper"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+</div>
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>This information from this website is from a <a href="https://jupyter.org/">jupyter notebook</a> that automatically pulls all <a href="https://nvd.nist.gov/vuln/data-feeds#JSON_FEED">JSON Data</a> from the NVD and perform some fundamental data analysis and graphing.  If you have any questions or suggestions, please join the <a href="https://github.com/jgamblin/cve.icu/discussions">discussion here</a> and check out the <a href="https://github.com/jgamblin/cve.icu/">source code</a>.  Questions? Reach out to <a href="https://www.twitter.com/jgamblin">@jgamblin</a>.</p>
 <p><strong>Yearly Data</strong></p>
 <ul>
@@ -14535,6 +14587,7 @@ a.anchor-link {
 </ul>
 
 </div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs jp-mod-noInput ">
 
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs jp-mod-noInput ">
@@ -14542,6 +14595,8 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -14561,6 +14616,8 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -14583,6 +14640,8 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -14590,7 +14649,7 @@ a.anchor-link {
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/markdown">
-<p>Total Number of CVEs: <strong>166924</strong><br />Average CVEs Per Day: <strong>20.77</strong><br />Average CVSS Score: <strong>7.21</strong></p>
+<p>Total Number of CVEs: <strong>166924</strong><br />Average CVEs Per Day: <strong>20.76</strong><br />Average CVSS Score: <strong>7.21</strong></p>
 
 </div>
 
@@ -14603,6 +14662,8 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -14610,7 +14671,7 @@ a.anchor-link {
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/markdown">
-<p>This report is updated automatically every day, last generated on: <strong>2022-01-03 18:27:02.922329</strong></p>
+<p>This report is updated automatically every day, last generated on: <strong>2022-01-04 00:52:12.918706</strong></p>
 
 </div>
 

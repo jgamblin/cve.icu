@@ -14454,25 +14454,74 @@ all of MD as it is not optimized for dense, information rich UIs.
 </style>
 
 <style type="text/css">
+/* Misc */
 a.anchor-link {
-   display: none;
+  display: none;
 }
+
 .highlight  {
-    margin: 0.4em;
+  margin: 0.4em;
 }
 
 /* Input area styling */
 .jp-InputArea {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .jp-InputArea-editor {
-    overflow: hidden;
+  overflow: hidden;
+}
+
+/* Using table instead of flexbox so that we can use break-inside property */
+/* CSS rules under this comment should not be required anymore after we move to the JupyterLab 4.0 CSS */
+
+
+.jp-CodeCell.jp-mod-outputsScrolled .jp-OutputArea-prompt {
+  min-width: calc(
+    var(--jp-cell-prompt-width) - var(--jp-private-cell-scrolling-output-offset)
+  );
+}
+
+.jp-OutputArea-child {
+  display: table;
+  width: 100%;
+}
+
+.jp-OutputPrompt {
+  display: table-cell;
+  vertical-align: top;
+  min-width: var(--jp-cell-prompt-width);
+}
+
+body[data-format='mobile'] .jp-OutputPrompt {
+  display: table-row;
+}
+
+.jp-OutputArea-output {
+  display: table-cell;
+  width: 100%;
+}
+
+body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
+  display: table-row;
+}
+
+.jp-OutputArea-output.jp-OutputArea-executeResult {
+  width: 100%;
 }
 
 @media print {
-  body {
-    margin: 0;
+  .jp-Collapser {
+    display: none;
+  }
+
+  .jp-Cell-inputWrapper,
+  .jp-Cell-outputWrapper {
+    display: block;
+  }
+
+  .jp-OutputArea-child {
+    break-inside: avoid-page;
   }
 }
 </style>
@@ -14513,12 +14562,15 @@ a.anchor-link {
     <!-- End of mathjax configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 
-<div class="jp-Cell-inputWrapper"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h1 id="CVE.ICU---2021">CVE.ICU - 2021<a class="anchor-link" href="#CVE.ICU---2021">&#182;</a></h1><hr>
 
 </div>
 </div>
-<div class="jp-Cell-inputWrapper"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+</div>
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>This information from this website is from a <a href="https://jupyter.org/">jupyter notebook</a> that automatically pulls all <a href="https://nvd.nist.gov/vuln/data-feeds#JSON_FEED">JSON Data</a> from the NVD and perform some fundamental data analysis and graphing.  If you have any questions or suggestions, please join the <a href="https://github.com/jgamblin/cve.icu/discussions">discussion here</a> and check out the <a href="https://github.com/jgamblin/cve.icu/">source code</a>.  Questions? Reach out to <a href="https://www.twitter.com/jgamblin">@jgamblin</a>.</p>
 <p><strong>Yearly Data</strong></p>
 <ul>
@@ -14536,8 +14588,11 @@ a.anchor-link {
 
 </div>
 </div>
-<div class="jp-Cell-inputWrapper"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+</div>
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="CVE-Data">CVE Data<a class="anchor-link" href="#CVE-Data">&#182;</a></h2>
+</div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs jp-mod-noInput ">
 
@@ -14546,6 +14601,8 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -14566,6 +14623,8 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -14587,6 +14646,8 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -14606,6 +14667,8 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -14628,6 +14691,8 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -14647,6 +14712,8 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -14669,6 +14736,8 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -14688,6 +14757,8 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -14710,6 +14781,8 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -14729,6 +14802,8 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -14751,6 +14826,8 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -14770,6 +14847,8 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -14792,6 +14871,8 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -14811,6 +14892,8 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -14833,6 +14916,8 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -14852,6 +14937,8 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -14874,6 +14961,8 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -14893,6 +14982,8 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -14912,6 +15003,8 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -14921,7 +15014,7 @@ a.anchor-link {
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 <style type="text/css">
 </style>
-<table id="T_61cb2_">
+<table id="T_ed8d8_">
   <thead>
     <tr>
       <th class="col_heading level0 col0" >Assigner</th>
@@ -14930,84 +15023,84 @@ a.anchor-link {
   </thead>
   <tbody>
     <tr>
-      <td id="T_61cb2_row0_col0" class="data row0 col0" >security-advisories@github.com</td>
-      <td id="T_61cb2_row0_col1" class="data row0 col1" >1067</td>
+      <td id="T_ed8d8_row0_col0" class="data row0 col0" >security-advisories@github.com</td>
+      <td id="T_ed8d8_row0_col1" class="data row0 col1" >1067</td>
     </tr>
     <tr>
-      <td id="T_61cb2_row1_col0" class="data row1 col0" >secure@microsoft.com</td>
-      <td id="T_61cb2_row1_col1" class="data row1 col1" >871</td>
+      <td id="T_ed8d8_row1_col0" class="data row1 col0" >secure@microsoft.com</td>
+      <td id="T_ed8d8_row1_col1" class="data row1 col1" >871</td>
     </tr>
     <tr>
-      <td id="T_61cb2_row2_col0" class="data row2 col0" >contact@wpscan.com</td>
-      <td id="T_61cb2_row2_col1" class="data row2 col1" >747</td>
+      <td id="T_ed8d8_row2_col0" class="data row2 col0" >contact@wpscan.com</td>
+      <td id="T_ed8d8_row2_col1" class="data row2 col1" >747</td>
     </tr>
     <tr>
-      <td id="T_61cb2_row3_col0" class="data row3 col0" >psirt@us.ibm.com</td>
-      <td id="T_61cb2_row3_col1" class="data row3 col1" >605</td>
+      <td id="T_ed8d8_row3_col0" class="data row3 col0" >psirt@us.ibm.com</td>
+      <td id="T_ed8d8_row3_col1" class="data row3 col1" >605</td>
     </tr>
     <tr>
-      <td id="T_61cb2_row4_col0" class="data row4 col0" >secalert_us@oracle.com</td>
-      <td id="T_61cb2_row4_col1" class="data row4 col1" >586</td>
+      <td id="T_ed8d8_row4_col0" class="data row4 col0" >secalert_us@oracle.com</td>
+      <td id="T_ed8d8_row4_col1" class="data row4 col1" >586</td>
     </tr>
     <tr>
-      <td id="T_61cb2_row5_col0" class="data row5 col0" >psirt@cisco.com</td>
-      <td id="T_61cb2_row5_col1" class="data row5 col1" >586</td>
+      <td id="T_ed8d8_row5_col0" class="data row5 col0" >psirt@cisco.com</td>
+      <td id="T_ed8d8_row5_col1" class="data row5 col1" >586</td>
     </tr>
     <tr>
-      <td id="T_61cb2_row6_col0" class="data row6 col0" >security@android.com</td>
-      <td id="T_61cb2_row6_col1" class="data row6 col1" >530</td>
+      <td id="T_ed8d8_row6_col0" class="data row6 col0" >security@android.com</td>
+      <td id="T_ed8d8_row6_col1" class="data row6 col1" >530</td>
     </tr>
     <tr>
-      <td id="T_61cb2_row7_col0" class="data row7 col0" >secalert@redhat.com</td>
-      <td id="T_61cb2_row7_col1" class="data row7 col1" >456</td>
+      <td id="T_ed8d8_row7_col0" class="data row7 col0" >secalert@redhat.com</td>
+      <td id="T_ed8d8_row7_col1" class="data row7 col1" >456</td>
     </tr>
     <tr>
-      <td id="T_61cb2_row8_col0" class="data row8 col0" >psirt@adobe.com</td>
-      <td id="T_61cb2_row8_col1" class="data row8 col1" >431</td>
+      <td id="T_ed8d8_row8_col0" class="data row8 col0" >psirt@adobe.com</td>
+      <td id="T_ed8d8_row8_col1" class="data row8 col1" >431</td>
     </tr>
     <tr>
-      <td id="T_61cb2_row9_col0" class="data row9 col0" >product-security@apple.com</td>
-      <td id="T_61cb2_row9_col1" class="data row9 col1" >409</td>
+      <td id="T_ed8d8_row9_col0" class="data row9 col0" >product-security@apple.com</td>
+      <td id="T_ed8d8_row9_col1" class="data row9 col1" >409</td>
     </tr>
     <tr>
-      <td id="T_61cb2_row10_col0" class="data row10 col0" >chrome-cve-admin@google.com</td>
-      <td id="T_61cb2_row10_col1" class="data row10 col1" >375</td>
+      <td id="T_ed8d8_row10_col0" class="data row10 col0" >chrome-cve-admin@google.com</td>
+      <td id="T_ed8d8_row10_col1" class="data row10 col1" >375</td>
     </tr>
     <tr>
-      <td id="T_61cb2_row11_col0" class="data row11 col0" >psirt@huawei.com</td>
-      <td id="T_61cb2_row11_col1" class="data row11 col1" >327</td>
+      <td id="T_ed8d8_row11_col0" class="data row11 col0" >psirt@huawei.com</td>
+      <td id="T_ed8d8_row11_col1" class="data row11 col1" >327</td>
     </tr>
     <tr>
-      <td id="T_61cb2_row12_col0" class="data row12 col0" >ics-cert@hq.dhs.gov</td>
-      <td id="T_61cb2_row12_col1" class="data row12 col1" >306</td>
+      <td id="T_ed8d8_row12_col0" class="data row12 col0" >ics-cert@hq.dhs.gov</td>
+      <td id="T_ed8d8_row12_col1" class="data row12 col1" >306</td>
     </tr>
     <tr>
-      <td id="T_61cb2_row13_col0" class="data row13 col0" >productcert@siemens.com</td>
-      <td id="T_61cb2_row13_col1" class="data row13 col1" >300</td>
+      <td id="T_ed8d8_row13_col0" class="data row13 col0" >productcert@siemens.com</td>
+      <td id="T_ed8d8_row13_col1" class="data row13 col1" >300</td>
     </tr>
     <tr>
-      <td id="T_61cb2_row14_col0" class="data row14 col0" >talos-cna@cisco.com</td>
-      <td id="T_61cb2_row14_col1" class="data row14 col1" >272</td>
+      <td id="T_ed8d8_row14_col0" class="data row14 col0" >talos-cna@cisco.com</td>
+      <td id="T_ed8d8_row14_col1" class="data row14 col1" >272</td>
     </tr>
     <tr>
-      <td id="T_61cb2_row15_col0" class="data row15 col0" >security.cna@qualcomm.com</td>
-      <td id="T_61cb2_row15_col1" class="data row15 col1" >261</td>
+      <td id="T_ed8d8_row15_col0" class="data row15 col0" >security.cna@qualcomm.com</td>
+      <td id="T_ed8d8_row15_col1" class="data row15 col1" >261</td>
     </tr>
     <tr>
-      <td id="T_61cb2_row16_col0" class="data row16 col0" >vultures@jpcert.or.jp</td>
-      <td id="T_61cb2_row16_col1" class="data row16 col1" >255</td>
+      <td id="T_ed8d8_row16_col0" class="data row16 col0" >vultures@jpcert.or.jp</td>
+      <td id="T_ed8d8_row16_col1" class="data row16 col1" >255</td>
     </tr>
     <tr>
-      <td id="T_61cb2_row17_col0" class="data row17 col0" >zdi-disclosures@trendmicro.com</td>
-      <td id="T_61cb2_row17_col1" class="data row17 col1" >218</td>
+      <td id="T_ed8d8_row17_col0" class="data row17 col0" >zdi-disclosures@trendmicro.com</td>
+      <td id="T_ed8d8_row17_col1" class="data row17 col1" >218</td>
     </tr>
     <tr>
-      <td id="T_61cb2_row18_col0" class="data row18 col0" >cna@sap.com</td>
-      <td id="T_61cb2_row18_col1" class="data row18 col1" >198</td>
+      <td id="T_ed8d8_row18_col0" class="data row18 col0" >cna@sap.com</td>
+      <td id="T_ed8d8_row18_col1" class="data row18 col1" >198</td>
     </tr>
     <tr>
-      <td id="T_61cb2_row19_col0" class="data row19 col0" >secure@intel.com</td>
-      <td id="T_61cb2_row19_col1" class="data row19 col1" >198</td>
+      <td id="T_ed8d8_row19_col0" class="data row19 col0" >secure@intel.com</td>
+      <td id="T_ed8d8_row19_col1" class="data row19 col1" >198</td>
     </tr>
   </tbody>
 </table>
@@ -15023,6 +15116,8 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -15042,6 +15137,8 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -15083,6 +15180,8 @@ CVE-2022-	0
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -15102,6 +15201,8 @@ CVE-2022-	0
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -15111,7 +15212,7 @@ CVE-2022-	0
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 <style type="text/css">
 </style>
-<table id="T_6b1b4_">
+<table id="T_1f586_">
   <thead>
     <tr>
       <th class="col_heading level0 col0" >CVE</th>
@@ -15120,24 +15221,24 @@ CVE-2022-	0
   </thead>
   <tbody>
     <tr>
-      <td id="T_6b1b4_row0_col0" class="data row0 col0" >CVE-2016-20008</td>
-      <td id="T_6b1b4_row0_col1" class="data row0 col1" >The REST/JSON project 7.x-1.x for Drupal allows session enumeration, aka SA-CONTRIB-2016-033. NOTE: This project is not covered by Drupal's security advisory policy.</td>
+      <td id="T_1f586_row0_col0" class="data row0 col0" >CVE-2016-20008</td>
+      <td id="T_1f586_row0_col1" class="data row0 col1" >The REST/JSON project 7.x-1.x for Drupal allows session enumeration, aka SA-CONTRIB-2016-033. NOTE: This project is not covered by Drupal's security advisory policy.</td>
     </tr>
     <tr>
-      <td id="T_6b1b4_row1_col0" class="data row1 col0" >CVE-2016-20007</td>
-      <td id="T_6b1b4_row1_col1" class="data row1 col1" >The REST/JSON project 7.x-1.x for Drupal allows session name guessing, aka SA-CONTRIB-2016-033. NOTE: This project is not covered by Drupal's security advisory policy.</td>
+      <td id="T_1f586_row1_col0" class="data row1 col0" >CVE-2016-20007</td>
+      <td id="T_1f586_row1_col1" class="data row1 col1" >The REST/JSON project 7.x-1.x for Drupal allows session name guessing, aka SA-CONTRIB-2016-033. NOTE: This project is not covered by Drupal's security advisory policy.</td>
     </tr>
     <tr>
-      <td id="T_6b1b4_row2_col0" class="data row2 col0" >CVE-2016-20006</td>
-      <td id="T_6b1b4_row2_col1" class="data row2 col1" >The REST/JSON project 7.x-1.x for Drupal allows blockage of user logins, aka SA-CONTRIB-2016-033. NOTE: This project is not covered by Drupal's security advisory policy.</td>
+      <td id="T_1f586_row2_col0" class="data row2 col0" >CVE-2016-20006</td>
+      <td id="T_1f586_row2_col1" class="data row2 col1" >The REST/JSON project 7.x-1.x for Drupal allows blockage of user logins, aka SA-CONTRIB-2016-033. NOTE: This project is not covered by Drupal's security advisory policy.</td>
     </tr>
     <tr>
-      <td id="T_6b1b4_row3_col0" class="data row3 col0" >CVE-2016-20001</td>
-      <td id="T_6b1b4_row3_col1" class="data row3 col1" >The REST/JSON project 7.x-1.x for Drupal allows node access bypass, aka SA-CONTRIB-2016-033. NOTE: This project is not covered by Drupal's security advisory policy.</td>
+      <td id="T_1f586_row3_col0" class="data row3 col0" >CVE-2016-20001</td>
+      <td id="T_1f586_row3_col1" class="data row3 col1" >The REST/JSON project 7.x-1.x for Drupal allows node access bypass, aka SA-CONTRIB-2016-033. NOTE: This project is not covered by Drupal's security advisory policy.</td>
     </tr>
     <tr>
-      <td id="T_6b1b4_row4_col0" class="data row4 col0" >CVE-2019-25012</td>
-      <td id="T_6b1b4_row4_col1" class="data row4 col1" >The Webform Report project 7.x-1.x-dev for Drupal allows remote attackers to view submissions by visiting the /rss.xml page. NOTE: This project is not covered by Drupal's security advisory policy.</td>
+      <td id="T_1f586_row4_col0" class="data row4 col0" >CVE-2019-25012</td>
+      <td id="T_1f586_row4_col1" class="data row4 col1" >The Webform Report project 7.x-1.x-dev for Drupal allows remote attackers to view submissions by visiting the /rss.xml page. NOTE: This project is not covered by Drupal's security advisory policy.</td>
     </tr>
   </tbody>
 </table>
@@ -15153,6 +15254,8 @@ CVE-2022-	0
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -15172,6 +15275,8 @@ CVE-2022-	0
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -15181,7 +15286,7 @@ CVE-2022-	0
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 <style type="text/css">
 </style>
-<table id="T_9af10_">
+<table id="T_bf6d8_">
   <thead>
     <tr>
       <th class="col_heading level0 col0" >CVE</th>
@@ -15190,24 +15295,24 @@ CVE-2022-	0
   </thead>
   <tbody>
     <tr>
-      <td id="T_9af10_row0_col0" class="data row0 col0" >CVE-2021-20152</td>
-      <td id="T_9af10_row0_col1" class="data row0 col1" >Trendnet AC2600 TEW-827DRU version 2.08B01 lacks proper authentication to the bittorrent functionality. If enabled, anyone is able to visit and modify settings and files via the Bittorent web client by visiting: http://192.168.10.1:9091/transmission/web/</td>
+      <td id="T_bf6d8_row0_col0" class="data row0 col0" >CVE-2021-20152</td>
+      <td id="T_bf6d8_row0_col1" class="data row0 col1" >Trendnet AC2600 TEW-827DRU version 2.08B01 lacks proper authentication to the bittorrent functionality. If enabled, anyone is able to visit and modify settings and files via the Bittorent web client by visiting: http://192.168.10.1:9091/transmission/web/</td>
     </tr>
     <tr>
-      <td id="T_9af10_row1_col0" class="data row1 col0" >CVE-2021-20175</td>
-      <td id="T_9af10_row1_col1" class="data row1 col1" >Netgear Nighthawk R6700 version 1.0.4.120 does not utilize secure communication methods to the SOAP interface. By default, all communication to/from the device's SOAP Interface (port 5000) is sent via HTTP, which causes potentially sensitive information (such as usernames and passwords) to be transmitted in cleartext</td>
+      <td id="T_bf6d8_row1_col0" class="data row1 col0" >CVE-2021-20175</td>
+      <td id="T_bf6d8_row1_col1" class="data row1 col1" >Netgear Nighthawk R6700 version 1.0.4.120 does not utilize secure communication methods to the SOAP interface. By default, all communication to/from the device's SOAP Interface (port 5000) is sent via HTTP, which causes potentially sensitive information (such as usernames and passwords) to be transmitted in cleartext</td>
     </tr>
     <tr>
-      <td id="T_9af10_row2_col0" class="data row2 col0" >CVE-2021-20174</td>
-      <td id="T_9af10_row2_col1" class="data row2 col1" >Netgear Nighthawk R6700 version 1.0.4.120 does not utilize secure communication methods to the web interface. By default, all communication to/from the device's web interface is sent via HTTP, which causes potentially sensitive information (such as usernames and passwords) to be transmitted in cleartext.</td>
+      <td id="T_bf6d8_row2_col0" class="data row2 col0" >CVE-2021-20174</td>
+      <td id="T_bf6d8_row2_col1" class="data row2 col1" >Netgear Nighthawk R6700 version 1.0.4.120 does not utilize secure communication methods to the web interface. By default, all communication to/from the device's web interface is sent via HTTP, which causes potentially sensitive information (such as usernames and passwords) to be transmitted in cleartext.</td>
     </tr>
     <tr>
-      <td id="T_9af10_row3_col0" class="data row3 col0" >CVE-2021-4186</td>
-      <td id="T_9af10_row3_col1" class="data row3 col1" >Crash in the Gryphon dissector in Wireshark 3.4.0 to 3.4.10 allows denial of service via packet injection or crafted capture file</td>
+      <td id="T_bf6d8_row3_col0" class="data row3 col0" >CVE-2021-4186</td>
+      <td id="T_bf6d8_row3_col1" class="data row3 col1" >Crash in the Gryphon dissector in Wireshark 3.4.0 to 3.4.10 allows denial of service via packet injection or crafted capture file</td>
     </tr>
     <tr>
-      <td id="T_9af10_row4_col0" class="data row4 col0" >CVE-2021-4183</td>
-      <td id="T_9af10_row4_col1" class="data row4 col1" >Crash in the pcapng file parser in Wireshark 3.6.0 allows denial of service via crafted capture file</td>
+      <td id="T_bf6d8_row4_col0" class="data row4 col0" >CVE-2021-4183</td>
+      <td id="T_bf6d8_row4_col1" class="data row4 col1" >Crash in the pcapng file parser in Wireshark 3.6.0 allows denial of service via crafted capture file</td>
     </tr>
   </tbody>
 </table>
@@ -15223,6 +15328,8 @@ CVE-2022-	0
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -15230,7 +15337,7 @@ CVE-2022-	0
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/markdown">
-<p>This report is updated automatically every day, last generated on: <strong>2022-01-03 18:22:18.931853</strong></p>
+<p>This report is updated automatically every day, last generated on: <strong>2022-01-04 00:47:57.570256</strong></p>
 
 </div>
 

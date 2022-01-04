@@ -14454,25 +14454,74 @@ all of MD as it is not optimized for dense, information rich UIs.
 </style>
 
 <style type="text/css">
+/* Misc */
 a.anchor-link {
-   display: none;
+  display: none;
 }
+
 .highlight  {
-    margin: 0.4em;
+  margin: 0.4em;
 }
 
 /* Input area styling */
 .jp-InputArea {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .jp-InputArea-editor {
-    overflow: hidden;
+  overflow: hidden;
+}
+
+/* Using table instead of flexbox so that we can use break-inside property */
+/* CSS rules under this comment should not be required anymore after we move to the JupyterLab 4.0 CSS */
+
+
+.jp-CodeCell.jp-mod-outputsScrolled .jp-OutputArea-prompt {
+  min-width: calc(
+    var(--jp-cell-prompt-width) - var(--jp-private-cell-scrolling-output-offset)
+  );
+}
+
+.jp-OutputArea-child {
+  display: table;
+  width: 100%;
+}
+
+.jp-OutputPrompt {
+  display: table-cell;
+  vertical-align: top;
+  min-width: var(--jp-cell-prompt-width);
+}
+
+body[data-format='mobile'] .jp-OutputPrompt {
+  display: table-row;
+}
+
+.jp-OutputArea-output {
+  display: table-cell;
+  width: 100%;
+}
+
+body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
+  display: table-row;
+}
+
+.jp-OutputArea-output.jp-OutputArea-executeResult {
+  width: 100%;
 }
 
 @media print {
-  body {
-    margin: 0;
+  .jp-Collapser {
+    display: none;
+  }
+
+  .jp-Cell-inputWrapper,
+  .jp-Cell-outputWrapper {
+    display: block;
+  }
+
+  .jp-OutputArea-child {
+    break-inside: avoid-page;
   }
 }
 </style>
@@ -14513,12 +14562,15 @@ a.anchor-link {
     <!-- End of mathjax configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 
-<div class="jp-Cell-inputWrapper"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h1 id="CVE.ICU---2020">CVE.ICU - 2020<a class="anchor-link" href="#CVE.ICU---2020">&#182;</a></h1><hr>
 
 </div>
 </div>
-<div class="jp-Cell-inputWrapper"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+</div>
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>This information from this website is from a <a href="https://jupyter.org/">jupyter notebook</a> that automatically pulls all <a href="https://nvd.nist.gov/vuln/data-feeds#JSON_FEED">JSON Data</a> from the NVD and perform some fundamental data analysis and graphing.  If you have any questions or suggestions, please join the <a href="https://github.com/jgamblin/cve.icu/discussions">discussion here</a> and check out the <a href="https://github.com/jgamblin/cve.icu/">source code</a>.  Questions? Reach out to <a href="https://www.twitter.com/jgamblin">@jgamblin</a>.</p>
 <p><strong>Yearly Data</strong></p>
 <ul>
@@ -14536,8 +14588,11 @@ a.anchor-link {
 
 </div>
 </div>
-<div class="jp-Cell-inputWrapper"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+</div>
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="CVE-Data">CVE Data<a class="anchor-link" href="#CVE-Data">&#182;</a></h2>
+</div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs jp-mod-noInput ">
 
@@ -14546,6 +14601,8 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -14566,6 +14623,8 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -14587,6 +14646,8 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -14606,6 +14667,8 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -14628,6 +14691,8 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -14647,6 +14712,8 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -14669,6 +14736,8 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -14688,6 +14757,8 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -14710,6 +14781,8 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -14729,6 +14802,8 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -14751,6 +14826,8 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -14770,6 +14847,8 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -14792,6 +14871,8 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -14811,6 +14892,8 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -14833,6 +14916,8 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -14852,6 +14937,8 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -14874,6 +14961,8 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -14893,6 +14982,8 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -14912,6 +15003,8 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -14921,7 +15014,7 @@ a.anchor-link {
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 <style type="text/css">
 </style>
-<table id="T_4d73b_">
+<table id="T_97d44_">
   <thead>
     <tr>
       <th class="col_heading level0 col0" >Assigner</th>
@@ -14930,84 +15023,84 @@ a.anchor-link {
   </thead>
   <tbody>
     <tr>
-      <td id="T_4d73b_row0_col0" class="data row0 col0" >secure@microsoft.com</td>
-      <td id="T_4d73b_row0_col1" class="data row0 col1" >1262</td>
+      <td id="T_97d44_row0_col0" class="data row0 col0" >secure@microsoft.com</td>
+      <td id="T_97d44_row0_col1" class="data row0 col1" >1262</td>
     </tr>
     <tr>
-      <td id="T_4d73b_row1_col0" class="data row1 col0" >secalert_us@oracle.com</td>
-      <td id="T_4d73b_row1_col1" class="data row1 col1" >811</td>
+      <td id="T_97d44_row1_col0" class="data row1 col0" >secalert_us@oracle.com</td>
+      <td id="T_97d44_row1_col1" class="data row1 col1" >811</td>
     </tr>
     <tr>
-      <td id="T_4d73b_row2_col0" class="data row2 col0" >secalert@redhat.com</td>
-      <td id="T_4d73b_row2_col1" class="data row2 col1" >564</td>
+      <td id="T_97d44_row2_col0" class="data row2 col0" >secalert@redhat.com</td>
+      <td id="T_97d44_row2_col1" class="data row2 col1" >564</td>
     </tr>
     <tr>
-      <td id="T_4d73b_row3_col0" class="data row3 col0" >psirt@us.ibm.com</td>
-      <td id="T_4d73b_row3_col1" class="data row3 col1" >560</td>
+      <td id="T_97d44_row3_col0" class="data row3 col0" >psirt@us.ibm.com</td>
+      <td id="T_97d44_row3_col1" class="data row3 col1" >560</td>
     </tr>
     <tr>
-      <td id="T_4d73b_row4_col0" class="data row4 col0" >psirt@cisco.com</td>
-      <td id="T_4d73b_row4_col1" class="data row4 col1" >558</td>
+      <td id="T_97d44_row4_col0" class="data row4 col0" >psirt@cisco.com</td>
+      <td id="T_97d44_row4_col1" class="data row4 col1" >558</td>
     </tr>
     <tr>
-      <td id="T_4d73b_row5_col0" class="data row5 col0" >security@android.com</td>
-      <td id="T_4d73b_row5_col1" class="data row5 col1" >535</td>
+      <td id="T_97d44_row5_col0" class="data row5 col0" >security@android.com</td>
+      <td id="T_97d44_row5_col1" class="data row5 col1" >535</td>
     </tr>
     <tr>
-      <td id="T_4d73b_row6_col0" class="data row6 col0" >security-advisories@github.com</td>
-      <td id="T_4d73b_row6_col1" class="data row6 col1" >498</td>
+      <td id="T_97d44_row6_col0" class="data row6 col0" >security-advisories@github.com</td>
+      <td id="T_97d44_row6_col1" class="data row6 col1" >498</td>
     </tr>
     <tr>
-      <td id="T_4d73b_row7_col0" class="data row7 col0" >product-security@apple.com</td>
-      <td id="T_4d73b_row7_col1" class="data row7 col1" >463</td>
+      <td id="T_97d44_row7_col0" class="data row7 col0" >product-security@apple.com</td>
+      <td id="T_97d44_row7_col1" class="data row7 col1" >463</td>
     </tr>
     <tr>
-      <td id="T_4d73b_row8_col0" class="data row8 col0" >psirt@adobe.com</td>
-      <td id="T_4d73b_row8_col1" class="data row8 col1" >349</td>
+      <td id="T_97d44_row8_col0" class="data row8 col0" >psirt@adobe.com</td>
+      <td id="T_97d44_row8_col1" class="data row8 col1" >349</td>
     </tr>
     <tr>
-      <td id="T_4d73b_row9_col0" class="data row9 col0" >security.cna@qualcomm.com</td>
-      <td id="T_4d73b_row9_col1" class="data row9 col1" >304</td>
+      <td id="T_97d44_row9_col0" class="data row9 col0" >security.cna@qualcomm.com</td>
+      <td id="T_97d44_row9_col1" class="data row9 col1" >304</td>
     </tr>
     <tr>
-      <td id="T_4d73b_row10_col0" class="data row10 col0" >ics-cert@hq.dhs.gov</td>
-      <td id="T_4d73b_row10_col1" class="data row10 col1" >280</td>
+      <td id="T_97d44_row10_col0" class="data row10 col0" >ics-cert@hq.dhs.gov</td>
+      <td id="T_97d44_row10_col1" class="data row10 col1" >280</td>
     </tr>
     <tr>
-      <td id="T_4d73b_row11_col0" class="data row11 col0" >chrome-cve-admin@google.com</td>
-      <td id="T_4d73b_row11_col1" class="data row11 col1" >256</td>
+      <td id="T_97d44_row11_col0" class="data row11 col0" >chrome-cve-admin@google.com</td>
+      <td id="T_97d44_row11_col1" class="data row11 col1" >256</td>
     </tr>
     <tr>
-      <td id="T_4d73b_row12_col0" class="data row12 col0" >secure@intel.com</td>
-      <td id="T_4d73b_row12_col1" class="data row12 col1" >240</td>
+      <td id="T_97d44_row12_col0" class="data row12 col0" >secure@intel.com</td>
+      <td id="T_97d44_row12_col1" class="data row12 col1" >240</td>
     </tr>
     <tr>
-      <td id="T_4d73b_row13_col0" class="data row13 col0" >jenkinsci-cert@googlegroups.com</td>
-      <td id="T_4d73b_row13_col1" class="data row13 col1" >235</td>
+      <td id="T_97d44_row13_col0" class="data row13 col0" >jenkinsci-cert@googlegroups.com</td>
+      <td id="T_97d44_row13_col1" class="data row13 col1" >235</td>
     </tr>
     <tr>
-      <td id="T_4d73b_row14_col0" class="data row14 col0" >report@snyk.io</td>
-      <td id="T_4d73b_row14_col1" class="data row14 col1" >223</td>
+      <td id="T_97d44_row14_col0" class="data row14 col0" >report@snyk.io</td>
+      <td id="T_97d44_row14_col1" class="data row14 col1" >223</td>
     </tr>
     <tr>
-      <td id="T_4d73b_row15_col0" class="data row15 col0" >cna@sap.com</td>
-      <td id="T_4d73b_row15_col1" class="data row15 col1" >218</td>
+      <td id="T_97d44_row15_col0" class="data row15 col0" >cna@sap.com</td>
+      <td id="T_97d44_row15_col1" class="data row15 col1" >218</td>
     </tr>
     <tr>
-      <td id="T_4d73b_row16_col0" class="data row16 col0" >cve-assignments@hackerone.com</td>
-      <td id="T_4d73b_row16_col1" class="data row16 col1" >206</td>
+      <td id="T_97d44_row16_col0" class="data row16 col0" >cve-assignments@hackerone.com</td>
+      <td id="T_97d44_row16_col1" class="data row16 col1" >206</td>
     </tr>
     <tr>
-      <td id="T_4d73b_row17_col0" class="data row17 col0" >talos-cna@cisco.com</td>
-      <td id="T_4d73b_row17_col1" class="data row17 col1" >198</td>
+      <td id="T_97d44_row17_col0" class="data row17 col0" >talos-cna@cisco.com</td>
+      <td id="T_97d44_row17_col1" class="data row17 col1" >198</td>
     </tr>
     <tr>
-      <td id="T_4d73b_row18_col0" class="data row18 col0" >zdi-disclosures@trendmicro.com</td>
-      <td id="T_4d73b_row18_col1" class="data row18 col1" >193</td>
+      <td id="T_97d44_row18_col0" class="data row18 col0" >zdi-disclosures@trendmicro.com</td>
+      <td id="T_97d44_row18_col1" class="data row18 col1" >193</td>
     </tr>
     <tr>
-      <td id="T_4d73b_row19_col0" class="data row19 col0" >psirt@huawei.com</td>
-      <td id="T_4d73b_row19_col1" class="data row19 col1" >187</td>
+      <td id="T_97d44_row19_col0" class="data row19 col0" >psirt@huawei.com</td>
+      <td id="T_97d44_row19_col1" class="data row19 col1" >187</td>
     </tr>
   </tbody>
 </table>
@@ -15023,6 +15116,8 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -15042,6 +15137,8 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -15083,6 +15180,8 @@ CVE-2022-	0
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -15102,6 +15201,8 @@ CVE-2022-	0
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -15111,7 +15212,7 @@ CVE-2022-	0
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 <style type="text/css">
 </style>
-<table id="T_7d72e_">
+<table id="T_15c88_">
   <thead>
     <tr>
       <th class="col_heading level0 col0" >CVE</th>
@@ -15120,24 +15221,24 @@ CVE-2022-	0
   </thead>
   <tbody>
     <tr>
-      <td id="T_7d72e_row0_col0" class="data row0 col0" >CVE-2019-20204</td>
-      <td id="T_7d72e_row0_col1" class="data row0 col1" >The Postie plugin 1.9.40 for WordPress allows XSS, as demonstrated by a certain payload with jaVasCript:/* at the beginning and a crafted SVG element.</td>
+      <td id="T_15c88_row0_col0" class="data row0 col0" >CVE-2019-20204</td>
+      <td id="T_15c88_row0_col1" class="data row0 col1" >The Postie plugin 1.9.40 for WordPress allows XSS, as demonstrated by a certain payload with jaVasCript:/* at the beginning and a crafted SVG element.</td>
     </tr>
     <tr>
-      <td id="T_7d72e_row1_col0" class="data row1 col0" >CVE-2019-20203</td>
-      <td id="T_7d72e_row1_col1" class="data row1 col1" >The Authorized Addresses feature in the Postie plugin 1.9.40 for WordPress allows remote attackers to publish posts by spoofing the From information of an email message.</td>
+      <td id="T_15c88_row1_col0" class="data row1 col0" >CVE-2019-20203</td>
+      <td id="T_15c88_row1_col1" class="data row1 col1" >The Authorized Addresses feature in the Postie plugin 1.9.40 for WordPress allows remote attackers to publish posts by spoofing the From information of an email message.</td>
     </tr>
     <tr>
-      <td id="T_7d72e_row2_col0" class="data row2 col0" >CVE-2020-5179</td>
-      <td id="T_7d72e_row2_col1" class="data row2 col1" >Comtech Stampede FX-1010 7.4.3 devices allow remote authenticated administrators to execute arbitrary OS commands by navigating to the Diagnostics Ping page and entering shell metacharacters in the Target IP address field. (In some cases, authentication can be achieved with the comtech password for the comtech account.)</td>
+      <td id="T_15c88_row2_col0" class="data row2 col0" >CVE-2020-5179</td>
+      <td id="T_15c88_row2_col1" class="data row2 col1" >Comtech Stampede FX-1010 7.4.3 devices allow remote authenticated administrators to execute arbitrary OS commands by navigating to the Diagnostics Ping page and entering shell metacharacters in the Target IP address field. (In some cases, authentication can be achieved with the comtech password for the comtech account.)</td>
     </tr>
     <tr>
-      <td id="T_7d72e_row3_col0" class="data row3 col0" >CVE-2019-20205</td>
-      <td id="T_7d72e_row3_col1" class="data row3 col1" >libsixel 1.8.4 has an integer overflow in sixel_frame_resize in frame.c.</td>
+      <td id="T_15c88_row3_col0" class="data row3 col0" >CVE-2019-20205</td>
+      <td id="T_15c88_row3_col1" class="data row3 col1" >libsixel 1.8.4 has an integer overflow in sixel_frame_resize in frame.c.</td>
     </tr>
     <tr>
-      <td id="T_7d72e_row4_col0" class="data row4 col0" >CVE-2019-20213</td>
-      <td id="T_7d72e_row4_col1" class="data row4 col1" >D-Link DIR-859 routers before v1.07b03_beta allow Unauthenticated Information Disclosure via the AUTHORIZED_GROUP=1%0a value, as demonstrated by vpnconfig.php.</td>
+      <td id="T_15c88_row4_col0" class="data row4 col0" >CVE-2019-20213</td>
+      <td id="T_15c88_row4_col1" class="data row4 col1" >D-Link DIR-859 routers before v1.07b03_beta allow Unauthenticated Information Disclosure via the AUTHORIZED_GROUP=1%0a value, as demonstrated by vpnconfig.php.</td>
     </tr>
   </tbody>
 </table>
@@ -15153,6 +15254,8 @@ CVE-2022-	0
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -15172,6 +15275,8 @@ CVE-2022-	0
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -15181,7 +15286,7 @@ CVE-2022-	0
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 <style type="text/css">
 </style>
-<table id="T_0d473_">
+<table id="T_f06ae_">
   <thead>
     <tr>
       <th class="col_heading level0 col0" >CVE</th>
@@ -15190,24 +15295,24 @@ CVE-2022-	0
   </thead>
   <tbody>
     <tr>
-      <td id="T_0d473_row0_col0" class="data row0 col0" >CVE-2019-16281</td>
-      <td id="T_0d473_row0_col1" class="data row0 col1" >Ptarmigan before 0.2.3 lacks API token validation, e.g., an "if (token === apiToken) {return true;} return false;" code block.</td>
+      <td id="T_f06ae_row0_col0" class="data row0 col0" >CVE-2019-16281</td>
+      <td id="T_f06ae_row0_col1" class="data row0 col1" >Ptarmigan before 0.2.3 lacks API token validation, e.g., an "if (token === apiToken) {return true;} return false;" code block.</td>
     </tr>
     <tr>
-      <td id="T_0d473_row1_col0" class="data row1 col0" >CVE-2020-28095</td>
-      <td id="T_0d473_row1_col1" class="data row1 col1" >On Tenda AC1200 (Model AC6) 15.03.06.51_multi devices, a large HTTP POST request sent to the change password API will trigger the router to crash and enter an infinite boot loop.</td>
+      <td id="T_f06ae_row1_col0" class="data row1 col0" >CVE-2020-28095</td>
+      <td id="T_f06ae_row1_col1" class="data row1 col1" >On Tenda AC1200 (Model AC6) 15.03.06.51_multi devices, a large HTTP POST request sent to the change password API will trigger the router to crash and enter an infinite boot loop.</td>
     </tr>
     <tr>
-      <td id="T_0d473_row2_col0" class="data row2 col0" >CVE-2020-28413</td>
-      <td id="T_0d473_row2_col1" class="data row2 col1" >In MantisBT 2.24.3, SQL Injection can occur in the parameter "access" of the mc_project_get_users function through the API SOAP.</td>
+      <td id="T_f06ae_row2_col0" class="data row2 col0" >CVE-2020-28413</td>
+      <td id="T_f06ae_row2_col1" class="data row2 col1" >In MantisBT 2.24.3, SQL Injection can occur in the parameter "access" of the mc_project_get_users function through the API SOAP.</td>
     </tr>
     <tr>
-      <td id="T_0d473_row3_col0" class="data row3 col0" >CVE-2020-27534</td>
-      <td id="T_0d473_row3_col1" class="data row3 col1" >util/binfmt_misc/check.go in Builder in Docker Engine before 19.03.9 calls os.OpenFile with a potentially unsafe qemu-check temporary pathname, constructed with an empty first argument in an ioutil.TempDir call.</td>
+      <td id="T_f06ae_row3_col0" class="data row3 col0" >CVE-2020-27534</td>
+      <td id="T_f06ae_row3_col1" class="data row3 col1" >util/binfmt_misc/check.go in Builder in Docker Engine before 19.03.9 calls os.OpenFile with a potentially unsafe qemu-check temporary pathname, constructed with an empty first argument in an ioutil.TempDir call.</td>
     </tr>
     <tr>
-      <td id="T_0d473_row4_col0" class="data row4 col0" >CVE-2020-26296</td>
-      <td id="T_0d473_row4_col1" class="data row4 col1" >Vega is a visualization grammar, a declarative format for creating, saving, and sharing interactive visualization designs. Vega in an npm package. In Vega before version 5.17.3 there is an XSS vulnerability in Vega expressions. Through a specially crafted Vega expression, an attacker could execute arbitrary javascript on a victim's machine. This is fixed in version 5.17.3</td>
+      <td id="T_f06ae_row4_col0" class="data row4 col0" >CVE-2020-26296</td>
+      <td id="T_f06ae_row4_col1" class="data row4 col1" >Vega is a visualization grammar, a declarative format for creating, saving, and sharing interactive visualization designs. Vega in an npm package. In Vega before version 5.17.3 there is an XSS vulnerability in Vega expressions. Through a specially crafted Vega expression, an attacker could execute arbitrary javascript on a victim's machine. This is fixed in version 5.17.3</td>
     </tr>
   </tbody>
 </table>
@@ -15223,6 +15328,8 @@ CVE-2022-	0
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -15230,7 +15337,7 @@ CVE-2022-	0
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/markdown">
-<p>This report is updated automatically every day, last generated on: <strong>2022-01-03 18:23:08.772562</strong></p>
+<p>This report is updated automatically every day, last generated on: <strong>2022-01-04 00:48:43.836103</strong></p>
 
 </div>
 

@@ -14454,25 +14454,74 @@ all of MD as it is not optimized for dense, information rich UIs.
 </style>
 
 <style type="text/css">
+/* Misc */
 a.anchor-link {
-   display: none;
+  display: none;
 }
+
 .highlight  {
-    margin: 0.4em;
+  margin: 0.4em;
 }
 
 /* Input area styling */
 .jp-InputArea {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .jp-InputArea-editor {
-    overflow: hidden;
+  overflow: hidden;
+}
+
+/* Using table instead of flexbox so that we can use break-inside property */
+/* CSS rules under this comment should not be required anymore after we move to the JupyterLab 4.0 CSS */
+
+
+.jp-CodeCell.jp-mod-outputsScrolled .jp-OutputArea-prompt {
+  min-width: calc(
+    var(--jp-cell-prompt-width) - var(--jp-private-cell-scrolling-output-offset)
+  );
+}
+
+.jp-OutputArea-child {
+  display: table;
+  width: 100%;
+}
+
+.jp-OutputPrompt {
+  display: table-cell;
+  vertical-align: top;
+  min-width: var(--jp-cell-prompt-width);
+}
+
+body[data-format='mobile'] .jp-OutputPrompt {
+  display: table-row;
+}
+
+.jp-OutputArea-output {
+  display: table-cell;
+  width: 100%;
+}
+
+body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
+  display: table-row;
+}
+
+.jp-OutputArea-output.jp-OutputArea-executeResult {
+  width: 100%;
 }
 
 @media print {
-  body {
-    margin: 0;
+  .jp-Collapser {
+    display: none;
+  }
+
+  .jp-Cell-inputWrapper,
+  .jp-Cell-outputWrapper {
+    display: block;
+  }
+
+  .jp-OutputArea-child {
+    break-inside: avoid-page;
   }
 }
 </style>
@@ -14513,12 +14562,15 @@ a.anchor-link {
     <!-- End of mathjax configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 
-<div class="jp-Cell-inputWrapper"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h1 id="CVE.ICU---2022">CVE.ICU - 2022<a class="anchor-link" href="#CVE.ICU---2022">&#182;</a></h1><hr>
 
 </div>
 </div>
-<div class="jp-Cell-inputWrapper"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+</div>
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>This information from this website is from a <a href="https://jupyter.org/">jupyter notebook</a> that automatically pulls all <a href="https://nvd.nist.gov/vuln/data-feeds#JSON_FEED">JSON Data</a> from the NVD and perform some fundamental data analysis and graphing.  If you have any questions or suggestions, please join the <a href="https://github.com/jgamblin/cve.icu/discussions">discussion here</a> and check out the <a href="https://github.com/jgamblin/cve.icu/">source code</a>.  Questions? Reach out to <a href="https://www.twitter.com/jgamblin">@jgamblin</a>.</p>
 <p><strong>Yearly Data</strong></p>
 <ul>
@@ -14536,8 +14588,11 @@ a.anchor-link {
 
 </div>
 </div>
-<div class="jp-Cell-inputWrapper"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+</div>
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="CVE-Data">CVE Data<a class="anchor-link" href="#CVE-Data">&#182;</a></h2>
+</div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs jp-mod-noInput ">
 
@@ -14546,6 +14601,8 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -14553,7 +14610,7 @@ a.anchor-link {
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/markdown">
-<p>Total Number of CVEs: <strong>49</strong><br />Average CVEs Per Day: <strong>24.5</strong><br />Average CVSS Score: <strong>nan</strong></p>
+<p>Total Number of CVEs: <strong>49</strong><br />Average CVEs Per Day: <strong>16.333333333333332</strong><br />Average CVSS Score: <strong>nan</strong></p>
 
 </div>
 
@@ -14564,12 +14621,16 @@ a.anchor-link {
 </div>
 
 </div>
-<div class="jp-Cell-inputWrapper"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 
+</div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -14591,6 +14652,8 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -14610,6 +14673,8 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -14632,6 +14697,8 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -14651,6 +14718,8 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -14673,6 +14742,8 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -14692,6 +14763,8 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -14714,6 +14787,8 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -14733,6 +14808,8 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -14755,6 +14832,8 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -14774,6 +14853,8 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -14796,6 +14877,8 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -14815,6 +14898,8 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -14837,6 +14922,8 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -14856,6 +14943,8 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -14878,6 +14967,8 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -14897,6 +14988,8 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -14916,6 +15009,8 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -14925,7 +15020,7 @@ a.anchor-link {
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 <style type="text/css">
 </style>
-<table id="T_a6ff6_">
+<table id="T_cc485_">
   <thead>
     <tr>
       <th class="col_heading level0 col0" >Assigner</th>
@@ -14947,6 +15042,8 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -14966,6 +15063,8 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -15007,6 +15106,8 @@ CVE-2022-	3
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -15026,6 +15127,8 @@ CVE-2022-	3
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -15035,7 +15138,7 @@ CVE-2022-	3
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 <style type="text/css">
 </style>
-<table id="T_a3bd4_">
+<table id="T_110ed_">
   <thead>
     <tr>
       <th class="col_heading level0 col0" >CVE</th>
@@ -15044,24 +15147,24 @@ CVE-2022-	3
   </thead>
   <tbody>
     <tr>
-      <td id="T_a3bd4_row0_col0" class="data row0 col0" >CVE-2021-45958</td>
-      <td id="T_a3bd4_row0_col1" class="data row0 col1" >UltraJSON (aka ujson) 4.0.2 through 5.0.0 has a stack-based buffer overflow in Buffer_AppendIndentUnchecked (called from encode).</td>
+      <td id="T_110ed_row0_col0" class="data row0 col0" >CVE-2021-45958</td>
+      <td id="T_110ed_row0_col1" class="data row0 col1" >UltraJSON (aka ujson) 4.0.2 through 5.0.0 has a stack-based buffer overflow in Buffer_AppendIndentUnchecked (called from encode).</td>
     </tr>
     <tr>
-      <td id="T_a3bd4_row1_col0" class="data row1 col0" >CVE-2021-45959</td>
-      <td id="T_a3bd4_row1_col1" class="data row1 col1" >** DISPUTED ** {fmt} 7.1.0 through 8.0.1 has a stack-based buffer overflow in fmt::v8::detail::dragonbox::umul192_upper64 (called from fmt::v8::detail::dragonbox::cache_accessor<double>::compute_mul and fmt::v8::detail::dragonbox::decimal_fp<double> fmt::v8::detail::dragonbox::to_de). NOTE: the vendor states that "This is one of a series of false positives [caused by a] fuzzing infra issue."</td>
+      <td id="T_110ed_row1_col0" class="data row1 col0" >CVE-2021-45959</td>
+      <td id="T_110ed_row1_col1" class="data row1 col1" >** DISPUTED ** {fmt} 7.1.0 through 8.0.1 has a stack-based buffer overflow in fmt::v8::detail::dragonbox::umul192_upper64 (called from fmt::v8::detail::dragonbox::cache_accessor<double>::compute_mul and fmt::v8::detail::dragonbox::decimal_fp<double> fmt::v8::detail::dragonbox::to_de). NOTE: the vendor states that "This is one of a series of false positives [caused by a] fuzzing infra issue."</td>
     </tr>
     <tr>
-      <td id="T_a3bd4_row2_col0" class="data row2 col0" >CVE-2021-45944</td>
-      <td id="T_a3bd4_row2_col1" class="data row2 col1" >Ghostscript GhostPDL 9.50 through 9.53.3 has a use-after-free in sampled_data_sample (called from sampled_data_continue and interp).</td>
+      <td id="T_110ed_row2_col0" class="data row2 col0" >CVE-2021-45944</td>
+      <td id="T_110ed_row2_col1" class="data row2 col1" >Ghostscript GhostPDL 9.50 through 9.53.3 has a use-after-free in sampled_data_sample (called from sampled_data_continue and interp).</td>
     </tr>
     <tr>
-      <td id="T_a3bd4_row3_col0" class="data row3 col0" >CVE-2021-45929</td>
-      <td id="T_a3bd4_row3_col1" class="data row3 col1" >Wasm3 0.5.0 has an out-of-bounds write in CompileBlock (called from CompileElseBlock and Compile_If).</td>
+      <td id="T_110ed_row3_col0" class="data row3 col0" >CVE-2021-45929</td>
+      <td id="T_110ed_row3_col1" class="data row3 col1" >Wasm3 0.5.0 has an out-of-bounds write in CompileBlock (called from CompileElseBlock and Compile_If).</td>
     </tr>
     <tr>
-      <td id="T_a3bd4_row4_col0" class="data row4 col0" >CVE-2021-45945</td>
-      <td id="T_a3bd4_row4_col1" class="data row4 col1" >uWebSockets 19.0.0 through 20.8.0 has an out-of-bounds write in std::__1::pair<unsigned int, void*> uWS::HttpParser::fenceAndConsumePostPadded<0 (called from uWS::HttpParser::consumePostPadded and std::__1::__function::__func<LLVMFuzzerTestOneInput::$_0, std::__1::allocator<LL).</td>
+      <td id="T_110ed_row4_col0" class="data row4 col0" >CVE-2021-45945</td>
+      <td id="T_110ed_row4_col1" class="data row4 col1" >uWebSockets 19.0.0 through 20.8.0 has an out-of-bounds write in std::__1::pair<unsigned int, void*> uWS::HttpParser::fenceAndConsumePostPadded<0 (called from uWS::HttpParser::consumePostPadded and std::__1::__function::__func<LLVMFuzzerTestOneInput::$_0, std::__1::allocator<LL).</td>
     </tr>
   </tbody>
 </table>
@@ -15077,6 +15180,8 @@ CVE-2022-	3
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -15096,6 +15201,8 @@ CVE-2022-	3
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -15105,7 +15212,7 @@ CVE-2022-	3
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 <style type="text/css">
 </style>
-<table id="T_541ab_">
+<table id="T_9fd3c_">
   <thead>
     <tr>
       <th class="col_heading level0 col0" >CVE</th>
@@ -15114,24 +15221,24 @@ CVE-2022-	3
   </thead>
   <tbody>
     <tr>
-      <td id="T_541ab_row0_col0" class="data row0 col0" >CVE-2022-0080</td>
-      <td id="T_541ab_row0_col1" class="data row0 col1" >mruby is vulnerable to Heap-based Buffer Overflow</td>
+      <td id="T_9fd3c_row0_col0" class="data row0 col0" >CVE-2022-0080</td>
+      <td id="T_9fd3c_row0_col1" class="data row0 col1" >mruby is vulnerable to Heap-based Buffer Overflow</td>
     </tr>
     <tr>
-      <td id="T_541ab_row1_col0" class="data row1 col0" >CVE-2021-36751</td>
-      <td id="T_541ab_row1_col1" class="data row1 col1" >ENC DataVault 7.1.1W uses an inappropriate encryption algorithm, such that an attacker (who does not know the secret key) can make ciphertext modifications that are reflected in modified plaintext. There is no data integrity mechanism. (This behavior occurs across USB drives sold under multiple brand names.)</td>
+      <td id="T_9fd3c_row1_col0" class="data row1 col0" >CVE-2021-36751</td>
+      <td id="T_9fd3c_row1_col1" class="data row1 col1" >ENC DataVault 7.1.1W uses an inappropriate encryption algorithm, such that an attacker (who does not know the secret key) can make ciphertext modifications that are reflected in modified plaintext. There is no data integrity mechanism. (This behavior occurs across USB drives sold under multiple brand names.)</td>
     </tr>
     <tr>
-      <td id="T_541ab_row2_col0" class="data row2 col0" >CVE-2022-0079</td>
-      <td id="T_541ab_row2_col1" class="data row2 col1" >showdoc is vulnerable to Generation of Error Message Containing Sensitive Information</td>
+      <td id="T_9fd3c_row2_col0" class="data row2 col0" >CVE-2022-0079</td>
+      <td id="T_9fd3c_row2_col1" class="data row2 col1" >showdoc is vulnerable to Generation of Error Message Containing Sensitive Information</td>
     </tr>
     <tr>
-      <td id="T_541ab_row3_col0" class="data row3 col0" >CVE-2021-25994</td>
-      <td id="T_541ab_row3_col1" class="data row3 col1" >In Userfrosting, versions v0.3.1 to v4.6.2 are vulnerable to Host Header Injection. By luring a victim application user to click on a link, an unauthenticated attacker can use the “forgot password” functionality to reset the victim’s password and successfully take over their account.</td>
+      <td id="T_9fd3c_row3_col0" class="data row3 col0" >CVE-2021-25994</td>
+      <td id="T_9fd3c_row3_col1" class="data row3 col1" >In Userfrosting, versions v0.3.1 to v4.6.2 are vulnerable to Host Header Injection. By luring a victim application user to click on a link, an unauthenticated attacker can use the “forgot password” functionality to reset the victim’s password and successfully take over their account.</td>
     </tr>
     <tr>
-      <td id="T_541ab_row4_col0" class="data row4 col0" >CVE-2021-25981</td>
-      <td id="T_541ab_row4_col1" class="data row4 col1" >In Talkyard, regular versions v0.2021.20 through v0.2021.33 and dev versions v0.2021.20 through v0.2021.34, are vulnerable to Insufficient Session Expiration. This may allow an attacker to reuse the admin’s still-valid session token even when logged-out, to gain admin privileges, given the attacker is able to obtain that token (via other, hypothetical attacks)</td>
+      <td id="T_9fd3c_row4_col0" class="data row4 col0" >CVE-2021-25981</td>
+      <td id="T_9fd3c_row4_col1" class="data row4 col1" >In Talkyard, regular versions v0.2021.20 through v0.2021.33 and dev versions v0.2021.20 through v0.2021.34, are vulnerable to Insufficient Session Expiration. This may allow an attacker to reuse the admin’s still-valid session token even when logged-out, to gain admin privileges, given the attacker is able to obtain that token (via other, hypothetical attacks)</td>
     </tr>
   </tbody>
 </table>
@@ -15147,6 +15254,8 @@ CVE-2022-	3
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
 
@@ -15154,7 +15263,7 @@ CVE-2022-	3
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/markdown">
-<p>This report is updated automatically every day, last generated on: <strong>2022-01-03 18:21:30.219162</strong></p>
+<p>This report is updated automatically every day, last generated on: <strong>2022-01-04 00:47:11.221449</strong></p>
 
 </div>
 
