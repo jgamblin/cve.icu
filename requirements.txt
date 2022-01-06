@@ -5,3 +5,6 @@ pandas
 calplot
 prophet
 plotly
+geopy
+folium
+folium.plugins
