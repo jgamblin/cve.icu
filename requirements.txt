@@ -7,4 +7,3 @@ prophet
 plotly
 geopy
 folium
-folium.plugins
