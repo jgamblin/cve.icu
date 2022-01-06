@@ -53,7 +53,7 @@ jobs:
          sed -i 's/cveicu2019.nbconvert/cve.icu 2019/g' 2019.html
          sed -i 's/CVEProphet.nbconvert/cve.icu Prophet/g' prophet.html
          sed -i 's/CVECalendar.nbconvert/cve.icu Calendar/g' calendar.html
-         sed -i 's/CVECNAMap.nbconvert/cve.icu CNA MAP/g' calendar.html
+         sed -i 's/CVECNAMap.nbconvert/cve.icu CNA MAP/g' cnamap.html
          mv *.html docs/
     - name: Commit changes
       uses: EndBug/add-and-commit@v4
