@@ -25,7 +25,7 @@ jobs:
       run: |
          wget https://nvd.nist.gov/feeds/json/cve/1.1/nvdcve-1.1-{2002..2022}.json.zip 
          unzip -o "*.zip" 
-         wget https://raw.githubusercontent.com/CVEProject/cve-website/81a874bccc4ab98eeb9579404279b189fa3d0ccc/src/assets/data/CNAsList.json
+         wget https://raw.githubusercontent.com/CVEProject/cve-website/dev/src/assets/data/CNAsList.json
     - name: Run Notebooks
       env:
         GH_TOKEN:  ${{ secrets.GH_TOKEN }}
