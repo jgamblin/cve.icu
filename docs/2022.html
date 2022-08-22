@@ -14465,10 +14465,6 @@ a.anchor-link {
   display: none;
 }
 
-.highlight  {
-  margin: 0.4em;
-}
-
 /* Input area styling */
 .jp-InputArea {
   overflow: hidden;
@@ -14478,9 +14474,26 @@ a.anchor-link {
   overflow: hidden;
 }
 
-.CodeMirror pre {
+.CodeMirror.cm-s-jupyter .highlight pre {
+/* weird, but --jp-code-padding defined to be 5px but 4px horizontal padding is hardcoded for pre.CodeMirror-line */
+  padding: var(--jp-code-padding) 4px;
   margin: 0;
-  padding: 0;
+
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+
+}
+
+.jp-OutputArea-output pre {
+  line-height: inherit;
+  font-family: inherit;
+}
+
+.jp-RenderedText pre {
+  color: var(--jp-content-font-color1);
+  font-size: var(--jp-code-font-size);
 }
 
 /* Using table instead of flexbox so that we can use break-inside property */
@@ -14579,7 +14592,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="CVE.ICU---2022">CVE.ICU - 2022<a class="anchor-link" href="#CVE.ICU---2022">&#182;</a></h1><hr>
+<h1 id="CVE.ICU---2022">CVE.ICU - 2022<a class="anchor-link" href="#CVE.ICU---2022">&#182;</a></h1><hr />
 
 </div>
 </div>
@@ -14630,9 +14643,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/markdown">
@@ -14663,9 +14674,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/markdown">
@@ -14687,9 +14696,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/markdown">
@@ -14709,9 +14716,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
 <div class="jp-OutputArea-child">
-
 
 
 <div class="jp-RenderedImage jp-OutputArea-output ">
@@ -14735,9 +14740,7 @@ class="
 </div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/markdown">
@@ -14757,9 +14760,7 @@ class="
 </div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
 <div class="jp-OutputArea-child">
-
 
 
 <div class="jp-RenderedImage jp-OutputArea-output ">
@@ -14783,9 +14784,7 @@ class="
 </div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/markdown">
@@ -14805,9 +14804,7 @@ class="
 </div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
 <div class="jp-OutputArea-child">
-
 
 
 <div class="jp-RenderedImage jp-OutputArea-output ">
@@ -14831,9 +14828,7 @@ class="
 </div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/markdown">
@@ -14853,9 +14848,7 @@ class="
 </div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
 <div class="jp-OutputArea-child">
-
 
 
 <div class="jp-RenderedImage jp-OutputArea-output ">
@@ -14879,9 +14872,7 @@ class="
 </div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/markdown">
@@ -14901,9 +14892,7 @@ class="
 </div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
 <div class="jp-OutputArea-child">
-
 
 
 <div class="jp-RenderedImage jp-OutputArea-output ">
@@ -14927,9 +14916,7 @@ class="
 </div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/markdown">
@@ -14949,9 +14936,7 @@ class="
 </div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
 <div class="jp-OutputArea-child">
-
 
 
 <div class="jp-RenderedImage jp-OutputArea-output ">
@@ -14975,9 +14960,7 @@ class="
 </div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/markdown">
@@ -14997,9 +14980,7 @@ class="
 </div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
 <div class="jp-OutputArea-child">
-
 
 
 <div class="jp-RenderedImage jp-OutputArea-output ">
@@ -15023,9 +15004,7 @@ class="
 </div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/markdown">
@@ -15045,9 +15024,7 @@ class="
 </div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/markdown">
@@ -15067,100 +15044,98 @@ class="
 </div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 <style type="text/css">
 </style>
-<table id="T_5b6c7">
+<table id="T_edb55">
   <thead>
     <tr>
-      <th id="T_5b6c7_level0_col0" class="col_heading level0 col0" >Assigner</th>
-      <th id="T_5b6c7_level0_col1" class="col_heading level0 col1" >counts</th>
+      <th id="T_edb55_level0_col0" class="col_heading level0 col0" >Assigner</th>
+      <th id="T_edb55_level0_col1" class="col_heading level0 col1" >counts</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td id="T_5b6c7_row0_col0" class="data row0 col0" >contact@wpscan.com</td>
-      <td id="T_5b6c7_row0_col1" class="data row0 col1" >805</td>
+      <td id="T_edb55_row0_col0" class="data row0 col0" >contact@wpscan.com</td>
+      <td id="T_edb55_row0_col1" class="data row0 col1" >805</td>
     </tr>
     <tr>
-      <td id="T_5b6c7_row1_col0" class="data row1 col0" >security-advisories@github.com</td>
-      <td id="T_5b6c7_row1_col1" class="data row1 col1" >737</td>
+      <td id="T_edb55_row1_col0" class="data row1 col0" >security-advisories@github.com</td>
+      <td id="T_edb55_row1_col1" class="data row1 col1" >737</td>
     </tr>
     <tr>
-      <td id="T_5b6c7_row2_col0" class="data row2 col0" >secure@microsoft.com</td>
-      <td id="T_5b6c7_row2_col1" class="data row2 col1" >667</td>
+      <td id="T_edb55_row2_col0" class="data row2 col0" >secure@microsoft.com</td>
+      <td id="T_edb55_row2_col1" class="data row2 col1" >667</td>
     </tr>
     <tr>
-      <td id="T_5b6c7_row3_col0" class="data row3 col0" >security@huntr.dev</td>
-      <td id="T_5b6c7_row3_col1" class="data row3 col1" >628</td>
+      <td id="T_edb55_row3_col0" class="data row3 col0" >security@huntr.dev</td>
+      <td id="T_edb55_row3_col1" class="data row3 col1" >628</td>
     </tr>
     <tr>
-      <td id="T_5b6c7_row4_col0" class="data row4 col0" >security@android.com</td>
-      <td id="T_5b6c7_row4_col1" class="data row4 col1" >444</td>
+      <td id="T_edb55_row4_col0" class="data row4 col0" >security@android.com</td>
+      <td id="T_edb55_row4_col1" class="data row4 col1" >444</td>
     </tr>
     <tr>
-      <td id="T_5b6c7_row5_col0" class="data row5 col0" >cna@vuldb.com</td>
-      <td id="T_5b6c7_row5_col1" class="data row5 col1" >392</td>
+      <td id="T_edb55_row5_col0" class="data row5 col0" >cna@vuldb.com</td>
+      <td id="T_edb55_row5_col1" class="data row5 col1" >392</td>
     </tr>
     <tr>
-      <td id="T_5b6c7_row6_col0" class="data row6 col0" >ics-cert@hq.dhs.gov</td>
-      <td id="T_5b6c7_row6_col1" class="data row6 col1" >357</td>
+      <td id="T_edb55_row6_col0" class="data row6 col0" >ics-cert@hq.dhs.gov</td>
+      <td id="T_edb55_row6_col1" class="data row6 col1" >357</td>
     </tr>
     <tr>
-      <td id="T_5b6c7_row7_col0" class="data row7 col0" >secalert@redhat.com</td>
-      <td id="T_5b6c7_row7_col1" class="data row7 col1" >340</td>
+      <td id="T_edb55_row7_col0" class="data row7 col0" >secalert@redhat.com</td>
+      <td id="T_edb55_row7_col1" class="data row7 col1" >340</td>
     </tr>
     <tr>
-      <td id="T_5b6c7_row8_col0" class="data row8 col0" >secalert_us@oracle.com</td>
-      <td id="T_5b6c7_row8_col1" class="data row8 col1" >336</td>
+      <td id="T_edb55_row8_col0" class="data row8 col0" >secalert_us@oracle.com</td>
+      <td id="T_edb55_row8_col1" class="data row8 col1" >336</td>
     </tr>
     <tr>
-      <td id="T_5b6c7_row9_col0" class="data row9 col0" >psirt@adobe.com</td>
-      <td id="T_5b6c7_row9_col1" class="data row9 col1" >323</td>
+      <td id="T_edb55_row9_col0" class="data row9 col0" >psirt@adobe.com</td>
+      <td id="T_edb55_row9_col1" class="data row9 col1" >323</td>
     </tr>
     <tr>
-      <td id="T_5b6c7_row10_col0" class="data row10 col0" >jenkinsci-cert@googlegroups.com</td>
-      <td id="T_5b6c7_row10_col1" class="data row10 col1" >290</td>
+      <td id="T_edb55_row10_col0" class="data row10 col0" >jenkinsci-cert@googlegroups.com</td>
+      <td id="T_edb55_row10_col1" class="data row10 col1" >290</td>
     </tr>
     <tr>
-      <td id="T_5b6c7_row11_col0" class="data row11 col0" >talos-cna@cisco.com</td>
-      <td id="T_5b6c7_row11_col1" class="data row11 col1" >278</td>
+      <td id="T_edb55_row11_col0" class="data row11 col0" >talos-cna@cisco.com</td>
+      <td id="T_edb55_row11_col1" class="data row11 col1" >278</td>
     </tr>
     <tr>
-      <td id="T_5b6c7_row12_col0" class="data row12 col0" >psirt@us.ibm.com</td>
-      <td id="T_5b6c7_row12_col1" class="data row12 col1" >274</td>
+      <td id="T_edb55_row12_col0" class="data row12 col0" >psirt@us.ibm.com</td>
+      <td id="T_edb55_row12_col1" class="data row12 col1" >274</td>
     </tr>
     <tr>
-      <td id="T_5b6c7_row13_col0" class="data row13 col0" >zdi-disclosures@trendmicro.com</td>
-      <td id="T_5b6c7_row13_col1" class="data row13 col1" >270</td>
+      <td id="T_edb55_row13_col0" class="data row13 col0" >zdi-disclosures@trendmicro.com</td>
+      <td id="T_edb55_row13_col1" class="data row13 col1" >270</td>
     </tr>
     <tr>
-      <td id="T_5b6c7_row14_col0" class="data row14 col0" >mobile.security@samsung.com</td>
-      <td id="T_5b6c7_row14_col1" class="data row14 col1" >247</td>
+      <td id="T_edb55_row14_col0" class="data row14 col0" >mobile.security@samsung.com</td>
+      <td id="T_edb55_row14_col1" class="data row14 col1" >247</td>
     </tr>
     <tr>
-      <td id="T_5b6c7_row15_col0" class="data row15 col0" >chrome-cve-admin@google.com</td>
-      <td id="T_5b6c7_row15_col1" class="data row15 col1" >244</td>
+      <td id="T_edb55_row15_col0" class="data row15 col0" >chrome-cve-admin@google.com</td>
+      <td id="T_edb55_row15_col1" class="data row15 col1" >244</td>
     </tr>
     <tr>
-      <td id="T_5b6c7_row16_col0" class="data row16 col0" >psirt@cisco.com</td>
-      <td id="T_5b6c7_row16_col1" class="data row16 col1" >225</td>
+      <td id="T_edb55_row16_col0" class="data row16 col0" >psirt@cisco.com</td>
+      <td id="T_edb55_row16_col1" class="data row16 col1" >225</td>
     </tr>
     <tr>
-      <td id="T_5b6c7_row17_col0" class="data row17 col0" >psirt@huawei.com</td>
-      <td id="T_5b6c7_row17_col1" class="data row17 col1" >194</td>
+      <td id="T_edb55_row17_col0" class="data row17 col0" >psirt@huawei.com</td>
+      <td id="T_edb55_row17_col1" class="data row17 col1" >194</td>
     </tr>
     <tr>
-      <td id="T_5b6c7_row18_col0" class="data row18 col0" >productcert@siemens.com</td>
-      <td id="T_5b6c7_row18_col1" class="data row18 col1" >186</td>
+      <td id="T_edb55_row18_col0" class="data row18 col0" >productcert@siemens.com</td>
+      <td id="T_edb55_row18_col1" class="data row18 col1" >186</td>
     </tr>
     <tr>
-      <td id="T_5b6c7_row19_col0" class="data row19 col0" >secure@intel.com</td>
-      <td id="T_5b6c7_row19_col1" class="data row19 col1" >178</td>
+      <td id="T_edb55_row19_col0" class="data row19 col0" >secure@intel.com</td>
+      <td id="T_edb55_row19_col1" class="data row19 col1" >178</td>
     </tr>
   </tbody>
 </table>
@@ -15180,9 +15155,7 @@ class="
 </div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/markdown">
@@ -15202,9 +15175,7 @@ class="
 </div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
 <div class="jp-OutputArea-child">
-
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>CVE-1999:	0
 CVE-2000:	0
@@ -15245,13 +15216,11 @@ CVE-2022:	11244
 </div>
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/markdown">
-<p>This report is updated automatically every day, last generated on: <strong>2022-08-22 12:06:13.454511</strong></p>
+<p>This report is updated automatically every day, last generated on: <strong>2022-08-22 18:06:40.919319</strong></p>
 
 </div>
 
