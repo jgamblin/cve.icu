@@ -1,3 +1,6 @@
+jupyter-book
+matplotlib
+numpy
 ipython
 matplotlib
 numpy
@@ -7,3 +10,4 @@ prophet
 plotly
 geopy
 folium
+seaborn

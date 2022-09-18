@@ -1,6 +1,4 @@
-
-   
-name: Create Report
+name: Deploy-Book
 on:
   push:
     branches: [ main ]
@@ -8,58 +6,66 @@ on:
     branches: [ main ]
   schedule: 
     - cron: "0 */6 * * *" 
+
+# This job installs dependencies, builds the book, and pushes it to `gh-pages`
 jobs:
-  build:
-    runs-on: ubuntu-20.04
+  deploy-book:
+    runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
-    - uses: actions/setup-python@v1
+    - uses: actions/checkout@v3
+    - uses: actions/setup-python@v4
       with:
-        python-version: '3.9'
+        python-version: '3.10'
         architecture: 'x64'
-    - name: Install library and other requirements
+
+    # Install dependencies
+
+    - name: Install dependencies
       run: |
         pip install jupyter nbconvert
-        pip install -r requirements.txt 
+        pip install -r requirements.txt
+    
     - name: Grab Needed Data
       run: |
-         wget https://nvd.nist.gov/feeds/json/cve/1.1/nvdcve-1.1-{2002..2022}.json.zip 
-         unzip -o "*.zip" 
-         wget https://raw.githubusercontent.com/CVEProject/cve-website/dev/src/assets/data/CNAsList.json
+        wget https://nvd.nist.gov/feeds/json/cve/1.1/nvdcve-1.1-{2002..2022}.json.zip 
+        unzip -o "*.zip" 
+        wget https://raw.githubusercontent.com/CVEProject/cve-website/dev/src/assets/data/CNAsList.json
+         
     - name: Run Notebooks
       env:
         GH_TOKEN:  ${{ secrets.GH_TOKEN }}
       run: |
-         jupyter nbconvert --to notebook --execute cveicu2022.ipynb
-         jupyter nbconvert --to html --TemplateExporter.exclude_input=True --no-prompt cveicu2022.nbconvert.ipynb --output 2022.html
-         jupyter nbconvert --to notebook --execute cveicu2021.ipynb
-         jupyter nbconvert --to html --TemplateExporter.exclude_input=True --no-prompt cveicu2021.nbconvert.ipynb --output 2021.html
-         jupyter nbconvert --to notebook --execute cveicu2020.ipynb
-         jupyter nbconvert --to html --TemplateExporter.exclude_input=True --no-prompt cveicu2020.nbconvert.ipynb --output 2020.html
-         jupyter nbconvert --to notebook --execute cveicu2019.ipynb
-         jupyter nbconvert --to html --TemplateExporter.exclude_input=True --no-prompt cveicu2019.nbconvert.ipynb --output 2019.html
-         jupyter nbconvert --to notebook --execute cveicu.ipynb
-         jupyter nbconvert --to html --TemplateExporter.exclude_input=True --no-prompt cveicu.nbconvert.ipynb --output index.html
-         jupyter nbconvert --to notebook --execute CVEProphet.ipynb
-         jupyter nbconvert --to html --TemplateExporter.exclude_input=True --no-prompt CVEProphet.nbconvert.ipynb --output prophet.html
-         jupyter nbconvert --to notebook --execute CVECalendar.ipynb
-         jupyter nbconvert --to html --TemplateExporter.exclude_input=True --no-prompt CVECalendar.nbconvert.ipynb --output calendar.html
-         jupyter nbconvert --to notebook --execute CVECNAMap.ipynb
-         jupyter nbconvert --to html --TemplateExporter.exclude_input=True --no-prompt CVECNAMap.nbconvert.ipynb --output cnamap.html
-         sed -i 's/cveicu.nbconvert/cve.icu/g' index.html
-         sed -i 's/cveicu2022.nbconvert/cve.icu 2022/g' 2022.html
-         sed -i 's/cveicu2021.nbconvert/cve.icu 2021/g' 2021.html
-         sed -i 's/cveicu2020.nbconvert/cve.icu 2020/g' 2020.html
-         sed -i 's/cveicu2019.nbconvert/cve.icu 2019/g' 2019.html
-         sed -i 's/CVEProphet.nbconvert/cve.icu Prophet/g' prophet.html
-         sed -i 's/CVECalendar.nbconvert/cve.icu Calendar/g' calendar.html
-         sed -i 's/CVECNAMap.nbconvert/cve.icu CNA MAP/g' cnamap.html
-         mv *.html docs/
+         jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --inplace --execute CVEAll.ipynb
+         jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --inplace --execute CVE2016.ipynb
+         jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --inplace --execute CVE2017.ipynb
+         jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --inplace --execute CVE2018.ipynb
+         jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --inplace --execute CVE2019.ipynb
+         jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --inplace --execute CVE2020.ipynb
+         jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --inplace --execute CVE2021.ipynb
+         jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --inplace --execute CVE2022.ipynb
+         jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --inplace --execute CVECNAMap.ipynb
+         jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --inplace --execute CVEProphet.ipynb
+         jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --inplace --execute CVECalendar.ipynb
+         jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --inplace --execute CVEGrowth.ipynb
+         jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --inplace --execute CVECVSS.ipynb
+         jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --inplace --execute CVECNA.ipynb
+         jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --inplace --execute CVECWE.ipynb
+         jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --inplace --execute CVECPE.ipynb
+    
     - name: Commit changes
-      uses: EndBug/add-and-commit@v4
+      uses: EndBug/add-and-commit@v9
       with:
-        author_name: Jerry Gamblin
-        message: "Update CVE Reports"
-        add: "."
+          default_author: github_actions
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    
+
+    - name: Build the book
+      run: |
+        jupyter-book build .
+
+    - name: GitHub Pages action
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./_build/html

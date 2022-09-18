@@ -1,3 +1,2 @@
-# CVE.icu
-
-This is the Repo for CVE.ICU
+# book.cve.icu
+Jupuyter Book Beta
