@@ -1,2 +1,3 @@
-# book.cve.icu
-Jupuyter Book Beta
+# cve.icu
+
+Jupuyter Book for CVE.icu

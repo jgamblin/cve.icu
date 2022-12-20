@@ -44,7 +44,6 @@ jobs:
          jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --inplace --execute CVE2021.ipynb
          jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --inplace --execute CVE2022.ipynb
          jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --inplace --execute CVECNAMap.ipynb
-         jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --inplace --execute CVEProphet.ipynb
          jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --inplace --execute CVECalendar.ipynb
          jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --inplace --execute CVEGrowth.ipynb
          jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --inplace --execute CVECVSS.ipynb

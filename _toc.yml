@@ -25,4 +25,3 @@ parts:
     - file: CVECWE
     - file: CVEGrowth
     - file: CVECNAMap
-    - file: CVEProphet
