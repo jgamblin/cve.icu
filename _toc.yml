@@ -10,6 +10,7 @@ parts:
     - file: CVECalendar
   - caption: Yearly Data
     chapters:
+    - file: CVE2023
     - file: CVE2022
     - file: CVE2021
     - file: CVE2020
