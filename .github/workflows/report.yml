@@ -35,7 +35,8 @@ jobs:
       env:
         GH_TOKEN:  ${{ secrets.GH_TOKEN }}
       run: |
-         jupyter nbconvert --to notebook --inplace --execute CVEAll.ipynb
+         jupyter nbconvert --to notebook --inplace --execute CVEAll.ipynb -- debug
+
          # jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --inplace --execute CVE2016.ipynb
          # jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --inplace --execute CVE2017.ipynb
          # jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --inplace --execute CVE2018.ipynb
