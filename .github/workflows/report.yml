@@ -10,13 +10,10 @@ on:
 # This job installs dependencies, builds the book, and pushes it to `gh-pages`
 jobs:
   deploy-book:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, linux, x64]
     steps:
     - uses: actions/checkout@v3
     - uses: actions/setup-python@v4
-      with:
-        python-version: '3.9'
-        architecture: 'x64'
 
     # Install dependencies
 
