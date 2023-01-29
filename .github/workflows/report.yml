@@ -27,7 +27,7 @@ jobs:
     
     - name: Grab Needed Data
       run: |
-        apt install unzip
+        sudo apt install unzip
         wget https://nvd.nist.gov/feeds/json/cve/1.1/nvdcve-1.1-{2002..2023}.json.zip 
         unzip -o "*.zip" 
         wget https://raw.githubusercontent.com/CVEProject/cve-website/dev/src/assets/data/CNAsList.json
