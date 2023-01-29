@@ -6,7 +6,6 @@ matplotlib
 numpy
 pandas
 calplot
-prophet
 plotly
 geopy
 folium
