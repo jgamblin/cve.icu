@@ -22,6 +22,7 @@ jobs:
 
     - name: Install dependencies
       run: |
+        pip install jupyterlab
         pip install nbconvert
         pip install -r requirements.txt
     
