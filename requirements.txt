@@ -1,0 +1,14 @@
+jupyter-book
+matplotlib
+numpy
+ipython
+matplotlib
+numpy
+pandas
+calplot
+prophet
+plotly
+geopy
+folium
+seaborn
+itables

@@ -1,0 +1,72 @@
+name: Deploy-Book
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  schedule: 
+    - cron: "0 */6 * * *" 
+
+# This job installs dependencies, builds the book, and pushes it to `gh-pages`
+jobs:
+  deploy-book:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+        architecture: 'x64'
+
+    # Install dependencies
+
+    - name: Install dependencies
+      run: |
+        pip install jupyter nbconvert
+        pip install -r requirements.txt
+    
+    - name: Grab Needed Data
+      run: |
+        wget https://nvd.nist.gov/feeds/json/cve/1.1/nvdcve-1.1-{2002..2023}.json.zip 
+        unzip -o "*.zip" 
+        wget https://raw.githubusercontent.com/CVEProject/cve-website/dev/src/assets/data/CNAsList.json
+         
+    - name: Run Notebooks
+      env:
+        GH_TOKEN:  ${{ secrets.GH_TOKEN }}
+      run: |
+         jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --inplace --execute CVEAll.ipynb
+         jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --inplace --execute CVE2016.ipynb
+         jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --inplace --execute CVE2017.ipynb
+         jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --inplace --execute CVE2018.ipynb
+         jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --inplace --execute CVE2019.ipynb
+         jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --inplace --execute CVE2020.ipynb
+         jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --inplace --execute CVE2021.ipynb
+         jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --inplace --execute CVE2022.ipynb
+         jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --inplace --execute CVE2023.ipynb
+         jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --inplace --execute CVECNAMap.ipynb
+         jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --inplace --execute CVECalendar.ipynb
+         jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --inplace --execute CVEGrowth.ipynb
+         jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --inplace --execute CVECVSS.ipynb
+         jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --inplace --execute CVECNA.ipynb
+         jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --inplace --execute CVECWE.ipynb
+         jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --inplace --execute CVECPE.ipynb
+    
+    - name: Commit changes
+      uses: EndBug/add-and-commit@v9
+      with:
+          default_author: github_actions
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    
+
+    - name: Build the book
+      run: |
+        jupyter-book build .
+
+    - name: GitHub Pages action
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./_build/html
+        cname: cve.icu
