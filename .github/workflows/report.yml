@@ -5,12 +5,12 @@ on:
   pull_request:
     branches: [ main ]
   schedule: 
-    - cron: "0 */12 * * *" 
+    - cron: "0 7 * * *" 
 
 # This job installs dependencies, builds the book, and pushes it to `gh-pages`
 jobs:
   deploy-book:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
     - uses: actions/setup-python@v4
