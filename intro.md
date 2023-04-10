@@ -1,6 +1,6 @@
 # About
 
-CVE.ICU is a research project by [Jerry Gamblin](https://www.jerrygamblin.com) from [Kenna Security](https://kennasecurity.com) that automatically pulls all CVE data from the [NVD](https://nvd.mitre.org) and performs fundamental data analysis and graphing.
+CVE.ICU is a research project by [Jerry Gamblin](https://www.jerrygamblin.com) that automatically pulls all CVE data from the [NVD](https://nvd.mitre.org) and performs fundamental data analysis and graphing.
 
 The source code for this project is in this [GitHub repository](https://github.com/jgamblin/cve.icu), and these pages are automatically updated daily by GitHub Actions.
 
