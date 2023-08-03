@@ -22,7 +22,7 @@ jobs:
 
     - name: Install dependencies
       run: |
-        sudo apt install jupyter
+        sudo apt-get install jupyter -y --fix-missing
         python -m pip install nbconvert
         python -m pip install --upgrade pip -r requirements.txt
         
