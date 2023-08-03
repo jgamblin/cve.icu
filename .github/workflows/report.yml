@@ -22,6 +22,7 @@ jobs:
 
     - name: Install dependencies
       run: |
+        sudo apt-get install python3-tk -y
         sudo apt-get install jupyter -y --fix-missing
         python -m pip install nbconvert
         python -m pip install --upgrade pip -r requirements.txt
