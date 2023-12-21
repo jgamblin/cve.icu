@@ -1,0 +1,788 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>2018 &#8212; CVE.ICU</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-DSHJ2DJFJZ"></script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-DSHJ2DJFJZ');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'CVE2018';</script>
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="2017" href="CVE2017.html" />
+    <link rel="prev" title="2019" href="CVE2019.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/ambulance.png" class="logo__image only-light" alt="CVE.ICU - Home"/>
+    <script>document.write(`<img src="_static/ambulance.png" class="logo__image only-dark" alt="CVE.ICU - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    About
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Combined Data</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="CVEAll.html">CVE Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CVECalendar.html">Daily Calendar View</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Yearly Data</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="CVE2023.html">2023</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CVE2022.html">2022</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CVE2021.html">2021</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CVE2020.html">2020</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CVE2019.html">2019</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">2018</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CVE2017.html">2017</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CVE2016.html">2016-2000</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Other CVE Data</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="CVECVSS.html">CVSS Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CVECPE.html">CPE Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CVECWE.html">CWE Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CVEGrowth.html">CVE Growth</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CVECNA.html">CNA Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CVECNAMap.html">CNA MAP</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/jgamblin/cve.icu" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/jgamblin/cve.icu/issues/new?title=Issue%20on%20page%20%2FCVE2018.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/CVE2018.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>2018</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cve-graphs">CVE Graphs</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cve-calendar">CVE Calendar</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cve-per-month-graph">CVE Per Month Graph</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cve-per-week-graph">CVE Per Week Graph</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cve-per-day-graph">CVE Per Day Graph</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cvss-data">CVSS Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cna-data">CNA Data</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cna-assigner-graph">CNA Assigner Graph</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cwe-data">CWE Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#more-cve-data">More CVE Data</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#top-cna-assigner">Top CNA Assigner</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#top-cwes">Top CWEs</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cves-by-identifier">CVEs By Identifier</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="id1">
+<h1>2018<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
+<hr class="docutils" />
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<p>Total Number of CVEs: <strong>18154</strong><br />Average CVEs Per Day: <strong>49.87</strong><br />Average CVSS Score: <strong>7.35</strong></p>
+</div>
+</div>
+<section id="cve-graphs">
+<h2>CVE Graphs<a class="headerlink" href="#cve-graphs" title="Permalink to this heading">#</a></h2>
+<section id="cve-calendar">
+<h3>CVE Calendar<a class="headerlink" href="#cve-calendar" title="Permalink to this heading">#</a></h3>
+<div class="cell tag_hide-input tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/9d619cefa542bc67dfb61b328dd4cbfc0e3a029f372db3cbe19c91da05bd97cf.png" src="_images/9d619cefa542bc67dfb61b328dd4cbfc0e3a029f372db3cbe19c91da05bd97cf.png" />
+</div>
+</div>
+</section>
+<section id="cve-per-month-graph">
+<h3>CVE Per Month Graph<a class="headerlink" href="#cve-per-month-graph" title="Permalink to this heading">#</a></h3>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/353d68f924ba94ce56c8f84927a4e67f5a5e045f874753b2853a22d77aff890e.png" src="_images/353d68f924ba94ce56c8f84927a4e67f5a5e045f874753b2853a22d77aff890e.png" />
+</div>
+</div>
+</section>
+<section id="cve-per-week-graph">
+<h3>CVE Per Week Graph<a class="headerlink" href="#cve-per-week-graph" title="Permalink to this heading">#</a></h3>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/c62f1096f75ec57da7c26fa803204fd4b39ee57560574c0156d06eceaad4435a.png" src="_images/c62f1096f75ec57da7c26fa803204fd4b39ee57560574c0156d06eceaad4435a.png" />
+</div>
+</div>
+</section>
+<section id="cve-per-day-graph">
+<h3>CVE Per Day Graph<a class="headerlink" href="#cve-per-day-graph" title="Permalink to this heading">#</a></h3>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/6ea4e1c79cd6b1b1eb9ebb54d36edbc4064a156237742dd7433a7c8505b78f82.png" src="_images/6ea4e1c79cd6b1b1eb9ebb54d36edbc4064a156237742dd7433a7c8505b78f82.png" />
+</div>
+</div>
+</section>
+</section>
+<section id="cvss-data">
+<h2>CVSS Data<a class="headerlink" href="#cvss-data" title="Permalink to this heading">#</a></h2>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/86cf6cd49fe1fcc825477efb2a68c582daef637d74127d5102a9020803929d39.png" src="_images/86cf6cd49fe1fcc825477efb2a68c582daef637d74127d5102a9020803929d39.png" />
+</div>
+</div>
+</section>
+<section id="cna-data">
+<h2>CNA Data<a class="headerlink" href="#cna-data" title="Permalink to this heading">#</a></h2>
+<section id="cna-assigner-graph">
+<h3>CNA Assigner Graph<a class="headerlink" href="#cna-assigner-graph" title="Permalink to this heading">#</a></h3>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/4de684817cac8cd39c0094096c7fa6237f6508ec07eb4622852710f08453117d.png" src="_images/4de684817cac8cd39c0094096c7fa6237f6508ec07eb4622852710f08453117d.png" />
+</div>
+</div>
+</section>
+</section>
+<section id="cwe-data">
+<h2>CWE Data<a class="headerlink" href="#cwe-data" title="Permalink to this heading">#</a></h2>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/f62473272e014178a255a70c4104b3d20b24c6d052ddb57f11a10767d0b58699.png" src="_images/f62473272e014178a255a70c4104b3d20b24c6d052ddb57f11a10767d0b58699.png" />
+</div>
+</div>
+</section>
+<section id="more-cve-data">
+<h2>More CVE Data<a class="headerlink" href="#more-cve-data" title="Permalink to this heading">#</a></h2>
+<section id="top-cna-assigner">
+<h3>Top CNA Assigner<a class="headerlink" href="#top-cna-assigner" title="Permalink to this heading">#</a></h3>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output text_html"><style>.itables table td {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables table th {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables thead input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+.itables tfoot input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+</style>
+<div class="itables">
+<table id="def5623c-ff63-4213-88a2-3fbbaed7cece" class="display nowrap"style="table-layout:auto;width:auto"><thead>
+    <tr style="text-align: right;">
+      
+      <th>Assigner</th>
+      <th>CVEs</th>
+      <th>Percentage</th>
+    </tr>
+  </thead><tbody><tr><td>Loading... (need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)</td></tr></tbody></table>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css">
+<script type="module">
+    // Import jquery and DataTable
+    import 'https://code.jquery.com/jquery-3.6.0.min.js';
+    import dt from 'https://cdn.datatables.net/1.12.1/js/jquery.dataTables.mjs';
+    dt($);
+
+    // Define the table data
+    const data = [["cve@mitre.org", 7411, 41.0], ["secure@intel.com", 1026, 6.0], ["psirt@us.ibm.com", 943, 5.0], ["secalert_us@oracle.com", 707, 4.0], ["secure@microsoft.com", 704, 4.0], ["security.cna@qualcomm.com", 670, 4.0], ["secalert@redhat.com", 580, 3.0], ["support@hackerone.com", 536, 3.0], ["psirt@cisco.com", 464, 3.0], ["psirt@adobe.com", 388, 2.0], ["security@mozilla.org", 350, 2.0], ["ics-cert@hq.dhs.gov", 338, 2.0], ["talos-cna@cisco.com", 336, 2.0], ["security@android.com", 287, 2.0], ["security-alert@hpe.com", 258, 1.0], ["zdi-disclosures@trendmicro.com", 246, 1.0], ["chrome-cve-admin@google.com", 245, 1.0], ["secure@dell.com", 241, 1.0], ["psirt@huawei.com", 226, 1.0], ["product-security@apple.com", 177, 1.0], ["security@apache.org", 175, 1.0], ["vultures@jpcert.or.jp", 172, 1.0], ["cna@sap.com", 130, 1.0], ["security@opentext.com", 122, 1.0], ["cert@cert.org", 111, 1.0], ["f5sirt@f5.com", 107, 1.0], ["cybersecurity@schneider-electric.com", 90, 0.0], ["security@atlassian.com", 74, 0.0], ["security@trendmicro.com", 67, 0.0], ["productcert@siemens.com", 66, 0.0], ["sirt@juniper.net", 60, 0.0], ["security@debian.org", 56, 0.0], ["psirt@lenovo.com", 54, 0.0], ["vulnreport@tenable.com", 52, 0.0], ["vulnerability@kaspersky.com", 50, 0.0], ["trellixpsirt@trellix.com", 47, 0.0], ["psirt@nvidia.com", 38, 0.0], ["security@vmware.com", 35, 0.0], ["secure@symantec.com", 31, 0.0], ["security@synology.com", 30, 0.0], ["security@qnap.com", 29, 0.0], ["vuln@ca.com", 27, 0.0], ["PSIRT-CNA@flexerasoftware.com", 25, 0.0], ["psirt@paloaltonetworks.com", 24, 0.0], ["security@tibco.com", 22, 0.0], ["secteam@freebsd.org", 22, 0.0], ["security@elastic.co", 19, 0.0], ["psirt@zte.com.cn", 18, 0.0], ["openssl-security@openssl.org", 17, 0.0], ["psirt@fortinet.com", 17, 0.0], ["security-alert@netapp.com", 16, 0.0], ["security@eclipse.org", 16, 0.0], ["security@ubuntu.com", 15, 0.0], ["larry0@me.com", 15, 0.0], ["sirt@brocade.com", 14, 0.0], ["cve-request@iojs.org", 14, 0.0], ["cve-assign@fb.com", 14, 0.0], ["security@perforce.com", 13, 0.0], ["hp-security-alert@hp.com", 13, 0.0], ["cve@checkpoint.com", 12, 0.0], ["security@drupal.org", 10, 0.0], ["security@marklogic.com", 10, 0.0], ["security-report@netflix.com", 10, 0.0], ["report@snyk.io", 10, 0.0], ["vuln@krcert.or.kr", 9, 0.0], ["cve@rapid7.com", 8, 0.0], ["securityalerts@avaya.com", 6, 0.0], ["secure@blackberry.com", 6, 0.0], ["security@kubernetes.io", 6, 0.0], ["security@puppet.com", 5, 0.0], ["browser-security@yandex-team.ru", 3, 0.0], ["cve@navercorp.com", 2, 0.0], ["hsrc@hikvision.com", 2, 0.0], ["PSIRT@sonicwall.com", 1, 0.0], ["https://obdev.at/go/cna", 1, 0.0], ["cybersecurity@dahuatech.com", 1, 0.0], ["patrick@puiterwijk.org", 1, 0.0], ["vulnerability@cspcert.ph", 1, 0.0]];
+
+    // Define the dt_args
+    let dt_args = {"scrollY": "400px", "scrollCollapse": true, "paging": false, "dom": "tpir", "order": []};
+    dt_args["data"] = data;
+
+    $(document).ready(function () {
+        
+        $('#def5623c-ff63-4213-88a2-3fbbaed7cece').DataTable(dt_args);
+    });
+</script>
+</div>
+</div></div>
+</div>
+</section>
+<section id="top-cwes">
+<h3>Top CWEs<a class="headerlink" href="#top-cwes" title="Permalink to this heading">#</a></h3>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output text_html"><style>.itables table td {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables table th {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables thead input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+.itables tfoot input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+</style>
+<div class="itables">
+<table id="fa23f12f-4d8f-47c9-bdca-e0979ec768aa" class="display nowrap"style="table-layout:auto;width:auto"><thead>
+    <tr style="text-align: right;">
+      
+      <th>CWE</th>
+      <th>CVEs</th>
+    </tr>
+  </thead><tbody><tr><td>Loading... (need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)</td></tr></tbody></table>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css">
+<script type="module">
+    // Import jquery and DataTable
+    import 'https://code.jquery.com/jquery-3.6.0.min.js';
+    import dt from 'https://cdn.datatables.net/1.12.1/js/jquery.dataTables.mjs';
+    dt($);
+
+    // Define the table data
+    const data = [["NVD-CWE-noinfo", 2004], ["CWE-79", 2001], ["Missing_Data", 1643], ["CWE-20", 1177], ["CWE-200", 1030], ["CWE-119", 989], ["CWE-787", 837], ["CWE-125", 736], ["CWE-190", 667], ["CWE-22", 535], ["CWE-89", 502], ["CWE-352", 451], ["CWE-416", 392], ["CWE-476", 328], ["CWE-78", 325], ["CWE-287", 285], ["CWE-732", 214], ["CWE-611", 186], ["CWE-310", 171], ["CWE-400", 169], ["CWE-434", 166], ["CWE-94", 156], ["CWE-798", 142], ["CWE-295", 124], ["CWE-502", 120], ["CWE-772", 114], ["CWE-522", 112], ["CWE-269", 112], ["CWE-835", 105], ["CWE-863", 105], ["CWE-362", 103], ["CWE-704", 93], ["CWE-264", 88], ["CWE-601", 84], ["CWE-426", 76], ["CWE-415", 67], ["CWE-918", 67], ["CWE-532", 64], ["CWE-862", 58], ["CWE-120", 48], ["CWE-384", 48], ["CWE-59", 47], ["CWE-284", 46], ["CWE-77", 45], ["CWE-74", 44], ["CWE-306", 43], ["CWE-319", 42], ["CWE-404", 42], ["CWE-326", 41], ["CWE-347", 41], ["CWE-770", 36], ["CWE-665", 29], ["CWE-327", 29], ["CWE-129", 28], ["CWE-369", 28], ["CWE-255", 27], ["CWE-617", 26], ["CWE-311", 25], ["CWE-668", 25], ["CWE-640", 24], ["CWE-427", 24], ["CWE-134", 21], ["CWE-693", 19], ["CWE-1236", 19], ["CWE-203", 18], ["CWE-254", 18], ["CWE-338", 17], ["CWE-312", 17], ["CWE-275", 17], ["CWE-824", 17], ["NVD-CWE-Other", 17], ["CWE-425", 17], ["CWE-674", 17], ["CWE-1188", 16], ["CWE-755", 16], ["CWE-428", 16], ["CWE-521", 15], ["CWE-330", 15], ["CWE-399", 15], ["CWE-191", 15], ["CWE-346", 15], ["CWE-276", 14], ["CWE-88", 14], ["CWE-345", 13], ["CWE-613", 12], ["CWE-908", 12], ["CWE-320", 11], ["CWE-290", 11], ["CWE-388", 11], ["CWE-307", 10], ["CWE-444", 10], ["CWE-358", 10], ["CWE-834", 10], ["CWE-829", 9], ["CWE-1021", 9], ["CWE-843", 9], ["CWE-19", 9], ["CWE-91", 8], ["CWE-118", 8], ["CWE-639", 8], ["CWE-285", 8], ["CWE-552", 7], ["CWE-459", 7], ["CWE-754", 7], ["CWE-682", 7], ["CWE-93", 7], ["CWE-122", 7], ["CWE-209", 7], ["CWE-193", 7], ["CWE-113", 6], ["CWE-116", 6], ["CWE-331", 6], ["CWE-294", 6], ["CWE-417", 6], ["CWE-185", 6], ["CWE-916", 5], ["CWE-367", 5], ["CWE-121", 5], ["CWE-123", 5], ["CWE-184", 5], ["CWE-252", 4], ["CWE-385", 4], ["CWE-172", 4], ["CWE-281", 4], ["CWE-401", 4], ["CWE-667", 3], ["CWE-16", 3], ["CWE-17", 3], ["CWE-917", 3], ["CWE-538", 3], ["CWE-909", 3], ["CWE-670", 3], ["CWE-354", 3], ["CWE-90", 3], ["CWE-763", 3], ["CWE-749", 3], ["CWE-470", 2], ["CWE-924", 2], ["CWE-1321", 2], ["CWE-441", 2], ["CWE-592", 2], ["CWE-250", 2], ["CWE-494", 2], ["CWE-565", 2], ["CWE-335", 2], ["CWE-642", 2], ["CWE-361", 2], ["CWE-189", 2], ["CWE-273", 2], ["CWE-681", 2], ["CWE-436", 2], ["CWE-131", 2], ["CWE-706", 2], ["CWE-178", 2], ["CWE-610", 1], ["CWE-297", 1], ["CWE-838", 1], ["CWE-707", 1], ["CWE-534", 1], ["CWE-117", 1], ["CWE-405", 1], ["CWE-321", 1], ["CWE-332", 1], ["CWE-99", 1], ["CWE-460", 1], ["CWE-774", 1], ["CWE-288", 1], ["CWE-407", 1], ["CWE-471", 1], ["CWE-212", 1], ["CWE-920", 1], ["CWE-1187", 1], ["CWE-266", 1]];
+
+    // Define the dt_args
+    let dt_args = {"scrollY": "400px", "scrollCollapse": true, "paging": false, "dom": "tpir", "order": []};
+    dt_args["data"] = data;
+
+    $(document).ready(function () {
+        
+        $('#fa23f12f-4d8f-47c9-bdca-e0979ec768aa').DataTable(dt_args);
+    });
+</script>
+</div>
+</div></div>
+</div>
+</section>
+<section id="cves-by-identifier">
+<h3>CVEs By Identifier<a class="headerlink" href="#cves-by-identifier" title="Permalink to this heading">#</a></h3>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CVE-1999:	0
+CVE-2000:	0
+CVE-2001:	0
+CVE-2002:	0
+CVE-2003:	1
+CVE-2004:	1
+CVE-2005:	0
+CVE-2006:	0
+CVE-2007:	1
+CVE-2008:	1
+CVE-2009:	8
+CVE-2010:	1
+CVE-2011:	20
+CVE-2012:	23
+CVE-2013:	54
+CVE-2014:	229
+CVE-2015:	274
+CVE-2016:	683
+CVE-2017:	4141
+CVE-2018:	12717
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<p>This report is updated automatically every day, last generated on: <strong>2023-12-21 14:37:26.845922</strong></p>
+</div>
+</div>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="CVE2019.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">2019</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="CVE2017.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">2017</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cve-graphs">CVE Graphs</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cve-calendar">CVE Calendar</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cve-per-month-graph">CVE Per Month Graph</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cve-per-week-graph">CVE Per Week Graph</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cve-per-day-graph">CVE Per Day Graph</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cvss-data">CVSS Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cna-data">CNA Data</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cna-assigner-graph">CNA Assigner Graph</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cwe-data">CWE Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#more-cve-data">More CVE Data</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#top-cna-assigner">Top CNA Assigner</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#top-cwes">Top CWEs</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cves-by-identifier">CVEs By Identifier</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Jerry Gamblin
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
