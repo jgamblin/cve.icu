@@ -26,7 +26,7 @@ jobs:
     - name: Grab Needed Data
       run: |
         rm -f *.zip
-        wget https://nvd.nist.gov/feeds/json/cve/1.1/nvdcve-1.1-{2002..2023}.json.zip 
+        wget https://nvd.nist.gov/feeds/json/cve/1.1/nvdcve-1.1-{2002..2024}.json.zip 
         unzip -o "*.zip" 
         wget https://raw.githubusercontent.com/CVEProject/cve-website/dev/src/assets/data/CNAsList.json
          
@@ -43,6 +43,7 @@ jobs:
          jupyter nbconvert  --to notebook --inplace --execute CVE2021.ipynb
          jupyter nbconvert  --to notebook --inplace --execute CVE2022.ipynb
          jupyter nbconvert  --to notebook --inplace --execute CVE2023.ipynb
+         jupyter nbconvert  --to notebook --inplace --execute CVE2024.ipynb
          jupyter nbconvert  --to notebook --inplace --execute CVECNAMap.ipynb
          jupyter nbconvert  --to notebook --inplace --execute CVECalendar.ipynb
          jupyter nbconvert  --to notebook --inplace --execute CVEGrowth.ipynb
