@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="" >
+<html lang="en" data-content_root="./" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>2022 &#8212; CVE.ICU</title>
   
@@ -29,33 +28,31 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
 <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
   <script src="_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/clipboard.min.js"></script>
-    <script src="_static/copybutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js"></script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="_static/design-tabs.js"></script>
+    <script src="_static/design-tabs.js?v=36754332"></script>
     <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-DSHJ2DJFJZ"></script>
     <script>
                 window.dataLayer = window.dataLayer || [];
@@ -68,9 +65,21 @@ const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
-    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script async="async" src="_static/sphinx-thebe.js?v=afe5de03"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-DSHJ2DJFJZ');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'CVE2022';</script>
-    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="icon" href="_static/favicon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="2021" href="CVE2021.html" />
@@ -168,7 +177,18 @@ const thebe_selector_output = ".output, .cell_output"
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -429,7 +449,7 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="id1">
-<h1>2022<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
+<h1>2022<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
 <hr class="docutils" />
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
@@ -437,9 +457,9 @@ document.write(`
 </div>
 </div>
 <section id="cve-graphs">
-<h2>CVE Graphs<a class="headerlink" href="#cve-graphs" title="Permalink to this heading">#</a></h2>
+<h2>CVE Graphs<a class="headerlink" href="#cve-graphs" title="Link to this heading">#</a></h2>
 <section id="cve-calendar">
-<h3>CVE Calendar<a class="headerlink" href="#cve-calendar" title="Permalink to this heading">#</a></h3>
+<h3>CVE Calendar<a class="headerlink" href="#cve-calendar" title="Link to this heading">#</a></h3>
 <div class="cell tag_hide-input tag_remove-input docutils container">
 <div class="cell_output docutils container">
 <img alt="_images/e702c0fd985ba661cfa53f2fa7f8503fa5bdacd919ec00417cfaa89cd081f9fd.png" src="_images/e702c0fd985ba661cfa53f2fa7f8503fa5bdacd919ec00417cfaa89cd081f9fd.png" />
@@ -447,7 +467,7 @@ document.write(`
 </div>
 </section>
 <section id="cve-per-month-graph">
-<h3>CVE Per Month Graph<a class="headerlink" href="#cve-per-month-graph" title="Permalink to this heading">#</a></h3>
+<h3>CVE Per Month Graph<a class="headerlink" href="#cve-per-month-graph" title="Link to this heading">#</a></h3>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
 <img alt="_images/3da6a40c4dca94f229265f273135177fa8ab66c834c49a732ae40f2dd6d82c7e.png" src="_images/3da6a40c4dca94f229265f273135177fa8ab66c834c49a732ae40f2dd6d82c7e.png" />
@@ -455,7 +475,7 @@ document.write(`
 </div>
 </section>
 <section id="cve-per-week-graph">
-<h3>CVE Per Week Graph<a class="headerlink" href="#cve-per-week-graph" title="Permalink to this heading">#</a></h3>
+<h3>CVE Per Week Graph<a class="headerlink" href="#cve-per-week-graph" title="Link to this heading">#</a></h3>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
 <img alt="_images/6c70580961b0cd34cd0e4d5cb35e22049630cd184cbb1b0c50b51c6bb5ad557b.png" src="_images/6c70580961b0cd34cd0e4d5cb35e22049630cd184cbb1b0c50b51c6bb5ad557b.png" />
@@ -463,7 +483,7 @@ document.write(`
 </div>
 </section>
 <section id="cve-per-day-graph">
-<h3>CVE Per Day Graph<a class="headerlink" href="#cve-per-day-graph" title="Permalink to this heading">#</a></h3>
+<h3>CVE Per Day Graph<a class="headerlink" href="#cve-per-day-graph" title="Link to this heading">#</a></h3>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
 <img alt="_images/b2f248a4a2cc42965f43013d4caabf75c077599c78017bae035d25255dd7d3aa.png" src="_images/b2f248a4a2cc42965f43013d4caabf75c077599c78017bae035d25255dd7d3aa.png" />
@@ -472,7 +492,7 @@ document.write(`
 </section>
 </section>
 <section id="cvss-data">
-<h2>CVSS Data<a class="headerlink" href="#cvss-data" title="Permalink to this heading">#</a></h2>
+<h2>CVSS Data<a class="headerlink" href="#cvss-data" title="Link to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
 <img alt="_images/5d4fc631e0bf12a9549e0173f1cfceabe6e50cce1c21bef52f0c8414332dd434.png" src="_images/5d4fc631e0bf12a9549e0173f1cfceabe6e50cce1c21bef52f0c8414332dd434.png" />
@@ -480,9 +500,9 @@ document.write(`
 </div>
 </section>
 <section id="cna-data">
-<h2>CNA Data<a class="headerlink" href="#cna-data" title="Permalink to this heading">#</a></h2>
+<h2>CNA Data<a class="headerlink" href="#cna-data" title="Link to this heading">#</a></h2>
 <section id="cna-assigner-graph">
-<h3>CNA Assigner Graph<a class="headerlink" href="#cna-assigner-graph" title="Permalink to this heading">#</a></h3>
+<h3>CNA Assigner Graph<a class="headerlink" href="#cna-assigner-graph" title="Link to this heading">#</a></h3>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
 <img alt="_images/3f0ccecd93338a102ffa9434b9f35bd991377ed389d8f7602fcb97a3e5237586.png" src="_images/3f0ccecd93338a102ffa9434b9f35bd991377ed389d8f7602fcb97a3e5237586.png" />
@@ -491,7 +511,7 @@ document.write(`
 </section>
 </section>
 <section id="cwe-data">
-<h2>CWE Data<a class="headerlink" href="#cwe-data" title="Permalink to this heading">#</a></h2>
+<h2>CWE Data<a class="headerlink" href="#cwe-data" title="Link to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
 <img alt="_images/e15506c4f8069aa80a97d431ae62204a124a1417708ed7ae0ad700bb83d2c6e1.png" src="_images/e15506c4f8069aa80a97d431ae62204a124a1417708ed7ae0ad700bb83d2c6e1.png" />
@@ -499,9 +519,9 @@ document.write(`
 </div>
 </section>
 <section id="more-cve-data">
-<h2>More CVE Data<a class="headerlink" href="#more-cve-data" title="Permalink to this heading">#</a></h2>
+<h2>More CVE Data<a class="headerlink" href="#more-cve-data" title="Link to this heading">#</a></h2>
 <section id="top-cna-assigner">
-<h3>Top CNA Assigner<a class="headerlink" href="#top-cna-assigner" title="Permalink to this heading">#</a></h3>
+<h3>Top CNA Assigner<a class="headerlink" href="#top-cna-assigner" title="Link to this heading">#</a></h3>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
 <div class="output text_html"><style>.itables table td {
@@ -527,7 +547,7 @@ document.write(`
 }
 </style>
 <div class="itables">
-<table id="700089cc-33bb-4fb0-aee5-eada285b437f" class="display nowrap"style="table-layout:auto;width:auto"><thead>
+<table id="c6f50e26-ae0c-4429-a2c4-3b90362a9792" class="display nowrap"style="table-layout:auto;width:auto"><thead>
     <tr style="text-align: right;">
       
       <th>Assigner</th>
@@ -551,7 +571,7 @@ document.write(`
 
     $(document).ready(function () {
         
-        $('#700089cc-33bb-4fb0-aee5-eada285b437f').DataTable(dt_args);
+        $('#c6f50e26-ae0c-4429-a2c4-3b90362a9792').DataTable(dt_args);
     });
 </script>
 </div>
@@ -559,7 +579,7 @@ document.write(`
 </div>
 </section>
 <section id="top-cwes">
-<h3>Top CWEs<a class="headerlink" href="#top-cwes" title="Permalink to this heading">#</a></h3>
+<h3>Top CWEs<a class="headerlink" href="#top-cwes" title="Link to this heading">#</a></h3>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
 <div class="output text_html"><style>.itables table td {
@@ -585,7 +605,7 @@ document.write(`
 }
 </style>
 <div class="itables">
-<table id="e623e031-f180-422b-ae16-83b983c12a21" class="display nowrap"style="table-layout:auto;width:auto"><thead>
+<table id="4e63766c-a38c-46f8-96b5-e0efe4147fa8" class="display nowrap"style="table-layout:auto;width:auto"><thead>
     <tr style="text-align: right;">
       
       <th>CWE</th>
@@ -608,7 +628,7 @@ document.write(`
 
     $(document).ready(function () {
         
-        $('#e623e031-f180-422b-ae16-83b983c12a21').DataTable(dt_args);
+        $('#4e63766c-a38c-46f8-96b5-e0efe4147fa8').DataTable(dt_args);
     });
 </script>
 </div>
@@ -616,7 +636,7 @@ document.write(`
 </div>
 </section>
 <section id="cves-by-identifier">
-<h3>CVEs By Identifier<a class="headerlink" href="#cves-by-identifier" title="Permalink to this heading">#</a></h3>
+<h3>CVEs By Identifier<a class="headerlink" href="#cves-by-identifier" title="Link to this heading">#</a></h3>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CVE-1999:	0
@@ -649,7 +669,7 @@ CVE-2022:	19798
 </div>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<p>This report is updated automatically every day, last generated on: <strong>2024-01-26 12:27:34.173618</strong></p>
+<p>This report is updated automatically every day, last generated on: <strong>2024-01-26 16:27:27.255653</strong></p>
 </div>
 </div>
 </section>
