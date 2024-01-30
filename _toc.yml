@@ -21,8 +21,7 @@ parts:
     - file: CVE2016
   - caption: Other CVE Data
     chapters:
-    - file: CVECVSS
-    - file: CVECPE    
+    - file: CVECVSS  
     - file: CVECWE
     - file: CVEGrowth
     - file: CVECNA
