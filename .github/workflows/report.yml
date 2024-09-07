@@ -26,7 +26,7 @@ jobs:
     - name: Grab Needed Data
       run: |
         wget -q  https://nvd.handsonhacking.org/nvd.jsonl
-        wget -q https://raw.githubusercontent.com/CVEProject/cve-website/dev/src/assets/data/CNAsList.json
+        wget -q https://raw.githubusercontent.com/CVEProject/cve-website/main/src/assets/data/CNAsList.json
         ls -lh 
     - name: Run Notebooks
       env:
