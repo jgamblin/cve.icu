@@ -42,6 +42,7 @@ jobs:
          jupyter nbconvert  --to notebook --inplace --execute CVE2022.ipynb
          jupyter nbconvert  --to notebook --inplace --execute CVE2023.ipynb
          jupyter nbconvert  --to notebook --inplace --execute CVE2024.ipynb
+         jupyter nbconvert  --to notebook --inplace --execute CVE2025.ipynb
          jupyter nbconvert  --to notebook --inplace --execute CVECNAMap.ipynb
          jupyter nbconvert  --to notebook --inplace --execute CVECalendar.ipynb
          jupyter nbconvert  --to notebook --inplace --execute CVEGrowth.ipynb
