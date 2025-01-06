@@ -1,0 +1,105 @@
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.11.11/x64/lib/python3.11/site-packages/jupyter_cache/executors/utils.py", line 58, in single_nb_execution
+    executenb(
+  File "/opt/hostedtoolcache/Python/3.11.11/x64/lib/python3.11/site-packages/nbclient/client.py", line 1319, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.11/x64/lib/python3.11/site-packages/jupyter_core/utils/__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.11/x64/lib/python3.11/asyncio/base_events.py", line 654, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.11/x64/lib/python3.11/site-packages/nbclient/client.py", line 709, in async_execute
+    await self.async_execute_cell(
+  File "/opt/hostedtoolcache/Python/3.11.11/x64/lib/python3.11/site-packages/nbclient/client.py", line 1062, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "/opt/hostedtoolcache/Python/3.11.11/x64/lib/python3.11/site-packages/nbclient/client.py", line 918, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+
+
+with open('CNAsList.json') as f:
+    data = json.load(f)
+
+CNA = pd.json_normalize(data)
+
+geolocator = Nominatim(user_agent="CNALookup")
+latitude = []
+long = []
+for i in CNA["country"]:
+    if i != None:
+        location = geolocator.geocode(i, timeout=None)
+        if location!=None:
+            latitude.append(location.latitude)#, location.longitude)
+            long.append(location.longitude)
+        else:
+            latitude.append(float("Nan"))#, location.longitude)
+            long.append(float("Nan"))
+    else:
+        latitude.append(float("Nan"))#, location.longitude)
+        long.append(float("Nan"))
+
+CNA["Latitude"] = latitude
+CNA["Longitude"] = long
+------------------
+
+
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mAdapterHTTPError[0m                          Traceback (most recent call last)
+File [0;32m/opt/hostedtoolcache/Python/3.11.11/x64/lib/python3.11/site-packages/geopy/geocoders/base.py:368[0m, in [0;36mGeocoder._call_geocoder[0;34m(self, url, callback, timeout, is_json, headers)[0m
+[1;32m    367[0m [38;5;28;01mif[39;00m is_json:
+[0;32m--> 368[0m     result [38;5;241m=[39m [38;5;28;43mself[39;49m[38;5;241;43m.[39;49m[43madapter[49m[38;5;241;43m.[39;49m[43mget_json[49m[43m([49m[43murl[49m[43m,[49m[43m [49m[43mtimeout[49m[38;5;241;43m=[39;49m[43mtimeout[49m[43m,[49m[43m [49m[43mheaders[49m[38;5;241;43m=[39;49m[43mreq_headers[49m[43m)[49m
+[1;32m    369[0m [38;5;28;01melse[39;00m:
+
+File [0;32m/opt/hostedtoolcache/Python/3.11.11/x64/lib/python3.11/site-packages/geopy/adapters.py:472[0m, in [0;36mRequestsAdapter.get_json[0;34m(self, url, timeout, headers)[0m
+[1;32m    471[0m [38;5;28;01mdef[39;00m[38;5;250m [39m[38;5;21mget_json[39m([38;5;28mself[39m, url, [38;5;241m*[39m, timeout, headers):
+[0;32m--> 472[0m     resp [38;5;241m=[39m [38;5;28;43mself[39;49m[38;5;241;43m.[39;49m[43m_request[49m[43m([49m[43murl[49m[43m,[49m[43m [49m[43mtimeout[49m[38;5;241;43m=[39;49m[43mtimeout[49m[43m,[49m[43m [49m[43mheaders[49m[38;5;241;43m=[39;49m[43mheaders[49m[43m)[49m
+[1;32m    473[0m     [38;5;28;01mtry[39;00m:
+
+File [0;32m/opt/hostedtoolcache/Python/3.11.11/x64/lib/python3.11/site-packages/geopy/adapters.py:500[0m, in [0;36mRequestsAdapter._request[0;34m(self, url, timeout, headers)[0m
+[1;32m    499[0m     [38;5;28;01mif[39;00m resp[38;5;241m.[39mstatus_code [38;5;241m>[39m[38;5;241m=[39m [38;5;241m400[39m:
+[0;32m--> 500[0m         [38;5;28;01mraise[39;00m AdapterHTTPError(
+[1;32m    501[0m             [38;5;124m"[39m[38;5;124mNon-successful status code [39m[38;5;132;01m%s[39;00m[38;5;124m"[39m [38;5;241m%[39m resp[38;5;241m.[39mstatus_code,
+[1;32m    502[0m             status_code[38;5;241m=[39mresp[38;5;241m.[39mstatus_code,
+[1;32m    503[0m             headers[38;5;241m=[39mresp[38;5;241m.[39mheaders,
+[1;32m    504[0m             text[38;5;241m=[39mresp[38;5;241m.[39mtext,
+[1;32m    505[0m         )
+[1;32m    507[0m [38;5;28;01mreturn[39;00m resp
+
+[0;31mAdapterHTTPError[0m: Non-successful status code 503
+
+The above exception was the direct cause of the following exception:
+
+[0;31mGeocoderTimedOut[0m                          Traceback (most recent call last)
+Cell [0;32mIn[2], line 11[0m
+[1;32m      9[0m [38;5;28;01mfor[39;00m i [38;5;129;01min[39;00m CNA[[38;5;124m"[39m[38;5;124mcountry[39m[38;5;124m"[39m]:
+[1;32m     10[0m     [38;5;28;01mif[39;00m i [38;5;241m!=[39m [38;5;28;01mNone[39;00m:
+[0;32m---> 11[0m         location [38;5;241m=[39m [43mgeolocator[49m[38;5;241;43m.[39;49m[43mgeocode[49m[43m([49m[43mi[49m[43m,[49m[43m [49m[43mtimeout[49m[38;5;241;43m=[39;49m[38;5;28;43;01mNone[39;49;00m[43m)[49m
+[1;32m     12[0m         [38;5;28;01mif[39;00m location[38;5;241m!=[39m[38;5;28;01mNone[39;00m:
+[1;32m     13[0m             latitude[38;5;241m.[39mappend(location[38;5;241m.[39mlatitude)[38;5;66;03m#, location.longitude)[39;00m
+
+File [0;32m/opt/hostedtoolcache/Python/3.11.11/x64/lib/python3.11/site-packages/geopy/geocoders/nominatim.py:297[0m, in [0;36mNominatim.geocode[0;34m(self, query, exactly_one, timeout, limit, addressdetails, language, geometry, extratags, country_codes, viewbox, bounded, featuretype, namedetails)[0m
+[1;32m    295[0m logger[38;5;241m.[39mdebug([38;5;124m"[39m[38;5;132;01m%s[39;00m[38;5;124m.geocode: [39m[38;5;132;01m%s[39;00m[38;5;124m"[39m, [38;5;28mself[39m[38;5;241m.[39m[38;5;18m__class__[39m[38;5;241m.[39m[38;5;18m__name__[39m, url)
+[1;32m    296[0m callback [38;5;241m=[39m partial([38;5;28mself[39m[38;5;241m.[39m_parse_json, exactly_one[38;5;241m=[39mexactly_one)
+[0;32m--> 297[0m [38;5;28;01mreturn[39;00m [38;5;28;43mself[39;49m[38;5;241;43m.[39;49m[43m_call_geocoder[49m[43m([49m[43murl[49m[43m,[49m[43m [49m[43mcallback[49m[43m,[49m[43m [49m[43mtimeout[49m[38;5;241;43m=[39;49m[43mtimeout[49m[43m)[49m
+
+File [0;32m/opt/hostedtoolcache/Python/3.11.11/x64/lib/python3.11/site-packages/geopy/geocoders/base.py:388[0m, in [0;36mGeocoder._call_geocoder[0;34m(self, url, callback, timeout, is_json, headers)[0m
+[1;32m    386[0m         [38;5;28;01mreturn[39;00m callback(result)
+[1;32m    387[0m [38;5;28;01mexcept[39;00m [38;5;167;01mException[39;00m [38;5;28;01mas[39;00m error:
+[0;32m--> 388[0m     res [38;5;241m=[39m [38;5;28;43mself[39;49m[38;5;241;43m.[39;49m[43m_adapter_error_handler[49m[43m([49m[43merror[49m[43m)[49m
+[1;32m    389[0m     [38;5;28;01mif[39;00m res [38;5;129;01mis[39;00m NONE_RESULT:
+[1;32m    390[0m         [38;5;28;01mreturn[39;00m [38;5;28;01mNone[39;00m
+
+File [0;32m/opt/hostedtoolcache/Python/3.11.11/x64/lib/python3.11/site-packages/geopy/geocoders/base.py:411[0m, in [0;36mGeocoder._adapter_error_handler[0;34m(self, error)[0m
+[1;32m    407[0m         [38;5;28;01mraise[39;00m exc_cls(
+[1;32m    408[0m             [38;5;28mstr[39m(error), retry_after[38;5;241m=[39mget_retry_after(error[38;5;241m.[39mheaders)
+[1;32m    409[0m         ) [38;5;28;01mfrom[39;00m[38;5;250m [39m[38;5;21;01merror[39;00m
+[1;32m    410[0m     [38;5;28;01melse[39;00m:
+[0;32m--> 411[0m         [38;5;28;01mraise[39;00m exc_cls([38;5;28mstr[39m(error)) [38;5;28;01mfrom[39;00m[38;5;250m [39m[38;5;21;01merror[39;00m
+[1;32m    412[0m [38;5;28;01melse[39;00m:
+[1;32m    413[0m     res [38;5;241m=[39m [38;5;28mself[39m[38;5;241m.[39m_geocoder_exception_handler(error)
+
+[0;31mGeocoderTimedOut[0m: Non-successful status code 503
+
