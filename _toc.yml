@@ -27,3 +27,4 @@ parts:
     - file: CVEGrowth
     - file: CVECNA
     - file: CVECNAMap
+    - file: CVECPE
