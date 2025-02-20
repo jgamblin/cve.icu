@@ -16,33 +16,30 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
-  <!--
-    this give us a css class that will be invisible only if js is disabled
-  -->
-  <noscript>
-    <style>
-      .pst-js-only { display: none !important; }
-
-    </style>
-  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
-  <!-- So that users can add custom icons -->
-  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
     <script src="_static/documentation_options.js?v=9eb32ce0"></script>
     <script src="_static/doctools.js?v=9a2dae69"></script>
@@ -81,7 +78,6 @@
     <link rel="prev" title="Daily Calendar View" href="CVECalendar.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -97,8 +93,19 @@
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
-  <dialog id="pst-search-dialog">
-    
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
 <form class="bd-search d-flex align-items-center"
       action="search.html"
       method="get">
@@ -106,6 +113,7 @@
   <input type="search"
          class="form-control"
          name="q"
+         id="search-input"
          placeholder="Search this book..."
          aria-label="Search this book..."
          autocomplete="off"
@@ -113,8 +121,8 @@
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form>
-  </dialog>
+</form></div>
+  </div>
 
   <div class="pst-async-banner-revealer d-none">
   <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
@@ -130,8 +138,7 @@
       
       
       
-      <dialog id="pst-primary-sidebar-modal"></dialog>
-      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+      <div class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -161,17 +168,21 @@
     
     
     <img src="_static/ambulance.png" class="logo__image only-light" alt="CVE.ICU - Home"/>
-    <img src="_static/ambulance.png" class="logo__image only-dark pst-js-only" alt="CVE.ICU - Home"/>
+    <script>document.write(`<img src="_static/ambulance.png" class="logo__image only-dark" alt="CVE.ICU - Home"/>`);</script>
   
   
 </a></div>
         <div class="sidebar-primary-item">
 
-<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
- <i class="fa-solid fa-magnifying-glass"></i>
- <span class="search-button__default-text">Search</span>
- <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-</button></div>
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
@@ -216,14 +227,9 @@
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
-      <div class="sidebar-primary-item">
-<div id="ethical-ad-placement"
-      class="flat"
-      data-ea-publisher="readthedocs"
-      data-ea-type="readthedocs-sidebar"
-      data-ea-manual="true">
-</div></div>
   </div>
+  
+  <div id="rtd-footer-container"></div>
 
 
       </div>
@@ -367,16 +373,24 @@
 
 
 
-<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
-  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
-  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
-  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
-</button>
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
 
 
-<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-</button>
+  </button>
+`);
+</script>
 <button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
 </button>
@@ -435,7 +449,7 @@
 <hr class="docutils" />
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<p>Total Number of CVEs: <strong>6304</strong><br />Average CVEs Per Day: <strong>126.08</strong><br />Average CVSS Score: <strong>6.57</strong></p>
+<p>Total Number of CVEs: <strong>6377</strong><br />Average CVEs Per Day: <strong>127.54</strong><br />Average CVSS Score: <strong>6.57</strong></p>
 </div>
 </div>
 <section id="cve-graphs">
@@ -444,7 +458,7 @@
 <h3>CVE Calendar<a class="headerlink" href="#cve-calendar" title="Link to this heading">#</a></h3>
 <div class="cell tag_hide-input tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<img alt="_images/dc675a1d8dabba0ae97ccc3ff2cde9f3f11f50327a9a7eab03018c765ec52dff.png" src="_images/dc675a1d8dabba0ae97ccc3ff2cde9f3f11f50327a9a7eab03018c765ec52dff.png" />
+<img alt="_images/1af58db07602ab9add15c24b40ae1b2e8999e709abc425e616ca9b09a25936d9.png" src="_images/1af58db07602ab9add15c24b40ae1b2e8999e709abc425e616ca9b09a25936d9.png" />
 </div>
 </div>
 </section>
@@ -452,7 +466,7 @@
 <h3>CVE Per Month Graph<a class="headerlink" href="#cve-per-month-graph" title="Link to this heading">#</a></h3>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<img alt="_images/c0cce2b780f5c78ab19c6d84a1edd4de94e6134eb8a587dd5bbbe25653f2aa34.png" src="_images/c0cce2b780f5c78ab19c6d84a1edd4de94e6134eb8a587dd5bbbe25653f2aa34.png" />
+<img alt="_images/9e8c6ba73354b4321697243621d47ca6dab3ec46e841a1e45f0e5606796de84e.png" src="_images/9e8c6ba73354b4321697243621d47ca6dab3ec46e841a1e45f0e5606796de84e.png" />
 </div>
 </div>
 </section>
@@ -460,7 +474,7 @@
 <h3>CVE Per Week Graph<a class="headerlink" href="#cve-per-week-graph" title="Link to this heading">#</a></h3>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<img alt="_images/54c73bb1af9da55db54526a75ba481717b1ad5b0c3871de671a0f047259ff72a.png" src="_images/54c73bb1af9da55db54526a75ba481717b1ad5b0c3871de671a0f047259ff72a.png" />
+<img alt="_images/73a0967024f6d43b7fa22d1f016bcb5102f55f9d14f88ecfc5c485dba0bc102a.png" src="_images/73a0967024f6d43b7fa22d1f016bcb5102f55f9d14f88ecfc5c485dba0bc102a.png" />
 </div>
 </div>
 </section>
@@ -468,7 +482,7 @@
 <h3>CVE Per Day Graph<a class="headerlink" href="#cve-per-day-graph" title="Link to this heading">#</a></h3>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<img alt="_images/41e5948395dddcacd57ea151bfe89ab30c615f09bfc703c3c67a9b5b02b1119d.png" src="_images/41e5948395dddcacd57ea151bfe89ab30c615f09bfc703c3c67a9b5b02b1119d.png" />
+<img alt="_images/51c2d6869060d4d13ddc77b8aec02f4e0b7726219474ab7d50a434762ac6adc1.png" src="_images/51c2d6869060d4d13ddc77b8aec02f4e0b7726219474ab7d50a434762ac6adc1.png" />
 </div>
 </div>
 </section>
@@ -477,7 +491,7 @@
 <h2>CVSS Data<a class="headerlink" href="#cvss-data" title="Link to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<img alt="_images/3294bd025c28310b95b0812cae5b711e336ea321622e54bd65a6ee38914748da.png" src="_images/3294bd025c28310b95b0812cae5b711e336ea321622e54bd65a6ee38914748da.png" />
+<img alt="_images/32750d4349b752b75ea2c987bf51bcb8e0ea3c85ee4ec6ba1c34cf8bb0785ae1.png" src="_images/32750d4349b752b75ea2c987bf51bcb8e0ea3c85ee4ec6ba1c34cf8bb0785ae1.png" />
 </div>
 </div>
 </section>
@@ -487,7 +501,7 @@
 <h3>CNA Assigner Graph<a class="headerlink" href="#cna-assigner-graph" title="Link to this heading">#</a></h3>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<img alt="_images/a150736663abcf5276712a908e65b6b6e9056ee6656829075e13582c1936f7ba.png" src="_images/a150736663abcf5276712a908e65b6b6e9056ee6656829075e13582c1936f7ba.png" />
+<img alt="_images/dea87981bf4955357f871de792488765a87d9a2803d2e5d54cb90b9236446300.png" src="_images/dea87981bf4955357f871de792488765a87d9a2803d2e5d54cb90b9236446300.png" />
 </div>
 </div>
 </section>
@@ -496,7 +510,7 @@
 <h2>CWE Data<a class="headerlink" href="#cwe-data" title="Link to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<img alt="_images/2a369a8fa2bd5131131cd5387df624f8a366d59fd002c4e9b95faba64db7a110.png" src="_images/2a369a8fa2bd5131131cd5387df624f8a366d59fd002c4e9b95faba64db7a110.png" />
+<img alt="_images/0ca73286d69972bed7c80dab66d600ba1a13961deec0c725f6d3dac6318ce11a.png" src="_images/0ca73286d69972bed7c80dab66d600ba1a13961deec0c725f6d3dac6318ce11a.png" />
 </div>
 </div>
 </section>
@@ -506,7 +520,7 @@
 <h3>Top CNA Assigners<a class="headerlink" href="#top-cna-assigners" title="Link to this heading">#</a></h3>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><table id="itables_6b85b335_b225_4bef_b99e_edf5eacf5c5c" class="display nowrap" data-quarto-disable-processing="true" style="table-layout:auto;width:auto">
+<div class="output text_html"><table id="itables_a9367c2c_2e45_460e_89e9_4f5dad6cd2ec" class="display nowrap" data-quarto-disable-processing="true" style="table-layout:auto;width:auto">
 <thead>
     <tr style="text-align: right;">
       
@@ -614,12 +628,12 @@ Loading ITables v2.2.4 from the internet...
 <script type="module">
     import {DataTable, jQuery as $} from 'https://www.unpkg.com/dt_for_itables@2.0.13/dt_bundle.js';
 
-    document.querySelectorAll("#itables_6b85b335_b225_4bef_b99e_edf5eacf5c5c:not(.dataTable)").forEach(table => {
+    document.querySelectorAll("#itables_a9367c2c_2e45_460e_89e9_4f5dad6cd2ec:not(.dataTable)").forEach(table => {
         if (!(table instanceof HTMLTableElement))
             return;
 
         // Define the table data
-        const data = [["audit@patchstack.com", 1303, 21.0], ["cve@mitre.org", 907, 14.0], ["security@wordfence.com", 692, 11.0], ["cna@vuldb.com", 395, 6.0], ["security-advisories@github.com", 340, 5.0], ["cve@kernel.org", 254, 4.0], ["secure@microsoft.com", 231, 4.0], ["psirt@us.ibm.com", 167, 3.0], ["contact@wpscan.com", 107, 2.0], ["product-security@apple.com", 104, 2.0], ["secalert_us@oracle.com", 83, 1.0], ["mlhess@drupal.org", 74, 1.0], ["talos-cna@cisco.com", 69, 1.0], ["psirt@fortinet.com", 67, 1.0], ["secure@intel.com", 67, 1.0], ["psirt@adobe.com", 65, 1.0], ["security@android.com", 63, 1.0], ["ics-cert@hq.dhs.gov", 56, 1.0], ["prodsec@nozominetworks.com", 48, 1.0], ["product-security@qualcomm.com", 43, 1.0], ["secalert@redhat.com", 43, 1.0], ["psirt@huawei.com", 38, 1.0], ["zdi-disclosures@trendmicro.com", 34, 1.0], ["vultures@jpcert.or.jp", 33, 1.0], ["cna@sap.com", 31, 0.0], ["3c1d8aa1-5a33-4ea4-8992-aadd6440af75", 31, 0.0], ["cve-coordination@incibe.es", 30, 0.0], ["psirt@cisco.com", 30, 0.0], ["cve@gitlab.com", 30, 0.0], ["security@mediatek.com", 29, 0.0], ["security@apache.org", 29, 0.0], ["chrome-cve-admin@google.com", 27, 0.0], ["security@mozilla.org", 27, 0.0], ["mobile.security@samsung.com", 26, 0.0], ["security_alert@emc.com", 21, 0.0], ["productcert@siemens.com", 20, 0.0], ["psirt@hcl.com", 19, 0.0], ["support@hackerone.com", 19, 0.0], ["cybersecurity@se.com", 18, 0.0], ["psirt@amd.com", 18, 0.0], ["psirt@nvidia.com", 18, 0.0], ["f5sirt@f5.com", 17, 0.0], ["csirt@divd.nl", 16, 0.0], ["product-security@silabs.com", 16, 0.0], ["security@progress.com", 16, 0.0], ["security-alert@hpe.com", 14, 0.0], ["security@acronis.com", 14, 0.0], ["psirt@arista.com", 13, 0.0], ["responsibledisclosure@mattermost.com", 13, 0.0], ["twcert@cert.org.tw", 13, 0.0], ["9119a7d8-5eab-497f-8521-727c672e3725", 12, 0.0], ["367425dc-4d06-4041-9650-c2dc6aaa27ce", 12, 0.0], ["dsap-vuln-management@google.com", 12, 0.0], ["PSIRT@sonicwall.com", 11, 0.0], ["psirt@paloaltonetworks.com", 11, 0.0], ["PSIRT@rockwellautomation.com", 10, 0.0], ["security@joomla.org", 9, 0.0], ["cybersecurity@ch.abb.com", 9, 0.0], ["secure@symantec.com", 9, 0.0], ["security.vulnerabilities@hitachivantara.com", 9, 0.0], ["cve@jetbrains.com", 9, 0.0], ["7bc73191-a2b6-4c63-9918-753964601853", 9, 0.0], ["10b61619-3869-496c-8a1e-f291b0e71e3f", 9, 0.0], ["bressers@elastic.co", 8, 0.0], ["security@vmware.com", 8, 0.0], ["sirt@juniper.net", 8, 0.0], ["vulnerability@ncsc.ch", 7, 0.0], ["c4f26cc8-17ff-4c99-b5e2-38fc1793eacc", 7, 0.0], ["jenkinsci-cert@googlegroups.com", 7, 0.0], ["security@golang.org", 7, 0.0], ["sirt@brocade.com", 7, 0.0], ["b7efe717-a805-47cf-8e9a-921fca0ce0ce", 7, 0.0], ["security@zoom.us", 7, 0.0], ["cve-coordination@google.com", 7, 0.0], ["cvd@cert.pl", 7, 0.0], ["arm-security@arm.com", 6, 0.0], ["scy@openharmony.io", 6, 0.0], ["iletisim@usom.gov.tr", 6, 0.0], ["disclosure@vulncheck.com", 6, 0.0], ["security@octopus.com", 6, 0.0], ["hp-security-alert@hp.com", 6, 0.0], ["vdisclose@cert-in.org.in", 5, 0.0], ["psirt@moxa.com", 5, 0.0], ["product-security@axis.com", 5, 0.0], ["psirt@solarwinds.com", 5, 0.0], ["cret@cert.org", 5, 0.0], ["report@snyk.io", 5, 0.0], ["secure@blackberry.com", 5, 0.0], ["security@ubuntu.com", 4, 0.0], ["54bf65a7-a193-42d2-b1ba-8e150d3c35e1", 4, 0.0], ["security@zyxel.com.tw", 4, 0.0], ["psirt@lenovo.com", 4, 0.0], ["psirt-info@cyber.jp.nec.com", 4, 0.0], ["ff89ba41-3aa1-4d27-914a-91399e9639e5", 4, 0.0], ["551230f0-3615-47bd-b7cc-93e92e730bbf", 4, 0.0], ["security@openvpn.net", 4, 0.0], ["patrick@puiterwijk.org", 4, 0.0], ["security@otrs.com", 4, 0.0], ["PSIRT-CNA@flexerasoftware.com", 4, 0.0], ["security@huntr.dev", 3, 0.0], ["security@devolutions.net", 3, 0.0], ["secure@citrix.com", 3, 0.0], ["security@vivo.com", 3, 0.0], ["secteam@freebsd.org", 3, 0.0], ["f98c90f0-e9bd-4fa7-911b-51993f3571fd", 3, 0.0], ["info@cert.vde.com", 3, 0.0], ["bba440f9-ef23-4224-aa62-7ac0935d18d1", 3, 0.0], ["2499f714-1537-4658-8207-48ae4bb9eae9", 3, 0.0], ["def9a96e-e099-41a9-bfac-30fd4f82c411", 3, 0.0], ["security@synology.com", 3, 0.0], ["a341c0d1-ebf7-493f-a84e-38cf86618674", 3, 0.0], ["security@hashicorp.com", 3, 0.0], ["security@m-files.com", 3, 0.0], ["5d1c2695-1a31-4499-88ae-e847036fd7e3", 3, 0.0], ["psirt@sick.de", 3, 0.0], ["security@opentext.com", 2, 0.0], ["f86ef6dc-4d3a-42ad-8f28-e6d5547a5007", 2, 0.0], ["prodsec@splunk.com", 2, 0.0], ["3ad20294-822c-4ebc-9301-f9a7cf62d46e", 2, 0.0], ["security@documentfoundation.org", 2, 0.0], ["productsecurity@baxter.com", 2, 0.0], ["security-officer@isc.org", 2, 0.0], ["cna@python.org", 2, 0.0], ["cve@rapid7.com", 2, 0.0], ["hirt@hitachi.co.jp", 2, 0.0], ["securityalerts@avaya.com", 2, 0.0], ["product-cna@github.com", 2, 0.0], ["cna@cloudflare.com", 2, 0.0], ["907edf6c-bf03-423e-ab1a-8da27e1aa1ea", 2, 0.0], ["de5a6978-88fe-4c27-a7df-d0d5b52d5b52", 2, 0.0], ["cve-requests@bitdefender.com", 2, 0.0], ["22d9ba52-f336-4b0d-bf1f-0efbdcc3c1de", 2, 0.0], ["biossecurity@ami.com", 2, 0.0], ["openssl-security@openssl.org", 2, 0.0], ["vulnerability@kaspersky.com", 2, 0.0], ["security@salesforce.com", 2, 0.0], ["bbf0bd87-ece2-41be-b873-96928ee8fab9", 2, 0.0], ["0fc0942c-577d-436f-ae8e-945763c79b02", 2, 0.0], ["a14582b7-06f4-4d66-8e82-3d7ba3739e88", 1, 0.0], ["96148269-fe82-4198-b1bf-3a73ce8bc92e", 1, 0.0], ["security@craftersoftware.com", 1, 0.0], ["security@pega.com", 1, 0.0], ["cve@forums.swift.org", 1, 0.0], ["vulnreport@tenable.com", 1, 0.0], ["5cdcf916-2b10-4ec8-bfc1-d054821e439e", 1, 0.0], ["security@replicated.com", 1, 0.0], ["security@docker.com", 1, 0.0], ["3ff69d7a-14f2-4f67-a097-88dee7810d18", 1, 0.0], ["sep@nlnetlabs.nl", 1, 0.0], ["769c9ae7-73c3-4e47-ae19-903170fc3eb8", 1, 0.0], ["85b1779b-6ecd-4f52-bcc5-73eac4659dcf", 1, 0.0], ["df4dee71-de3a-4139-9588-11b62fe6c0ff", 1, 0.0], ["trellixpsirt@trellix.com", 1, 0.0], ["psirt@honeywell.com", 1, 0.0], ["cve@checkpoint.com", 1, 0.0], ["596c5446-0ce5-4ba2-aa66-48b3b757a647", 1, 0.0], ["security@grafana.com", 1, 0.0], ["vulnerabilities@zephyrproject.org", 1, 0.0], ["security@ni.com", 1, 0.0], ["psirt@teamviewer.com", 1, 0.0], ["incident@nbu.gov.sk", 1, 0.0], ["jordan@liggitt.net", 1, 0.0], ["security@php.net", 1, 0.0], ["13ddcd98-6f4a-40a8-8e24-29ca0aee4661", 1, 0.0], ["security@temporal.io", 1, 0.0], ["security@atlassian.com", 1, 0.0], ["security@puppet.com", 1, 0.0], ["759f5e80-c8e1-4224-bead-956d7b33c98b", 1, 0.0], ["security-alert@netapp.com", 1, 0.0], ["security@openanolis.org", 1, 0.0], ["security@xen.org", 1, 0.0], ["a6d3dc9e-0591-4a13-bce7-0f5b31ff6158", 1, 0.0], ["cve-coordination@palantir.com", 1, 0.0], ["PSIRT@samsung.com", 1, 0.0], ["help@fluidattacks.com", 1, 0.0], ["security@checkmk.com", 1, 0.0], ["emo@eclipse.org", 1, 0.0]];
+        const data = [["audit@patchstack.com", 1303, 20.0], ["cve@mitre.org", 951, 15.0], ["security@wordfence.com", 711, 11.0], ["cna@vuldb.com", 395, 6.0], ["security-advisories@github.com", 341, 5.0], ["cve@kernel.org", 254, 4.0], ["secure@microsoft.com", 231, 4.0], ["psirt@us.ibm.com", 172, 3.0], ["contact@wpscan.com", 107, 2.0], ["product-security@apple.com", 104, 2.0], ["secalert_us@oracle.com", 83, 1.0], ["mlhess@drupal.org", 74, 1.0], ["talos-cna@cisco.com", 69, 1.0], ["secure@intel.com", 67, 1.0], ["psirt@fortinet.com", 67, 1.0], ["psirt@adobe.com", 65, 1.0], ["security@android.com", 63, 1.0], ["ics-cert@hq.dhs.gov", 56, 1.0], ["prodsec@nozominetworks.com", 48, 1.0], ["product-security@qualcomm.com", 43, 1.0], ["secalert@redhat.com", 43, 1.0], ["psirt@huawei.com", 38, 1.0], ["zdi-disclosures@trendmicro.com", 34, 1.0], ["vultures@jpcert.or.jp", 33, 1.0], ["3c1d8aa1-5a33-4ea4-8992-aadd6440af75", 31, 0.0], ["cna@sap.com", 31, 0.0], ["psirt@cisco.com", 30, 0.0], ["cve@gitlab.com", 30, 0.0], ["cve-coordination@incibe.es", 30, 0.0], ["security@mediatek.com", 29, 0.0], ["security@apache.org", 29, 0.0], ["security@mozilla.org", 27, 0.0], ["chrome-cve-admin@google.com", 27, 0.0], ["mobile.security@samsung.com", 26, 0.0], ["security_alert@emc.com", 23, 0.0], ["productcert@siemens.com", 20, 0.0], ["psirt@hcl.com", 19, 0.0], ["support@hackerone.com", 19, 0.0], ["psirt@amd.com", 18, 0.0], ["cybersecurity@se.com", 18, 0.0], ["psirt@nvidia.com", 18, 0.0], ["f5sirt@f5.com", 17, 0.0], ["security@progress.com", 16, 0.0], ["csirt@divd.nl", 16, 0.0], ["product-security@silabs.com", 16, 0.0], ["security@acronis.com", 14, 0.0], ["security-alert@hpe.com", 14, 0.0], ["twcert@cert.org.tw", 13, 0.0], ["psirt@arista.com", 13, 0.0], ["responsibledisclosure@mattermost.com", 13, 0.0], ["9119a7d8-5eab-497f-8521-727c672e3725", 12, 0.0], ["367425dc-4d06-4041-9650-c2dc6aaa27ce", 12, 0.0], ["dsap-vuln-management@google.com", 12, 0.0], ["PSIRT@sonicwall.com", 11, 0.0], ["psirt@paloaltonetworks.com", 11, 0.0], ["PSIRT@rockwellautomation.com", 10, 0.0], ["security@joomla.org", 9, 0.0], ["cybersecurity@ch.abb.com", 9, 0.0], ["security.vulnerabilities@hitachivantara.com", 9, 0.0], ["secure@symantec.com", 9, 0.0], ["7bc73191-a2b6-4c63-9918-753964601853", 9, 0.0], ["cve@jetbrains.com", 9, 0.0], ["10b61619-3869-496c-8a1e-f291b0e71e3f", 9, 0.0], ["sirt@juniper.net", 8, 0.0], ["cvd@cert.pl", 8, 0.0], ["security@vmware.com", 8, 0.0], ["bressers@elastic.co", 8, 0.0], ["c4f26cc8-17ff-4c99-b5e2-38fc1793eacc", 7, 0.0], ["vulnerability@ncsc.ch", 7, 0.0], ["security@golang.org", 7, 0.0], ["security@zoom.us", 7, 0.0], ["sirt@brocade.com", 7, 0.0], ["b7efe717-a805-47cf-8e9a-921fca0ce0ce", 7, 0.0], ["jenkinsci-cert@googlegroups.com", 7, 0.0], ["cve-coordination@google.com", 7, 0.0], ["disclosure@vulncheck.com", 6, 0.0], ["arm-security@arm.com", 6, 0.0], ["iletisim@usom.gov.tr", 6, 0.0], ["scy@openharmony.io", 6, 0.0], ["security@octopus.com", 6, 0.0], ["hp-security-alert@hp.com", 6, 0.0], ["product-security@axis.com", 5, 0.0], ["vdisclose@cert-in.org.in", 5, 0.0], ["psirt@moxa.com", 5, 0.0], ["psirt@solarwinds.com", 5, 0.0], ["report@snyk.io", 5, 0.0], ["cret@cert.org", 5, 0.0], ["secure@blackberry.com", 5, 0.0], ["PSIRT-CNA@flexerasoftware.com", 4, 0.0], ["patrick@puiterwijk.org", 4, 0.0], ["54bf65a7-a193-42d2-b1ba-8e150d3c35e1", 4, 0.0], ["psirt@lenovo.com", 4, 0.0], ["psirt-info@cyber.jp.nec.com", 4, 0.0], ["ff89ba41-3aa1-4d27-914a-91399e9639e5", 4, 0.0], ["security@otrs.com", 4, 0.0], ["security@ubuntu.com", 4, 0.0], ["security@openvpn.net", 4, 0.0], ["security@zyxel.com.tw", 4, 0.0], ["551230f0-3615-47bd-b7cc-93e92e730bbf", 4, 0.0], ["secteam@freebsd.org", 3, 0.0], ["security@huntr.dev", 3, 0.0], ["f98c90f0-e9bd-4fa7-911b-51993f3571fd", 3, 0.0], ["secure@citrix.com", 3, 0.0], ["security@vivo.com", 3, 0.0], ["2499f714-1537-4658-8207-48ae4bb9eae9", 3, 0.0], ["security@hashicorp.com", 3, 0.0], ["info@cert.vde.com", 3, 0.0], ["bba440f9-ef23-4224-aa62-7ac0935d18d1", 3, 0.0], ["psirt@sick.de", 3, 0.0], ["def9a96e-e099-41a9-bfac-30fd4f82c411", 3, 0.0], ["security@devolutions.net", 3, 0.0], ["security@synology.com", 3, 0.0], ["security@m-files.com", 3, 0.0], ["a341c0d1-ebf7-493f-a84e-38cf86618674", 3, 0.0], ["5d1c2695-1a31-4499-88ae-e847036fd7e3", 3, 0.0], ["security@opentext.com", 2, 0.0], ["prodsec@splunk.com", 2, 0.0], ["security@documentfoundation.org", 2, 0.0], ["f86ef6dc-4d3a-42ad-8f28-e6d5547a5007", 2, 0.0], ["3ad20294-822c-4ebc-9301-f9a7cf62d46e", 2, 0.0], ["securityalerts@avaya.com", 2, 0.0], ["productsecurity@baxter.com", 2, 0.0], ["security@salesforce.com", 2, 0.0], ["cna@python.org", 2, 0.0], ["cve@rapid7.com", 2, 0.0], ["hirt@hitachi.co.jp", 2, 0.0], ["0fc0942c-577d-436f-ae8e-945763c79b02", 2, 0.0], ["product-cna@github.com", 2, 0.0], ["openssl-security@openssl.org", 2, 0.0], ["907edf6c-bf03-423e-ab1a-8da27e1aa1ea", 2, 0.0], ["de5a6978-88fe-4c27-a7df-d0d5b52d5b52", 2, 0.0], ["cve-requests@bitdefender.com", 2, 0.0], ["22d9ba52-f336-4b0d-bf1f-0efbdcc3c1de", 2, 0.0], ["biossecurity@ami.com", 2, 0.0], ["cna@cloudflare.com", 2, 0.0], ["vulnerability@kaspersky.com", 2, 0.0], ["bbf0bd87-ece2-41be-b873-96928ee8fab9", 2, 0.0], ["security-officer@isc.org", 2, 0.0], ["a14582b7-06f4-4d66-8e82-3d7ba3739e88", 1, 0.0], ["96148269-fe82-4198-b1bf-3a73ce8bc92e", 1, 0.0], ["vulnreport@tenable.com", 1, 0.0], ["security@craftersoftware.com", 1, 0.0], ["security@pega.com", 1, 0.0], ["cve@forums.swift.org", 1, 0.0], ["df4dee71-de3a-4139-9588-11b62fe6c0ff", 1, 0.0], ["85b1779b-6ecd-4f52-bcc5-73eac4659dcf", 1, 0.0], ["security@replicated.com", 1, 0.0], ["security@docker.com", 1, 0.0], ["3ff69d7a-14f2-4f67-a097-88dee7810d18", 1, 0.0], ["sep@nlnetlabs.nl", 1, 0.0], ["769c9ae7-73c3-4e47-ae19-903170fc3eb8", 1, 0.0], ["5cdcf916-2b10-4ec8-bfc1-d054821e439e", 1, 0.0], ["759f5e80-c8e1-4224-bead-956d7b33c98b", 1, 0.0], ["trellixpsirt@trellix.com", 1, 0.0], ["security@ni.com", 1, 0.0], ["psirt@honeywell.com", 1, 0.0], ["cve@checkpoint.com", 1, 0.0], ["596c5446-0ce5-4ba2-aa66-48b3b757a647", 1, 0.0], ["vulnerabilities@zephyrproject.org", 1, 0.0], ["security@grafana.com", 1, 0.0], ["psirt@teamviewer.com", 1, 0.0], ["incident@nbu.gov.sk", 1, 0.0], ["security-alert@netapp.com", 1, 0.0], ["jordan@liggitt.net", 1, 0.0], ["security@php.net", 1, 0.0], ["13ddcd98-6f4a-40a8-8e24-29ca0aee4661", 1, 0.0], ["security@atlassian.com", 1, 0.0], ["security@temporal.io", 1, 0.0], ["security@puppet.com", 1, 0.0], ["a6d3dc9e-0591-4a13-bce7-0f5b31ff6158", 1, 0.0], ["security@xen.org", 1, 0.0], ["security@openanolis.org", 1, 0.0], ["cve-coordination@palantir.com", 1, 0.0], ["help@fluidattacks.com", 1, 0.0], ["emo@eclipse.org", 1, 0.0], ["PSIRT@samsung.com", 1, 0.0], ["security@checkmk.com", 1, 0.0], ["responsible-disclosure@pingidentity.com", 1, 0.0]];
 
         // Define the dt_args
         let dt_args = {"scrollY": "400px", "scrollCollapse": true, "paging": false, "dom": "tpir", "order": [], "warn_on_selected_rows_not_rendered": true};
@@ -636,7 +650,7 @@ Loading ITables v2.2.4 from the internet...
 <h3>Top CWEs<a class="headerlink" href="#top-cwes" title="Link to this heading">#</a></h3>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><table id="itables_baca841d_f4dc_4940_a429_cadef71253b1" class="display nowrap" data-quarto-disable-processing="true" style="table-layout:auto;width:auto">
+<div class="output text_html"><table id="itables_1cbf7b6a_0b02_4793_b7de_e1eb6f70c0b2" class="display nowrap" data-quarto-disable-processing="true" style="table-layout:auto;width:auto">
 <thead>
     <tr style="text-align: right;">
       
@@ -743,12 +757,12 @@ Loading ITables v2.2.4 from the internet...
 <script type="module">
     import {DataTable, jQuery as $} from 'https://www.unpkg.com/dt_for_itables@2.0.13/dt_bundle.js';
 
-    document.querySelectorAll("#itables_baca841d_f4dc_4940_a429_cadef71253b1:not(.dataTable)").forEach(table => {
+    document.querySelectorAll("#itables_1cbf7b6a_0b02_4793_b7de_e1eb6f70c0b2:not(.dataTable)").forEach(table => {
         if (!(table instanceof HTMLTableElement))
             return;
 
         // Define the table data
-        const data = [["CWE-79", 1362], ["Missing_Data", 607], ["CWE-352", 404], ["CWE-862", 363], ["CWE-89", 266], ["CWE-74", 167], ["CWE-22", 124], ["CWE-787", 111], ["CWE-120", 92], ["CWE-416", 89], ["CWE-20", 88], ["CWE-284", 88], ["CWE-200", 81], ["CWE-863", 81], ["CWE-122", 79], ["CWE-125", 69], ["CWE-77", 68], ["CWE-78", 66], ["CWE-476", 65], ["CWE-502", 62], ["CWE-770", 60], ["CWE-434", 59], ["CWE-94", 58], ["NVD-CWE-noinfo", 53], ["CWE-119", 49], ["CWE-918", 47], ["CWE-266", 44], ["CWE-306", 42], ["CWE-121", 42], ["CWE-287", 40], ["CWE-427", 40], ["CWE-601", 39], ["CWE-269", 32], ["CWE-617", 32], ["CWE-639", 31], ["CWE-732", 31], ["CWE-400", 29], ["CWE-532", 27], ["CWE-276", 25], ["CWE-98", 24], ["CWE-209", 24], ["CWE-190", 24], ["CWE-404", 22], ["CWE-426", 21], ["CWE-281", 21], ["CWE-908", 20], ["CWE-126", 20], ["CWE-295", 20], ["CWE-285", 19], ["CWE-798", 18], ["CWE-401", 17], ["CWE-201", 17], ["CWE-843", 16], ["CWE-59", 16], ["CWE-288", 15], ["CWE-667", 15], ["CWE-497", 15], ["CWE-362", 15], ["CWE-1321", 14], ["CWE-35", 14], ["CWE-15", 14], ["CWE-23", 13], ["CWE-922", 13], ["CWE-611", 13], ["CWE-327", 13], ["CWE-80", 13], ["CWE-346", 13], ["CWE-522", 12], ["CWE-319", 12], ["CWE-1287", 12], ["CWE-367", 12], ["CWE-552", 11], ["CWE-754", 11], ["CWE-321", 10], ["CWE-250", 10], ["CWE-613", 10], ["CWE-1333", 10], ["CWE-73", 10], ["CWE-823", 10], ["CWE-312", 10], ["CWE-204", 10], ["CWE-191", 9], ["CWE-384", 9], ["CWE-129", 9], ["CWE-345", 9], ["CWE-359", 8], ["CWE-693", 8], ["CWE-41", 8], ["CWE-36", 8], ["CWE-415", 8], ["CWE-203", 7], ["CWE-116", 7], ["CWE-451", 7], ["CWE-248", 7], ["CWE-290", 7], ["CWE-835", 7], ["CWE-407", 7], ["CWE-1284", 7], ["CWE-1390", 7], ["NVD-CWE-Other", 7], ["CWE-347", 6], ["CWE-755", 6], ["CWE-1220", 6], ["CWE-117", 6], ["CWE-99", 6], ["CWE-822", 6], ["CWE-1021", 6], ["CWE-598", 5], ["CWE-307", 5], ["CWE-338", 5], ["CWE-805", 5], ["CWE-940", 5], ["CWE-1392", 5], ["CWE-256", 5], ["CWE-280", 5], ["CWE-538", 5], ["CWE-96", 5], ["CWE-264", 5], ["CWE-88", 5], ["CWE-305", 5], ["CWE-521", 5], ["CWE-494", 4], ["CWE-674", 4], ["CWE-807", 4], ["CWE-614", 4], ["CWE-620", 4], ["CWE-672", 4], ["CWE-610", 4], ["CWE-459", 4], ["CWE-653", 4], ["CWE-311", 4], ["CWE-113", 4], ["CWE-300", 4], ["CWE-749", 3], ["CWE-155", 3], ["CWE-134", 3], ["CWE-840", 3], ["CWE-369", 3], ["CWE-86", 3], ["CWE-1104", 3], ["CWE-354", 3], ["CWE-923", 3], ["CWE-428", 3], ["CWE-208", 3], ["CWE-833", 3], ["CWE-379", 3], ["CWE-328", 3], ["CWE-1236", 3], ["CWE-912", 3], ["CWE-668", 3], ["CWE-302", 3], ["CWE-326", 3], ["CWE-390", 3], ["CWE-680", 3], ["CWE-405", 3], ["CWE-1336", 3], ["CWE-282", 3], ["CWE-131", 3], ["CWE-799", 3], ["CWE-296", 2], ["CWE-1191", 2], ["CWE-1230", 2], ["CWE-202", 2], ["CWE-701", 2], ["CWE-457", 2], ["CWE-640", 2], ["CWE-340", 2], ["CWE-286", 2], ["CWE-385", 2], ["CWE-488", 2], ["CWE-665", 2], ["CWE-330", 2], ["CWE-1286", 2], ["CWE-548", 2], ["CWE-525", 2], ["CWE-1295", 2], ["CWE-489", 2], ["CWE-29", 2], ["CWE-648", 2], ["CWE-924", 2], ["CWE-789", 2], ["CWE-704", 2], ["CWE-1204", 2], ["CWE-422", 2], ["CWE-656", 2], ["CWE-1391", 2], ["CWE-259", 2], ["CWE-1385", 2], ["CWE-61", 2], ["CWE-1240", 2], ["CWE-837", 2], ["CWE-641", 2], ["CWE-591", 2], ["CWE-90", 2], ["CWE-471", 2], ["CWE-193", 2], ["CWE-703", 2], ["CWE-472", 2], ["CWE-149", 1], ["CWE-223", 1], ["CWE-1281", 1], ["CWE-150", 1], ["CWE-1384", 1], ["CWE-916", 1], ["CWE-780", 1], ["CWE-322", 1], ["CWE-289", 1], ["CWE-304", 1], ["CWE-544", 1], ["CWE-463", 1], ["CWE-664", 1], ["CWE-227", 1], ["CWE-437", 1], ["CWE-425", 1], ["CWE-331", 1], ["CWE-530", 1], ["CWE-27", 1], ["CWE-37", 1], ["CWE-212", 1], ["CWE-566", 1], ["CWE-93", 1], ["CWE-424", 1], ["CWE-323", 1], ["CWE-921", 1], ["CWE-392", 1], ["CWE-441", 1], ["CWE-1245", 1], ["CWE-279", 1], ["CWE-526", 1], ["CWE-636", 1], ["CWE-366", 1], ["CWE-909", 1], ["CWE-706", 1], ["CWE-1188", 1], ["CWE-402", 1], ["CWE-85", 1], ["CWE-84", 1], ["CWE-419", 1], ["CWE-603", 1], ["CWE-75", 1], ["CWE-775", 1], ["CWE-1242", 1], ["CWE-274", 1], ["CWE-671", 1], ["CWE-91", 1], ["CWE-277", 1], ["CWE-1323", 1], ["CWE-213", 1], ["CWE-602", 1], ["CWE-436", 1], ["CWE-942", 1], ["CWE-303", 1], ["CWE-834", 1], ["CWE-670", 1], ["CWE-394", 1], ["CWE-299", 1], ["CWE-114", 1], ["CWE-123", 1], ["CWE-444", 1], ["CWE-776", 1], ["CWE-195", 1], ["CWE-310", 1], ["CWE-759", 1], ["CWE-144", 1], ["CWE-540", 1], ["CWE-335", 1], ["CWE-95", 1], ["CWE-1023", 1], ["CWE-267", 1], ["CWE-273", 1], ["CWE-549", 1], ["CWE-348", 1], ["CWE-915", 1], ["CWE-926", 1], ["CWE-127", 1], ["CWE-237", 1], ["CWE-829", 1], ["CWE-316", 1], ["CWE-657", 1], ["CWE-943", 1], ["CWE-241", 1], ["CWE-913", 1], ["CWE-772", 1], ["CWE-358", 1], ["CWE-682", 1], ["CWE-449", 1], ["CWE-1222", 1], ["CWE-115", 1], ["CWE-644", 1], ["CWE-420", 1], ["CWE-1007", 1], ["CWE-1393", 1], ["CWE-97", 1], ["CWE-524", 1], ["CWE-252", 1], ["CWE-911", 1], ["CWE-283", 1], ["CWE-501", 1], ["CWE-297", 1]];
+        const data = [["CWE-79", 1384], ["Missing_Data", 619], ["CWE-352", 407], ["CWE-862", 365], ["CWE-89", 268], ["CWE-74", 167], ["CWE-22", 124], ["CWE-787", 111], ["CWE-120", 93], ["CWE-284", 91], ["CWE-416", 89], ["CWE-20", 88], ["CWE-200", 85], ["CWE-863", 81], ["CWE-122", 80], ["CWE-125", 69], ["CWE-77", 69], ["CWE-78", 66], ["CWE-476", 65], ["CWE-502", 63], ["CWE-770", 62], ["CWE-94", 62], ["CWE-434", 60], ["NVD-CWE-noinfo", 53], ["CWE-119", 49], ["CWE-918", 48], ["CWE-266", 44], ["CWE-121", 43], ["CWE-306", 42], ["CWE-287", 40], ["CWE-427", 40], ["CWE-601", 40], ["CWE-269", 32], ["CWE-617", 32], ["CWE-400", 31], ["CWE-732", 31], ["CWE-639", 31], ["CWE-532", 27], ["CWE-276", 26], ["CWE-209", 24], ["CWE-98", 24], ["CWE-190", 24], ["CWE-404", 23], ["CWE-281", 21], ["CWE-426", 21], ["CWE-295", 20], ["CWE-908", 20], ["CWE-126", 20], ["CWE-285", 19], ["CWE-798", 18], ["CWE-201", 17], ["CWE-401", 17], ["CWE-59", 16], ["CWE-843", 16], ["CWE-288", 15], ["CWE-362", 15], ["CWE-667", 15], ["CWE-497", 15], ["CWE-35", 14], ["CWE-80", 14], ["CWE-23", 14], ["CWE-611", 14], ["CWE-15", 14], ["CWE-1321", 14], ["CWE-327", 13], ["CWE-346", 13], ["CWE-922", 13], ["CWE-522", 12], ["CWE-319", 12], ["CWE-367", 12], ["CWE-1287", 12], ["CWE-552", 11], ["CWE-754", 11], ["CWE-613", 10], ["CWE-312", 10], ["CWE-321", 10], ["CWE-250", 10], ["CWE-1333", 10], ["CWE-73", 10], ["CWE-384", 10], ["CWE-823", 10], ["CWE-204", 10], ["CWE-191", 9], ["CWE-129", 9], ["CWE-345", 9], ["CWE-359", 8], ["CWE-693", 8], ["CWE-41", 8], ["CWE-36", 8], ["CWE-415", 8], ["CWE-407", 7], ["CWE-1390", 7], ["CWE-1284", 7], ["CWE-248", 7], ["CWE-290", 7], ["CWE-835", 7], ["CWE-116", 7], ["CWE-203", 7], ["CWE-451", 7], ["NVD-CWE-Other", 7], ["CWE-347", 6], ["CWE-117", 6], ["CWE-755", 6], ["CWE-1220", 6], ["CWE-99", 6], ["CWE-822", 6], ["CWE-1021", 6], ["CWE-598", 5], ["CWE-307", 5], ["CWE-805", 5], ["CWE-940", 5], ["CWE-1236", 5], ["CWE-1392", 5], ["CWE-256", 5], ["CWE-280", 5], ["CWE-88", 5], ["CWE-96", 5], ["CWE-305", 5], ["CWE-338", 5], ["CWE-538", 5], ["CWE-521", 5], ["CWE-264", 5], ["CWE-672", 4], ["CWE-113", 4], ["CWE-614", 4], ["CWE-494", 4], ["CWE-674", 4], ["CWE-610", 4], ["CWE-459", 4], ["CWE-653", 4], ["CWE-311", 4], ["CWE-807", 4], ["CWE-300", 4], ["CWE-620", 4], ["CWE-749", 3], ["CWE-840", 3], ["CWE-155", 3], ["CWE-369", 3], ["CWE-86", 3], ["CWE-1104", 3], ["CWE-354", 3], ["CWE-923", 3], ["CWE-428", 3], ["CWE-208", 3], ["CWE-833", 3], ["CWE-379", 3], ["CWE-328", 3], ["CWE-912", 3], ["CWE-390", 3], ["CWE-668", 3], ["CWE-302", 3], ["CWE-326", 3], ["CWE-134", 3], ["CWE-405", 3], ["CWE-680", 3], ["CWE-799", 3], ["CWE-131", 3], ["CWE-665", 3], ["CWE-1336", 3], ["CWE-282", 3], ["CWE-1191", 2], ["CWE-1230", 2], ["CWE-202", 2], ["CWE-488", 2], ["CWE-701", 2], ["CWE-457", 2], ["CWE-340", 2], ["CWE-385", 2], ["CWE-640", 2], ["CWE-286", 2], ["CWE-296", 2], ["CWE-330", 2], ["CWE-1286", 2], ["CWE-548", 2], ["CWE-525", 2], ["CWE-1295", 2], ["CWE-489", 2], ["CWE-29", 2], ["CWE-648", 2], ["CWE-924", 2], ["CWE-789", 2], ["CWE-704", 2], ["CWE-1204", 2], ["CWE-422", 2], ["CWE-656", 2], ["CWE-1391", 2], ["CWE-259", 2], ["CWE-1385", 2], ["CWE-61", 2], ["CWE-1240", 2], ["CWE-837", 2], ["CWE-641", 2], ["CWE-591", 2], ["CWE-90", 2], ["CWE-471", 2], ["CWE-193", 2], ["CWE-703", 2], ["CWE-472", 2], ["CWE-150", 1], ["CWE-223", 1], ["CWE-566", 1], ["CWE-1384", 1], ["CWE-279", 1], ["CWE-916", 1], ["CWE-780", 1], ["CWE-322", 1], ["CWE-289", 1], ["CWE-304", 1], ["CWE-544", 1], ["CWE-463", 1], ["CWE-664", 1], ["CWE-227", 1], ["CWE-437", 1], ["CWE-425", 1], ["CWE-331", 1], ["CWE-27", 1], ["CWE-37", 1], ["CWE-530", 1], ["CWE-212", 1], ["CWE-149", 1], ["CWE-93", 1], ["CWE-323", 1], ["CWE-392", 1], ["CWE-921", 1], ["CWE-441", 1], ["CWE-1245", 1], ["CWE-424", 1], ["CWE-1281", 1], ["CWE-526", 1], ["CWE-636", 1], ["CWE-366", 1], ["CWE-909", 1], ["CWE-706", 1], ["CWE-1188", 1], ["CWE-402", 1], ["CWE-85", 1], ["CWE-84", 1], ["CWE-419", 1], ["CWE-603", 1], ["CWE-75", 1], ["CWE-775", 1], ["CWE-1242", 1], ["CWE-274", 1], ["CWE-671", 1], ["CWE-91", 1], ["CWE-277", 1], ["CWE-1323", 1], ["CWE-213", 1], ["CWE-602", 1], ["CWE-436", 1], ["CWE-942", 1], ["CWE-303", 1], ["CWE-834", 1], ["CWE-670", 1], ["CWE-394", 1], ["CWE-299", 1], ["CWE-114", 1], ["CWE-123", 1], ["CWE-444", 1], ["CWE-776", 1], ["CWE-195", 1], ["CWE-310", 1], ["CWE-759", 1], ["CWE-144", 1], ["CWE-540", 1], ["CWE-335", 1], ["CWE-95", 1], ["CWE-1023", 1], ["CWE-267", 1], ["CWE-273", 1], ["CWE-549", 1], ["CWE-348", 1], ["CWE-915", 1], ["CWE-926", 1], ["CWE-127", 1], ["CWE-237", 1], ["CWE-829", 1], ["CWE-316", 1], ["CWE-657", 1], ["CWE-943", 1], ["CWE-241", 1], ["CWE-913", 1], ["CWE-772", 1], ["CWE-358", 1], ["CWE-682", 1], ["CWE-449", 1], ["CWE-1222", 1], ["CWE-115", 1], ["CWE-644", 1], ["CWE-420", 1], ["CWE-1007", 1], ["CWE-1393", 1], ["CWE-97", 1], ["CWE-524", 1], ["CWE-252", 1], ["CWE-911", 1], ["CWE-283", 1], ["CWE-501", 1], ["CWE-297", 1]];
 
         // Define the dt_args
         let dt_args = {"scrollY": "400px", "scrollCollapse": true, "paging": false, "dom": "tpir", "order": [], "warn_on_selected_rows_not_rendered": true};
@@ -789,16 +803,16 @@ CVE-2019:	2
 CVE-2020:	8
 CVE-2021:	9
 CVE-2022:	33
-CVE-2023:	253
-CVE-2024:	2956
-CVE-2025:	3020
+CVE-2023:	279
+CVE-2024:	2980
+CVE-2025:	3043
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<p>This report is updated automatically every day, last generated on: <strong>2025-02-20 16:31:59.059539</strong></p>
+<p>This report is updated automatically every day, last generated on: <strong>2025-02-20 20:31:20.428388</strong></p>
 </div>
 </div>
 </section>
@@ -860,8 +874,7 @@ CVE-2025:	3020
             
             
               
-                <dialog id="pst-secondary-sidebar-modal"></dialog>
-                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
 
   <div class="sidebar-secondary-item">
@@ -937,8 +950,8 @@ By Jerry Gamblin
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
-<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
   </footer>

@@ -16,33 +16,30 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
-  <!--
-    this give us a css class that will be invisible only if js is disabled
-  -->
-  <noscript>
-    <style>
-      .pst-js-only { display: none !important; }
-
-    </style>
-  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
-  <!-- So that users can add custom icons -->
-  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
     <script src="_static/documentation_options.js?v=9eb32ce0"></script>
     <script src="_static/doctools.js?v=9a2dae69"></script>
@@ -81,7 +78,6 @@
     <link rel="prev" title="CWE Data" href="CVECWE.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -97,8 +93,19 @@
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
-  <dialog id="pst-search-dialog">
-    
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
 <form class="bd-search d-flex align-items-center"
       action="search.html"
       method="get">
@@ -106,6 +113,7 @@
   <input type="search"
          class="form-control"
          name="q"
+         id="search-input"
          placeholder="Search this book..."
          aria-label="Search this book..."
          autocomplete="off"
@@ -113,8 +121,8 @@
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form>
-  </dialog>
+</form></div>
+  </div>
 
   <div class="pst-async-banner-revealer d-none">
   <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
@@ -130,8 +138,7 @@
       
       
       
-      <dialog id="pst-primary-sidebar-modal"></dialog>
-      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+      <div class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -161,17 +168,21 @@
     
     
     <img src="_static/ambulance.png" class="logo__image only-light" alt="CVE.ICU - Home"/>
-    <img src="_static/ambulance.png" class="logo__image only-dark pst-js-only" alt="CVE.ICU - Home"/>
+    <script>document.write(`<img src="_static/ambulance.png" class="logo__image only-dark" alt="CVE.ICU - Home"/>`);</script>
   
   
 </a></div>
         <div class="sidebar-primary-item">
 
-<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
- <i class="fa-solid fa-magnifying-glass"></i>
- <span class="search-button__default-text">Search</span>
- <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-</button></div>
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
@@ -216,14 +227,9 @@
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
-      <div class="sidebar-primary-item">
-<div id="ethical-ad-placement"
-      class="flat"
-      data-ea-publisher="readthedocs"
-      data-ea-type="readthedocs-sidebar"
-      data-ea-manual="true">
-</div></div>
   </div>
+  
+  <div id="rtd-footer-container"></div>
 
 
       </div>
@@ -367,16 +373,24 @@
 
 
 
-<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
-  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
-  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
-  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
-</button>
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
 
 
-<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-</button>
+  </button>
+`);
+</script>
 
 </div></div>
       
@@ -406,7 +420,7 @@
 <h1>CVE Growth<a class="headerlink" href="#cve-growth" title="Link to this heading">#</a></h1>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><table id="itables_de1608f2_f6e7_4151_988f_6eb665f0d91f" class="display nowrap" data-quarto-disable-processing="true" style="table-layout:auto;width:auto">
+<div class="output text_html"><table id="itables_5d843686_a787_4c57_9a1c_aa9a78b93535" class="display nowrap" data-quarto-disable-processing="true" style="table-layout:auto;width:auto">
 <thead>
     <tr style="text-align: right;">
       
@@ -515,12 +529,12 @@ Loading ITables v2.2.4 from the internet...
 <script type="module">
     import {DataTable, jQuery as $} from 'https://www.unpkg.com/dt_for_itables@2.0.13/dt_bundle.js';
 
-    document.querySelectorAll("#itables_de1608f2_f6e7_4151_988f_6eb665f0d91f:not(.dataTable)").forEach(table => {
+    document.querySelectorAll("#itables_5d843686_a787_4c57_9a1c_aa9a78b93535:not(.dataTable)").forEach(table => {
         if (!(table instanceof HTMLTableElement))
             return;
 
         // Define the table data
-        const data = [["1988", 2, 0.0, NaN], ["1989", 3, 0.0, 50.0], ["1990", 11, 0.0, 266.67], ["1991", 15, 0.01, 36.36], ["1992", 13, 0.0, -13.33], ["1993", 13, 0.0, 0.0], ["1994", 25, 0.01, 92.31], ["1995", 25, 0.01, 0.0], ["1996", 74, 0.03, 196.0], ["1997", 252, 0.09, 240.54], ["1998", 246, 0.09, -2.38], ["1999", 894, 0.33, 263.41], ["2000", 1019, 0.38, 13.98], ["2001", 1676, 0.63, 64.47], ["2002", 2156, 0.81, 28.64], ["2003", 1527, 0.57, -29.17], ["2004", 2451, 0.92, 60.51], ["2005", 4932, 1.85, 101.22], ["2006", 6608, 2.47, 33.98], ["2007", 6516, 2.44, -1.39], ["2008", 5632, 2.11, -13.57], ["2009", 5732, 2.15, 1.78], ["2010", 4639, 1.74, -19.07], ["2011", 4150, 1.55, -10.54], ["2012", 5288, 1.98, 27.42], ["2013", 5187, 1.94, -1.91], ["2014", 7928, 2.97, 52.84], ["2015", 6494, 2.43, -18.09], ["2016", 6449, 2.41, -0.69], ["2017", 14642, 5.48, 127.04], ["2018", 16510, 6.18, 12.76], ["2019", 17305, 6.48, 4.82], ["2020", 18322, 6.86, 5.88], ["2021", 20150, 7.54, 9.98], ["2022", 25074, 9.39, 24.44], ["2023", 28818, 10.79, 14.93], ["2024", 39997, 14.98, 38.79], ["2025", 6304, 2.36, -84.24]];
+        const data = [["1988", 2, 0.0, NaN], ["1989", 3, 0.0, 50.0], ["1990", 11, 0.0, 266.67], ["1991", 15, 0.01, 36.36], ["1992", 13, 0.0, -13.33], ["1993", 13, 0.0, 0.0], ["1994", 25, 0.01, 92.31], ["1995", 25, 0.01, 0.0], ["1996", 74, 0.03, 196.0], ["1997", 252, 0.09, 240.54], ["1998", 246, 0.09, -2.38], ["1999", 894, 0.33, 263.41], ["2000", 1019, 0.38, 13.98], ["2001", 1676, 0.63, 64.47], ["2002", 2156, 0.81, 28.64], ["2003", 1527, 0.57, -29.17], ["2004", 2451, 0.92, 60.51], ["2005", 4932, 1.85, 101.22], ["2006", 6608, 2.47, 33.98], ["2007", 6516, 2.44, -1.39], ["2008", 5632, 2.11, -13.57], ["2009", 5732, 2.15, 1.78], ["2010", 4639, 1.74, -19.07], ["2011", 4150, 1.55, -10.54], ["2012", 5288, 1.98, 27.42], ["2013", 5187, 1.94, -1.91], ["2014", 7928, 2.97, 52.84], ["2015", 6494, 2.43, -18.09], ["2016", 6449, 2.41, -0.69], ["2017", 14642, 5.48, 127.04], ["2018", 16510, 6.18, 12.76], ["2019", 17305, 6.48, 4.82], ["2020", 18322, 6.86, 5.88], ["2021", 20150, 7.54, 9.98], ["2022", 25074, 9.39, 24.44], ["2023", 28818, 10.79, 14.93], ["2024", 39997, 14.97, 38.79], ["2025", 6377, 2.39, -84.06]];
 
         // Define the dt_args
         let dt_args = {"scrollY": "400px", "scrollCollapse": true, "paging": false, "dom": "tpir", "order": [], "warn_on_selected_rows_not_rendered": true};
@@ -534,12 +548,12 @@ Loading ITables v2.2.4 from the internet...
 </div>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<img alt="_images/c2cea5134da02f895ff120147acb143f77a0fb3adaee511e55a0288a331bd5e3.png" src="_images/c2cea5134da02f895ff120147acb143f77a0fb3adaee511e55a0288a331bd5e3.png" />
+<img alt="_images/1f95bb7d386495f252057be8358f58a407491ed61b4d0f141c0ed2f7256b9f8a.png" src="_images/1f95bb7d386495f252057be8358f58a407491ed61b4d0f141c0ed2f7256b9f8a.png" />
 </div>
 </div>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<img alt="_images/2ed8b931c778abcecd3b2acb2e70bad89727036ea62b62ab78a0588c1824ddaf.png" src="_images/2ed8b931c778abcecd3b2acb2e70bad89727036ea62b62ab78a0588c1824ddaf.png" />
+<img alt="_images/8d08565be4f9eb5e21b61c12aaeb07ba3bc2582ac913169d7a819280b3545893.png" src="_images/8d08565be4f9eb5e21b61c12aaeb07ba3bc2582ac913169d7a819280b3545893.png" />
 </div>
 </div>
 </section>
@@ -642,8 +656,8 @@ By Jerry Gamblin
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
-<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
   </footer>
