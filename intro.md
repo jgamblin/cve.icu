@@ -1,10 +1,20 @@
 # About
-CVE.ICU is an innovative research project led by [Jerry Gamblin](https://www.jerrygamblin.com). Aimed at facilitating a deeper understanding of Common Vulnerabilities and Exposures (CVE), this project is an automated system that systematically extracts all CVE-related data from the [National Vulnerability Database (NVD)](https://nvd.nist.gov/).
+[CVE.ICU](https://cve.icu) is a passion project by [Jerry Gamblin](https://www.jerrygamblin.com). The goal is to dive deep into Common Vulnerabilities and Exposures (CVE) by pulling and analyzing all the CVE data from the [National Vulnerability Database (NVD)](https://nvd.nist.gov/).
 
-The central purpose of this project is to conduct an essential data analysis, curate and graphically present the data in a comprehendible manner. This automated analysis is crucial as it aids in spotting patterns, enabling researchers and cybersecurity professionals to understand and anticipate security threats more effectively.
+## Goals
+The main aim of CVE.ICU is to make sense of all this data and present it in a way that's easy to understand through cool graphs and charts. 
+ 
+This automated analysis helps:
+- Spot patterns and trends in cybersecurity vulnerabilities.
+- Give researchers and cybersecurity pros a better handle on what's going on and what's coming next.
 
-The [source code](https://github.com/jgamblin/cve.icu) for this project has been made available to the public for further development and utilization through a GitHub repository. This open-source approach promotes transparency, collaboration, and the potential for continual improvement by other developers and researchers in the field.
+## Open Source and Collaboration
+The [source code](https://github.com/jgamblin/cve.icu) for this project is up on GitHub. It's open for everyone to see, use, and improve. By keeping it open-source, I'm hoping to get contributions and ideas from the community to make it even better.
 
-To ensure the data's relevance and timeliness, these pages undergo daily updates facilitated by GitHub Actions. This automated process guarantees that the data on display is current, providing the most recent insights into the ever-evolving landscape of cybersecurity vulnerabilities.
+## Timely Updates
+To keep things fresh, the data on CVE.ICU is updated every 4 hours using GitHub Actions. This way, you always get the latest insights into the ever-changing world of cybersecurity vulnerabilities.
 
-Jerry Gamblin encourages interaction and queries regarding the project, and he can be reached via his Twitter account [@jgamblin](https://twitter.com/jgamblin) for any questions or discussions you may wish to engage in about CVE.ICU.
+## Get Involved
+I love hearing from people who are interested in this project. Feel free to reach out to me on Twitter [@jgamblin](https://twitter.com/jgamblin) if you have any questions or just want to chat about CVE.ICU. If you're interested in contributing, check out the [GitHub repository](https://github.com/jgamblin/cve.icu).
+
+---

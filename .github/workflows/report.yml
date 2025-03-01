@@ -1,4 +1,5 @@
 name: Deploy CVE.ICU
+
 on:
   push:
     branches: [ main ]
@@ -12,10 +13,20 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
     - uses: actions/checkout@v4
-    - uses: actions/setup-python@v5
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
       with:
         python-version: '3.13'
         architecture: 'x64'
+
+    - name: Cache pip
+      uses: actions/cache@v3
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-
 
     - name: Install dependencies
       run: |
@@ -26,30 +37,30 @@ jobs:
     - name: Grab Needed Data
       run: |
         wget -q  https://nvd.handsonhacking.org/nvd.jsonl
-        wget -q https://raw.githubusercontent.com/CVEProject/cve-website/main/src/assets/data/CNAsList.json
         ls -lh 
+
     - name: Run Notebooks
       env:
         GH_TOKEN:  ${{ secrets.GH_TOKEN }}
       run: |
-         jupyter nbconvert  --to notebook --inplace --execute CVEAll.ipynb
-         jupyter nbconvert  --to notebook --inplace --execute CVE2016.ipynb
-         jupyter nbconvert  --to notebook --inplace --execute CVE2017.ipynb
-         jupyter nbconvert  --to notebook --inplace --execute CVE2018.ipynb
-         jupyter nbconvert  --to notebook --inplace --execute CVE2019.ipynb
-         jupyter nbconvert  --to notebook --inplace --execute CVE2020.ipynb
-         jupyter nbconvert  --to notebook --inplace --execute CVE2021.ipynb
-         jupyter nbconvert  --to notebook --inplace --execute CVE2022.ipynb
-         jupyter nbconvert  --to notebook --inplace --execute CVE2023.ipynb
-         jupyter nbconvert  --to notebook --inplace --execute CVE2024.ipynb
-         jupyter nbconvert  --to notebook --inplace --execute CVE2025.ipynb
-         jupyter nbconvert  --to notebook --inplace --execute CVECNAMap.ipynb
-         jupyter nbconvert  --to notebook --inplace --execute CVECalendar.ipynb
-         jupyter nbconvert  --to notebook --inplace --execute CVEGrowth.ipynb
-         jupyter nbconvert  --to notebook --inplace --execute CVECVSS.ipynb
-         jupyter nbconvert  --to notebook --inplace --execute CVECNA.ipynb
-         jupyter nbconvert  --to notebook --inplace --execute CVECWE.ipynb
-         jupyter nbconvert  --to notebook --inplace --execute CVECPE.ipynb
+         jupyter nbconvert  --to notebook --inplace --execute CVEAll.ipynb &
+         jupyter nbconvert  --to notebook --inplace --execute CVE2016.ipynb &
+         jupyter nbconvert  --to notebook --inplace --execute CVE2017.ipynb &
+         jupyter nbconvert  --to notebook --inplace --execute CVE2018.ipynb &
+         jupyter nbconvert  --to notebook --inplace --execute CVE2019.ipynb &
+         jupyter nbconvert  --to notebook --inplace --execute CVE2020.ipynb &
+         jupyter nbconvert  --to notebook --inplace --execute CVE2021.ipynb &
+         jupyter nbconvert  --to notebook --inplace --execute CVE2022.ipynb &
+         jupyter nbconvert  --to notebook --inplace --execute CVE2023.ipynb &
+         jupyter nbconvert  --to notebook --inplace --execute CVE2024.ipynb &
+         jupyter nbconvert  --to notebook --inplace --execute CVE2025.ipynb &
+         jupyter nbconvert  --to notebook --inplace --execute CVECalendar.ipynb &
+         jupyter nbconvert  --to notebook --inplace --execute CVEGrowth.ipynb &
+         jupyter nbconvert  --to notebook --inplace --execute CVECVSS.ipynb &
+         jupyter nbconvert  --to notebook --inplace --execute CVECNA.ipynb &
+         jupyter nbconvert  --to notebook --inplace --execute CVECWE.ipynb &
+         jupyter nbconvert  --to notebook --inplace --execute CVECPE.ipynb &
+         wait
     
     - name: Commit changes
       uses: EndBug/add-and-commit@v9
