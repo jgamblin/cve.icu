@@ -4,12 +4,16 @@
 title: CVE.ICU
 author: Jerry Gamblin
 logo: ambulance.png
+description: "A comprehensive analysis of Common Vulnerabilities and Exposures (CVE) data from the National Vulnerability Database (NVD)."
+language: en
+keywords: ["CVE", "cybersecurity", "vulnerabilities", "NVD"]
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
 execute:
   execute_notebooks: force
   timeout: -1
+
 # Define the name of the latex output file for PDF builds
 latex:
   latex_documents:
@@ -31,6 +35,6 @@ html:
   use_issues_button: true
   use_repository_button: true
   favicon : "favicon.ico"
-  google_analytics_id  : "G-DSHJ2DJFJZ"
+  html.analytics.google_analytics_id  : "G-DSHJ2DJFJZ"
 
 copyright: "2025"
