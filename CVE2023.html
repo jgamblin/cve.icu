@@ -53,22 +53,9 @@
     <script src="_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="_static/design-tabs.js?v=f930bc37"></script>
-    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-DSHJ2DJFJZ"></script>
-    <script>
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){ dataLayer.push(arguments); }
-                gtag('js', new Date());
-                gtag('config', 'G-DSHJ2DJFJZ');
-            </script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script>
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){ dataLayer.push(arguments); }
-                gtag('js', new Date());
-                gtag('config', 'G-DSHJ2DJFJZ');
-            </script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'CVE2023';</script>
     <link rel="icon" href="_static/favicon.ico"/>
@@ -195,7 +182,7 @@
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Combined Data</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="CVEAll.html">CVE Report for All Published CVEs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CVEAll.html">All CVEs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="CVECalendar.html">Daily Calendar View</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Yearly Data</span></p>
@@ -205,11 +192,11 @@
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">2023</a></li>
 <li class="toctree-l1"><a class="reference internal" href="CVE2022.html">2022</a></li>
 <li class="toctree-l1"><a class="reference internal" href="CVE2021.html">2021</a></li>
-<li class="toctree-l1"><a class="reference internal" href="CVE2020.html">CVE Report for 2020</a></li>
-<li class="toctree-l1"><a class="reference internal" href="CVE2019.html">CVE Report for 2019</a></li>
-<li class="toctree-l1"><a class="reference internal" href="CVE2018.html">CVE Report for 2018</a></li>
-<li class="toctree-l1"><a class="reference internal" href="CVE2017.html">CVE Report for 2017</a></li>
-<li class="toctree-l1"><a class="reference internal" href="CVE2016.html">CVE Report for 2016-2000</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CVE2020.html">2020</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CVE2019.html">2019</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CVE2018.html">2018</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CVE2017.html">2017</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CVE2016.html">2016-2000</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Other CVE Data</span></p>
 <ul class="nav bd-sidenav">
@@ -217,7 +204,6 @@
 <li class="toctree-l1"><a class="reference internal" href="CVECWE.html">CWE Data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="CVEGrowth.html">CVE Growth</a></li>
 <li class="toctree-l1"><a class="reference internal" href="CVECNA.html">CNA Data</a></li>
-<li class="toctree-l1"><a class="reference internal" href="CVECNAMap.html">CNA MAP</a></li>
 <li class="toctree-l1"><a class="reference internal" href="CVECPE.html">CPE Data</a></li>
 </ul>
 
@@ -415,7 +401,6 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cve-graphs">CVE Graphs</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cve-calendar">CVE Calendar</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cve-per-month-graph">CVE Per Month Graph</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cve-per-week-graph">CVE Per Week Graph</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cve-per-day-graph">CVE Per Day Graph</a></li>
@@ -428,7 +413,7 @@ document.write(`
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cwe-data">CWE Data</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#more-cve-data">More CVE Data</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#top-cna-assigners">Top CNA Assigners</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#top-cna-assigner">Top CNA Assigner</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#top-cwes">Top CWEs</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cves-by-identifier">CVEs By Identifier</a></li>
 </ul>
@@ -454,19 +439,11 @@ document.write(`
 </div>
 <section id="cve-graphs">
 <h2>CVE Graphs<a class="headerlink" href="#cve-graphs" title="Link to this heading">#</a></h2>
-<section id="cve-calendar">
-<h3>CVE Calendar<a class="headerlink" href="#cve-calendar" title="Link to this heading">#</a></h3>
-<div class="cell tag_hide-input tag_remove-input docutils container">
-<div class="cell_output docutils container">
-<img alt="_images/5274c459f97c58baeed23f075d2890e79aa26a212045aaff16b8b7b3874b5f2d.png" src="_images/5274c459f97c58baeed23f075d2890e79aa26a212045aaff16b8b7b3874b5f2d.png" />
-</div>
-</div>
-</section>
 <section id="cve-per-month-graph">
 <h3>CVE Per Month Graph<a class="headerlink" href="#cve-per-month-graph" title="Link to this heading">#</a></h3>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<img alt="_images/a3a91be779acea3d26079eeac30908469ec1ecbd4e61459d7b32e14d14e53b6c.png" src="_images/a3a91be779acea3d26079eeac30908469ec1ecbd4e61459d7b32e14d14e53b6c.png" />
+<img alt="_images/158159acb32a17a4242813afbd202ca5bb834d5612d0d98090463f873247901e.png" src="_images/158159acb32a17a4242813afbd202ca5bb834d5612d0d98090463f873247901e.png" />
 </div>
 </div>
 </section>
@@ -474,7 +451,7 @@ document.write(`
 <h3>CVE Per Week Graph<a class="headerlink" href="#cve-per-week-graph" title="Link to this heading">#</a></h3>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<img alt="_images/37e54c7d9aa9d246453672b7e5316f3990b2f3ebfb045effafa1896f8b2e8fed.png" src="_images/37e54c7d9aa9d246453672b7e5316f3990b2f3ebfb045effafa1896f8b2e8fed.png" />
+<img alt="_images/89400958326d558d28eaf4b97d735b8025f964b31cc8e574c46ad98a2308576c.png" src="_images/89400958326d558d28eaf4b97d735b8025f964b31cc8e574c46ad98a2308576c.png" />
 </div>
 </div>
 </section>
@@ -482,7 +459,7 @@ document.write(`
 <h3>CVE Per Day Graph<a class="headerlink" href="#cve-per-day-graph" title="Link to this heading">#</a></h3>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<img alt="_images/24750cdc5f1cc2974b2e753aa605affd72207135fc85d2bb7d03a9335ac26c87.png" src="_images/24750cdc5f1cc2974b2e753aa605affd72207135fc85d2bb7d03a9335ac26c87.png" />
+<img alt="_images/3156c758f6670f3cd431d5c9ffd5f58322db650fd7f475f6276afb39ebbaa1e1.png" src="_images/3156c758f6670f3cd431d5c9ffd5f58322db650fd7f475f6276afb39ebbaa1e1.png" />
 </div>
 </div>
 </section>
@@ -491,7 +468,7 @@ document.write(`
 <h2>CVSS Data<a class="headerlink" href="#cvss-data" title="Link to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<img alt="_images/58ee4c6e9bafae1d660b9c7ad5fe90c75d32cb5b87070de8f13c42ab0255f535.png" src="_images/58ee4c6e9bafae1d660b9c7ad5fe90c75d32cb5b87070de8f13c42ab0255f535.png" />
+<img alt="_images/6c9f94ecd4b1504879d3b455c72a7912adbbf0b40a99edff7d6f98f8bfd809c3.png" src="_images/6c9f94ecd4b1504879d3b455c72a7912adbbf0b40a99edff7d6f98f8bfd809c3.png" />
 </div>
 </div>
 </section>
@@ -501,7 +478,7 @@ document.write(`
 <h3>CNA Assigner Graph<a class="headerlink" href="#cna-assigner-graph" title="Link to this heading">#</a></h3>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<img alt="_images/e1ebc824085142aed6edff8e8efe00b7931515f1cc45510c31949e067034629c.png" src="_images/e1ebc824085142aed6edff8e8efe00b7931515f1cc45510c31949e067034629c.png" />
+<img alt="_images/7eecd4010235ecc1bdba5c6dc21029ceee60d52802faafc908b1082c17b1b707.png" src="_images/7eecd4010235ecc1bdba5c6dc21029ceee60d52802faafc908b1082c17b1b707.png" />
 </div>
 </div>
 </section>
@@ -510,23 +487,22 @@ document.write(`
 <h2>CWE Data<a class="headerlink" href="#cwe-data" title="Link to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<img alt="_images/26a5d6acec122df465050373dd65fd3bd95b72c8e8a0ec4c21f79c195d4aa7e5.png" src="_images/26a5d6acec122df465050373dd65fd3bd95b72c8e8a0ec4c21f79c195d4aa7e5.png" />
+<img alt="_images/369ae2dfcbb92c6f445210d6409e9c01660c0d3c30139184fcc4bd92d315fc69.png" src="_images/369ae2dfcbb92c6f445210d6409e9c01660c0d3c30139184fcc4bd92d315fc69.png" />
 </div>
 </div>
 </section>
 <section id="more-cve-data">
 <h2>More CVE Data<a class="headerlink" href="#more-cve-data" title="Link to this heading">#</a></h2>
-<section id="top-cna-assigners">
-<h3>Top CNA Assigners<a class="headerlink" href="#top-cna-assigners" title="Link to this heading">#</a></h3>
+<section id="top-cna-assigner">
+<h3>Top CNA Assigner<a class="headerlink" href="#top-cna-assigner" title="Link to this heading">#</a></h3>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><table id="itables_64ba85b4_aaf1_4c8b_a307_061e78239279" class="display nowrap" data-quarto-disable-processing="true" style="table-layout:auto;width:auto">
+<div class="output text_html"><table id="itables_dfcf7fc5_5607_4181_9746_45026c8bf9a1" class="display nowrap" data-quarto-disable-processing="true" style="table-layout:auto;width:auto">
 <thead>
     <tr style="text-align: right;">
       
       <th>Assigner</th>
-      <th>CVEs</th>
-      <th>Percentage</th>
+      <th>counts</th>
     </tr>
   </thead><tbody><tr>
 <td style="vertical-align:middle; text-align:left">
@@ -628,15 +604,15 @@ Loading ITables v2.2.5 from the internet...
 <script type="module">
     import {DataTable, jQuery as $} from 'https://www.unpkg.com/dt_for_itables@2.0.13/dt_bundle.js';
 
-    document.querySelectorAll("#itables_64ba85b4_aaf1_4c8b_a307_061e78239279:not(.dataTable)").forEach(table => {
+    document.querySelectorAll("#itables_dfcf7fc5_5607_4181_9746_45026c8bf9a1:not(.dataTable)").forEach(table => {
         if (!(table instanceof HTMLTableElement))
             return;
 
         // Define the table data
-        const data = [["cve@mitre.org", 6221, 22.0], ["audit@patchstack.com", 2146, 7.0], ["cna@vuldb.com", 1925, 7.0], ["security-advisories@github.com", 1771, 6.0], ["secure@microsoft.com", 994, 3.0], ["contact@wpscan.com", 935, 3.0], ["security@wordfence.com", 879, 3.0], ["psirt@adobe.com", 674, 2.0], ["security@android.com", 625, 2.0], ["security@huntr.dev", 612, 2.0], ["security@unisoc.com", 464, 2.0], ["product-security@apple.com", 460, 2.0], ["secalert@redhat.com", 447, 2.0], ["psirt@us.ibm.com", 414, 1.0], ["secure@intel.com", 349, 1.0], ["talos-cna@cisco.com", 347, 1.0], ["ics-cert@hq.dhs.gov", 335, 1.0], ["vultures@jpcert.or.jp", 324, 1.0], ["security@mediatek.com", 324, 1.0], ["product-security@qualcomm.com", 314, 1.0], ["chrome-cve-admin@google.com", 297, 1.0], ["secalert_us@oracle.com", 295, 1.0], ["security_alert@emc.com", 266, 1.0], ["psirt@cisco.com", 263, 1.0], ["security@apache.org", 259, 1.0], ["zdi-disclosures@trendmicro.com", 259, 1.0], ["psirt@huawei.com", 254, 1.0], ["productcert@siemens.com", 248, 1.0], ["jenkinsci-cert@googlegroups.com", 240, 1.0], ["mobile.security@samsung.com", 237, 1.0], ["cve@gitlab.com", 210, 1.0], ["psirt@fortinet.com", 198, 1.0], ["security@mozilla.org", 194, 1.0], ["security-alert@hpe.com", 178, 1.0], ["iletisim@usom.gov.tr", 171, 1.0], ["cve-coordination@incibe.es", 170, 1.0], ["cna@sap.com", 167, 1.0], ["help@fluidattacks.com", 149, 1.0], ["support@hackerone.com", 144, 0.0], ["twcert@cert.org.tw", 122, 0.0], ["info@cert.vde.com", 104, 0.0], ["psirt@nvidia.com", 102, 0.0], ["sirt@juniper.net", 100, 0.0], ["psirt@lenovo.com", 99, 0.0], ["psirt@amd.com", 95, 0.0], ["cybersecurity@se.com", 94, 0.0], ["report@snyk.io", 90, 0.0], ["cna@cyber.gov.il", 84, 0.0], ["responsibledisclosure@mattermost.com", 84, 0.0], ["security@vmware.com", 80, 0.0], ["vulnreport@tenable.com", 69, 0.0], ["patrick@puiterwijk.org", 65, 0.0], ["cve-coordination@google.com", 62, 0.0], ["security@zoom.us", 62, 0.0], ["hp-security-alert@hp.com", 61, 0.0], ["security@acronis.com", 61, 0.0], ["security@zyxel.com.tw", 60, 0.0], ["f5sirt@f5.com", 54, 0.0], ["cve@jetbrains.com", 53, 0.0], ["psirt@hcl.com", 53, 0.0], ["psirt@solarwinds.com", 46, 0.0], ["cve@rapid7.com", 44, 0.0], ["security@trendmicro.com", 44, 0.0], ["PSIRT@rockwellautomation.com", 42, 0.0], ["security@selinc.com", 40, 0.0], ["security@golang.org", 40, 0.0], ["cret@cert.org", 37, 0.0], ["trellixpsirt@trellix.com", 37, 0.0], ["psirt@sick.de", 37, 0.0], ["security@qnapsecurity.com.tw", 37, 0.0], ["prodsec@splunk.com", 36, 0.0], ["PSIRT@sonicwall.com", 34, 0.0], ["vdp@themissinglink.com.au", 34, 0.0], ["security@open-xchange.com", 34, 0.0], ["security@ubuntu.com", 32, 0.0], ["psirt@autodesk.com", 31, 0.0], ["security@checkmk.com", 31, 0.0], ["bressers@elastic.co", 31, 0.0], ["product-security@silabs.com", 31, 0.0], ["security@joomla.org", 31, 0.0], ["info@starlabs.sg", 30, 0.0], ["psirt@moxa.com", 30, 0.0], ["security@devolutions.net", 30, 0.0], ["3836d913-7555-4dd0-a509-f5667fdf5fe4", 30, 0.0], ["cybersecurity@ch.abb.com", 29, 0.0], ["security@hashicorp.com", 29, 0.0], ["dsap-vuln-management@google.com", 28, 0.0], ["cybersecurity@hitachienergy.com", 28, 0.0], ["cve-coordination@palantir.com", 28, 0.0], ["csirt@divd.nl", 27, 0.0], ["meissner@suse.de", 26, 0.0], ["security@liferay.com", 26, 0.0], ["contact@securifera.com", 25, 0.0], ["product-cna@github.com", 25, 0.0], ["vulnerabilities@zephyrproject.org", 25, 0.0], ["Mitsubishielectric.Psirt@yd.MitsubishiElectric.co.jp", 23, 0.0], ["cna@cloudflare.com", 22, 0.0], ["security@progress.com", 22, 0.0], ["biossecurity@ami.com", 22, 0.0], ["security.vulnerabilities@hitachivantara.com", 20, 0.0], ["jordan@liggitt.net", 20, 0.0], ["psirt@paloaltonetworks.com", 20, 0.0], ["hirt@hitachi.co.jp", 19, 0.0], ["openssl-security@openssl.org", 19, 0.0], ["security@pandorafms.com", 19, 0.0], ["security@m-files.com", 19, 0.0], ["security@opentext.com", 18, 0.0], ["psirt@bosch.com", 18, 0.0], ["sirt@brocade.com", 18, 0.0], ["cert@ncsc.nl", 18, 0.0], ["vulnerability@ncsc.ch", 18, 0.0], ["security@zabbix.com", 18, 0.0], ["psirt@wdc.com", 18, 0.0], ["psirt@honeywell.com", 17, 0.0], ["cve@zscaler.com", 17, 0.0], ["scy@openharmony.io", 17, 0.0], ["secure@citrix.com", 17, 0.0], ["disclosure@synopsys.com", 17, 0.0], ["cve-assign@fb.com", 16, 0.0], ["product-security@axis.com", 16, 0.0], ["prodsec@nozominetworks.com", 15, 0.0], ["cybersecurity@bd.com", 15, 0.0], ["security@odoo.com", 15, 0.0], ["security@opennms.com", 14, 0.0], ["psirt@zte.com.cn", 14, 0.0], ["security@tibco.com", 14, 0.0], ["security@atlassian.com", 14, 0.0], ["security@octopus.com", 14, 0.0], ["psirt@esri.com", 14, 0.0], ["9119a7d8-5eab-497f-8521-727c672e3725", 13, 0.0], ["security@proofpoint.com", 13, 0.0], ["emo@eclipse.org", 13, 0.0], ["product.security@lge.com", 13, 0.0], ["cve@asrg.io", 13, 0.0], ["3DS.Information-Security@3ds.com", 13, 0.0], ["disclosures@gallagher.com", 13, 0.0], ["security@synology.com", 13, 0.0], ["productsecurity@jci.com", 12, 0.0], ["secteam@freebsd.org", 12, 0.0], ["security-alert@netapp.com", 12, 0.0], ["arm-security@arm.com", 12, 0.0], ["security@otrs.com", 11, 0.0], ["security@grafana.com", 11, 0.0], ["f98c90f0-e9bd-4fa7-911b-51993f3571fd", 11, 0.0], ["vuln@krcert.or.kr", 11, 0.0], ["secure@symantec.com", 11, 0.0], ["psirt-info@cyber.jp.nec.com", 11, 0.0], ["psirt@arista.com", 11, 0.0], ["responsible-disclosure@pingidentity.com", 10, 0.0], ["disclosure@vulncheck.com", 10, 0.0], ["reefs@jfrog.com", 10, 0.0], ["security@sierrawireless.com", 10, 0.0], ["product-security@gg.jp.panasonic.com", 10, 0.0], ["cve-requests@bitdefender.com", 10, 0.0], ["vdisclose@cert-in.org.in", 10, 0.0], ["security@pega.com", 10, 0.0], ["security@xen.org", 9, 0.0], ["security-officer@isc.org", 9, 0.0], ["security@docker.com", 9, 0.0], ["security@puppet.com", 9, 0.0], ["security@asustor.com", 9, 0.0], ["psirt@servicenow.com", 8, 0.0], ["office@cyberdanube.com", 8, 0.0], ["mlhess@drupal.org", 8, 0.0], ["security-alert@sophos.com", 8, 0.0], ["securities@openeuler.org", 8, 0.0], ["a87f365f-9d39-4848-9b3a-58c7cae69cab", 7, 0.0], ["ART@zuso.ai", 7, 0.0], ["security@nortonlifelock.com", 7, 0.0], ["vulnerability@kaspersky.com", 7, 0.0], ["psirt@purestorage.com", 6, 0.0], ["cvd@cert.pl", 6, 0.0], ["security@yugabyte.com", 6, 0.0], ["research@onekey.com", 6, 0.0], ["security@php.net", 6, 0.0], ["cna@mongodb.com", 6, 0.0], ["security@1e.com", 6, 0.0], ["bugreport@qualys.com", 6, 0.0], ["hsrc@hikvision.com", 6, 0.0], ["security@xiaomi.com", 6, 0.0], ["cve@takeonme.org", 6, 0.0], ["ed10eef1-636d-4fbe-9993-6890dfa878f8", 6, 0.0], ["support@shopbeat.co.za", 6, 0.0], ["xpdf@xpdfreader.com", 5, 0.0], ["secure@blackberry.com", 5, 0.0], ["paddle-security@baidu.com", 5, 0.0], ["ot-cert@dragos.com", 5, 0.0], ["disclosures@exodusintel.com", 5, 0.0], ["sep@nlnetlabs.nl", 4, 0.0], ["security@baicells.com", 4, 0.0], ["security@eset.com", 4, 0.0], ["psirt@forcepoint.com", 4, 0.0], ["VulnerabilityReporting@secomea.com", 4, 0.0], ["cve@checkpoint.com", 4, 0.0], ["security@documentfoundation.org", 4, 0.0], ["psirt@forgerock.com", 4, 0.0], ["68630edc-a58c-4cbd-9b01-0e130455c8ae", 3, 0.0], ["security@knime.com", 3, 0.0], ["psirt@sailpoint.com", 3, 0.0], ["psirt@okta.com", 3, 0.0], ["security@ni.com", 3, 0.0], ["CybersecurityCOE@eaton.com", 3, 0.0], ["security@oppo.com", 3, 0.0], ["security@openvpn.net", 3, 0.0], ["disclosures@halborn.com", 3, 0.0], ["PSIRT-CNA@flexerasoftware.com", 3, 0.0], ["security@42gears.com", 3, 0.0], ["security@snowsoftware.com", 3, 0.0], ["0a72a055-908d-47f5-a16a-1f09049c16c6", 3, 0.0], ["psirt@netskope.com", 3, 0.0], ["security@hypr.com", 3, 0.0], ["cna@python.org", 2, 0.0], ["zowe-security@lists.openmainframeproject.org", 2, 0.0], ["cve@forums.swift.org", 2, 0.0], ["security@craftersoftware.com", 2, 0.0], ["cve_disclosure@tech.gov.sg", 2, 0.0], ["security@vaadin.com", 2, 0.0], ["22d9ba52-f336-4b0d-bf1f-0efbdcc3c1de", 2, 0.0], ["fc9afe74-3f80-4fb7-a313-e6f036a89882", 2, 0.0], ["551230f0-3615-47bd-b7cc-93e92e730bbf", 2, 0.0], ["security@medtronic.com", 2, 0.0], ["mandiant-cve@google.com", 2, 0.0], ["cves@blacklanternsecurity.com", 2, 0.0], ["securityalerts@avaya.com", 2, 0.0], ["PSIRT@samsung.com", 2, 0.0], ["8a9629cb-c5e7-4d2a-a894-111e8039b7ea", 2, 0.0], ["info@appcheck-ng.com", 2, 0.0], ["cybersecurity@dahuatech.com", 1, 0.0], ["security@vivo.com", 1, 0.0], ["security@genetec.com", 1, 0.0], ["security@tcpdump.org", 1, 0.0], ["GEPowerCVD@ge.com", 1, 0.0], ["productsecurity@bbraun.com", 1, 0.0], ["psirt@teamviewer.com", 1, 0.0], ["security@temporal.io", 1, 0.0], ["security@mimsoftware.com", 1, 0.0], ["psirt@thalesgroup.com", 1, 0.0], ["2fdefc65-d750-4b8d-96ee-6e2c0c42dbfe", 1, 0.0], ["facts@wolfssl.com", 1, 0.0], ["security@opencloudos.tech", 1, 0.0], ["security@illumio.com", 1, 0.0], ["incident@nbu.gov.sk", 1, 0.0], ["info@greenrocketsecurity.com", 1, 0.0], ["sec@hillstonenet.com", 1, 0.0], ["dl_cve@linecorp.com", 1, 0.0], ["PSIRT@synaptics.com", 1, 0.0], ["security@dotcms.com", 1, 0.0], ["psirt@tigera.io", 1, 0.0], ["security@bluespice.com", 1, 0.0], ["security.vulnerabilities@algosec.com", 1, 0.0], ["eb41dac7-0af8-4f84-9f6d-0272772514f4", 1, 0.0], ["769c9ae7-73c3-4e47-ae19-903170fc3eb8", 1, 0.0], ["cve@navercorp.com", 1, 0.0], ["96d4e157-0bf0-48b3-8efd-382c68caf4e0", 1, 0.0], ["7168b535-132a-4efe-a076-338f829b2eb9", 1, 0.0], ["6b35d637-e00f-4228-858c-b20ad6e1d07b", 1, 0.0]];
+        const data = [["mitre.org", 6221], ["patchstack.com", 2146], ["vuldb.com", 1925], ["github.com (security-advisories)", 1771], ["microsoft.com", 994], ["wpscan.com", 935], ["wordfence.com", 879], ["adobe.com", 674], ["android.com", 625], ["huntr.dev", 612], ["unisoc.com", 464], ["apple.com", 460], ["redhat.com", 447], ["us.ibm.com", 414], ["intel.com", 349], ["cisco.com (talos-cna)", 347], ["hq.dhs.gov", 335], ["jpcert.or.jp", 324], ["mediatek.com", 324], ["qualcomm.com", 314], ["google.com (chrome-cve-admin)", 297], ["oracle.com", 295], ["emc.com", 266], ["cisco.com (psirt)", 263], ["apache.org", 259], ["trendmicro.com (zdi-disclosures)", 259], ["huawei.com", 254], ["siemens.com", 248], ["googlegroups.com", 240], ["samsung.com (mobile.security)", 237], ["gitlab.com", 210], ["fortinet.com", 198], ["mozilla.org", 194], ["hpe.com", 178], ["usom.gov.tr", 171], ["incibe.es", 170], ["sap.com", 167], ["fluidattacks.com", 149], ["hackerone.com", 144], ["cert.org.tw", 122], ["cert.vde.com", 104], ["nvidia.com", 102], ["juniper.net", 100], ["lenovo.com", 99], ["amd.com", 95], ["se.com", 94], ["snyk.io", 90], ["cyber.gov.il", 84], ["mattermost.com", 84], ["vmware.com", 80]];
 
         // Define the dt_args
-        let dt_args = {"scrollY": "400px", "scrollCollapse": true, "paging": false, "dom": "tpir", "order": [], "warn_on_selected_rows_not_rendered": true};
+        let dt_args = {"scrollCollapse": true, "paging": true, "dom": "tpir", "order": [], "warn_on_selected_rows_not_rendered": true};
         dt_args["data"] = data;
 
         
@@ -650,12 +626,12 @@ Loading ITables v2.2.5 from the internet...
 <h3>Top CWEs<a class="headerlink" href="#top-cwes" title="Link to this heading">#</a></h3>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><table id="itables_b2e1a81a_c9e7_4012_bb0a_a57d85b0a34e" class="display nowrap" data-quarto-disable-processing="true" style="table-layout:auto;width:auto">
+<div class="output text_html"><table id="itables_bb19503e_8ce2_4d95_9708_45ec76514af1" class="display nowrap" data-quarto-disable-processing="true" style="table-layout:auto;width:auto">
 <thead>
     <tr style="text-align: right;">
       
       <th>CWE</th>
-      <th>CVEs</th>
+      <th>counts</th>
     </tr>
   </thead><tbody><tr>
 <td style="vertical-align:middle; text-align:left">
@@ -757,15 +733,15 @@ Loading ITables v2.2.5 from the internet...
 <script type="module">
     import {DataTable, jQuery as $} from 'https://www.unpkg.com/dt_for_itables@2.0.13/dt_bundle.js';
 
-    document.querySelectorAll("#itables_b2e1a81a_c9e7_4012_bb0a_a57d85b0a34e:not(.dataTable)").forEach(table => {
+    document.querySelectorAll("#itables_bb19503e_8ce2_4d95_9708_45ec76514af1:not(.dataTable)").forEach(table => {
         if (!(table instanceof HTMLTableElement))
             return;
 
         // Define the table data
-        const data = [["CWE-79", 4495], ["NVD-CWE-noinfo", 2442], ["CWE-89", 1962], ["CWE-787", 1448], ["CWE-352", 1147], ["Missing_Data", 1090], ["CWE-125", 885], ["CWE-20", 768], ["CWE-862", 694], ["CWE-22", 660], ["CWE-416", 616], ["CWE-120", 564], ["CWE-78", 548], ["CWE-434", 485], ["CWE-200", 470], ["CWE-77", 445], ["NVD-CWE-Other", 368], ["CWE-284", 357], ["CWE-400", 322], ["CWE-287", 294], ["CWE-121", 281], ["CWE-863", 257], ["CWE-94", 255], ["CWE-502", 253], ["CWE-122", 243], ["CWE-476", 243], ["CWE-190", 243], ["CWE-918", 215], ["CWE-269", 211], ["CWE-119", 189], ["CWE-601", 180], ["CWE-306", 155], ["CWE-74", 142], ["CWE-798", 141], ["CWE-427", 137], ["CWE-770", 132], ["CWE-611", 131], ["CWE-285", 123], ["CWE-732", 120], ["CWE-276", 116], ["CWE-532", 114], ["CWE-126", 111], ["CWE-639", 111], ["CWE-312", 102], ["CWE-295", 98], ["CWE-668", 98], ["CWE-367", 96], ["CWE-59", 96], ["CWE-362", 94], ["CWE-522", 93], ["CWE-843", 88], ["CWE-319", 86], ["CWE-203", 83], ["CWE-307", 81], ["CWE-404", 74], ["CWE-401", 71], ["CWE-1333", 68], ["CWE-617", 66], ["CWE-209", 65], ["CWE-347", 61], ["CWE-345", 60], ["CWE-835", 60], ["CWE-755", 60], ["CWE-613", 60], ["CWE-415", 58], ["CWE-1236", 54], ["CWE-327", 52], ["CWE-552", 52], ["CWE-426", 51], ["CWE-326", 49], ["CWE-754", 45], ["CWE-824", 44], ["CWE-191", 43], ["CWE-23", 41], ["CWE-129", 40], ["CWE-665", 40], ["CWE-311", 39], ["CWE-290", 38], ["CWE-384", 36], ["CWE-908", 36], ["CWE-330", 36], ["CWE-281", 36], ["CWE-591", 35], ["CWE-73", 35], ["CWE-80", 34], ["CWE-1321", 33], ["CWE-1021", 31], ["CWE-697", 31], ["CWE-369", 31], ["CWE-116", 29], ["CWE-321", 29], ["CWE-521", 28], ["CWE-428", 27], ["CWE-288", 25], ["CWE-248", 25], ["CWE-640", 25], ["CWE-294", 25], ["CWE-346", 24], ["CWE-444", 24], ["CWE-134", 24], ["CWE-250", 23], ["CWE-354", 22], ["CWE-256", 21], ["CWE-822", 21], ["CWE-922", 20], ["CWE-674", 20], ["CWE-494", 20], ["CWE-24", 19], ["CWE-693", 19], ["CWE-670", 18], ["CWE-667", 18], ["CWE-95", 18], ["CWE-749", 17], ["CWE-201", 17], ["CWE-829", 17], ["CWE-359", 17], ["CWE-425", 16], ["CWE-436", 16], ["CWE-703", 16], ["CWE-259", 16], ["CWE-88", 16], ["CWE-823", 16], ["CWE-266", 15], ["CWE-305", 15], ["CWE-204", 15], ["CWE-252", 15], ["CWE-1188", 14], ["CWE-264", 14], ["CWE-1284", 14], ["CWE-459", 13], ["CWE-29", 13], ["CWE-35", 13], ["CWE-277", 13], ["CWE-338", 13], ["CWE-208", 13], ["CWE-92", 12], ["CWE-91", 12], ["CWE-682", 12], ["CWE-680", 12], ["CWE-610", 12], ["CWE-840", 12], ["CWE-131", 12], ["CWE-117", 12], ["CWE-916", 12], ["CWE-457", 11], ["CWE-36", 11], ["CWE-789", 11], ["CWE-267", 11], ["CWE-113", 10], ["CWE-497", 10], ["CWE-331", 10], ["CWE-280", 10], ["CWE-1386", 9], ["CWE-489", 9], ["CWE-328", 9], ["CWE-193", 9], ["CWE-184", 9], ["CWE-763", 9], ["CWE-691", 9], ["CWE-602", 9], ["CWE-377", 9], ["CWE-704", 9], ["CWE-257", 8], ["CWE-648", 8], ["CWE-297", 8], ["CWE-1220", 8], ["CWE-1336", 8], ["CWE-14", 8], ["CWE-286", 8], ["CWE-1287", 8], ["CWE-303", 8], ["CWE-917", 8], ["CWE-261", 8], ["CWE-93", 8], ["CWE-662", 8], ["CWE-275", 7], ["CWE-87", 7], ["CWE-1385", 7], ["CWE-681", 7], ["CWE-379", 7], ["CWE-834", 7], ["CWE-772", 7], ["CWE-912", 7], ["CWE-924", 7], ["CWE-923", 7], ["CWE-913", 6], ["CWE-1286", 6], ["CWE-614", 6], ["CWE-150", 6], ["CWE-289", 6], ["CWE-15", 6], ["CWE-538", 6], ["CWE-669", 6], ["CWE-788", 6], ["CWE-420", 6], ["CWE-27", 5], ["CWE-449", 5], ["CWE-274", 5], ["CWE-130", 5], ["CWE-1393", 5], ["CWE-325", 5], ["CWE-926", 5], ["CWE-598", 5], ["CWE-706", 5], ["CWE-942", 5], ["CWE-268", 5], ["CWE-927", 5], ["CWE-310", 5], ["CWE-1320", 5], ["CWE-620", 5], ["CWE-358", 5], ["CWE-453", 5], ["CWE-701", 5], ["CWE-644", 4], ["CWE-313", 4], ["CWE-316", 4], ["CWE-684", 4], ["CWE-90", 4], ["CWE-421", 4], ["CWE-349", 4], ["CWE-402", 4], ["CWE-253", 4], ["CWE-75", 4], ["CWE-366", 4], ["CWE-911", 4], ["CWE-940", 4], ["CWE-170", 4], ["CWE-249", 4], ["CWE-395", 4], ["CWE-833", 4], ["CWE-323", 4], ["CWE-424", 4], ["CWE-378", 4], ["CWE-440", 4], ["CWE-837", 4], ["CWE-197", 4], ["CWE-776", 4], ["CWE-407", 4], ["CWE-1390", 4], ["CWE-470", 4], ["CWE-140", 4], ["CWE-1004", 4], ["CWE-836", 4], ["CWE-540", 4], ["CWE-300", 4], ["CWE-232", 4], ["CWE-16", 4], ["CWE-302", 3], ["CWE-213", 3], ["CWE-304", 3], ["CWE-471", 3], ["CWE-842", 3], ["CWE-565", 3], ["CWE-807", 3], ["CWE-279", 3], ["CWE-176", 3], ["CWE-606", 3], ["CWE-548", 3], ["CWE-1077", 3], ["CWE-526", 3], ["CWE-792", 3], ["CWE-708", 3], ["CWE-805", 3], ["CWE-475", 3], ["CWE-83", 3], ["CWE-223", 3], ["CWE-202", 3], ["CWE-233", 3], ["CWE-124", 3], ["CWE-1391", 3], ["CWE-1392", 3], ["CWE-799", 3], ["CWE-183", 3], ["CWE-409", 3], ["CWE-167", 3], ["CWE-410", 3], ["CWE-413", 3], ["CWE-841", 3], ["CWE-98", 3], ["CWE-915", 3], ["CWE-643", 3], ["CWE-195", 3], ["CWE-399", 3], ["CWE-226", 3], ["CWE-394", 3], ["CWE-241", 3], ["CWE-146", 3], ["CWE-523", 3], ["CWE-1263", 3], ["CWE-244", 3], ["CWE-664", 3], ["CWE-337", 3], ["CWE-1258", 2], ["CWE-1104", 2], ["CWE-1299", 2], ["CWE-273", 2], ["CWE-694", 2], ["CWE-282", 2], ["CWE-653", 2], ["CWE-501", 2], ["CWE-1303", 2], ["CWE-178", 2], ["CWE-118", 2], ["CWE-1230", 2], ["CWE-96", 2], ["CWE-265", 2], ["CWE-272", 2], ["CWE-477", 2], ["CWE-364", 2], ["CWE-791", 2], ["CWE-372", 2], ["CWE-21", 2], ["CWE-473", 2], ["CWE-262", 2], ["CWE-696", 2], ["CWE-353", 2], ["CWE-61", 2], ["CWE-1270", 2], ["CWE-99", 2], ["CWE-212", 2], ["CWE-76", 2], ["CWE-308", 2], ["CWE-820", 2], ["CWE-260", 2], ["CWE-784", 2], ["CWE-549", 2], ["CWE-1285", 2], ["CWE-1295", 2], ["CWE-590", 2], ["CWE-636", 2], ["CWE-37", 2], ["CWE-1022", 2], ["CWE-460", 2], ["CWE-173", 2], ["CWE-215", 2], ["CWE-86", 2], ["CWE-270", 2], ["CWE-544", 2], ["CWE-1327", 2], ["CWE-825", 2], ["CWE-1234", 2], ["CWE-334", 2], ["CWE-1274", 2], ["CWE-320", 2], ["CWE-81", 2], ["CWE-757", 2], ["CWE-1288", 2], ["CWE-196", 1], ["CWE-567", 1], ["CWE-158", 1], ["CWE-821", 1], ["CWE-1039", 1], ["CWE-230", 1], ["CWE-28", 1], ["CWE-1260", 1], ["CWE-168", 1], ["CWE-771", 1], ["CWE-456", 1], ["CWE-385", 1], ["CWE-388", 1], ["CWE-939", 1], ["CWE-1281", 1], ["CWE-41", 1], ["CWE-25", 1], ["CWE-437", 1], ["CWE-231", 1], ["CWE-112", 1], ["CWE-530", 1], ["CWE-647", 1], ["CWE-446", 1], ["CWE-263", 1], ["CWE-356", 1], ["CWE-332", 1], ["CWE-555", 1], ["CWE-283", 1], ["CWE-1325", 1], ["CWE-318", 1], ["CWE-329", 1], ["CWE-115", 1], ["CWE-1103", 1], ["CWE-539", 1], ["CWE-914", 1], ["CWE-551", 1], ["CWE-271", 1], ["CWE-441", 1], ["CWE-830", 1], ["CWE-355", 1], ["CWE-1224", 1], ["CWE-50", 1], ["CWE-941", 1], ["CWE-790", 1], ["CWE-488", 1], ["CWE-683", 1], ["CWE-921", 1], ["CWE-412", 1], ["CWE-672", 1], ["CWE-138", 1], ["CWE-177", 1], ["CWE-1050", 1], ["CWE-758", 1], ["CWE-780", 1], ["CWE-419", 1], ["CWE-547", 1], ["CWE-1250", 1], ["CWE-760", 1], ["CWE-1204", 1], ["CWE-1246", 1], ["CWE-351", 1], ["CWE-1335", 1], ["CWE-1231", 1], ["CWE-826", 1], ["CWE-299", 1], ["CWE-293", 1], ["CWE-406", 1], ["CWE-1125", 1], ["CWE-391", 1], ["CWE-1112", 1], ["CWE-762", 1], ["CWE-506", 1], ["CWE-1283", 1], ["CWE-641", 1], ["CWE-690", 1], ["CWE-1282", 1], ["CWE-342", 1], ["CWE-278", 1], ["CWE-237", 1], ["CWE-1173", 1], ["CWE-524", 1], ["CWE-839", 1], ["CWE-144", 1], ["CWE-258", 1], ["CWE-82", 1], ["CWE-324", 1], ["CWE-405", 1], ["CWE-1326", 1], ["CWE-19", 1], ["CWE-1334", 1], ["CWE-1342", 1], ["CWE-657", 1], ["CWE-778", 1], ["CWE-612", 1], ["CWE-1241", 1], ["CWE-671", 1], ["CWE-645", 1], ["CWE-686", 1], ["CWE-392", 1], ["CWE-1319", 1], ["CWE-1018", 1], ["CWE-1279", 1], ["CWE-291", 1], ["CWE-114", 1], ["CWE-242", 1], ["CWE-550", 1], ["CWE-756", 1], ["CWE-149", 1], ["CWE-534", 1], ["CWE-298", 1], ["CWE-148", 1], ["CWE-210", 1], ["CWE-227", 1], ["CWE-84", 1], ["CWE-710", 1], ["CWE-925", 1], ["CWE-1049", 1], ["CWE-1047", 1], ["CWE-1272", 1], ["CWE-1253", 1]];
+        const data = [["CWE-79", 4495], ["NVD-CWE-noinfo", 2442], ["CWE-89", 1962], ["CWE-787", 1448], ["CWE-352", 1147], ["CWE-125", 885], ["CWE-20", 768], ["CWE-862", 694], ["CWE-22", 660], ["CWE-416", 616], ["CWE-120", 564], ["CWE-78", 548], ["CWE-434", 485], ["CWE-200", 470], ["CWE-77", 445], ["NVD-CWE-Other", 368], ["CWE-284", 357], ["CWE-400", 322], ["CWE-287", 294], ["CWE-121", 281], ["CWE-863", 257], ["CWE-94", 255], ["CWE-502", 253], ["CWE-122", 243], ["CWE-476", 243]];
 
         // Define the dt_args
-        let dt_args = {"scrollY": "400px", "scrollCollapse": true, "paging": false, "dom": "tpir", "order": [], "warn_on_selected_rows_not_rendered": true};
+        let dt_args = {"scrollCollapse": true, "paging": true, "dom": "tpir", "order": [], "warn_on_selected_rows_not_rendered": true};
         dt_args["data"] = data;
 
         
@@ -779,38 +755,133 @@ Loading ITables v2.2.5 from the internet...
 <h3>CVEs By Identifier<a class="headerlink" href="#cves-by-identifier" title="Link to this heading">#</a></h3>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CVE-1999:	0
-CVE-2000:	0
-CVE-2001:	0
-CVE-2002:	0
-CVE-2003:	0
-CVE-2004:	0
-CVE-2005:	1
-CVE-2006:	2
-CVE-2007:	3
-CVE-2008:	3
-CVE-2009:	5
-CVE-2010:	8
-CVE-2011:	4
-CVE-2012:	18
-CVE-2013:	26
-CVE-2014:	79
-CVE-2015:	136
-CVE-2016:	32
-CVE-2017:	114
-CVE-2018:	55
-CVE-2019:	49
-CVE-2020:	422
-CVE-2021:	666
-CVE-2022:	3859
-CVE-2023:	23336
-</pre></div>
-</div>
-</div>
+<div class="output text_html"><table id="itables_8df44b5a_bec3_4a96_b25f_25e5f27a2929" class="display nowrap" data-quarto-disable-processing="true" style="table-layout:auto;width:auto">
+<thead>
+    <tr style="text-align: right;">
+      
+      <th>Identifier</th>
+      <th>Count</th>
+    </tr>
+  </thead><tbody><tr>
+<td style="vertical-align:middle; text-align:left">
+<a href=https://mwouts.github.io/itables/><svg class="main-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+width="64" viewBox="0 0 500 400" style="font-family: 'Droid Sans', sans-serif;">
+    <g style="fill:#d9d7fc">
+        <path d="M100,400H500V357H100Z" />
+        <path d="M100,300H400V257H100Z" />
+        <path d="M0,200H400V157H0Z" />
+        <path d="M100,100H500V57H100Z" />
+        <path d="M100,350H500V307H100Z" />
+        <path d="M100,250H400V207H100Z" />
+        <path d="M0,150H400V107H0Z" />
+        <path d="M100,50H500V7H100Z" />
+    </g>
+    <g style="fill:#1a1366;stroke:#1a1366;">
+   <rect x="100" y="7" width="400" height="43">
+    <animate
+      attributeName="width"
+      values="0;400;0"
+      dur="5s"
+      repeatCount="indefinite" />
+      <animate
+      attributeName="x"
+      values="100;100;500"
+      dur="5s"
+      repeatCount="indefinite" />
+  </rect>
+        <rect x="0" y="107" width="400" height="43">
+    <animate
+      attributeName="width"
+      values="0;400;0"
+      dur="3.5s"
+      repeatCount="indefinite" />
+    <animate
+      attributeName="x"
+      values="0;0;400"
+      dur="3.5s"
+      repeatCount="indefinite" />
+  </rect>
+        <rect x="100" y="207" width="300" height="43">
+    <animate
+      attributeName="width"
+      values="0;300;0"
+      dur="3s"
+      repeatCount="indefinite" />
+    <animate
+      attributeName="x"
+      values="100;100;400"
+      dur="3s"
+      repeatCount="indefinite" />
+  </rect>
+        <rect x="100" y="307" width="400" height="43">
+    <animate
+      attributeName="width"
+      values="0;400;0"
+      dur="4s"
+      repeatCount="indefinite" />
+      <animate
+      attributeName="x"
+      values="100;100;500"
+      dur="4s"
+      repeatCount="indefinite" />
+  </rect>
+        <g style="fill:transparent;stroke-width:8; stroke-linejoin:round" rx="5">
+            <g transform="translate(45 50) rotate(-45)">
+                <circle r="33" cx="0" cy="0" />
+                <rect x="-8" y="32" width="16" height="30" />
+            </g>
+
+            <g transform="translate(450 152)">
+                <polyline points="-15,-20 -35,-20 -35,40 25,40 25,20" />
+                <rect x="-15" y="-40" width="60" height="60" />
+            </g>
+
+            <g transform="translate(50 352)">
+                <polygon points="-35,-5 0,-40 35,-5" />
+                <polygon points="-35,10 0,45 35,10" />
+            </g>
+
+            <g transform="translate(75 250)">
+                <polyline points="-30,30 -60,0 -30,-30" />
+                <polyline points="0,30 -30,0 0,-30" />
+            </g>
+
+            <g transform="translate(425 250) rotate(180)">
+                <polyline points="-30,30 -60,0 -30,-30" />
+                <polyline points="0,30 -30,0 0,-30" />
+            </g>
+        </g>
+    </g>
+</svg>
+</a>
+Loading ITables v2.2.5 from the internet...
+(need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)</td>
+</tr></tbody>
+</table>
+<link href="https://www.unpkg.com/dt_for_itables@2.0.13/dt_bundle.css" rel="stylesheet">
+<script type="module">
+    import {DataTable, jQuery as $} from 'https://www.unpkg.com/dt_for_itables@2.0.13/dt_bundle.js';
+
+    document.querySelectorAll("#itables_8df44b5a_bec3_4a96_b25f_25e5f27a2929:not(.dataTable)").forEach(table => {
+        if (!(table instanceof HTMLTableElement))
+            return;
+
+        // Define the table data
+        const data = [["CVE-2005", 1], ["CVE-2006", 2], ["CVE-2007", 3], ["CVE-2008", 3], ["CVE-2009", 5], ["CVE-2010", 8], ["CVE-2011", 4], ["CVE-2012", 18], ["CVE-2013", 26], ["CVE-2014", 79], ["CVE-2015", 136], ["CVE-2016", 32], ["CVE-2017", 114], ["CVE-2018", 55], ["CVE-2019", 49], ["CVE-2020", 422], ["CVE-2021", 666], ["CVE-2022", 3859], ["CVE-2023", 23336]];
+
+        // Define the dt_args
+        let dt_args = {"scrollCollapse": true, "paging": false, "dom": "tpir", "order": [], "warn_on_selected_rows_not_rendered": true};
+        dt_args["data"] = data;
+
+        
+        new DataTable(table, dt_args);
+    });
+</script>
+</div></div>
 </div>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<p>This report is updated automatically every day, last generated on: <strong>2025-03-01 20:44:27.508532</strong></p>
+<p>This report is updated automatically every day, last generated on: <strong>2025-03-02 00:20:43.143959</strong></p>
 </div>
 </div>
 </section>
@@ -882,7 +953,6 @@ CVE-2023:	23336
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cve-graphs">CVE Graphs</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cve-calendar">CVE Calendar</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cve-per-month-graph">CVE Per Month Graph</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cve-per-week-graph">CVE Per Week Graph</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cve-per-day-graph">CVE Per Day Graph</a></li>
@@ -895,7 +965,7 @@ CVE-2023:	23336
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cwe-data">CWE Data</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#more-cve-data">More CVE Data</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#top-cna-assigners">Top CNA Assigners</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#top-cna-assigner">Top CNA Assigner</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#top-cwes">Top CWEs</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cves-by-identifier">CVEs By Identifier</a></li>
 </ul>

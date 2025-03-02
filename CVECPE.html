@@ -53,28 +53,15 @@
     <script src="_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="_static/design-tabs.js?v=f930bc37"></script>
-    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-DSHJ2DJFJZ"></script>
-    <script>
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){ dataLayer.push(arguments); }
-                gtag('js', new Date());
-                gtag('config', 'G-DSHJ2DJFJZ');
-            </script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script>
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){ dataLayer.push(arguments); }
-                gtag('js', new Date());
-                gtag('config', 'G-DSHJ2DJFJZ');
-            </script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'CVECPE';</script>
     <link rel="icon" href="_static/favicon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="CNA MAP" href="CVECNAMap.html" />
+    <link rel="prev" title="CNA Data" href="CVECNA.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -194,7 +181,7 @@
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Combined Data</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="CVEAll.html">CVE Report for All Published CVEs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CVEAll.html">All CVEs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="CVECalendar.html">Daily Calendar View</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Yearly Data</span></p>
@@ -204,11 +191,11 @@
 <li class="toctree-l1"><a class="reference internal" href="CVE2023.html">2023</a></li>
 <li class="toctree-l1"><a class="reference internal" href="CVE2022.html">2022</a></li>
 <li class="toctree-l1"><a class="reference internal" href="CVE2021.html">2021</a></li>
-<li class="toctree-l1"><a class="reference internal" href="CVE2020.html">CVE Report for 2020</a></li>
-<li class="toctree-l1"><a class="reference internal" href="CVE2019.html">CVE Report for 2019</a></li>
-<li class="toctree-l1"><a class="reference internal" href="CVE2018.html">CVE Report for 2018</a></li>
-<li class="toctree-l1"><a class="reference internal" href="CVE2017.html">CVE Report for 2017</a></li>
-<li class="toctree-l1"><a class="reference internal" href="CVE2016.html">CVE Report for 2016-2000</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CVE2020.html">2020</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CVE2019.html">2019</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CVE2018.html">2018</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CVE2017.html">2017</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CVE2016.html">2016-2000</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Other CVE Data</span></p>
 <ul class="current nav bd-sidenav">
@@ -216,7 +203,6 @@
 <li class="toctree-l1"><a class="reference internal" href="CVECWE.html">CWE Data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="CVEGrowth.html">CVE Growth</a></li>
 <li class="toctree-l1"><a class="reference internal" href="CVECNA.html">CNA Data</a></li>
-<li class="toctree-l1"><a class="reference internal" href="CVECNAMap.html">CNA MAP</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">CPE Data</a></li>
 </ul>
 
@@ -416,7 +402,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">CPE Data</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cves-with-most-cpes">CVEs With Most CPEs</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#most-common-cpes">Most Common CPEs</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#unique-cpes">Unique CPEs</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#number-of-cpes">Number of CPEs</a></li>
 </ul>
 </li>
 </ul>
@@ -439,15 +425,12 @@ document.write(`
 <h3>CVEs With Most CPEs<a class="headerlink" href="#cves-with-most-cpes" title="Link to this heading">#</a></h3>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><table id="itables_127b0ec0_e584_4071_9ce3_c772ab927b87" class="display nowrap" data-quarto-disable-processing="true" style="table-layout:auto;width:auto">
+<div class="output text_html"><table id="itables_48e4e3fd_0e9d_4628_a54e_ccbd0c9ad043" class="display nowrap" data-quarto-disable-processing="true" style="table-layout:auto;width:auto">
 <thead>
     <tr style="text-align: right;">
-      <th></th>
-      <th>count</th>
-    </tr>
-    <tr>
+      
       <th>CVE</th>
-      <th></th>
+      <th>Count</th>
     </tr>
   </thead><tbody><tr>
 <td style="vertical-align:middle; text-align:left">
@@ -549,7 +532,7 @@ Loading ITables v2.2.5 from the internet...
 <script type="module">
     import {DataTable, jQuery as $} from 'https://www.unpkg.com/dt_for_itables@2.0.13/dt_bundle.js';
 
-    document.querySelectorAll("#itables_127b0ec0_e584_4071_9ce3_c772ab927b87:not(.dataTable)").forEach(table => {
+    document.querySelectorAll("#itables_48e4e3fd_0e9d_4628_a54e_ccbd0c9ad043:not(.dataTable)").forEach(table => {
         if (!(table instanceof HTMLTableElement))
             return;
 
@@ -557,7 +540,7 @@ Loading ITables v2.2.5 from the internet...
         const data = [["CVE-2016-1409", 4891], ["CVE-2017-6770", 3788], ["CVE-2016-6380", 3334], ["CVE-2021-3942", 2942], ["CVE-2024-20433", 2434], ["CVE-2008-4609", 2046], ["CVE-2020-3201", 1917], ["CVE-2019-1761", 1762], ["CVE-2021-34705", 1721], ["CVE-2009-5040", 1550], ["CVE-2022-20920", 1446], ["CVE-2007-5381", 1429], ["CVE-2011-2395", 1409], ["CVE-2017-5753", 1388], ["CVE-2020-0551", 1321], ["CVE-2021-0144", 1312], ["CVE-2021-0114", 1312], ["CVE-2020-3204", 1283], ["CVE-2020-3200", 1198], ["CVE-2018-0197", 1195]];
 
         // Define the dt_args
-        let dt_args = {"scrollY": "400px", "scrollCollapse": true, "paging": false, "dom": "tpir", "order": [], "warn_on_selected_rows_not_rendered": true};
+        let dt_args = {"scrollCollapse": true, "paging": false, "dom": "tpir", "order": [], "warn_on_selected_rows_not_rendered": true};
         dt_args["data"] = data;
 
         
@@ -571,15 +554,12 @@ Loading ITables v2.2.5 from the internet...
 <h3>Most Common CPEs<a class="headerlink" href="#most-common-cpes" title="Link to this heading">#</a></h3>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><table id="itables_7f757f23_c747_48d9_bfac_2b92e6ecaf5f" class="display nowrap" data-quarto-disable-processing="true" style="table-layout:auto;width:auto">
+<div class="output text_html"><table id="itables_1724af80_c7d3_49f3_9f8b_dc2999ac7497" class="display nowrap" data-quarto-disable-processing="true" style="table-layout:auto;width:auto">
 <thead>
     <tr style="text-align: right;">
-      <th></th>
-      <th>count</th>
-    </tr>
-    <tr>
+      
       <th>CPE</th>
-      <th></th>
+      <th>Count</th>
     </tr>
   </thead><tbody><tr>
 <td style="vertical-align:middle; text-align:left">
@@ -681,7 +661,7 @@ Loading ITables v2.2.5 from the internet...
 <script type="module">
     import {DataTable, jQuery as $} from 'https://www.unpkg.com/dt_for_itables@2.0.13/dt_bundle.js';
 
-    document.querySelectorAll("#itables_7f757f23_c747_48d9_bfac_2b92e6ecaf5f:not(.dataTable)").forEach(table => {
+    document.querySelectorAll("#itables_1724af80_c7d3_49f3_9f8b_dc2999ac7497:not(.dataTable)").forEach(table => {
         if (!(table instanceof HTMLTableElement))
             return;
 
@@ -689,7 +669,7 @@ Loading ITables v2.2.5 from the internet...
         const data = [["cpe:2.3:o:linux:linux_kernel:*:*:*:*:*:*:*:*", 15222], ["cpe:2.3:o:debian:debian_linux:9.0:*:*:*:*:*:*:*", 3999], ["cpe:2.3:o:apple:iphone_os:*:*:*:*:*:*:*:*", 3662], ["cpe:2.3:a:google:chrome:*:*:*:*:*:*:*:*", 3603], ["cpe:2.3:o:debian:debian_linux:8.0:*:*:*:*:*:*:*", 3478], ["cpe:2.3:o:debian:debian_linux:10.0:*:*:*:*:*:*:*", 3126], ["cpe:2.3:o:microsoft:windows_server_2012:r2:*:*:*:*:*:*:*", 2968], ["cpe:2.3:o:microsoft:windows_server_2012:-:*:*:*:*:*:*:*", 2828], ["cpe:2.3:o:microsoft:windows_server_2019:-:*:*:*:*:*:*:*", 2737], ["cpe:2.3:o:apple:mac_os_x:*:*:*:*:*:*:*:*", 2719], ["cpe:2.3:o:microsoft:windows_server_2016:-:*:*:*:*:*:*:*", 2672], ["cpe:2.3:o:apple:macos:*:*:*:*:*:*:*:*", 2639], ["cpe:2.3:a:gitlab:gitlab:*:*:*:*:enterprise:*:*:*", 2435], ["cpe:2.3:a:adobe:acrobat_dc:*:*:*:*:classic:*:*:*", 2377], ["cpe:2.3:a:adobe:acrobat_reader_dc:*:*:*:*:classic:*:*:*", 2374], ["cpe:2.3:a:mozilla:firefox:*:*:*:*:*:*:*:*", 2342], ["cpe:2.3:a:gitlab:gitlab:*:*:*:*:community:*:*:*", 2135], ["cpe:2.3:o:microsoft:windows_server_2008:r2:sp1:*:*:*:*:x64:*", 1999], ["cpe:2.3:a:adobe:flash_player:*:*:*:*:*:*:*:*", 1993], ["cpe:2.3:a:oracle:mysql:*:*:*:*:*:*:*:*", 1971]];
 
         // Define the dt_args
-        let dt_args = {"scrollY": "400px", "scrollCollapse": true, "paging": false, "dom": "tpir", "order": [], "warn_on_selected_rows_not_rendered": true};
+        let dt_args = {"scrollCollapse": true, "paging": false, "dom": "tpir", "order": [], "warn_on_selected_rows_not_rendered": true};
         dt_args["data"] = data;
 
         
@@ -699,18 +679,18 @@ Loading ITables v2.2.5 from the internet...
 </div></div>
 </div>
 </section>
-<section id="unique-cpes">
-<h3>Unique CPEs<a class="headerlink" href="#unique-cpes" title="Link to this heading">#</a></h3>
+<section id="number-of-cpes">
+<h3>Number of CPEs<a class="headerlink" href="#number-of-cpes" title="Link to this heading">#</a></h3>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>348339
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>There are 348,339 unique CPEs across 240,996 total CVEs.
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<p>This report is updated automatically every day, last generated on: <strong>2025-03-01 20:54:34.183521</strong></p>
+<p>This report is updated automatically every day, last generated on: <strong>2025-03-02 00:23:28.667293</strong></p>
 </div>
 </div>
 </section>
@@ -748,12 +728,12 @@ Loading ITables v2.2.5 from the internet...
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="CVECNAMap.html"
+       href="CVECNA.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">CNA MAP</p>
+        <p class="prev-next-title">CNA Data</p>
       </div>
     </a>
 </div>
@@ -775,7 +755,7 @@ Loading ITables v2.2.5 from the internet...
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">CPE Data</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cves-with-most-cpes">CVEs With Most CPEs</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#most-common-cpes">Most Common CPEs</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#unique-cpes">Unique CPEs</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#number-of-cpes">Number of CPEs</a></li>
 </ul>
 </li>
 </ul>
