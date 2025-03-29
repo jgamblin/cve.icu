@@ -22,7 +22,9 @@ jobs:
 
     - name: Install dependencies
       run: |
-        sudo apt-get install libdebuginfod-dev jupyter unzip -y --fix-missing
+        sudo apt-get update
+        sudo apt-get install -y libdebuginfod1 libdebuginfod-common libelf-dev libdebuginfod-dev jupyter unzip
+        sudo apt-get install -f
         python -m pip install nbconvert
         python -m pip install --upgrade pip -r requirements.txt
         
