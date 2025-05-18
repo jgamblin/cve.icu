@@ -502,16 +502,10 @@ document.write(`
 <h3>Top CNA Assigner<a class="headerlink" href="#top-cna-assigner" title="Link to this heading">#</a></h3>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><table id="itables_86b2d7f8_4b47_44f7_b8c1_f78054bc8831" class="display nowrap" data-quarto-disable-processing="true" style="table-layout:auto;width:auto">
-<thead>
-    <tr style="text-align: right;">
-      
-      <th>Assigner</th>
-      <th>counts</th>
-    </tr>
-  </thead><tbody><tr>
-<td style="vertical-align:middle; text-align:left">
-<a href=https://mwouts.github.io/itables/><svg class="main-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+<div class="output text_html"><!--| quarto-html-table-processing: none -->
+<table id="itables_48dd22d7_535c_41bc_bf6e_3864da76688b"><tbody><tr>
+    <td style="vertical-align:middle; text-align:left">
+    <a href=https://mwouts.github.io/itables/><svg class="main-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 width="64" viewBox="0 0 500 400" style="font-family: 'Droid Sans', sans-serif;">
     <g style="fill:#d9d7fc">
         <path d="M100,400H500V357H100Z" />
@@ -601,27 +595,19 @@ width="64" viewBox="0 0 500 400" style="font-family: 'Droid Sans', sans-serif;">
     </g>
 </svg>
 </a>
-Loading ITables v2.3.0 from the internet...
-(need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)</td>
-</tr></tbody>
-</table>
-<link href="https://www.unpkg.com/dt_for_itables@2.2.0/dt_bundle.css" rel="stylesheet">
+    Loading ITables v2.4.0 from the internet...
+    (need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)</td>
+    </tr></tbody></table>
+<link href="https://www.unpkg.com/dt_for_itables@2.3.2/dt_bundle.css" rel="stylesheet">
 <script type="module">
-    import {DataTable, jQuery as $} from 'https://www.unpkg.com/dt_for_itables@2.2.0/dt_bundle.js';
+    import { ITable, jQuery as $ } from 'https://www.unpkg.com/dt_for_itables@2.3.2/dt_bundle.js';
 
-    document.querySelectorAll("#itables_86b2d7f8_4b47_44f7_b8c1_f78054bc8831:not(.dataTable)").forEach(table => {
+    document.querySelectorAll("#itables_48dd22d7_535c_41bc_bf6e_3864da76688b:not(.dataTable)").forEach(table => {
         if (!(table instanceof HTMLTableElement))
             return;
 
-        // Define the table data
-        const data = [["mitre.org", 6221], ["patchstack.com", 2146], ["vuldb.com", 1925], ["github.com (security-advisories)", 1771], ["microsoft.com", 994], ["wpscan.com", 935], ["wordfence.com", 879], ["adobe.com", 674], ["android.com", 625], ["huntr.dev", 612], ["unisoc.com", 464], ["apple.com", 460], ["redhat.com", 447], ["us.ibm.com", 414], ["intel.com", 349], ["cisco.com (talos-cna)", 347], ["hq.dhs.gov", 335], ["jpcert.or.jp", 324], ["mediatek.com", 324], ["qualcomm.com", 314], ["google.com (chrome-cve-admin)", 297], ["oracle.com", 295], ["emc.com", 266], ["cisco.com (psirt)", 263], ["apache.org", 259], ["trendmicro.com (zdi-disclosures)", 259], ["huawei.com", 254], ["siemens.com", 248], ["googlegroups.com", 240], ["samsung.com (mobile.security)", 237], ["gitlab.com", 210], ["fortinet.com", 198], ["mozilla.org", 194], ["hpe.com", 178], ["usom.gov.tr", 171], ["incibe.es", 170], ["sap.com", 167], ["fluidattacks.com", 149], ["hackerone.com", 144], ["cert.org.tw", 122], ["cert.vde.com", 104], ["nvidia.com", 102], ["juniper.net", 100], ["lenovo.com", 99], ["amd.com", 95], ["se.com", 94], ["snyk.io", 90], ["cyber.gov.il", 84], ["mattermost.com", 84], ["vmware.com", 80]];
-
-        // Define the dt_args
-        let dt_args = {"scrollCollapse": true, "paging": true, "dom": "tpir", "order": [], "warn_on_selected_rows_not_rendered": true};
-        dt_args["data"] = data;
-
-        
-        new DataTable(table, dt_args);
+        let dt_args = {"scrollCollapse": true, "paging": true, "layout": {"topStart": "pageLength", "topEnd": "search", "bottomStart": "info", "bottomEnd": "paging"}, "text_in_header_can_be_selected": true, "order": [], "dom": "tpir", "classes": ["display", "nowrap"], "style": {"table-layout": "auto", "width": "auto"}, "table_html": "<table><thead>\n    <tr style=\"text-align: right;\">\n      \n      <th>Assigner</th>\n      <th>counts</th>\n    </tr>\n  </thead></table>", "data_json": "[[\"mitre.org\", 6221], [\"patchstack.com\", 2146], [\"vuldb.com\", 1925], [\"github.com (security-advisories)\", 1771], [\"microsoft.com\", 994], [\"wpscan.com\", 935], [\"wordfence.com\", 879], [\"adobe.com\", 674], [\"android.com\", 625], [\"huntr.dev\", 612], [\"unisoc.com\", 464], [\"apple.com\", 460], [\"redhat.com\", 447], [\"us.ibm.com\", 414], [\"intel.com\", 349], [\"cisco.com (talos-cna)\", 347], [\"hq.dhs.gov\", 335], [\"jpcert.or.jp\", 324], [\"mediatek.com\", 324], [\"qualcomm.com\", 314], [\"google.com (chrome-cve-admin)\", 297], [\"oracle.com\", 295], [\"emc.com\", 266], [\"cisco.com (psirt)\", 263], [\"apache.org\", 259], [\"trendmicro.com (zdi-disclosures)\", 259], [\"huawei.com\", 254], [\"siemens.com\", 248], [\"googlegroups.com\", 240], [\"samsung.com (mobile.security)\", 237], [\"gitlab.com\", 210], [\"fortinet.com\", 198], [\"mozilla.org\", 194], [\"hpe.com\", 178], [\"usom.gov.tr\", 171], [\"incibe.es\", 170], [\"sap.com\", 167], [\"fluidattacks.com\", 149], [\"hackerone.com\", 144], [\"cert.org.tw\", 122], [\"cert.vde.com\", 104], [\"nvidia.com\", 102], [\"juniper.net\", 100], [\"lenovo.com\", 99], [\"amd.com\", 95], [\"se.com\", 94], [\"snyk.io\", 90], [\"cyber.gov.il\", 84], [\"mattermost.com\", 84], [\"vmware.com\", 80]]"};
+        new ITable(table, dt_args);
     });
 </script>
 </div></div>
@@ -631,16 +617,10 @@ Loading ITables v2.3.0 from the internet...
 <h3>Top CWEs<a class="headerlink" href="#top-cwes" title="Link to this heading">#</a></h3>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><table id="itables_69a024fb_b9c6_4c5a_addc_c51f15e916fc" class="display nowrap" data-quarto-disable-processing="true" style="table-layout:auto;width:auto">
-<thead>
-    <tr style="text-align: right;">
-      
-      <th>CWE</th>
-      <th>counts</th>
-    </tr>
-  </thead><tbody><tr>
-<td style="vertical-align:middle; text-align:left">
-<a href=https://mwouts.github.io/itables/><svg class="main-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+<div class="output text_html"><!--| quarto-html-table-processing: none -->
+<table id="itables_371b11ac_8410_44a1_b670_89436afdde58"><tbody><tr>
+    <td style="vertical-align:middle; text-align:left">
+    <a href=https://mwouts.github.io/itables/><svg class="main-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 width="64" viewBox="0 0 500 400" style="font-family: 'Droid Sans', sans-serif;">
     <g style="fill:#d9d7fc">
         <path d="M100,400H500V357H100Z" />
@@ -730,27 +710,19 @@ width="64" viewBox="0 0 500 400" style="font-family: 'Droid Sans', sans-serif;">
     </g>
 </svg>
 </a>
-Loading ITables v2.3.0 from the internet...
-(need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)</td>
-</tr></tbody>
-</table>
-<link href="https://www.unpkg.com/dt_for_itables@2.2.0/dt_bundle.css" rel="stylesheet">
+    Loading ITables v2.4.0 from the internet...
+    (need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)</td>
+    </tr></tbody></table>
+<link href="https://www.unpkg.com/dt_for_itables@2.3.2/dt_bundle.css" rel="stylesheet">
 <script type="module">
-    import {DataTable, jQuery as $} from 'https://www.unpkg.com/dt_for_itables@2.2.0/dt_bundle.js';
+    import { ITable, jQuery as $ } from 'https://www.unpkg.com/dt_for_itables@2.3.2/dt_bundle.js';
 
-    document.querySelectorAll("#itables_69a024fb_b9c6_4c5a_addc_c51f15e916fc:not(.dataTable)").forEach(table => {
+    document.querySelectorAll("#itables_371b11ac_8410_44a1_b670_89436afdde58:not(.dataTable)").forEach(table => {
         if (!(table instanceof HTMLTableElement))
             return;
 
-        // Define the table data
-        const data = [["CWE-79", 4517], ["NVD-CWE-noinfo", 2443], ["CWE-89", 1958], ["CWE-787", 1448], ["CWE-352", 1150], ["CWE-125", 885], ["CWE-20", 768], ["CWE-862", 694], ["CWE-22", 661], ["CWE-416", 616], ["CWE-120", 564], ["CWE-78", 548], ["CWE-434", 485], ["CWE-200", 470], ["CWE-77", 445], ["NVD-CWE-Other", 369], ["CWE-284", 357], ["CWE-400", 322], ["CWE-287", 293], ["CWE-121", 281], ["CWE-863", 259], ["CWE-94", 255], ["CWE-502", 253], ["CWE-190", 243], ["CWE-122", 243]];
-
-        // Define the dt_args
-        let dt_args = {"scrollCollapse": true, "paging": true, "dom": "tpir", "order": [], "warn_on_selected_rows_not_rendered": true};
-        dt_args["data"] = data;
-
-        
-        new DataTable(table, dt_args);
+        let dt_args = {"scrollCollapse": true, "paging": true, "layout": {"topStart": "pageLength", "topEnd": "search", "bottomStart": "info", "bottomEnd": "paging"}, "text_in_header_can_be_selected": true, "order": [], "dom": "tpir", "classes": ["display", "nowrap"], "style": {"table-layout": "auto", "width": "auto"}, "table_html": "<table><thead>\n    <tr style=\"text-align: right;\">\n      \n      <th>CWE</th>\n      <th>counts</th>\n    </tr>\n  </thead></table>", "data_json": "[[\"CWE-79\", 4517], [\"NVD-CWE-noinfo\", 2443], [\"CWE-89\", 1958], [\"CWE-787\", 1448], [\"CWE-352\", 1150], [\"CWE-125\", 885], [\"CWE-20\", 768], [\"CWE-862\", 694], [\"CWE-22\", 661], [\"CWE-416\", 616], [\"CWE-120\", 564], [\"CWE-78\", 548], [\"CWE-434\", 485], [\"CWE-200\", 470], [\"CWE-77\", 445], [\"NVD-CWE-Other\", 369], [\"CWE-284\", 357], [\"CWE-400\", 322], [\"CWE-287\", 293], [\"CWE-121\", 281], [\"CWE-863\", 259], [\"CWE-94\", 255], [\"CWE-502\", 253], [\"CWE-190\", 243], [\"CWE-122\", 243]]"};
+        new ITable(table, dt_args);
     });
 </script>
 </div></div>
@@ -760,16 +732,10 @@ Loading ITables v2.3.0 from the internet...
 <h3>CVEs By Identifier<a class="headerlink" href="#cves-by-identifier" title="Link to this heading">#</a></h3>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><table id="itables_c2f3ed96_8618_49f3_b827_8c3fd18e04b9" class="display nowrap" data-quarto-disable-processing="true" style="table-layout:auto;width:auto">
-<thead>
-    <tr style="text-align: right;">
-      
-      <th>Identifier</th>
-      <th>Count</th>
-    </tr>
-  </thead><tbody><tr>
-<td style="vertical-align:middle; text-align:left">
-<a href=https://mwouts.github.io/itables/><svg class="main-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+<div class="output text_html"><!--| quarto-html-table-processing: none -->
+<table id="itables_f3eae75f_e4c0_40ad_ad8e_986e16bf4d21"><tbody><tr>
+    <td style="vertical-align:middle; text-align:left">
+    <a href=https://mwouts.github.io/itables/><svg class="main-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 width="64" viewBox="0 0 500 400" style="font-family: 'Droid Sans', sans-serif;">
     <g style="fill:#d9d7fc">
         <path d="M100,400H500V357H100Z" />
@@ -859,34 +825,26 @@ width="64" viewBox="0 0 500 400" style="font-family: 'Droid Sans', sans-serif;">
     </g>
 </svg>
 </a>
-Loading ITables v2.3.0 from the internet...
-(need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)</td>
-</tr></tbody>
-</table>
-<link href="https://www.unpkg.com/dt_for_itables@2.2.0/dt_bundle.css" rel="stylesheet">
+    Loading ITables v2.4.0 from the internet...
+    (need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)</td>
+    </tr></tbody></table>
+<link href="https://www.unpkg.com/dt_for_itables@2.3.2/dt_bundle.css" rel="stylesheet">
 <script type="module">
-    import {DataTable, jQuery as $} from 'https://www.unpkg.com/dt_for_itables@2.2.0/dt_bundle.js';
+    import { ITable, jQuery as $ } from 'https://www.unpkg.com/dt_for_itables@2.3.2/dt_bundle.js';
 
-    document.querySelectorAll("#itables_c2f3ed96_8618_49f3_b827_8c3fd18e04b9:not(.dataTable)").forEach(table => {
+    document.querySelectorAll("#itables_f3eae75f_e4c0_40ad_ad8e_986e16bf4d21:not(.dataTable)").forEach(table => {
         if (!(table instanceof HTMLTableElement))
             return;
 
-        // Define the table data
-        const data = [["CVE-2005", 1], ["CVE-2006", 2], ["CVE-2007", 3], ["CVE-2008", 3], ["CVE-2009", 5], ["CVE-2010", 8], ["CVE-2011", 4], ["CVE-2012", 18], ["CVE-2013", 26], ["CVE-2014", 79], ["CVE-2015", 136], ["CVE-2016", 32], ["CVE-2017", 114], ["CVE-2018", 55], ["CVE-2019", 49], ["CVE-2020", 422], ["CVE-2021", 666], ["CVE-2022", 3859], ["CVE-2023", 23336]];
-
-        // Define the dt_args
-        let dt_args = {"scrollCollapse": true, "paging": false, "dom": "tpir", "order": [], "warn_on_selected_rows_not_rendered": true};
-        dt_args["data"] = data;
-
-        
-        new DataTable(table, dt_args);
+        let dt_args = {"scrollCollapse": true, "paging": false, "layout": {"topStart": "pageLength", "topEnd": "search", "bottomStart": "info", "bottomEnd": "paging"}, "text_in_header_can_be_selected": true, "order": [], "dom": "tpir", "classes": ["display", "nowrap"], "style": {"table-layout": "auto", "width": "auto"}, "table_html": "<table><thead>\n    <tr style=\"text-align: right;\">\n      \n      <th>Identifier</th>\n      <th>Count</th>\n    </tr>\n  </thead></table>", "data_json": "[[\"CVE-2005\", 1], [\"CVE-2006\", 2], [\"CVE-2007\", 3], [\"CVE-2008\", 3], [\"CVE-2009\", 5], [\"CVE-2010\", 8], [\"CVE-2011\", 4], [\"CVE-2012\", 18], [\"CVE-2013\", 26], [\"CVE-2014\", 79], [\"CVE-2015\", 136], [\"CVE-2016\", 32], [\"CVE-2017\", 114], [\"CVE-2018\", 55], [\"CVE-2019\", 49], [\"CVE-2020\", 422], [\"CVE-2021\", 666], [\"CVE-2022\", 3859], [\"CVE-2023\", 23336]]"};
+        new ITable(table, dt_args);
     });
 </script>
 </div></div>
 </div>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<p>This report is updated automatically every day, last generated on: <strong>2025-05-17 20:26:05.335328</strong></p>
+<p>This report is updated automatically every day, last generated on: <strong>2025-05-18 00:42:55.101514</strong></p>
 </div>
 </div>
 </section>
