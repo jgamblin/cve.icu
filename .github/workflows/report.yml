@@ -46,8 +46,27 @@ jobs:
       env:
         GH_TOKEN:  ${{ secrets.GH_TOKEN }}
       run: |
-        NOTEBOOKS="CVEAll.ipynb CVEAll-Interactive.ipynb CVE2016.ipynb CVE2017.ipynb CVE2018.ipynb CVE2019.ipynb CVE2020.ipynb CVE2021.ipynb CVE2022.ipynb CVE2023.ipynb CVE2024.ipynb CVE2025.ipynb CVECalendar.ipynb CVEGrowth.ipynb CVECVSS.ipynb CVECNA.ipynb CVECWE.ipynb CVECPE.ipynb"
-        printf "%s\n" $NOTEBOOKS | xargs -P 4 -n 1 jupyter nbconvert --to notebook --inplace --execute
+        NOTEBOOKS=(
+          CVEAll.ipynb
+          CVEAll-Interactive.ipynb
+          CVE2016.ipynb
+          CVE2017.ipynb
+          CVE2018.ipynb
+          CVE2019.ipynb
+          CVE2020.ipynb
+          CVE2021.ipynb
+          CVE2022.ipynb
+          CVE2023.ipynb
+          CVE2024.ipynb
+          CVE2025.ipynb
+          CVECalendar.ipynb
+          CVEGrowth.ipynb
+          CVECVSS.ipynb
+          CVECNA.ipynb
+          CVECWE.ipynb
+          CVECPE.ipynb
+        )
+        printf "%s\n" "${NOTEBOOKS[@]}" | xargs -P 4 -n 1 jupyter nbconvert --to notebook --inplace --execute
 
     - name: Commit changes
       uses: EndBug/add-and-commit@v9
