@@ -182,7 +182,6 @@
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Combined Data</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="CVEAll.html">All CVEs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="CVEAll-Interactive.html">All CVEs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="CVECalendar.html">Daily Calendar View</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Yearly Data</span></p>
@@ -426,8 +425,14 @@ document.write(`
 <h3>CVEs With Most CPEs<a class="headerlink" href="#cves-with-most-cpes" title="Link to this heading">#</a></h3>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/itables/typing.py:201: SyntaxWarning: These arguments are not documented in ITableOptions: {&#39;dom&#39;}. You can silence this warning by setting `itables.options.warn_on_undocumented_option=False`. If you believe ITableOptions should be updated, please make a PR or open an issue at https://github.com/mwouts/itables
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/itables/typing.py:201: SyntaxWarning: These arguments are not documented in DTForITablesOptions: {&#39;dom&#39;}. You can silence this warning by setting `itables.options.warn_on_undocumented_option=False`. If you believe ITableOptions should be updated, please make a PR or open an issue at https://github.com/mwouts/itables
+  warnings.warn(
+</pre></div>
+</div>
 <div class="output text_html"><!--| quarto-html-table-processing: none -->
-<table id="itables_39d85e7e_4155_43e9_96ad_0e1861cf2941"><tbody><tr>
+<table id="itables_5413243d_0feb_4ef0_ae19_688dcf9f5d63"><tbody><tr>
     <td style="vertical-align:middle; text-align:left">
     <a href=https://mwouts.github.io/itables/><svg class="main-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 width="64" viewBox="0 0 500 400" style="font-family: 'Droid Sans', sans-serif;">
@@ -526,11 +531,11 @@ width="64" viewBox="0 0 500 400" style="font-family: 'Droid Sans', sans-serif;">
 <script type="module">
     import { ITable, jQuery as $ } from 'https://www.unpkg.com/dt_for_itables@2.3.3/dt_bundle.js';
 
-    document.querySelectorAll("#itables_39d85e7e_4155_43e9_96ad_0e1861cf2941:not(.dataTable)").forEach(table => {
+    document.querySelectorAll("#itables_5413243d_0feb_4ef0_ae19_688dcf9f5d63:not(.dataTable)").forEach(table => {
         if (!(table instanceof HTMLTableElement))
             return;
 
-        let dt_args = {"scrollCollapse": true, "paging": false, "layout": {"topStart": "pageLength", "topEnd": "search", "bottomStart": "info", "bottomEnd": "paging"}, "text_in_header_can_be_selected": true, "dom": "tpir", "style": {"table-layout": "auto", "width": "auto"}, "classes": ["display", "nowrap"], "order": [], "table_html": "<table><thead>\n    <tr style=\"text-align: right;\">\n      \n      <th>CVE</th>\n      <th>Count</th>\n    </tr>\n  </thead></table>", "data_json": "[[\"CVE-2016-1409\", 4891], [\"CVE-2017-6770\", 3788], [\"CVE-2016-6380\", 3334], [\"CVE-2021-3942\", 2942], [\"CVE-2024-20433\", 2434], [\"CVE-2008-4609\", 2046], [\"CVE-2020-3201\", 1917], [\"CVE-2019-1761\", 1762], [\"CVE-2021-34705\", 1721], [\"CVE-2009-5040\", 1550], [\"CVE-2022-20920\", 1446], [\"CVE-2007-5381\", 1429], [\"CVE-2011-2395\", 1409], [\"CVE-2017-5753\", 1388], [\"CVE-2020-0551\", 1321], [\"CVE-2021-0114\", 1312], [\"CVE-2021-0144\", 1312], [\"CVE-2020-3204\", 1283], [\"CVE-2020-3200\", 1198], [\"CVE-2018-0197\", 1195]]"};
+        let dt_args = {"scrollCollapse": true, "paging": false, "layout": {"topStart": "pageLength", "topEnd": "search", "bottomStart": "info", "bottomEnd": "paging"}, "order": [], "dom": "tpir", "style": {"table-layout": "auto", "width": "auto"}, "classes": ["display", "nowrap"], "text_in_header_can_be_selected": true, "table_html": "<table><thead>\n    <tr style=\"text-align: right;\">\n      \n      <th>CVE</th>\n      <th>Count</th>\n    </tr>\n  </thead></table>", "data_json": "[[\"CVE-2016-1409\", 4891], [\"CVE-2017-6770\", 3788], [\"CVE-2016-6380\", 3334], [\"CVE-2021-3942\", 2942], [\"CVE-2024-20433\", 2434], [\"CVE-2008-4609\", 2046], [\"CVE-2020-3201\", 1917], [\"CVE-2019-1761\", 1762], [\"CVE-2021-34705\", 1721], [\"CVE-2009-5040\", 1550], [\"CVE-2022-20920\", 1446], [\"CVE-2007-5381\", 1429], [\"CVE-2011-2395\", 1409], [\"CVE-2017-5753\", 1388], [\"CVE-2020-0551\", 1321], [\"CVE-2021-0114\", 1312], [\"CVE-2021-0144\", 1312], [\"CVE-2020-3204\", 1283], [\"CVE-2020-3200\", 1198], [\"CVE-2018-0197\", 1195]]"};
         new ITable(table, dt_args);
     });
 </script>
@@ -541,8 +546,14 @@ width="64" viewBox="0 0 500 400" style="font-family: 'Droid Sans', sans-serif;">
 <h3>Most Common CPEs<a class="headerlink" href="#most-common-cpes" title="Link to this heading">#</a></h3>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/itables/typing.py:201: SyntaxWarning: These arguments are not documented in ITableOptions: {&#39;dom&#39;}. You can silence this warning by setting `itables.options.warn_on_undocumented_option=False`. If you believe ITableOptions should be updated, please make a PR or open an issue at https://github.com/mwouts/itables
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/itables/typing.py:201: SyntaxWarning: These arguments are not documented in DTForITablesOptions: {&#39;dom&#39;}. You can silence this warning by setting `itables.options.warn_on_undocumented_option=False`. If you believe ITableOptions should be updated, please make a PR or open an issue at https://github.com/mwouts/itables
+  warnings.warn(
+</pre></div>
+</div>
 <div class="output text_html"><!--| quarto-html-table-processing: none -->
-<table id="itables_f03f1036_b01d_4a24_b736_8e3696d6f3ce"><tbody><tr>
+<table id="itables_e6c53c52_7d8f_4004_af3e_d81a2e6a11ab"><tbody><tr>
     <td style="vertical-align:middle; text-align:left">
     <a href=https://mwouts.github.io/itables/><svg class="main-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 width="64" viewBox="0 0 500 400" style="font-family: 'Droid Sans', sans-serif;">
@@ -641,11 +652,11 @@ width="64" viewBox="0 0 500 400" style="font-family: 'Droid Sans', sans-serif;">
 <script type="module">
     import { ITable, jQuery as $ } from 'https://www.unpkg.com/dt_for_itables@2.3.3/dt_bundle.js';
 
-    document.querySelectorAll("#itables_f03f1036_b01d_4a24_b736_8e3696d6f3ce:not(.dataTable)").forEach(table => {
+    document.querySelectorAll("#itables_e6c53c52_7d8f_4004_af3e_d81a2e6a11ab:not(.dataTable)").forEach(table => {
         if (!(table instanceof HTMLTableElement))
             return;
 
-        let dt_args = {"scrollCollapse": true, "paging": false, "layout": {"topStart": "pageLength", "topEnd": "search", "bottomStart": "info", "bottomEnd": "paging"}, "text_in_header_can_be_selected": true, "dom": "tpir", "style": {"table-layout": "auto", "width": "auto"}, "classes": ["display", "nowrap"], "order": [], "table_html": "<table><thead>\n    <tr style=\"text-align: right;\">\n      \n      <th>CPE</th>\n      <th>Count</th>\n    </tr>\n  </thead></table>", "data_json": "[[\"cpe:2.3:o:linux:linux_kernel:*:*:*:*:*:*:*:*\", 21532], [\"cpe:2.3:o:debian:debian_linux:9.0:*:*:*:*:*:*:*\", 3999], [\"cpe:2.3:o:apple:iphone_os:*:*:*:*:*:*:*:*\", 3852], [\"cpe:2.3:a:google:chrome:*:*:*:*:*:*:*:*\", 3672], [\"cpe:2.3:o:debian:debian_linux:8.0:*:*:*:*:*:*:*\", 3481], [\"cpe:2.3:o:apple:macos:*:*:*:*:*:*:*:*\", 3318], [\"cpe:2.3:o:debian:debian_linux:10.0:*:*:*:*:*:*:*\", 3304], [\"cpe:2.3:o:microsoft:windows_server_2012:r2:*:*:*:*:*:*:*\", 3123], [\"cpe:2.3:o:microsoft:windows_server_2012:-:*:*:*:*:*:*:*\", 2981], [\"cpe:2.3:o:apple:mac_os_x:*:*:*:*:*:*:*:*\", 2726], [\"cpe:2.3:o:microsoft:windows_server_2019:-:*:*:*:*:*:*:*\", 2708], [\"cpe:2.3:o:microsoft:windows_server_2016:-:*:*:*:*:*:*:*\", 2649], [\"cpe:2.3:a:gitlab:gitlab:*:*:*:*:enterprise:*:*:*\", 2451], [\"cpe:2.3:a:mozilla:firefox:*:*:*:*:*:*:*:*\", 2448], [\"cpe:2.3:a:adobe:acrobat_dc:*:*:*:*:classic:*:*:*\", 2377], [\"cpe:2.3:a:adobe:acrobat_reader_dc:*:*:*:*:classic:*:*:*\", 2374], [\"cpe:2.3:a:gitlab:gitlab:*:*:*:*:community:*:*:*\", 2149], [\"cpe:2.3:o:microsoft:windows_server_2008:r2:sp1:*:*:*:*:x64:*\", 2133], [\"cpe:2.3:a:adobe:flash_player:*:*:*:*:*:*:*:*\", 1993], [\"cpe:2.3:a:oracle:mysql:*:*:*:*:*:*:*:*\", 1970]]"};
+        let dt_args = {"scrollCollapse": true, "paging": false, "layout": {"topStart": "pageLength", "topEnd": "search", "bottomStart": "info", "bottomEnd": "paging"}, "order": [], "dom": "tpir", "style": {"table-layout": "auto", "width": "auto"}, "classes": ["display", "nowrap"], "text_in_header_can_be_selected": true, "table_html": "<table><thead>\n    <tr style=\"text-align: right;\">\n      \n      <th>CPE</th>\n      <th>Count</th>\n    </tr>\n  </thead></table>", "data_json": "[[\"cpe:2.3:o:linux:linux_kernel:*:*:*:*:*:*:*:*\", 21532], [\"cpe:2.3:o:debian:debian_linux:9.0:*:*:*:*:*:*:*\", 3999], [\"cpe:2.3:o:apple:iphone_os:*:*:*:*:*:*:*:*\", 3852], [\"cpe:2.3:a:google:chrome:*:*:*:*:*:*:*:*\", 3672], [\"cpe:2.3:o:debian:debian_linux:8.0:*:*:*:*:*:*:*\", 3481], [\"cpe:2.3:o:apple:macos:*:*:*:*:*:*:*:*\", 3318], [\"cpe:2.3:o:debian:debian_linux:10.0:*:*:*:*:*:*:*\", 3304], [\"cpe:2.3:o:microsoft:windows_server_2012:r2:*:*:*:*:*:*:*\", 3123], [\"cpe:2.3:o:microsoft:windows_server_2012:-:*:*:*:*:*:*:*\", 2981], [\"cpe:2.3:o:apple:mac_os_x:*:*:*:*:*:*:*:*\", 2726], [\"cpe:2.3:o:microsoft:windows_server_2019:-:*:*:*:*:*:*:*\", 2708], [\"cpe:2.3:o:microsoft:windows_server_2016:-:*:*:*:*:*:*:*\", 2649], [\"cpe:2.3:a:gitlab:gitlab:*:*:*:*:enterprise:*:*:*\", 2451], [\"cpe:2.3:a:mozilla:firefox:*:*:*:*:*:*:*:*\", 2448], [\"cpe:2.3:a:adobe:acrobat_dc:*:*:*:*:classic:*:*:*\", 2377], [\"cpe:2.3:a:adobe:acrobat_reader_dc:*:*:*:*:classic:*:*:*\", 2374], [\"cpe:2.3:a:gitlab:gitlab:*:*:*:*:community:*:*:*\", 2149], [\"cpe:2.3:o:microsoft:windows_server_2008:r2:sp1:*:*:*:*:x64:*\", 2133], [\"cpe:2.3:a:adobe:flash_player:*:*:*:*:*:*:*:*\", 1993], [\"cpe:2.3:a:oracle:mysql:*:*:*:*:*:*:*:*\", 1970]]"};
         new ITable(table, dt_args);
     });
 </script>
@@ -663,7 +674,7 @@ width="64" viewBox="0 0 500 400" style="font-family: 'Droid Sans', sans-serif;">
 </div>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<p>This report is updated automatically every day, last generated on: <strong>2025-06-29 20:32:04.290264</strong></p>
+<p>This report is updated automatically every day, last generated on: <strong>2025-06-29 22:34:23.105964</strong></p>
 </div>
 </div>
 </section>
