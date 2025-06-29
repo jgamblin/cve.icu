@@ -7,7 +7,6 @@ parts:
   - caption: Combined Data
     chapters:
     - file: CVEAll
-    - file: CVEAll-Interactive
     - file: CVECalendar
   - caption: Yearly Data
     chapters:
