@@ -34,8 +34,8 @@ jobs:
         sudo apt-get install -y libdebuginfod1 libdebuginfod-common libelf-dev libdebuginfod-dev jupyter unzip parallel
         sudo apt-get install -f
         python -m pip install --upgrade pip
-        python -m pip install -r requirements.txt
-        python -m pip install nbconvert
+        python -m pip install --prefer-binary -r requirements.txt
+        python -m pip install --prefer-binary nbconvert
 
     - name: Grab Needed Data
       run: |
@@ -47,7 +47,7 @@ jobs:
         GH_TOKEN:  ${{ secrets.GH_TOKEN }}
       run: |
         NOTEBOOKS="CVEAll.ipynb CVEAll-Interactive.ipynb CVE2016.ipynb CVE2017.ipynb CVE2018.ipynb CVE2019.ipynb CVE2020.ipynb CVE2021.ipynb CVE2022.ipynb CVE2023.ipynb CVE2024.ipynb CVE2025.ipynb CVECalendar.ipynb CVEGrowth.ipynb CVECVSS.ipynb CVECNA.ipynb CVECWE.ipynb CVECPE.ipynb"
-        echo $NOTEBOOKS | xargs -n 1 -P 4 -I {} jupyter nbconvert --to notebook --inplace --execute {}
+        printf "%s\n" $NOTEBOOKS | xargs -P 4 -n 1 jupyter nbconvert --to notebook --inplace --execute
 
     - name: Commit changes
       uses: EndBug/add-and-commit@v9
