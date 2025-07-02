@@ -1,20 +1,21 @@
 # About
-[CVE.ICU](https://cve.icu) is a passion project by [Jerry Gamblin](https://www.jerrygamblin.com). The goal is to dive deep into Common Vulnerabilities and Exposures (CVE) by pulling and analyzing all the CVE data from the [National Vulnerability Database (NVD)](https://nvd.nist.gov/).
+[CVE.ICU](https://cve.icu) is a comprehensive cybersecurity intelligence platform developed by [RogoLabs](https://rogolabs.net/). Originally created by [Jerry Gamblin](https://www.jerrygamblin.com), this project focuses on the systematic analysis of Common Vulnerabilities and Exposures (CVE) data sourced from the [National Vulnerability Database (NVD)](https://nvd.nist.gov/).
 
-## Goals
-The main aim of CVE.ICU is to make sense of all this data and present it in a way that's easy to understand through cool graphs and charts. 
- 
-This automated analysis helps:
-- Spot patterns and trends in cybersecurity vulnerabilities.
-- Give researchers and cybersecurity pros a better handle on what's going on and what's coming next.
+## Mission
+CVE.ICU transforms complex vulnerability data into actionable intelligence through advanced analytics and intuitive visualizations. Our platform provides cybersecurity professionals, researchers, and organizations with the insights needed to understand vulnerability landscapes and emerging threat patterns.
+
+This comprehensive analysis platform delivers:
+- In-depth trend analysis and pattern recognition across vulnerability datasets
+- Strategic intelligence for cybersecurity professionals and threat researchers
+- Data-driven insights to support proactive security decision-making
 
 ## Open Source and Collaboration
-The [source code](https://github.com/jgamblin/cve.icu) for this project is up on GitHub. It's open for everyone to see, use, and improve. By keeping it open-source, I'm hoping to get contributions and ideas from the community to make it even better.
+The [source code](https://github.com/RogoLabs/cve.icu) for this project is available on GitHub under the RogoLabs organization. As an open-source initiative, we welcome community contributions, feedback, and collaborative improvements to enhance the platform's capabilities and reach.
 
-## Timely Updates
-To keep things fresh, the data on CVE.ICU is updated every 4 hours using GitHub Actions. This way, you always get the latest insights into the ever-changing world of cybersecurity vulnerabilities.
+## Real-Time Intelligence
+CVE.ICU maintains current and comprehensive vulnerability intelligence through automated data updates every 4 hours via GitHub Actions. This ensures our users have access to the most recent vulnerability disclosures and threat intelligence as they emerge.
 
-## Get Involved
-I love hearing from people who are interested in this project. Feel free to reach out to me on Twitter [@jgamblin](https://twitter.com/jgamblin) if you have any questions or just want to chat about CVE.ICU. If you're interested in contributing, check out the [GitHub repository](https://github.com/jgamblin/cve.icu).
+## Contact and Contributions
+For inquiries about CVE.ICU or RogoLabs initiatives, please visit [RogoLabs.net](https://rogolabs.net/) or connect with the project maintainers. We encourage community engagement and welcome contributions through our [GitHub repository](https://github.com/RogoLabs/cve.icu).
 
 ---
