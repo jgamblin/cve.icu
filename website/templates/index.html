@@ -1,0 +1,252 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container-fluid">
+    <!-- Hero Section -->
+    <div class="row mb-5">
+        <div class="col-12">
+            <div class="jumbotron bg-primary text-white p-5 rounded">
+                <h1 class="display-4"><i class="fas fa-shield-alt me-3"></i>CVE Analysis Dashboard</h1>
+                <p class="lead">Comprehensive analysis of Common Vulnerabilities and Exposures (CVE) data from the National Vulnerability Database.</p>
+                {% if analysis_data.summary and analysis_data.summary.total_cves %}
+                <hr class="my-4">
+                <p class="mb-3">
+                    <strong>{{ "{:,}".format(analysis_data.summary.total_cves) }}</strong> CVEs analyzed
+                    {% if analysis_data.summary.date_range %}
+                    from <strong>{{ analysis_data.summary.date_range.start.strftime('%Y-%m-%d') if analysis_data.summary.date_range.start else 'N/A' }}</strong>
+                    to <strong>{{ analysis_data.summary.date_range.end.strftime('%Y-%m-%d') if analysis_data.summary.date_range.end else 'N/A' }}</strong>
+                    {% endif %}
+                </p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+    <!-- Statistics Cards -->
+    {% if analysis_data.summary %}
+    <div class="row mb-5">
+        <div class="col-md-3 mb-3">
+            <div class="card bg-success text-white h-100">
+                <div class="card-body text-center">
+                    <i class="fas fa-database fa-2x mb-2"></i>
+                    <h4>{{ "{:,}".format(analysis_data.summary.total_cves) if analysis_data.summary.total_cves else '0' }}</h4>
+                    <p class="card-text">Total CVEs</p>
+                </div>
+            </div>
+        </div>
+        
+        {% if analysis_data.summary.avg_cvss_score %}
+        <div class="col-md-3 mb-3">
+            <div class="card bg-warning text-dark h-100">
+                <div class="card-body text-center">
+                    <i class="fas fa-tachometer-alt fa-2x mb-2"></i>
+                    <h4>{{ "%.1f"|format(analysis_data.summary.avg_cvss_score) }}</h4>
+                    <p class="card-text">Avg CVSS Score</p>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+        
+        {% if analysis_data.summary.avg_per_day %}
+        <div class="col-md-3 mb-3">
+            <div class="card bg-info text-white h-100">
+                <div class="card-body text-center">
+                    <i class="fas fa-calendar-day fa-2x mb-2"></i>
+                    <h4>{{ "%.1f"|format(analysis_data.summary.avg_per_day) }}</h4>
+                    <p class="card-text">CVEs per Day</p>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+        
+        <div class="col-md-3 mb-3">
+            <div class="card bg-danger text-white h-100">
+                <div class="card-body text-center">
+                    <i class="fas fa-exclamation-triangle fa-2x mb-2"></i>
+                    <h4>{{ current_date }}</h4>
+                    <p class="card-text">Last Updated</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
+    <!-- Quick Analysis Links -->
+    <div class="row mb-5">
+        <div class="col-12">
+            <h2><i class="fas fa-chart-line me-2"></i>Analysis Categories</h2>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-trending-up me-2 text-primary"></i>Growth Trends</h5>
+                            <p class="card-text">Analyze CVE publication trends over time, including yearly and monthly patterns.</p>
+                            <a href="/growth.html" class="btn btn-primary">View Analysis</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-tachometer-alt me-2 text-warning"></i>CVSS Scores</h5>
+                            <p class="card-text">Distribution and trends of CVSS severity scores across all CVEs.</p>
+                            <a href="/cvss.html" class="btn btn-warning">View Analysis</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-crosshairs me-2 text-danger"></i>Attack Vectors</h5>
+                            <p class="card-text">Analysis of attack vectors and exploitation methods used in CVEs.</p>
+                            <a href="/attack-vectors.html" class="btn btn-danger">View Analysis</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-bug me-2 text-info"></i>Common Weaknesses</h5>
+                            <p class="card-text">Distribution of CWE (Common Weakness Enumeration) categories.</p>
+                            <a href="/cwe.html" class="btn btn-info">View Analysis</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-users me-2 text-success"></i>Numbering Authorities</h5>
+                            <p class="card-text">Analysis of CVE Numbering Authorities (CNAs) and their contributions.</p>
+                            <a href="/cna.html" class="btn btn-success">View Analysis</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-database me-2 text-secondary"></i>Data Overview</h5>
+                            <p class="card-text">Comprehensive overview of the CVE dataset and key statistics.</p>
+                            <a href="/data.html" class="btn btn-secondary">View Data</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Recent Growth Chart (if available) -->
+    {% if analysis_data.summary and analysis_data.summary.recent_growth %}
+    <div class="row mb-5">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h3><i class="fas fa-chart-area me-2"></i>Recent Growth Trends</h3>
+                </div>
+                <div class="card-body">
+                    <canvas id="recentGrowthChart" width="400" height="200"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
+    <!-- Top Attack Vectors (if available) -->
+    {% if analysis_data.summary and analysis_data.summary.top_attack_vectors %}
+    <div class="row mb-5">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h4><i class="fas fa-crosshairs me-2"></i>Top Attack Vectors</h4>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Attack Vector</th>
+                                    <th>Count</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for vector in analysis_data.summary.top_attack_vectors %}
+                                <tr>
+                                    <td>{{ vector['Attack Vector'] }}</td>
+                                    <td><span class="badge bg-primary">{{ vector.Count }}</span></td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h4><i class="fas fa-info-circle me-2"></i>Quick Stats</h4>
+                </div>
+                <div class="card-body">
+                    {% if analysis_data.summary.cvss_statistics %}
+                    <p><strong>Average CVSS Score:</strong> {{ "%.2f"|format(analysis_data.summary.cvss_statistics.average) }}</p>
+                    <p><strong>Median CVSS Score:</strong> {{ "%.2f"|format(analysis_data.summary.cvss_statistics.median) }}</p>
+                    {% endif %}
+                    <p><strong>Last Updated:</strong> {{ analysis_data.summary.last_updated[:10] if analysis_data.summary.last_updated else current_date }}</p>
+                    <hr>
+                    <p class="text-muted small">
+                        Data sourced from the National Vulnerability Database (NVD). 
+                        Analysis generated using custom Python algorithms.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+</div>
+
+{% endblock %}
+
+{% block extra_scripts %}
+{% if analysis_data.summary and analysis_data.summary.recent_growth %}
+<script>
+// Recent Growth Chart
+const ctx = document.getElementById('recentGrowthChart').getContext('2d');
+const recentGrowthChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: [
+            {% for entry in analysis_data.summary.recent_growth %}
+            '{{ entry.Published }}'{% if not loop.last %},{% endif %}
+            {% endfor %}
+        ],
+        datasets: [{
+            label: 'CVEs Published',
+            data: [
+                {% for entry in analysis_data.summary.recent_growth %}
+                {{ entry.CVEs }}{% if not loop.last %},{% endif %}
+                {% endfor %}
+            ],
+            borderColor: 'rgb(75, 192, 192)',
+            backgroundColor: 'rgba(75, 192, 192, 0.2)',
+            tension: 0.1
+        }]
+    },
+    options: {
+        responsive: true,
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+</script>
+{% endif %}
+{% endblock %}

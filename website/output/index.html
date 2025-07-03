@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CVE.ICU - Comprehensive CVE analysis and vulnerability intelligence">
+    <meta name="keywords" content="CVE, vulnerability, security, analysis, NVD, CVSS">
+    <meta name="author" content="Jerry Gamblin">
+    
+    <title>CVE.ICU - CVE Analysis Dashboard</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/static/images/favicon.ico">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/static/css/main.css">
+    <link rel="stylesheet" href="/static/css/components.css">
+    
+    <!-- Bootstrap CSS for quick styling -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Chart.js for interactive charts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="/">
+                <i class="fas fa-shield-alt me-2"></i>CVE.ICU
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/"><i class="fas fa-home me-1"></i>Dashboard</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            <i class="fas fa-chart-line me-1"></i>Analysis
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/growth.html"><i class="fas fa-trending-up me-1"></i>Growth Trends</a></li>
+                            <li><a class="dropdown-item" href="/cvss.html"><i class="fas fa-tachometer-alt me-1"></i>CVSS Scores</a></li>
+                            <li><a class="dropdown-item" href="/attack-vectors.html"><i class="fas fa-crosshairs me-1"></i>Attack Vectors</a></li>
+                            <li><a class="dropdown-item" href="/cwe.html"><i class="fas fa-bug me-1"></i>Common Weaknesses</a></li>
+                            <li><a class="dropdown-item" href="/cna.html"><i class="fas fa-users me-1"></i>Numbering Authorities</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/data.html"><i class="fas fa-database me-1"></i>Data</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about.html"><i class="fas fa-info-circle me-1"></i>About</a>
+                    </li>
+                </ul>
+                
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <span class="navbar-text">
+                            <i class="fas fa-calendar me-1"></i>Updated: 2025-07-03
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container-fluid mt-5 pt-4">
+        
+<div class="container-fluid">
+    <!-- Hero Section -->
+    <div class="row mb-5">
+        <div class="col-12">
+            <div class="jumbotron bg-primary text-white p-5 rounded">
+                <h1 class="display-4"><i class="fas fa-shield-alt me-3"></i>CVE Analysis Dashboard</h1>
+                <p class="lead">Comprehensive analysis of Common Vulnerabilities and Exposures (CVE) data from the National Vulnerability Database.</p>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Statistics Cards -->
+    
+    <div class="row mb-5">
+        <div class="col-md-3 mb-3">
+            <div class="card bg-success text-white h-100">
+                <div class="card-body text-center">
+                    <i class="fas fa-database fa-2x mb-2"></i>
+                    <h4>0</h4>
+                    <p class="card-text">Total CVEs</p>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+        
+        <div class="col-md-3 mb-3">
+            <div class="card bg-danger text-white h-100">
+                <div class="card-body text-center">
+                    <i class="fas fa-exclamation-triangle fa-2x mb-2"></i>
+                    <h4>2025-07-03</h4>
+                    <p class="card-text">Last Updated</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Quick Analysis Links -->
+    <div class="row mb-5">
+        <div class="col-12">
+            <h2><i class="fas fa-chart-line me-2"></i>Analysis Categories</h2>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-trending-up me-2 text-primary"></i>Growth Trends</h5>
+                            <p class="card-text">Analyze CVE publication trends over time, including yearly and monthly patterns.</p>
+                            <a href="/growth.html" class="btn btn-primary">View Analysis</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-tachometer-alt me-2 text-warning"></i>CVSS Scores</h5>
+                            <p class="card-text">Distribution and trends of CVSS severity scores across all CVEs.</p>
+                            <a href="/cvss.html" class="btn btn-warning">View Analysis</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-crosshairs me-2 text-danger"></i>Attack Vectors</h5>
+                            <p class="card-text">Analysis of attack vectors and exploitation methods used in CVEs.</p>
+                            <a href="/attack-vectors.html" class="btn btn-danger">View Analysis</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-bug me-2 text-info"></i>Common Weaknesses</h5>
+                            <p class="card-text">Distribution of CWE (Common Weakness Enumeration) categories.</p>
+                            <a href="/cwe.html" class="btn btn-info">View Analysis</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-users me-2 text-success"></i>Numbering Authorities</h5>
+                            <p class="card-text">Analysis of CVE Numbering Authorities (CNAs) and their contributions.</p>
+                            <a href="/cna.html" class="btn btn-success">View Analysis</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-database me-2 text-secondary"></i>Data Overview</h5>
+                            <p class="card-text">Comprehensive overview of the CVE dataset and key statistics.</p>
+                            <a href="/data.html" class="btn btn-secondary">View Data</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Recent Growth Chart (if available) -->
+    
+
+    <!-- Top Attack Vectors (if available) -->
+    
+</div>
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5><i class="fas fa-shield-alt me-2"></i>CVE.ICU</h5>
+                    <p class="mb-0">Comprehensive CVE analysis and vulnerability intelligence platform.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="mb-2">
+                        <a href="https://github.com/gamblin/cve.icu" class="text-light me-3">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="https://twitter.com/jerrygamblin" class="text-light">
+                            <i class="fab fa-twitter"></i> Twitter
+                        </a>
+                    </div>
+                    <small class="text-muted">
+                        © 2025 Jerry Gamblin. Data from NVD.
+                    </small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="/static/js/main.js"></script>
+    
+    
+
+
+</body>
+</html>

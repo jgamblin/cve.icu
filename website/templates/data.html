@@ -1,0 +1,258 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h1><i class="fas fa-database me-2"></i>{{ title }}</h1>
+                <a href="/" class="btn btn-outline-secondary">
+                    <i class="fas fa-arrow-left me-1"></i>Back to Dashboard
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Summary Statistics -->
+    {% if summary %}
+    <div class="row mb-5">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h3><i class="fas fa-chart-pie me-2"></i>Dataset Summary</h3>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <div class="stat-item text-center">
+                                <h2 class="text-primary">{{ "{:,}".format(summary.total_cves) if summary.total_cves else '0' }}</h2>
+                                <p class="text-muted">Total CVEs</p>
+                            </div>
+                        </div>
+                        
+                        {% if summary.avg_cvss_score %}
+                        <div class="col-md-4 mb-3">
+                            <div class="stat-item text-center">
+                                <h2 class="text-warning">{{ "%.2f"|format(summary.avg_cvss_score) }}</h2>
+                                <p class="text-muted">Average CVSS Score</p>
+                            </div>
+                        </div>
+                        {% endif %}
+                        
+                        {% if summary.avg_per_day %}
+                        <div class="col-md-4 mb-3">
+                            <div class="stat-item text-center">
+                                <h2 class="text-info">{{ "%.1f"|format(summary.avg_per_day) }}</h2>
+                                <p class="text-muted">CVEs per Day</p>
+                            </div>
+                        </div>
+                        {% endif %}
+                    </div>
+                    
+                    {% if summary.date_range %}
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p><strong>Data Range:</strong></p>
+                            <p class="text-muted">
+                                From: {{ summary.date_range.start.strftime('%Y-%m-%d') if summary.date_range.start else 'N/A' }}<br>
+                                To: {{ summary.date_range.end.strftime('%Y-%m-%d') if summary.date_range.end else 'N/A' }}
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <p><strong>Last Updated:</strong></p>
+                            <p class="text-muted">{{ summary.last_updated[:10] if summary.last_updated else current_date }}</p>
+                        </div>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
+    <!-- CVSS Statistics -->
+    {% if summary and summary.cvss_statistics %}
+    <div class="row mb-5">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h3><i class="fas fa-tachometer-alt me-2"></i>CVSS Score Statistics</h3>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-3 mb-3">
+                            <div class="text-center">
+                                <h4>{{ "%.2f"|format(summary.cvss_statistics.average) if summary.cvss_statistics.average else 'N/A' }}</h4>
+                                <p class="text-muted">Average</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <div class="text-center">
+                                <h4>{{ "%.2f"|format(summary.cvss_statistics.median) if summary.cvss_statistics.median else 'N/A' }}</h4>
+                                <p class="text-muted">Median</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <div class="text-center">
+                                <h4>{{ summary.cvss_statistics.most_common if summary.cvss_statistics.most_common else 'N/A' }}</h4>
+                                <p class="text-muted">Most Common</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <div class="text-center">
+                                <h4>{{ "%.2f"|format(summary.cvss_statistics.std) if summary.cvss_statistics.std else 'N/A' }}</h4>
+                                <p class="text-muted">Std Deviation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
+    <!-- Recent Growth Trends -->
+    {% if summary and summary.recent_growth %}
+    <div class="row mb-5">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h3><i class="fas fa-chart-line me-2"></i>Recent Growth Trends (Last 5 Years)</h3>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Year</th>
+                                    <th>CVEs Published</th>
+                                    <th>Percentage of Total</th>
+                                    <th>Growth Rate</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for entry in summary.recent_growth %}
+                                <tr>
+                                    <td><strong>{{ entry.Published }}</strong></td>
+                                    <td><span class="badge bg-primary">{{ "{:,}".format(entry.CVEs) }}</span></td>
+                                    <td>{{ "%.2f"|format(entry['Percentage Of CVEs']) }}%</td>
+                                    <td>
+                                        {% if entry['Growth YOY'] %}
+                                            {% if entry['Growth YOY'] > 0 %}
+                                                <span class="text-success">+{{ "%.1f"|format(entry['Growth YOY']) }}%</span>
+                                            {% else %}
+                                                <span class="text-danger">{{ "%.1f"|format(entry['Growth YOY']) }}%</span>
+                                            {% endif %}
+                                        {% else %}
+                                            <span class="text-muted">N/A</span>
+                                        {% endif %}
+                                    </td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
+    <!-- Top Attack Vectors -->
+    {% if summary and summary.top_attack_vectors %}
+    <div class="row mb-5">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h4><i class="fas fa-crosshairs me-2"></i>Top Attack Vectors</h4>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Attack Vector</th>
+                                    <th>Count</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for vector in summary.top_attack_vectors %}
+                                <tr>
+                                    <td>{{ vector['Attack Vector'] }}</td>
+                                    <td><span class="badge bg-danger">{{ "{:,}".format(vector.Count) }}</span></td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h4><i class="fas fa-info-circle me-2"></i>Data Sources & Notes</h4>
+                </div>
+                <div class="card-body">
+                    <h6>Data Sources:</h6>
+                    <ul>
+                        <li>National Vulnerability Database (NVD)</li>
+                        <li>MITRE CVE List</li>
+                        <li>CVSS v3.1 Scoring</li>
+                    </ul>
+                    
+                    <h6>Update Frequency:</h6>
+                    <p>Data is updated daily from NVD feeds.</p>
+                    
+                    <h6>Coverage:</h6>
+                    <p>Includes all published CVEs with available metadata.</p>
+                    
+                    <div class="alert alert-info mt-3">
+                        <small><i class="fas fa-info-circle me-1"></i>
+                        CVEs without CVSS scores are excluded from scoring statistics but included in count totals.
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
+    <!-- API Information -->
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h3><i class="fas fa-code me-2"></i>Data Access</h3>
+                </div>
+                <div class="card-body">
+                    <p>The underlying data and analysis scripts are available through our GitHub repository:</p>
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h6>Repository:</h6>
+                            <p>
+                                <a href="https://github.com/gamblin/cve.icu" class="btn btn-outline-dark">
+                                    <i class="fab fa-github me-1"></i>View on GitHub
+                                </a>
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <h6>Analysis Scripts:</h6>
+                            <p>All analysis can be reproduced using the included Python scripts.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="alert alert-warning">
+                        <small><i class="fas fa-exclamation-triangle me-1"></i>
+                        This data is provided for informational purposes only. Always verify CVE information through official sources.
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

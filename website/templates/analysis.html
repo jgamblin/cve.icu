@@ -1,0 +1,243 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h1><i class="fas fa-chart-line me-2"></i>{{ title }}</h1>
+                <a href="/" class="btn btn-outline-secondary">
+                    <i class="fas fa-arrow-left me-1"></i>Back to Dashboard
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Analysis Content -->
+    <div class="row">
+        <div class="col-12">
+            {% if analysis_type == 'growth' %}
+                <div class="alert alert-info">
+                    <i class="fas fa-info-circle me-2"></i>
+                    Analysis of CVE publication growth trends over time, showing yearly patterns and percentage distributions.
+                </div>
+                
+                {% if data.yearly is defined %}
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h3>Yearly Growth Statistics</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Year</th>
+                                        <th>CVEs</th>
+                                        <th>Percentage</th>
+                                        <th>Growth YOY</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for _, row in data.yearly.iterrows() %}
+                                    <tr>
+                                        <td><strong>{{ row.Published }}</strong></td>
+                                        <td><span class="badge bg-primary">{{ "{:,}".format(row.CVEs) }}</span></td>
+                                        <td>{{ "%.2f"|format(row['Percentage Of CVEs']) }}%</td>
+                                        <td>
+                                            {% if row['Growth YOY'] %}
+                                                {% if row['Growth YOY'] > 0 %}
+                                                    <span class="text-success">+{{ "%.1f"|format(row['Growth YOY']) }}%</span>
+                                                {% else %}
+                                                    <span class="text-danger">{{ "%.1f"|format(row['Growth YOY']) }}%</span>
+                                                {% endif %}
+                                            {% else %}
+                                                <span class="text-muted">N/A</span>
+                                            {% endif %}
+                                        </td>
+                                    </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+                
+            {% elif analysis_type == 'cvss' %}
+                <div class="alert alert-warning">
+                    <i class="fas fa-tachometer-alt me-2"></i>
+                    CVSS (Common Vulnerability Scoring System) score distribution and statistical analysis.
+                </div>
+                
+                {% if data.statistics is defined %}
+                <div class="row mb-4">
+                    <div class="col-md-3">
+                        <div class="card text-center bg-light">
+                            <div class="card-body">
+                                <h5>{{ "%.2f"|format(data.statistics.average) if data.statistics.average else 'N/A' }}</h5>
+                                <p class="card-text">Average Score</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card text-center bg-light">
+                            <div class="card-body">
+                                <h5>{{ "%.2f"|format(data.statistics.median) if data.statistics.median else 'N/A' }}</h5>
+                                <p class="card-text">Median Score</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card text-center bg-light">
+                            <div class="card-body">
+                                <h5>{{ data.statistics.most_common if data.statistics.most_common else 'N/A' }}</h5>
+                                <p class="card-text">Most Common</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card text-center bg-light">
+                            <div class="card-body">
+                                <h5>{{ "%.2f"|format(data.statistics.std) if data.statistics.std else 'N/A' }}</h5>
+                                <p class="card-text">Std Deviation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+                
+            {% elif analysis_type == 'attack-vectors' %}
+                <div class="alert alert-danger">
+                    <i class="fas fa-crosshairs me-2"></i>
+                    Analysis of attack vectors showing how vulnerabilities can be exploited.
+                </div>
+                
+            {% elif analysis_type == 'cwe' %}
+                <div class="alert alert-info">
+                    <i class="fas fa-bug me-2"></i>
+                    Common Weakness Enumeration (CWE) distribution showing the most frequent vulnerability types.
+                </div>
+                
+            {% elif analysis_type == 'cna' %}
+                <div class="alert alert-success">
+                    <i class="fas fa-users me-2"></i>
+                    CVE Numbering Authority (CNA) analysis showing organizations that assign CVE identifiers.
+                </div>
+            {% endif %}
+        </div>
+    </div>
+
+    <!-- Visualizations -->
+    {% if plots %}
+    <div class="row">
+        <div class="col-12">
+            <h2><i class="fas fa-chart-bar me-2"></i>Visualizations</h2>
+            {% for plot in plots %}
+            <div class="card mb-4">
+                <div class="card-body text-center">
+                    <img src="/static/images/analysis/{{ plot }}" 
+                         alt="{{ analysis_type|title }} Analysis Chart" 
+                         class="img-fluid rounded"
+                         style="max-width: 100%; height: auto;">
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    {% endif %}
+
+    <!-- Data Tables -->
+    {% if data %}
+    <div class="row">
+        <div class="col-12">
+            <h2><i class="fas fa-table me-2"></i>Data</h2>
+            
+            {% if analysis_type == 'attack-vectors' and data.counts is defined %}
+            <div class="card">
+                <div class="card-header">
+                    <h4>Attack Vector Distribution</h4>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Attack Vector</th>
+                                    <th>Count</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for _, row in data.counts.iterrows() %}
+                                <tr>
+                                    <td>{{ row['Attack Vector'] }}</td>
+                                    <td><span class="badge bg-primary">{{ "{:,}".format(row.Count) }}</span></td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+            
+            {% if analysis_type == 'cwe' and data.top_cwes is defined %}
+            <div class="card">
+                <div class="card-header">
+                    <h4>Top Common Weakness Enumerations</h4>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>CWE</th>
+                                    <th>Count</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for _, row in data.top_cwes.iterrows() %}
+                                <tr>
+                                    <td>{{ row.CWE }}</td>
+                                    <td><span class="badge bg-info">{{ "{:,}".format(row.counts) }}</span></td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+            
+            {% if analysis_type == 'cna' and data.top_assigners is defined %}
+            <div class="card">
+                <div class="card-header">
+                    <h4>Top CVE Numbering Authorities</h4>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Assigner</th>
+                                    <th>Count</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for _, row in data.top_assigners.iterrows() %}
+                                <tr>
+                                    <td>{{ row.Assigner }}</td>
+                                    <td><span class="badge bg-success">{{ "{:,}".format(row.counts) }}</span></td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}
