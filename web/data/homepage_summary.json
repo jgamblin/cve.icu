@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-05T17:14:32.378017Z",
-  "data_as_of": "2026-09-05T17:08:38.001662Z",
+  "generated_at": "2026-09-05T20:00:21.426437Z",
+  "data_as_of": "2026-09-05T19:53:43.910161Z",
   "data_age_hours": 0.0,
-  "source_last_run": "2026-09-05T17:02:53.166126+00:00",
+  "source_last_run": "2026-09-05T19:43:30.075912+00:00",
   "source_cve_count": 386879,
   "current_year": 2026,
   "yearly_summary": {
@@ -983,7 +983,7 @@
         "last_cve_year": 2026,
         "first_cve_date": "2024-02-20T12:52:56.753Z",
         "last_cve_date": "2026-09-04T17:19:23.975Z",
-        "days_since_last_cve": 0,
+        "days_since_last_cve": 1,
         "activity_status": "Active",
         "is_official": true,
         "cna_types": [
@@ -1152,7 +1152,7 @@
         "last_cve_year": 2026,
         "first_cve_date": "2008-10-14T21:00:00.000Z",
         "last_cve_date": "2026-08-26T19:57:04.287Z",
-        "days_since_last_cve": 9,
+        "days_since_last_cve": 10,
         "activity_status": "Active",
         "is_official": true,
         "cna_types": [
@@ -1244,7 +1244,7 @@
         "last_cve_year": 2026,
         "first_cve_date": "2009-10-13T10:00:00.000Z",
         "last_cve_date": "2026-09-03T17:35:22.220Z",
-        "days_since_last_cve": 1,
+        "days_since_last_cve": 2,
         "activity_status": "Active",
         "is_official": true,
         "cna_types": [
@@ -1291,7 +1291,7 @@
         "last_cve_year": 2026,
         "first_cve_date": "2010-01-20T16:00:00.000Z",
         "last_cve_date": "2026-08-25T19:24:55.493Z",
-        "days_since_last_cve": 10,
+        "days_since_last_cve": 11,
         "activity_status": "Active",
         "is_official": true,
         "cna_types": [
@@ -1419,7 +1419,7 @@
         "last_cve_year": 2026,
         "first_cve_date": "2011-05-16T17:00:00.000Z",
         "last_cve_date": "2026-09-03T19:26:14.928Z",
-        "days_since_last_cve": 1,
+        "days_since_last_cve": 2,
         "activity_status": "Active",
         "is_official": true,
         "cna_types": [

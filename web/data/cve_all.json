@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-05T17:14:32.362830Z",
-  "data_as_of": "2026-09-05T17:08:38.001662Z",
+  "generated_at": "2026-09-05T20:00:21.410236Z",
+  "data_as_of": "2026-09-05T19:53:43.910161Z",
   "data_age_hours": 0.0,
-  "source_last_run": "2026-09-05T17:02:53.166126+00:00",
+  "source_last_run": "2026-09-05T19:43:30.075912+00:00",
   "source_cve_count": 386879,
   "total_cves": 367905,
   "years_covered": 28,
