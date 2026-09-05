@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-05T19:57:31.113993",
+  "generated_at": "2026-09-05T22:44:46.065215",
   "source": "CVE V5 List (Authoritative)",
   "year": 2026,
   "total_cnas": 367,
@@ -172,10 +172,10 @@
     {
       "name": "VulDB",
       "assigner_org_id": "1af790b2-7ee1-4545-860a-a788eba489b5",
-      "count": 4532,
+      "count": 4534,
       "rank": 4,
       "first_cve_date": "2026-01-01T09:02:10.684Z",
-      "last_cve_date": "2026-09-04T21:00:07.481Z",
+      "last_cve_date": "2026-09-05T22:00:09.574Z",
       "years_active": 5,
       "first_cve_year": 2022,
       "last_cve_year": 2026,
@@ -186,7 +186,7 @@
       ],
       "severity_distribution": {
         "Medium": 2687,
-        "Critical": 660,
+        "Critical": 662,
         "High": 1102,
         "Low": 83
       },
@@ -194,7 +194,7 @@
         "CWE-74": 1275,
         "CWE-89": 921,
         "CWE-119": 744,
-        "CWE-77": 572,
+        "CWE-77": 574,
         "CWE-94": 458
       },
       "kev_count": 0,
@@ -215,7 +215,7 @@
         ],
         [
           "CWE-77",
-          572
+          574
         ],
         [
           "CWE-94",
@@ -1357,10 +1357,64 @@
       ]
     },
     {
+      "name": "CERT-PL",
+      "assigner_org_id": "4bb8329e-dd38-46c1-aafb-9bf32bcb93c6",
+      "count": 255,
+      "rank": 26,
+      "first_cve_date": "2026-01-07T13:00:46.715Z",
+      "last_cve_date": "2026-09-05T20:00:59.107Z",
+      "years_active": 4,
+      "first_cve_year": 2023,
+      "last_cve_year": 2026,
+      "is_official": true,
+      "activity_status": "Active",
+      "cna_types": [
+        "CERT"
+      ],
+      "severity_distribution": {
+        "High": 68,
+        "Medium": 143,
+        "Critical": 29,
+        "Low": 15
+      },
+      "top_cwe_types": {
+        "CWE-79": 39,
+        "CWE-89": 18,
+        "CWE-22": 17,
+        "CWE-78": 12,
+        "CWE-434": 10
+      },
+      "kev_count": 0,
+      "epss_high_count": 0,
+      "epss_elevated_count": 0,
+      "top_cwes": [
+        [
+          "CWE-79",
+          39
+        ],
+        [
+          "CWE-89",
+          18
+        ],
+        [
+          "CWE-22",
+          17
+        ],
+        [
+          "CWE-78",
+          12
+        ],
+        [
+          "CWE-434",
+          10
+        ]
+      ]
+    },
+    {
       "name": "TR-CERT",
       "assigner_org_id": "ca940d4e-fea4-4aa2-9a58-591a58b1ce21",
       "count": 254,
-      "rank": 26,
+      "rank": 27,
       "first_cve_date": "2026-01-22T09:10:16.989Z",
       "last_cve_date": "2026-09-04T14:08:37.890Z",
       "years_active": 6,
@@ -1407,60 +1461,6 @@
         [
           "CWE-862",
           15
-        ]
-      ]
-    },
-    {
-      "name": "CERT-PL",
-      "assigner_org_id": "4bb8329e-dd38-46c1-aafb-9bf32bcb93c6",
-      "count": 249,
-      "rank": 27,
-      "first_cve_date": "2026-01-07T13:00:46.715Z",
-      "last_cve_date": "2026-09-03T10:09:33.690Z",
-      "years_active": 4,
-      "first_cve_year": 2023,
-      "last_cve_year": 2026,
-      "is_official": true,
-      "activity_status": "Active",
-      "cna_types": [
-        "CERT"
-      ],
-      "severity_distribution": {
-        "High": 66,
-        "Medium": 141,
-        "Critical": 27,
-        "Low": 15
-      },
-      "top_cwe_types": {
-        "CWE-79": 39,
-        "CWE-89": 18,
-        "CWE-22": 16,
-        "CWE-78": 12,
-        "CWE-434": 10
-      },
-      "kev_count": 0,
-      "epss_high_count": 0,
-      "epss_elevated_count": 0,
-      "top_cwes": [
-        [
-          "CWE-79",
-          39
-        ],
-        [
-          "CWE-89",
-          18
-        ],
-        [
-          "CWE-22",
-          16
-        ],
-        [
-          "CWE-78",
-          12
-        ],
-        [
-          "CWE-434",
-          10
         ]
       ]
     },
@@ -17967,10 +17967,10 @@
     {
       "name": "VulDB",
       "assigner_org_id": "1af790b2-7ee1-4545-860a-a788eba489b5",
-      "count": 4532,
+      "count": 4534,
       "rank": 4,
       "first_cve_date": "2026-01-01T09:02:10.684Z",
-      "last_cve_date": "2026-09-04T21:00:07.481Z",
+      "last_cve_date": "2026-09-05T22:00:09.574Z",
       "years_active": 5,
       "first_cve_year": 2022,
       "last_cve_year": 2026,
@@ -17981,7 +17981,7 @@
       ],
       "severity_distribution": {
         "Medium": 2687,
-        "Critical": 660,
+        "Critical": 662,
         "High": 1102,
         "Low": 83
       },
@@ -17989,7 +17989,7 @@
         "CWE-74": 1275,
         "CWE-89": 921,
         "CWE-119": 744,
-        "CWE-77": 572,
+        "CWE-77": 574,
         "CWE-94": 458
       },
       "kev_count": 0,
@@ -18010,7 +18010,7 @@
         ],
         [
           "CWE-77",
-          572
+          574
         ],
         [
           "CWE-94",
@@ -19152,10 +19152,64 @@
       ]
     },
     {
+      "name": "CERT-PL",
+      "assigner_org_id": "4bb8329e-dd38-46c1-aafb-9bf32bcb93c6",
+      "count": 255,
+      "rank": 26,
+      "first_cve_date": "2026-01-07T13:00:46.715Z",
+      "last_cve_date": "2026-09-05T20:00:59.107Z",
+      "years_active": 4,
+      "first_cve_year": 2023,
+      "last_cve_year": 2026,
+      "is_official": true,
+      "activity_status": "Active",
+      "cna_types": [
+        "CERT"
+      ],
+      "severity_distribution": {
+        "High": 68,
+        "Medium": 143,
+        "Critical": 29,
+        "Low": 15
+      },
+      "top_cwe_types": {
+        "CWE-79": 39,
+        "CWE-89": 18,
+        "CWE-22": 17,
+        "CWE-78": 12,
+        "CWE-434": 10
+      },
+      "kev_count": 0,
+      "epss_high_count": 0,
+      "epss_elevated_count": 0,
+      "top_cwes": [
+        [
+          "CWE-79",
+          39
+        ],
+        [
+          "CWE-89",
+          18
+        ],
+        [
+          "CWE-22",
+          17
+        ],
+        [
+          "CWE-78",
+          12
+        ],
+        [
+          "CWE-434",
+          10
+        ]
+      ]
+    },
+    {
       "name": "TR-CERT",
       "assigner_org_id": "ca940d4e-fea4-4aa2-9a58-591a58b1ce21",
       "count": 254,
-      "rank": 26,
+      "rank": 27,
       "first_cve_date": "2026-01-22T09:10:16.989Z",
       "last_cve_date": "2026-09-04T14:08:37.890Z",
       "years_active": 6,
@@ -19202,60 +19256,6 @@
         [
           "CWE-862",
           15
-        ]
-      ]
-    },
-    {
-      "name": "CERT-PL",
-      "assigner_org_id": "4bb8329e-dd38-46c1-aafb-9bf32bcb93c6",
-      "count": 249,
-      "rank": 27,
-      "first_cve_date": "2026-01-07T13:00:46.715Z",
-      "last_cve_date": "2026-09-03T10:09:33.690Z",
-      "years_active": 4,
-      "first_cve_year": 2023,
-      "last_cve_year": 2026,
-      "is_official": true,
-      "activity_status": "Active",
-      "cna_types": [
-        "CERT"
-      ],
-      "severity_distribution": {
-        "High": 66,
-        "Medium": 141,
-        "Critical": 27,
-        "Low": 15
-      },
-      "top_cwe_types": {
-        "CWE-79": 39,
-        "CWE-89": 18,
-        "CWE-22": 16,
-        "CWE-78": 12,
-        "CWE-434": 10
-      },
-      "kev_count": 0,
-      "epss_high_count": 0,
-      "epss_elevated_count": 0,
-      "top_cwes": [
-        [
-          "CWE-79",
-          39
-        ],
-        [
-          "CWE-89",
-          18
-        ],
-        [
-          "CWE-22",
-          16
-        ],
-        [
-          "CWE-78",
-          12
-        ],
-        [
-          "CWE-434",
-          10
         ]
       ]
     },

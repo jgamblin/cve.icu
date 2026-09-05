@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-09-05T20:00:21.410236Z",
-  "data_as_of": "2026-09-05T19:53:43.910161Z",
+  "generated_at": "2026-09-05T22:47:31.314414Z",
+  "data_as_of": "2026-09-05T22:40:39.729424Z",
   "data_age_hours": 0.0,
-  "source_last_run": "2026-09-05T19:43:30.075912+00:00",
-  "source_cve_count": 386879,
-  "total_cves": 367905,
+  "source_last_run": "2026-09-05T22:30:52.256982+00:00",
+  "source_cve_count": 386895,
+  "total_cves": 367921,
   "years_covered": 28,
   "current_year": 2026,
-  "current_year_cves": 59702,
+  "current_year_cves": 59718,
   "peak_year": 2026,
-  "peak_count": 59702,
+  "peak_count": 59718,
   "yoy_growth_rate": 24.0,
   "excluded_pre_1999": 679,
   "yearly_trend": [
@@ -123,7 +123,7 @@
     },
     {
       "year": 2026,
-      "count": 59702
+      "count": 59718
     }
   ]
 }

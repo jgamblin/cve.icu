@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-05T20:00:21.426437Z",
-  "data_as_of": "2026-09-05T19:53:43.910161Z",
+  "generated_at": "2026-09-05T22:47:31.334528Z",
+  "data_as_of": "2026-09-05T22:40:39.729424Z",
   "data_age_hours": 0.0,
-  "source_last_run": "2026-09-05T19:43:30.075912+00:00",
-  "source_cve_count": 386879,
+  "source_last_run": "2026-09-05T22:30:52.256982+00:00",
+  "source_cve_count": 386895,
   "current_year": 2026,
   "yearly_summary": {
     "years": {
@@ -117,7 +117,7 @@
       },
       "2026": {
         "year": 2026,
-        "total_cves": 59702
+        "total_cves": 59718
       }
     }
   },
@@ -341,15 +341,15 @@
       },
       {
         "year": 2026,
-        "cves": 59702,
-        "growth_rate": 86.8,
-        "growth_absolute": 27743,
+        "cves": 59718,
+        "growth_rate": 86.9,
+        "growth_absolute": 27759,
         "is_ytd": true,
-        "projected_full_year": 87867,
+        "projected_full_year": 87891,
         "ytd_vs_prev_full": 24.0,
-        "ytd_vs_prev_ytd": 86.8,
+        "ytd_vs_prev_ytd": 86.9,
         "prev_year_ytd_actual": 31959,
-        "growth_rate_3yr_avg": 86.8
+        "growth_rate_3yr_avg": 86.9
       }
     ]
   },
@@ -522,7 +522,7 @@
         "9.8": 20380,
         "8.2": 2266,
         "7.8": 20124,
-        "5.5": 15962,
+        "5.5": 15966,
         "7.1": 6648,
         "8.8": 17902,
         "5.3": 10231,
@@ -538,8 +538,8 @@
         "4.7": 2078,
         "7.4": 1192,
         "4.5": 236,
-        "4.3": 11124,
-        "5.0": 843,
+        "4.3": 11125,
+        "5.0": 844,
         "6.3": 5804,
         "5.6": 416,
         "8.1": 5204,
@@ -585,7 +585,7 @@
         "2.8": 98,
         "9.4": 264,
         "5.2": 167,
-        "8.7": 547,
+        "8.7": 548,
         "2.1": 17,
         "8.5": 866,
         "2.2": 118,
@@ -604,19 +604,19 @@
       },
       "v4.0": {
         "7.1": 1370,
-        "8.7": 2969,
+        "8.7": 2970,
         "10.0": 343,
         "7.3": 482,
         "9.3": 1750,
         "8.6": 997,
-        "6.9": 3186,
-        "5.9": 253,
+        "6.9": 3188,
+        "5.9": 254,
         "5.1": 2094,
-        "8.8": 706,
+        "8.8": 707,
         "5.3": 3229,
         "2.1": 2743,
-        "9.2": 394,
-        "6.3": 703,
+        "9.2": 396,
+        "6.3": 704,
         "5.5": 2330,
         "5.2": 78,
         "9.1": 93,
@@ -634,7 +634,7 @@
         "8.9": 347,
         "5.7": 169,
         "7.0": 375,
-        "7.7": 368,
+        "7.7": 369,
         "6.7": 122,
         "6.8": 392,
         "4.6": 230,
@@ -762,7 +762,7 @@
       {
         "id": "787",
         "name": "CWE-787: Out-of-bounds Write",
-        "count": 17099,
+        "count": 17100,
         "description": "Out-of-bounds Write"
       },
       {
@@ -780,7 +780,7 @@
       {
         "id": "22",
         "name": "CWE-22: Path Traversal",
-        "count": 11419,
+        "count": 11420,
         "description": "Path Traversal"
       },
       {
@@ -792,7 +792,7 @@
       {
         "id": "125",
         "name": "CWE-125: Out-of-bounds Read",
-        "count": 10969,
+        "count": 10971,
         "description": "Out-of-bounds Read"
       },
       {
@@ -943,12 +943,12 @@
       {
         "name": "VulDB",
         "assigner_org_id": "1af790b2-7ee1-4545-860a-a788eba489b5",
-        "count": 16148,
+        "count": 16150,
         "years_active": 5,
         "first_cve_year": 2022,
         "last_cve_year": 2026,
         "first_cve_date": "2022-03-28T18:00:15.000Z",
-        "last_cve_date": "2026-09-04T21:00:07.481Z",
+        "last_cve_date": "2026-09-05T22:00:09.574Z",
         "days_since_last_cve": 0,
         "activity_status": "Active",
         "is_official": true,
@@ -960,7 +960,7 @@
           "2024": 2930,
           "2022": 854,
           "2025": 5901,
-          "2026": 4532
+          "2026": 4534
         },
         "years_active_list": [
           2022,
@@ -1066,7 +1066,7 @@
         "last_cve_year": 2026,
         "first_cve_date": "2005-02-07T05:00:00.000Z",
         "last_cve_date": "2026-09-04T21:02:00.079Z",
-        "days_since_last_cve": 0,
+        "days_since_last_cve": 1,
         "activity_status": "Active",
         "is_official": true,
         "cna_types": [
@@ -1540,7 +1540,7 @@
         "last_cve_year": 2026,
         "first_cve_date": "2012-05-09T10:00:00.000Z",
         "last_cve_date": "2026-09-04T21:19:02.213Z",
-        "days_since_last_cve": 0,
+        "days_since_last_cve": 1,
         "activity_status": "Active",
         "is_official": true,
         "cna_types": [
@@ -1761,7 +1761,7 @@
         "last_cve_year": 2026,
         "first_cve_date": "2013-01-13T20:00:00.000Z",
         "last_cve_date": "2026-09-01T21:33:07.987Z",
-        "days_since_last_cve": 3,
+        "days_since_last_cve": 4,
         "activity_status": "Active",
         "is_official": true,
         "cna_types": [
@@ -1844,7 +1844,7 @@
         "last_cve_year": 2026,
         "first_cve_date": "2016-10-28T14:00:00.000Z",
         "last_cve_date": "2026-06-25T21:46:00.057Z",
-        "days_since_last_cve": 71,
+        "days_since_last_cve": 72,
         "activity_status": "Active",
         "is_official": true,
         "cna_types": [
@@ -3530,9 +3530,9 @@
       },
       {
         "date": "2026-09-05",
-        "value": 124,
-        "avg_cvss": 6.9,
-        "cvss_count": 83
+        "value": 140,
+        "avg_cvss": 6.8,
+        "cvss_count": 90
       }
     ]
   }
