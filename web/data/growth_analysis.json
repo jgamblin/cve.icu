@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-06T17:39:34.477077",
+  "generated_at": "2026-09-06T20:05:19.928441",
   "growth_data": [
     {
       "year": 1999,
@@ -219,11 +219,11 @@
     },
     {
       "year": 2026,
-      "cves": 59784,
+      "cves": 59789,
       "growth_rate": 86.7,
-      "growth_absolute": 27763,
+      "growth_absolute": 27768,
       "is_ytd": true,
-      "projected_full_year": 87635,
+      "projected_full_year": 87642,
       "ytd_vs_prev_full": 24.2,
       "ytd_vs_prev_ytd": 86.7,
       "prev_year_ytd_actual": 32021,
@@ -249,11 +249,11 @@
   },
   "current_year_ytd": {
     "year": 2026,
-    "cves": 59784,
+    "cves": 59789,
     "growth_rate": 86.7,
-    "growth_absolute": 27763,
+    "growth_absolute": 27768,
     "is_ytd": true,
-    "projected_full_year": 87635,
+    "projected_full_year": 87642,
     "ytd_vs_prev_full": 24.2,
     "ytd_vs_prev_ytd": 86.7,
     "prev_year_ytd_actual": 32021,
