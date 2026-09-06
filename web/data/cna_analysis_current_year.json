@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-06T02:44:10.527359",
+  "generated_at": "2026-09-06T07:40:04.548184",
   "source": "CVE V5 List (Authoritative)",
   "year": 2026,
   "total_cnas": 367,
@@ -172,10 +172,10 @@
     {
       "name": "VulDB",
       "assigner_org_id": "1af790b2-7ee1-4545-860a-a788eba489b5",
-      "count": 4541,
+      "count": 4550,
       "rank": 4,
       "first_cve_date": "2026-01-01T09:02:10.684Z",
-      "last_cve_date": "2026-09-06T02:30:07.476Z",
+      "last_cve_date": "2026-09-06T06:15:09.435Z",
       "years_active": 5,
       "first_cve_year": 2022,
       "last_cve_year": 2026,
@@ -185,16 +185,16 @@
         "Security Researcher"
       ],
       "severity_distribution": {
-        "Medium": 2688,
-        "Critical": 665,
-        "High": 1105,
+        "Medium": 2692,
+        "Critical": 668,
+        "High": 1107,
         "Low": 83
       },
       "top_cwe_types": {
-        "CWE-74": 1278,
-        "CWE-89": 924,
-        "CWE-119": 744,
-        "CWE-77": 576,
+        "CWE-74": 1284,
+        "CWE-89": 930,
+        "CWE-119": 746,
+        "CWE-77": 577,
         "CWE-94": 458
       },
       "kev_count": 0,
@@ -203,19 +203,19 @@
       "top_cwes": [
         [
           "CWE-74",
-          1278
+          1284
         ],
         [
           "CWE-89",
-          924
+          930
         ],
         [
           "CWE-119",
-          744
+          746
         ],
         [
           "CWE-77",
-          576
+          577
         ],
         [
           "CWE-94",
@@ -550,10 +550,10 @@
     {
       "name": "WPScan",
       "assigner_org_id": "1bfdd5d7-9bf6-4a53-96ea-42e2716d7a81",
-      "count": 1019,
+      "count": 1025,
       "rank": 11,
       "first_cve_date": "2026-01-01T06:00:03.091Z",
-      "last_cve_date": "2026-09-05T06:00:10.646Z",
+      "last_cve_date": "2026-09-06T06:00:04.787Z",
       "years_active": 6,
       "first_cve_year": 2021,
       "last_cve_year": 2026,
@@ -569,8 +569,8 @@
         "Critical": 88
       },
       "top_cwe_types": {
-        "CWE-79": 183,
-        "CWE-862": 119,
+        "CWE-79": 185,
+        "CWE-862": 121,
         "CWE-639": 113,
         "CWE-200": 106,
         "CWE-287": 76
@@ -581,11 +581,11 @@
       "top_cwes": [
         [
           "CWE-79",
-          183
+          185
         ],
         [
           "CWE-862",
-          119
+          121
         ],
         [
           "CWE-639",
@@ -17973,10 +17973,10 @@
     {
       "name": "VulDB",
       "assigner_org_id": "1af790b2-7ee1-4545-860a-a788eba489b5",
-      "count": 4541,
+      "count": 4550,
       "rank": 4,
       "first_cve_date": "2026-01-01T09:02:10.684Z",
-      "last_cve_date": "2026-09-06T02:30:07.476Z",
+      "last_cve_date": "2026-09-06T06:15:09.435Z",
       "years_active": 5,
       "first_cve_year": 2022,
       "last_cve_year": 2026,
@@ -17986,16 +17986,16 @@
         "Security Researcher"
       ],
       "severity_distribution": {
-        "Medium": 2688,
-        "Critical": 665,
-        "High": 1105,
+        "Medium": 2692,
+        "Critical": 668,
+        "High": 1107,
         "Low": 83
       },
       "top_cwe_types": {
-        "CWE-74": 1278,
-        "CWE-89": 924,
-        "CWE-119": 744,
-        "CWE-77": 576,
+        "CWE-74": 1284,
+        "CWE-89": 930,
+        "CWE-119": 746,
+        "CWE-77": 577,
         "CWE-94": 458
       },
       "kev_count": 0,
@@ -18004,19 +18004,19 @@
       "top_cwes": [
         [
           "CWE-74",
-          1278
+          1284
         ],
         [
           "CWE-89",
-          924
+          930
         ],
         [
           "CWE-119",
-          744
+          746
         ],
         [
           "CWE-77",
-          576
+          577
         ],
         [
           "CWE-94",
@@ -18351,10 +18351,10 @@
     {
       "name": "WPScan",
       "assigner_org_id": "1bfdd5d7-9bf6-4a53-96ea-42e2716d7a81",
-      "count": 1019,
+      "count": 1025,
       "rank": 11,
       "first_cve_date": "2026-01-01T06:00:03.091Z",
-      "last_cve_date": "2026-09-05T06:00:10.646Z",
+      "last_cve_date": "2026-09-06T06:00:04.787Z",
       "years_active": 6,
       "first_cve_year": 2021,
       "last_cve_year": 2026,
@@ -18370,8 +18370,8 @@
         "Critical": 88
       },
       "top_cwe_types": {
-        "CWE-79": 183,
-        "CWE-862": 119,
+        "CWE-79": 185,
+        "CWE-862": 121,
         "CWE-639": 113,
         "CWE-200": 106,
         "CWE-287": 76
@@ -18382,11 +18382,11 @@
       "top_cwes": [
         [
           "CWE-79",
-          183
+          185
         ],
         [
           "CWE-862",
-          119
+          121
         ],
         [
           "CWE-639",

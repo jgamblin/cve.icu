@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-06T02:44:57.415925",
+  "generated_at": "2026-09-06T07:40:48.648921",
   "year": 2026,
-  "total_cves_with_cwe": 38351,
+  "total_cves_with_cwe": 38376,
   "total_unique_cwes": 20,
   "top_cwes": [
     {
@@ -13,7 +13,7 @@
     },
     {
       "cwe": "CWE-89",
-      "count": 3250,
+      "count": 3258,
       "id": "89",
       "description": "SQL Injection",
       "name": "CWE-89: SQL Injection"
@@ -48,7 +48,7 @@
     },
     {
       "cwe": "CWE-78",
-      "count": 1643,
+      "count": 1646,
       "id": "78",
       "description": "OS Command Injection",
       "name": "CWE-78: OS Command Injection"
@@ -90,7 +90,7 @@
     },
     {
       "cwe": "CWE-74",
-      "count": 1420,
+      "count": 1428,
       "id": "74",
       "description": "CWE-74",
       "name": "CWE-74"
@@ -111,7 +111,7 @@
     },
     {
       "cwe": "CWE-639",
-      "count": 1329,
+      "count": 1330,
       "id": "639",
       "description": "CWE-639",
       "name": "CWE-639"
@@ -132,14 +132,14 @@
     },
     {
       "cwe": "CWE-77",
-      "count": 983,
+      "count": 986,
       "id": "77",
       "description": "CWE-77",
       "name": "CWE-77"
     },
     {
       "cwe": "CWE-119",
-      "count": 979,
+      "count": 981,
       "id": "119",
       "description": "Buffer Overflow",
       "name": "CWE-119: Buffer Overflow"
@@ -155,7 +155,7 @@
     },
     {
       "cwe": "CWE-89",
-      "count": 3250,
+      "count": 3258,
       "id": "89",
       "description": "SQL Injection",
       "name": "CWE-89: SQL Injection"
@@ -190,7 +190,7 @@
     },
     {
       "cwe": "CWE-78",
-      "count": 1643,
+      "count": 1646,
       "id": "78",
       "description": "OS Command Injection",
       "name": "CWE-78: OS Command Injection"
@@ -232,7 +232,7 @@
     },
     {
       "cwe": "CWE-74",
-      "count": 1420,
+      "count": 1428,
       "id": "74",
       "description": "CWE-74",
       "name": "CWE-74"
@@ -253,7 +253,7 @@
     },
     {
       "cwe": "CWE-639",
-      "count": 1329,
+      "count": 1330,
       "id": "639",
       "description": "CWE-639",
       "name": "CWE-639"
@@ -274,14 +274,14 @@
     },
     {
       "cwe": "CWE-77",
-      "count": 983,
+      "count": 986,
       "id": "77",
       "description": "CWE-77",
       "name": "CWE-77"
     },
     {
       "cwe": "CWE-119",
-      "count": 979,
+      "count": 981,
       "id": "119",
       "description": "Buffer Overflow",
       "name": "CWE-119: Buffer Overflow"
