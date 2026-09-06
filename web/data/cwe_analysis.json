@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-09-06T07:40:48.648422",
-  "total_cves_with_cwe": 264126,
+  "generated_at": "2026-09-06T12:42:23.967430",
+  "total_cves_with_cwe": 264185,
   "total_unique_cwes": 69,
   "top_cwes": [
     {
       "id": "79",
       "name": "CWE-79: Cross-site Scripting (XSS)",
-      "count": 53233,
+      "count": 53249,
       "description": "Cross-site Scripting (XSS)"
     },
     {
       "id": "89",
       "name": "CWE-89: SQL Injection",
-      "count": 24198,
+      "count": 24208,
       "description": "SQL Injection"
     },
     {
@@ -36,13 +36,13 @@
     {
       "id": "22",
       "name": "CWE-22: Path Traversal",
-      "count": 11420,
+      "count": 11422,
       "description": "Path Traversal"
     },
     {
       "id": "200",
       "name": "CWE-200: Information Exposure",
-      "count": 11195,
+      "count": 11201,
       "description": "Information Exposure"
     },
     {
@@ -54,7 +54,7 @@
     {
       "id": "862",
       "name": "CWE-862: Missing Authorization",
-      "count": 10349,
+      "count": 10355,
       "description": "Missing Authorization"
     },
     {
@@ -78,13 +78,13 @@
     {
       "id": "284",
       "name": "CWE-284",
-      "count": 6957,
+      "count": 6960,
       "description": "CWE-284"
     },
     {
       "id": "94",
       "name": "CWE-94: Code Injection",
-      "count": 6379,
+      "count": 6380,
       "description": "Code Injection"
     },
     {
@@ -114,7 +114,7 @@
     {
       "id": "74",
       "name": "CWE-74",
-      "count": 4001,
+      "count": 4011,
       "description": "CWE-74"
     },
     {
@@ -174,7 +174,7 @@
     {
       "id": "918",
       "name": "CWE-918",
-      "count": 1529,
+      "count": 1530,
       "description": "CWE-918"
     },
     {
@@ -186,7 +186,7 @@
     {
       "id": "639",
       "name": "CWE-639",
-      "count": 1330,
+      "count": 1334,
       "description": "CWE-639"
     },
     {
@@ -422,13 +422,13 @@
     {
       "id": "79",
       "name": "CWE-79: Cross-site Scripting (XSS)",
-      "count": 53233,
+      "count": 53249,
       "description": "Cross-site Scripting (XSS)"
     },
     {
       "id": "89",
       "name": "CWE-89: SQL Injection",
-      "count": 24198,
+      "count": 24208,
       "description": "SQL Injection"
     },
     {
@@ -452,13 +452,13 @@
     {
       "id": "22",
       "name": "CWE-22: Path Traversal",
-      "count": 11420,
+      "count": 11422,
       "description": "Path Traversal"
     },
     {
       "id": "200",
       "name": "CWE-200: Information Exposure",
-      "count": 11195,
+      "count": 11201,
       "description": "Information Exposure"
     },
     {
@@ -470,7 +470,7 @@
     {
       "id": "862",
       "name": "CWE-862: Missing Authorization",
-      "count": 10349,
+      "count": 10355,
       "description": "Missing Authorization"
     },
     {
@@ -494,13 +494,13 @@
     {
       "id": "284",
       "name": "CWE-284",
-      "count": 6957,
+      "count": 6960,
       "description": "CWE-284"
     },
     {
       "id": "94",
       "name": "CWE-94: Code Injection",
-      "count": 6379,
+      "count": 6380,
       "description": "Code Injection"
     },
     {
@@ -530,7 +530,7 @@
     {
       "id": "74",
       "name": "CWE-74",
-      "count": 4001,
+      "count": 4011,
       "description": "CWE-74"
     },
     {

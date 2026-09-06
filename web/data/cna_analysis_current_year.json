@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-06T07:40:04.548184",
+  "generated_at": "2026-09-06T12:41:36.961065",
   "source": "CVE V5 List (Authoritative)",
   "year": 2026,
   "total_cnas": 367,
@@ -65,10 +65,10 @@
     {
       "name": "VulnCheck",
       "assigner_org_id": "83251b91-4cc7-4094-a5c7-464a1b83ea10",
-      "count": 5533,
+      "count": 5547,
       "rank": 2,
       "first_cve_date": "2026-01-03T21:18:51.053Z",
-      "last_cve_date": "2026-09-05T12:09:10.147Z",
+      "last_cve_date": "2026-09-06T12:00:30.969Z",
       "years_active": 4,
       "first_cve_year": 2023,
       "last_cve_year": 2026,
@@ -79,15 +79,15 @@
       ],
       "severity_distribution": {
         "Critical": 817,
-        "Medium": 1758,
-        "High": 2904,
+        "Medium": 1765,
+        "High": 2911,
         "Low": 54
       },
       "top_cwe_types": {
         "CWE-79": 619,
         "CWE-89": 445,
-        "CWE-22": 293,
-        "CWE-862": 264,
+        "CWE-22": 295,
+        "CWE-862": 265,
         "CWE-863": 216
       },
       "kev_count": 6,
@@ -104,11 +104,11 @@
         ],
         [
           "CWE-22",
-          293
+          295
         ],
         [
           "CWE-862",
-          264
+          265
         ],
         [
           "CWE-863",
@@ -172,10 +172,10 @@
     {
       "name": "VulDB",
       "assigner_org_id": "1af790b2-7ee1-4545-860a-a788eba489b5",
-      "count": 4550,
+      "count": 4561,
       "rank": 4,
       "first_cve_date": "2026-01-01T09:02:10.684Z",
-      "last_cve_date": "2026-09-06T06:15:09.435Z",
+      "last_cve_date": "2026-09-06T11:15:10.347Z",
       "years_active": 5,
       "first_cve_year": 2022,
       "last_cve_year": 2026,
@@ -185,17 +185,17 @@
         "Security Researcher"
       ],
       "severity_distribution": {
-        "Medium": 2692,
+        "Medium": 2698,
         "Critical": 668,
-        "High": 1107,
+        "High": 1112,
         "Low": 83
       },
       "top_cwe_types": {
-        "CWE-74": 1284,
-        "CWE-89": 930,
+        "CWE-74": 1290,
+        "CWE-89": 936,
         "CWE-119": 746,
         "CWE-77": 577,
-        "CWE-94": 458
+        "CWE-94": 459
       },
       "kev_count": 0,
       "epss_high_count": 0,
@@ -203,11 +203,11 @@
       "top_cwes": [
         [
           "CWE-74",
-          1284
+          1290
         ],
         [
           "CWE-89",
-          930
+          936
         ],
         [
           "CWE-119",
@@ -219,7 +219,7 @@
         ],
         [
           "CWE-94",
-          458
+          459
         ]
       ]
     },
@@ -550,10 +550,10 @@
     {
       "name": "WPScan",
       "assigner_org_id": "1bfdd5d7-9bf6-4a53-96ea-42e2716d7a81",
-      "count": 1025,
+      "count": 1029,
       "rank": 11,
       "first_cve_date": "2026-01-01T06:00:03.091Z",
-      "last_cve_date": "2026-09-06T06:00:04.787Z",
+      "last_cve_date": "2026-09-06T09:36:35.180Z",
       "years_active": 6,
       "first_cve_year": 2021,
       "last_cve_year": 2026,
@@ -563,10 +563,10 @@
         "Vendor"
       ],
       "severity_distribution": {
-        "Low": 83,
-        "Medium": 531,
-        "High": 283,
-        "Critical": 88
+        "Low": 91,
+        "Medium": 558,
+        "High": 291,
+        "Critical": 89
       },
       "top_cwe_types": {
         "CWE-79": 185,
@@ -4791,10 +4791,64 @@
       ]
     },
     {
+      "name": "JFROG",
+      "assigner_org_id": "48a46f29-ae42-4e1d-90dd-c1676c1e5e6d",
+      "count": 55,
+      "rank": 90,
+      "first_cve_date": "2026-01-04T09:17:34.468Z",
+      "last_cve_date": "2026-09-06T11:20:11.759Z",
+      "years_active": 6,
+      "first_cve_year": 2021,
+      "last_cve_year": 2026,
+      "is_official": true,
+      "activity_status": "Active",
+      "cna_types": [
+        "Vendor"
+      ],
+      "severity_distribution": {
+        "Medium": 27,
+        "High": 24,
+        "Critical": 2,
+        "Low": 2
+      },
+      "top_cwe_types": {
+        "CWE-862": 14,
+        "CWE-918": 8,
+        "CWE-22": 5,
+        "CWE-287": 4,
+        "CWE-79": 3
+      },
+      "kev_count": 2,
+      "epss_high_count": 0,
+      "epss_elevated_count": 1,
+      "top_cwes": [
+        [
+          "CWE-862",
+          14
+        ],
+        [
+          "CWE-918",
+          8
+        ],
+        [
+          "CWE-22",
+          5
+        ],
+        [
+          "CWE-287",
+          4
+        ],
+        [
+          "CWE-79",
+          3
+        ]
+      ]
+    },
+    {
       "name": "Nozomi",
       "assigner_org_id": "bec8025f-a851-46e5-b3a3-058e6b0aa23c",
       "count": 54,
-      "rank": 90,
+      "rank": 91,
       "first_cve_date": "2026-02-20T16:48:34.348Z",
       "last_cve_date": "2026-08-14T15:04:47.414Z",
       "years_active": 6,
@@ -4839,60 +4893,6 @@
         ],
         [
           "CWE-22",
-          3
-        ]
-      ]
-    },
-    {
-      "name": "JFROG",
-      "assigner_org_id": "48a46f29-ae42-4e1d-90dd-c1676c1e5e6d",
-      "count": 54,
-      "rank": 91,
-      "first_cve_date": "2026-01-04T09:17:34.468Z",
-      "last_cve_date": "2026-08-30T13:44:34.109Z",
-      "years_active": 6,
-      "first_cve_year": 2021,
-      "last_cve_year": 2026,
-      "is_official": true,
-      "activity_status": "Active",
-      "cna_types": [
-        "Vendor"
-      ],
-      "severity_distribution": {
-        "Medium": 27,
-        "High": 23,
-        "Critical": 2,
-        "Low": 2
-      },
-      "top_cwe_types": {
-        "CWE-862": 14,
-        "CWE-918": 8,
-        "CWE-22": 5,
-        "CWE-287": 4,
-        "CWE-79": 3
-      },
-      "kev_count": 2,
-      "epss_high_count": 0,
-      "epss_elevated_count": 1,
-      "top_cwes": [
-        [
-          "CWE-862",
-          14
-        ],
-        [
-          "CWE-918",
-          8
-        ],
-        [
-          "CWE-22",
-          5
-        ],
-        [
-          "CWE-287",
-          4
-        ],
-        [
-          "CWE-79",
           3
         ]
       ]
@@ -17866,10 +17866,10 @@
     {
       "name": "VulnCheck",
       "assigner_org_id": "83251b91-4cc7-4094-a5c7-464a1b83ea10",
-      "count": 5533,
+      "count": 5547,
       "rank": 2,
       "first_cve_date": "2026-01-03T21:18:51.053Z",
-      "last_cve_date": "2026-09-05T12:09:10.147Z",
+      "last_cve_date": "2026-09-06T12:00:30.969Z",
       "years_active": 4,
       "first_cve_year": 2023,
       "last_cve_year": 2026,
@@ -17880,15 +17880,15 @@
       ],
       "severity_distribution": {
         "Critical": 817,
-        "Medium": 1758,
-        "High": 2904,
+        "Medium": 1765,
+        "High": 2911,
         "Low": 54
       },
       "top_cwe_types": {
         "CWE-79": 619,
         "CWE-89": 445,
-        "CWE-22": 293,
-        "CWE-862": 264,
+        "CWE-22": 295,
+        "CWE-862": 265,
         "CWE-863": 216
       },
       "kev_count": 6,
@@ -17905,11 +17905,11 @@
         ],
         [
           "CWE-22",
-          293
+          295
         ],
         [
           "CWE-862",
-          264
+          265
         ],
         [
           "CWE-863",
@@ -17973,10 +17973,10 @@
     {
       "name": "VulDB",
       "assigner_org_id": "1af790b2-7ee1-4545-860a-a788eba489b5",
-      "count": 4550,
+      "count": 4561,
       "rank": 4,
       "first_cve_date": "2026-01-01T09:02:10.684Z",
-      "last_cve_date": "2026-09-06T06:15:09.435Z",
+      "last_cve_date": "2026-09-06T11:15:10.347Z",
       "years_active": 5,
       "first_cve_year": 2022,
       "last_cve_year": 2026,
@@ -17986,17 +17986,17 @@
         "Security Researcher"
       ],
       "severity_distribution": {
-        "Medium": 2692,
+        "Medium": 2698,
         "Critical": 668,
-        "High": 1107,
+        "High": 1112,
         "Low": 83
       },
       "top_cwe_types": {
-        "CWE-74": 1284,
-        "CWE-89": 930,
+        "CWE-74": 1290,
+        "CWE-89": 936,
         "CWE-119": 746,
         "CWE-77": 577,
-        "CWE-94": 458
+        "CWE-94": 459
       },
       "kev_count": 0,
       "epss_high_count": 0,
@@ -18004,11 +18004,11 @@
       "top_cwes": [
         [
           "CWE-74",
-          1284
+          1290
         ],
         [
           "CWE-89",
-          930
+          936
         ],
         [
           "CWE-119",
@@ -18020,7 +18020,7 @@
         ],
         [
           "CWE-94",
-          458
+          459
         ]
       ]
     },
@@ -18351,10 +18351,10 @@
     {
       "name": "WPScan",
       "assigner_org_id": "1bfdd5d7-9bf6-4a53-96ea-42e2716d7a81",
-      "count": 1025,
+      "count": 1029,
       "rank": 11,
       "first_cve_date": "2026-01-01T06:00:03.091Z",
-      "last_cve_date": "2026-09-06T06:00:04.787Z",
+      "last_cve_date": "2026-09-06T09:36:35.180Z",
       "years_active": 6,
       "first_cve_year": 2021,
       "last_cve_year": 2026,
@@ -18364,10 +18364,10 @@
         "Vendor"
       ],
       "severity_distribution": {
-        "Low": 83,
-        "Medium": 531,
-        "High": 283,
-        "Critical": 88
+        "Low": 91,
+        "Medium": 558,
+        "High": 291,
+        "Critical": 89
       },
       "top_cwe_types": {
         "CWE-79": 185,
@@ -22592,10 +22592,64 @@
       ]
     },
     {
+      "name": "JFROG",
+      "assigner_org_id": "48a46f29-ae42-4e1d-90dd-c1676c1e5e6d",
+      "count": 55,
+      "rank": 90,
+      "first_cve_date": "2026-01-04T09:17:34.468Z",
+      "last_cve_date": "2026-09-06T11:20:11.759Z",
+      "years_active": 6,
+      "first_cve_year": 2021,
+      "last_cve_year": 2026,
+      "is_official": true,
+      "activity_status": "Active",
+      "cna_types": [
+        "Vendor"
+      ],
+      "severity_distribution": {
+        "Medium": 27,
+        "High": 24,
+        "Critical": 2,
+        "Low": 2
+      },
+      "top_cwe_types": {
+        "CWE-862": 14,
+        "CWE-918": 8,
+        "CWE-22": 5,
+        "CWE-287": 4,
+        "CWE-79": 3
+      },
+      "kev_count": 2,
+      "epss_high_count": 0,
+      "epss_elevated_count": 1,
+      "top_cwes": [
+        [
+          "CWE-862",
+          14
+        ],
+        [
+          "CWE-918",
+          8
+        ],
+        [
+          "CWE-22",
+          5
+        ],
+        [
+          "CWE-287",
+          4
+        ],
+        [
+          "CWE-79",
+          3
+        ]
+      ]
+    },
+    {
       "name": "Nozomi",
       "assigner_org_id": "bec8025f-a851-46e5-b3a3-058e6b0aa23c",
       "count": 54,
-      "rank": 90,
+      "rank": 91,
       "first_cve_date": "2026-02-20T16:48:34.348Z",
       "last_cve_date": "2026-08-14T15:04:47.414Z",
       "years_active": 6,
@@ -22640,60 +22694,6 @@
         ],
         [
           "CWE-22",
-          3
-        ]
-      ]
-    },
-    {
-      "name": "JFROG",
-      "assigner_org_id": "48a46f29-ae42-4e1d-90dd-c1676c1e5e6d",
-      "count": 54,
-      "rank": 91,
-      "first_cve_date": "2026-01-04T09:17:34.468Z",
-      "last_cve_date": "2026-08-30T13:44:34.109Z",
-      "years_active": 6,
-      "first_cve_year": 2021,
-      "last_cve_year": 2026,
-      "is_official": true,
-      "activity_status": "Active",
-      "cna_types": [
-        "Vendor"
-      ],
-      "severity_distribution": {
-        "Medium": 27,
-        "High": 23,
-        "Critical": 2,
-        "Low": 2
-      },
-      "top_cwe_types": {
-        "CWE-862": 14,
-        "CWE-918": 8,
-        "CWE-22": 5,
-        "CWE-287": 4,
-        "CWE-79": 3
-      },
-      "kev_count": 2,
-      "epss_high_count": 0,
-      "epss_elevated_count": 1,
-      "top_cwes": [
-        [
-          "CWE-862",
-          14
-        ],
-        [
-          "CWE-918",
-          8
-        ],
-        [
-          "CWE-22",
-          5
-        ],
-        [
-          "CWE-287",
-          4
-        ],
-        [
-          "CWE-79",
           3
         ]
       ]
