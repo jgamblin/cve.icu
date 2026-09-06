@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-05T22:47:31.222809Z",
+  "generated_at": "2026-09-06T02:46:55.808500Z",
   "systems": {
     "cvss": {
       "name": "CVSS",
       "full_name": "Common Vulnerability Scoring System",
       "description": "Measures severity/impact of vulnerabilities",
       "question": "How bad is it?",
-      "total_scored": 529939,
+      "total_scored": 529948,
       "source": "NVD / Vendors",
       "update_frequency": "Per CVE publication"
     },

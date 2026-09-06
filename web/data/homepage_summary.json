@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-05T22:47:31.334528Z",
-  "data_as_of": "2026-09-05T22:40:39.729424Z",
+  "generated_at": "2026-09-06T02:46:55.923702Z",
+  "data_as_of": "2026-09-06T02:40:03.902774Z",
   "data_age_hours": 0.0,
-  "source_last_run": "2026-09-05T22:30:52.256982+00:00",
-  "source_cve_count": 386895,
+  "source_last_run": "2026-09-06T01:48:57.542974+00:00",
+  "source_cve_count": 386900,
   "current_year": 2026,
   "yearly_summary": {
     "years": {
@@ -117,7 +117,7 @@
       },
       "2026": {
         "year": 2026,
-        "total_cves": 59718
+        "total_cves": 59721
       }
     }
   },
@@ -341,15 +341,15 @@
       },
       {
         "year": 2026,
-        "cves": 59718,
-        "growth_rate": 86.9,
-        "growth_absolute": 27759,
+        "cves": 59721,
+        "growth_rate": 86.5,
+        "growth_absolute": 27700,
         "is_ytd": true,
-        "projected_full_year": 87891,
+        "projected_full_year": 87542,
         "ytd_vs_prev_full": 24.0,
-        "ytd_vs_prev_ytd": 86.9,
-        "prev_year_ytd_actual": 31959,
-        "growth_rate_3yr_avg": 86.9
+        "ytd_vs_prev_ytd": 86.5,
+        "prev_year_ytd_actual": 32021,
+        "growth_rate_3yr_avg": 86.5
       }
     ]
   },
@@ -379,7 +379,7 @@
         "9.0": 3823,
         "4.3": 27218,
         "3.5": 7524,
-        "3.3": 1497,
+        "3.3": 1498,
         "6.8": 15512,
         "5.4": 1613,
         "1.7": 402,
@@ -387,7 +387,7 @@
         "1.9": 882,
         "3.8": 16,
         "8.5": 487,
-        "8.3": 470,
+        "8.3": 472,
         "6.6": 198,
         "9.4": 125,
         "5.8": 4249,
@@ -526,7 +526,7 @@
         "7.1": 6648,
         "8.8": 17902,
         "5.3": 10231,
-        "9.1": 3260,
+        "9.1": 3262,
         "3.3": 1815,
         "6.5": 17461,
         "6.1": 10049,
@@ -569,7 +569,7 @@
         "6.4": 3997,
         "8.6": 1442,
         "6.2": 1074,
-        "4.1": 401,
+        "4.1": 402,
         "2.5": 255,
         "7.9": 173,
         "8.9": 99,
@@ -620,12 +620,12 @@
         "5.5": 2330,
         "5.2": 78,
         "9.1": 93,
-        "2.0": 919,
+        "2.0": 920,
         "4.8": 744,
         "5.4": 257,
         "2.3": 421,
         "8.2": 436,
-        "9.4": 418,
+        "9.4": 420,
         "1.9": 742,
         "9.0": 68,
         "1.0": 49,
@@ -877,7 +877,7 @@
         "last_cve_year": 2026,
         "first_cve_date": "2019-09-30T21:39:38.000Z",
         "last_cve_date": "2026-09-04T23:51:46.992Z",
-        "days_since_last_cve": 0,
+        "days_since_last_cve": 1,
         "activity_status": "Active",
         "is_official": true,
         "cna_types": [
@@ -943,12 +943,12 @@
       {
         "name": "VulDB",
         "assigner_org_id": "1af790b2-7ee1-4545-860a-a788eba489b5",
-        "count": 16150,
+        "count": 16157,
         "years_active": 5,
         "first_cve_year": 2022,
         "last_cve_year": 2026,
         "first_cve_date": "2022-03-28T18:00:15.000Z",
-        "last_cve_date": "2026-09-05T22:00:09.574Z",
+        "last_cve_date": "2026-09-06T02:30:07.476Z",
         "days_since_last_cve": 0,
         "activity_status": "Active",
         "is_official": true,
@@ -960,7 +960,7 @@
           "2024": 2930,
           "2022": 854,
           "2025": 5901,
-          "2026": 4534
+          "2026": 4541
         },
         "years_active_list": [
           2022,
@@ -1015,7 +1015,7 @@
         "last_cve_year": 2026,
         "first_cve_date": "2005-04-13T04:00:00.000Z",
         "last_cve_date": "2026-09-03T22:59:17.956Z",
-        "days_since_last_cve": 1,
+        "days_since_last_cve": 2,
         "activity_status": "Active",
         "is_official": true,
         "cna_types": [
@@ -1111,12 +1111,12 @@
       {
         "name": "Wordfence",
         "assigner_org_id": "b15e7b5b-3da4-40ae-a43c-f7aa60e62599",
-        "count": 10963,
+        "count": 10966,
         "years_active": 6,
         "first_cve_year": 2021,
         "last_cve_year": 2026,
         "first_cve_date": "2021-07-07T12:20:58.388Z",
-        "last_cve_date": "2026-09-05T11:28:48.391Z",
+        "last_cve_date": "2026-09-06T02:26:52.017Z",
         "days_since_last_cve": 0,
         "activity_status": "Active",
         "is_official": true,
@@ -1127,7 +1127,7 @@
           "2024": 3524,
           "2025": 3450,
           "2023": 879,
-          "2026": 2787,
+          "2026": 2790,
           "2022": 169,
           "2021": 154
         },
@@ -3530,9 +3530,9 @@
       },
       {
         "date": "2026-09-05",
-        "value": 140,
+        "value": 143,
         "avg_cvss": 6.8,
-        "cvss_count": 90
+        "cvss_count": 93
       }
     ]
   }

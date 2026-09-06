@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-05T22:45:32.859551",
-  "total_cves_with_cwe": 264097,
+  "generated_at": "2026-09-06T02:44:57.415344",
+  "total_cves_with_cwe": 264101,
   "total_unique_cwes": 69,
   "top_cwes": [
     {
@@ -72,7 +72,7 @@
     {
       "id": "78",
       "name": "CWE-78: OS Command Injection",
-      "count": 7636,
+      "count": 7638,
       "description": "OS Command Injection"
     },
     {
@@ -126,7 +126,7 @@
     {
       "id": "77",
       "name": "CWE-77",
-      "count": 3559,
+      "count": 3561,
       "description": "CWE-77"
     },
     {
@@ -488,7 +488,7 @@
     {
       "id": "78",
       "name": "CWE-78: OS Command Injection",
-      "count": 7636,
+      "count": 7638,
       "description": "OS Command Injection"
     },
     {
