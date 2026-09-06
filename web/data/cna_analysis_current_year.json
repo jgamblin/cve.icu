@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-06T12:41:36.961065",
+  "generated_at": "2026-09-06T17:37:33.089635",
   "source": "CVE V5 List (Authoritative)",
   "year": 2026,
   "total_cnas": 367,
@@ -65,10 +65,10 @@
     {
       "name": "VulnCheck",
       "assigner_org_id": "83251b91-4cc7-4094-a5c7-464a1b83ea10",
-      "count": 5547,
+      "count": 5549,
       "rank": 2,
       "first_cve_date": "2026-01-03T21:18:51.053Z",
-      "last_cve_date": "2026-09-06T12:00:30.969Z",
+      "last_cve_date": "2026-09-06T12:37:50.155Z",
       "years_active": 4,
       "first_cve_year": 2023,
       "last_cve_year": 2026,
@@ -78,15 +78,15 @@
         "Vendor"
       ],
       "severity_distribution": {
-        "Critical": 817,
+        "Critical": 818,
         "Medium": 1765,
-        "High": 2911,
+        "High": 2912,
         "Low": 54
       },
       "top_cwe_types": {
         "CWE-79": 619,
         "CWE-89": 445,
-        "CWE-22": 295,
+        "CWE-22": 296,
         "CWE-862": 265,
         "CWE-863": 216
       },
@@ -104,7 +104,7 @@
         ],
         [
           "CWE-22",
-          295
+          296
         ],
         [
           "CWE-862",
@@ -172,10 +172,10 @@
     {
       "name": "VulDB",
       "assigner_org_id": "1af790b2-7ee1-4545-860a-a788eba489b5",
-      "count": 4561,
+      "count": 4567,
       "rank": 4,
       "first_cve_date": "2026-01-01T09:02:10.684Z",
-      "last_cve_date": "2026-09-06T11:15:10.347Z",
+      "last_cve_date": "2026-09-06T17:15:10.119Z",
       "years_active": 5,
       "first_cve_year": 2022,
       "last_cve_year": 2026,
@@ -185,17 +185,17 @@
         "Security Researcher"
       ],
       "severity_distribution": {
-        "Medium": 2698,
+        "Medium": 2701,
         "Critical": 668,
-        "High": 1112,
+        "High": 1115,
         "Low": 83
       },
       "top_cwe_types": {
-        "CWE-74": 1290,
-        "CWE-89": 936,
+        "CWE-74": 1292,
+        "CWE-89": 938,
         "CWE-119": 746,
         "CWE-77": 577,
-        "CWE-94": 459
+        "CWE-94": 460
       },
       "kev_count": 0,
       "epss_high_count": 0,
@@ -203,11 +203,11 @@
       "top_cwes": [
         [
           "CWE-74",
-          1290
+          1292
         ],
         [
           "CWE-89",
-          936
+          938
         ],
         [
           "CWE-119",
@@ -219,7 +219,7 @@
         ],
         [
           "CWE-94",
-          459
+          460
         ]
       ]
     },
@@ -1251,10 +1251,10 @@
     {
       "name": "EEF",
       "assigner_org_id": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
-      "count": 260,
+      "count": 262,
       "rank": 24,
       "first_cve_date": "2026-01-19T14:22:46.770Z",
-      "last_cve_date": "2026-09-05T17:16:16.722Z",
+      "last_cve_date": "2026-09-06T16:08:41.089Z",
       "years_active": 2,
       "first_cve_year": 2025,
       "last_cve_year": 2026,
@@ -1264,7 +1264,7 @@
         "Vendor"
       ],
       "severity_distribution": {
-        "High": 108,
+        "High": 110,
         "Low": 51,
         "Critical": 9,
         "Medium": 92
@@ -1273,7 +1273,7 @@
         "CWE-770": 43,
         "CWE-863": 15,
         "CWE-400": 13,
-        "CWE-1284": 11,
+        "CWE-1284": 13,
         "CWE-79": 9
       },
       "kev_count": 0,
@@ -1294,7 +1294,7 @@
         ],
         [
           "CWE-1284",
-          11
+          13
         ],
         [
           "CWE-79",
@@ -2432,10 +2432,10 @@
     {
       "name": "CIRCL",
       "assigner_org_id": "5a6e4751-2f3f-4070-9419-94fb35b644e8",
-      "count": 138,
+      "count": 139,
       "rank": 46,
       "first_cve_date": "2026-05-07T12:07:59.273Z",
-      "last_cve_date": "2026-09-04T12:59:59.743Z",
+      "last_cve_date": "2026-09-06T14:15:06.533Z",
       "years_active": 1,
       "first_cve_year": 2026,
       "last_cve_year": 2026,
@@ -2445,14 +2445,14 @@
         "Vendor"
       ],
       "severity_distribution": {
-        "High": 53,
+        "High": 54,
         "Medium": 67,
         "Critical": 17,
         "Low": 1
       },
       "top_cwe_types": {
         "CWE-79": 31,
-        "CWE-862": 15,
+        "CWE-862": 16,
         "CWE-918": 11,
         "CWE-863": 10,
         "CWE-20": 9
@@ -2467,7 +2467,7 @@
         ],
         [
           "CWE-862",
-          15
+          16
         ],
         [
           "CWE-918",
@@ -3774,10 +3774,64 @@
       ]
     },
     {
+      "name": "PostgreSQL",
+      "assigner_org_id": "f86ef6dc-4d3a-42ad-8f28-e6d5547a5007",
+      "count": 81,
+      "rank": 71,
+      "first_cve_date": "2026-02-05T17:30:05.089Z",
+      "last_cve_date": "2026-09-06T15:25:41.341Z",
+      "years_active": 3,
+      "first_cve_year": 2024,
+      "last_cve_year": 2026,
+      "is_official": true,
+      "activity_status": "Active",
+      "cna_types": [
+        "Vendor"
+      ],
+      "severity_distribution": {
+        "Low": 4,
+        "High": 45,
+        "Medium": 25,
+        "Critical": 7
+      },
+      "top_cwe_types": {
+        "CWE-89": 14,
+        "CWE-122": 7,
+        "CWE-190": 6,
+        "CWE-843": 5,
+        "CWE-862": 5
+      },
+      "kev_count": 0,
+      "epss_high_count": 0,
+      "epss_elevated_count": 0,
+      "top_cwes": [
+        [
+          "CWE-89",
+          14
+        ],
+        [
+          "CWE-122",
+          7
+        ],
+        [
+          "CWE-190",
+          6
+        ],
+        [
+          "CWE-843",
+          5
+        ],
+        [
+          "CWE-862",
+          5
+        ]
+      ]
+    },
+    {
       "name": "GovTech CSG",
       "assigner_org_id": "1a37b84a-8e51-4525-b3d6-87e2fae01dbd",
       "count": 81,
-      "rank": 71,
+      "rank": 72,
       "first_cve_date": "2026-01-27T08:15:57.520Z",
       "last_cve_date": "2026-03-24T06:05:21.161Z",
       "years_active": 6,
@@ -3824,60 +3878,6 @@
         [
           "CWE-476",
           6
-        ]
-      ]
-    },
-    {
-      "name": "PostgreSQL",
-      "assigner_org_id": "f86ef6dc-4d3a-42ad-8f28-e6d5547a5007",
-      "count": 78,
-      "rank": 72,
-      "first_cve_date": "2026-02-05T17:30:05.089Z",
-      "last_cve_date": "2026-08-13T13:00:18.697Z",
-      "years_active": 3,
-      "first_cve_year": 2024,
-      "last_cve_year": 2026,
-      "is_official": true,
-      "activity_status": "Active",
-      "cna_types": [
-        "Vendor"
-      ],
-      "severity_distribution": {
-        "Low": 4,
-        "High": 44,
-        "Medium": 23,
-        "Critical": 7
-      },
-      "top_cwe_types": {
-        "CWE-89": 12,
-        "CWE-122": 7,
-        "CWE-190": 6,
-        "CWE-843": 5,
-        "CWE-862": 5
-      },
-      "kev_count": 0,
-      "epss_high_count": 0,
-      "epss_elevated_count": 0,
-      "top_cwes": [
-        [
-          "CWE-89",
-          12
-        ],
-        [
-          "CWE-122",
-          7
-        ],
-        [
-          "CWE-190",
-          6
-        ],
-        [
-          "CWE-843",
-          5
-        ],
-        [
-          "CWE-862",
-          5
         ]
       ]
     },
@@ -17866,10 +17866,10 @@
     {
       "name": "VulnCheck",
       "assigner_org_id": "83251b91-4cc7-4094-a5c7-464a1b83ea10",
-      "count": 5547,
+      "count": 5549,
       "rank": 2,
       "first_cve_date": "2026-01-03T21:18:51.053Z",
-      "last_cve_date": "2026-09-06T12:00:30.969Z",
+      "last_cve_date": "2026-09-06T12:37:50.155Z",
       "years_active": 4,
       "first_cve_year": 2023,
       "last_cve_year": 2026,
@@ -17879,15 +17879,15 @@
         "Vendor"
       ],
       "severity_distribution": {
-        "Critical": 817,
+        "Critical": 818,
         "Medium": 1765,
-        "High": 2911,
+        "High": 2912,
         "Low": 54
       },
       "top_cwe_types": {
         "CWE-79": 619,
         "CWE-89": 445,
-        "CWE-22": 295,
+        "CWE-22": 296,
         "CWE-862": 265,
         "CWE-863": 216
       },
@@ -17905,7 +17905,7 @@
         ],
         [
           "CWE-22",
-          295
+          296
         ],
         [
           "CWE-862",
@@ -17973,10 +17973,10 @@
     {
       "name": "VulDB",
       "assigner_org_id": "1af790b2-7ee1-4545-860a-a788eba489b5",
-      "count": 4561,
+      "count": 4567,
       "rank": 4,
       "first_cve_date": "2026-01-01T09:02:10.684Z",
-      "last_cve_date": "2026-09-06T11:15:10.347Z",
+      "last_cve_date": "2026-09-06T17:15:10.119Z",
       "years_active": 5,
       "first_cve_year": 2022,
       "last_cve_year": 2026,
@@ -17986,17 +17986,17 @@
         "Security Researcher"
       ],
       "severity_distribution": {
-        "Medium": 2698,
+        "Medium": 2701,
         "Critical": 668,
-        "High": 1112,
+        "High": 1115,
         "Low": 83
       },
       "top_cwe_types": {
-        "CWE-74": 1290,
-        "CWE-89": 936,
+        "CWE-74": 1292,
+        "CWE-89": 938,
         "CWE-119": 746,
         "CWE-77": 577,
-        "CWE-94": 459
+        "CWE-94": 460
       },
       "kev_count": 0,
       "epss_high_count": 0,
@@ -18004,11 +18004,11 @@
       "top_cwes": [
         [
           "CWE-74",
-          1290
+          1292
         ],
         [
           "CWE-89",
-          936
+          938
         ],
         [
           "CWE-119",
@@ -18020,7 +18020,7 @@
         ],
         [
           "CWE-94",
-          459
+          460
         ]
       ]
     },
@@ -19052,10 +19052,10 @@
     {
       "name": "EEF",
       "assigner_org_id": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
-      "count": 260,
+      "count": 262,
       "rank": 24,
       "first_cve_date": "2026-01-19T14:22:46.770Z",
-      "last_cve_date": "2026-09-05T17:16:16.722Z",
+      "last_cve_date": "2026-09-06T16:08:41.089Z",
       "years_active": 2,
       "first_cve_year": 2025,
       "last_cve_year": 2026,
@@ -19065,7 +19065,7 @@
         "Vendor"
       ],
       "severity_distribution": {
-        "High": 108,
+        "High": 110,
         "Low": 51,
         "Critical": 9,
         "Medium": 92
@@ -19074,7 +19074,7 @@
         "CWE-770": 43,
         "CWE-863": 15,
         "CWE-400": 13,
-        "CWE-1284": 11,
+        "CWE-1284": 13,
         "CWE-79": 9
       },
       "kev_count": 0,
@@ -19095,7 +19095,7 @@
         ],
         [
           "CWE-1284",
-          11
+          13
         ],
         [
           "CWE-79",
@@ -20233,10 +20233,10 @@
     {
       "name": "CIRCL",
       "assigner_org_id": "5a6e4751-2f3f-4070-9419-94fb35b644e8",
-      "count": 138,
+      "count": 139,
       "rank": 46,
       "first_cve_date": "2026-05-07T12:07:59.273Z",
-      "last_cve_date": "2026-09-04T12:59:59.743Z",
+      "last_cve_date": "2026-09-06T14:15:06.533Z",
       "years_active": 1,
       "first_cve_year": 2026,
       "last_cve_year": 2026,
@@ -20246,14 +20246,14 @@
         "Vendor"
       ],
       "severity_distribution": {
-        "High": 53,
+        "High": 54,
         "Medium": 67,
         "Critical": 17,
         "Low": 1
       },
       "top_cwe_types": {
         "CWE-79": 31,
-        "CWE-862": 15,
+        "CWE-862": 16,
         "CWE-918": 11,
         "CWE-863": 10,
         "CWE-20": 9
@@ -20268,7 +20268,7 @@
         ],
         [
           "CWE-862",
-          15
+          16
         ],
         [
           "CWE-918",
@@ -21575,10 +21575,64 @@
       ]
     },
     {
+      "name": "PostgreSQL",
+      "assigner_org_id": "f86ef6dc-4d3a-42ad-8f28-e6d5547a5007",
+      "count": 81,
+      "rank": 71,
+      "first_cve_date": "2026-02-05T17:30:05.089Z",
+      "last_cve_date": "2026-09-06T15:25:41.341Z",
+      "years_active": 3,
+      "first_cve_year": 2024,
+      "last_cve_year": 2026,
+      "is_official": true,
+      "activity_status": "Active",
+      "cna_types": [
+        "Vendor"
+      ],
+      "severity_distribution": {
+        "Low": 4,
+        "High": 45,
+        "Medium": 25,
+        "Critical": 7
+      },
+      "top_cwe_types": {
+        "CWE-89": 14,
+        "CWE-122": 7,
+        "CWE-190": 6,
+        "CWE-843": 5,
+        "CWE-862": 5
+      },
+      "kev_count": 0,
+      "epss_high_count": 0,
+      "epss_elevated_count": 0,
+      "top_cwes": [
+        [
+          "CWE-89",
+          14
+        ],
+        [
+          "CWE-122",
+          7
+        ],
+        [
+          "CWE-190",
+          6
+        ],
+        [
+          "CWE-843",
+          5
+        ],
+        [
+          "CWE-862",
+          5
+        ]
+      ]
+    },
+    {
       "name": "GovTech CSG",
       "assigner_org_id": "1a37b84a-8e51-4525-b3d6-87e2fae01dbd",
       "count": 81,
-      "rank": 71,
+      "rank": 72,
       "first_cve_date": "2026-01-27T08:15:57.520Z",
       "last_cve_date": "2026-03-24T06:05:21.161Z",
       "years_active": 6,
@@ -21625,60 +21679,6 @@
         [
           "CWE-476",
           6
-        ]
-      ]
-    },
-    {
-      "name": "PostgreSQL",
-      "assigner_org_id": "f86ef6dc-4d3a-42ad-8f28-e6d5547a5007",
-      "count": 78,
-      "rank": 72,
-      "first_cve_date": "2026-02-05T17:30:05.089Z",
-      "last_cve_date": "2026-08-13T13:00:18.697Z",
-      "years_active": 3,
-      "first_cve_year": 2024,
-      "last_cve_year": 2026,
-      "is_official": true,
-      "activity_status": "Active",
-      "cna_types": [
-        "Vendor"
-      ],
-      "severity_distribution": {
-        "Low": 4,
-        "High": 44,
-        "Medium": 23,
-        "Critical": 7
-      },
-      "top_cwe_types": {
-        "CWE-89": 12,
-        "CWE-122": 7,
-        "CWE-190": 6,
-        "CWE-843": 5,
-        "CWE-862": 5
-      },
-      "kev_count": 0,
-      "epss_high_count": 0,
-      "epss_elevated_count": 0,
-      "top_cwes": [
-        [
-          "CWE-89",
-          12
-        ],
-        [
-          "CWE-122",
-          7
-        ],
-        [
-          "CWE-190",
-          6
-        ],
-        [
-          "CWE-843",
-          5
-        ],
-        [
-          "CWE-862",
-          5
         ]
       ]
     },

@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-06T12:44:23.668761Z",
-  "data_as_of": "2026-09-06T12:37:29.502020Z",
+  "generated_at": "2026-09-06T17:40:17.125192Z",
+  "data_as_of": "2026-09-06T17:33:29.217972Z",
   "data_age_hours": 0.0,
-  "source_last_run": "2026-09-06T12:29:37.735020+00:00",
-  "source_cve_count": 386939,
+  "source_last_run": "2026-09-06T17:27:15.782522+00:00",
+  "source_cve_count": 386963,
   "current_year": 2026,
   "yearly_summary": {
     "years": {
@@ -117,7 +117,7 @@
       },
       "2026": {
         "year": 2026,
-        "total_cves": 59760
+        "total_cves": 59784
       }
     }
   },
@@ -341,15 +341,15 @@
       },
       {
         "year": 2026,
-        "cves": 59760,
-        "growth_rate": 86.6,
-        "growth_absolute": 27739,
+        "cves": 59784,
+        "growth_rate": 86.7,
+        "growth_absolute": 27763,
         "is_ytd": true,
-        "projected_full_year": 87600,
-        "ytd_vs_prev_full": 24.1,
-        "ytd_vs_prev_ytd": 86.6,
+        "projected_full_year": 87635,
+        "ytd_vs_prev_full": 24.2,
+        "ytd_vs_prev_ytd": 86.7,
         "prev_year_ytd_actual": 32021,
-        "growth_rate_3yr_avg": 86.6
+        "growth_rate_3yr_avg": 86.7
       }
     ]
   },
@@ -357,8 +357,8 @@
     "score_distribution": {
       "v2.0": {
         "10.0": 9012,
-        "5.0": 26758,
-        "7.5": 26889,
+        "5.0": 26760,
+        "7.5": 26891,
         "4.6": 5463,
         "5.1": 1168,
         "3.7": 152,
@@ -375,7 +375,7 @@
         "3.6": 870,
         "7.6": 1264,
         "7.1": 1040,
-        "4.0": 9065,
+        "4.0": 9067,
         "9.0": 3825,
         "4.3": 27218,
         "3.5": 7524,
@@ -517,36 +517,36 @@
         "0.0": 4
       },
       "v3.1": {
-        "7.3": 5219,
-        "7.5": 21957,
+        "7.3": 5221,
+        "7.5": 21960,
         "9.8": 20384,
         "8.2": 2266,
         "7.8": 20124,
         "5.5": 15966,
         "7.1": 6649,
         "8.8": 17905,
-        "5.3": 10237,
+        "5.3": 10240,
         "9.1": 3264,
-        "3.3": 1815,
-        "6.5": 17463,
+        "3.3": 1816,
+        "6.5": 17466,
         "6.1": 10049,
         "4.8": 2914,
         "7.0": 1468,
-        "5.9": 3612,
+        "5.9": 3615,
         "8.4": 1430,
         "3.7": 1079,
         "4.7": 2079,
         "7.4": 1192,
         "4.5": 236,
-        "4.3": 11128,
+        "4.3": 11131,
         "5.0": 844,
         "6.3": 5809,
         "5.6": 416,
-        "8.1": 5204,
+        "8.1": 5205,
         "7.2": 4687,
-        "5.4": 10528,
+        "5.4": 10531,
         "4.6": 976,
-        "6.8": 2033,
+        "6.8": 2034,
         "4.4": 1908,
         "9.9": 1335,
         "5.8": 617,
@@ -603,31 +603,31 @@
         "9.2": 9
       },
       "v4.0": {
-        "7.1": 1370,
-        "8.7": 2970,
+        "7.1": 1374,
+        "8.7": 2972,
         "10.0": 345,
         "7.3": 482,
         "9.3": 1750,
         "8.6": 998,
-        "6.9": 3188,
+        "6.9": 3190,
         "5.9": 254,
-        "5.1": 2094,
+        "5.1": 2095,
         "8.8": 707,
-        "5.3": 3229,
-        "2.1": 2749,
+        "5.3": 3230,
+        "2.1": 2752,
         "9.2": 396,
         "6.3": 704,
-        "5.5": 2342,
+        "5.5": 2345,
         "5.2": 78,
         "9.1": 93,
         "2.0": 921,
-        "4.8": 744,
+        "4.8": 746,
         "5.4": 257,
         "2.3": 421,
-        "8.2": 436,
+        "8.2": 439,
         "9.4": 422,
         "1.9": 742,
-        "9.0": 68,
+        "9.0": 69,
         "1.0": 49,
         "8.5": 953,
         "7.5": 160,
@@ -651,7 +651,7 @@
         "7.2": 251,
         "6.2": 49,
         "7.8": 62,
-        "6.1": 102,
+        "6.1": 103,
         "9.5": 86,
         "6.5": 16,
         "9.9": 30,
@@ -695,14 +695,14 @@
   },
   "epss_analysis": {
     "statistics": {
-      "average_score": 0.027594,
-      "gt_0_1": 17118,
-      "gt_0_3": 6886,
-      "gt_0_5": 4209,
-      "gt_0_7": 2409,
-      "gt_0_9": 782
+      "average_score": 0.027838,
+      "gt_0_1": 17364,
+      "gt_0_3": 7058,
+      "gt_0_5": 4339,
+      "gt_0_7": 2478,
+      "gt_0_9": 797
     },
-    "total_cves_with_epss": 368543
+    "total_cves_with_epss": 368634
   },
   "kev_analysis": {
     "statistics": {
@@ -750,13 +750,13 @@
       {
         "id": "79",
         "name": "CWE-79: Cross-site Scripting (XSS)",
-        "count": 53249,
+        "count": 53250,
         "description": "Cross-site Scripting (XSS)"
       },
       {
         "id": "89",
         "name": "CWE-89: SQL Injection",
-        "count": 24208,
+        "count": 24209,
         "description": "SQL Injection"
       },
       {
@@ -774,19 +774,19 @@
       {
         "id": "20",
         "name": "CWE-20: Improper Input Validation",
-        "count": 13531,
+        "count": 13532,
         "description": "Improper Input Validation"
       },
       {
         "id": "22",
         "name": "CWE-22: Path Traversal",
-        "count": 11422,
+        "count": 11425,
         "description": "Path Traversal"
       },
       {
         "id": "200",
         "name": "CWE-200: Information Exposure",
-        "count": 11201,
+        "count": 11202,
         "description": "Information Exposure"
       },
       {
@@ -798,7 +798,7 @@
       {
         "id": "862",
         "name": "CWE-862: Missing Authorization",
-        "count": 10355,
+        "count": 10357,
         "description": "Missing Authorization"
       },
       {
@@ -863,8 +863,8 @@
         "severity_distribution": {},
         "top_cwe_types": {},
         "kev_count": 322,
-        "epss_high_count": 1662,
-        "epss_elevated_count": 7149,
+        "epss_high_count": 1733,
+        "epss_elevated_count": 7261,
         "top_cwes": [],
         "rank": 1
       },
@@ -943,12 +943,12 @@
       {
         "name": "VulDB",
         "assigner_org_id": "1af790b2-7ee1-4545-860a-a788eba489b5",
-        "count": 16177,
+        "count": 16183,
         "years_active": 5,
         "first_cve_year": 2022,
         "last_cve_year": 2026,
         "first_cve_date": "2022-03-28T18:00:15.000Z",
-        "last_cve_date": "2026-09-06T11:15:10.347Z",
+        "last_cve_date": "2026-09-06T17:15:10.119Z",
         "days_since_last_cve": 0,
         "activity_status": "Active",
         "is_official": true,
@@ -960,7 +960,7 @@
           "2024": 2930,
           "2022": 854,
           "2025": 5901,
-          "2026": 4561
+          "2026": 4567
         },
         "years_active_list": [
           2022,
@@ -983,7 +983,7 @@
         "last_cve_year": 2026,
         "first_cve_date": "2024-02-20T12:52:56.753Z",
         "last_cve_date": "2026-09-04T17:19:23.975Z",
-        "days_since_last_cve": 1,
+        "days_since_last_cve": 2,
         "activity_status": "Active",
         "is_official": true,
         "cna_types": [
@@ -1052,8 +1052,8 @@
         "severity_distribution": {},
         "top_cwe_types": {},
         "kev_count": 377,
-        "epss_high_count": 525,
-        "epss_elevated_count": 3663,
+        "epss_high_count": 557,
+        "epss_elevated_count": 3665,
         "top_cwes": [],
         "rank": 6
       },
@@ -1103,7 +1103,7 @@
         "severity_distribution": {},
         "top_cwe_types": {},
         "kev_count": 33,
-        "epss_high_count": 185,
+        "epss_high_count": 187,
         "epss_elevated_count": 783,
         "top_cwes": [],
         "rank": 7
@@ -1186,8 +1186,8 @@
         "severity_distribution": {},
         "top_cwe_types": {},
         "kev_count": 44,
-        "epss_high_count": 112,
-        "epss_elevated_count": 216,
+        "epss_high_count": 115,
+        "epss_elevated_count": 219,
         "top_cwes": [],
         "rank": 9
       },
@@ -1200,7 +1200,7 @@
         "last_cve_year": 2026,
         "first_cve_date": "2012-01-18T20:00:00.000Z",
         "last_cve_date": "2026-09-04T16:46:39.948Z",
-        "days_since_last_cve": 1,
+        "days_since_last_cve": 2,
         "activity_status": "Active",
         "is_official": true,
         "cna_types": [
@@ -1244,7 +1244,7 @@
         "last_cve_year": 2026,
         "first_cve_date": "2009-10-13T10:00:00.000Z",
         "last_cve_date": "2026-09-03T17:35:22.220Z",
-        "days_since_last_cve": 2,
+        "days_since_last_cve": 3,
         "activity_status": "Active",
         "is_official": true,
         "cna_types": [
@@ -1277,8 +1277,8 @@
         "severity_distribution": {},
         "top_cwe_types": {},
         "kev_count": 74,
-        "epss_high_count": 113,
-        "epss_elevated_count": 624,
+        "epss_high_count": 117,
+        "epss_elevated_count": 722,
         "top_cwes": [],
         "rank": 11
       },
@@ -1324,19 +1324,19 @@
         "top_cwe_types": {},
         "kev_count": 94,
         "epss_high_count": 10,
-        "epss_elevated_count": 150,
+        "epss_elevated_count": 125,
         "top_cwes": [],
         "rank": 12
       },
       {
         "name": "VulnCheck",
         "assigner_org_id": "83251b91-4cc7-4094-a5c7-464a1b83ea10",
-        "count": 6668,
+        "count": 6670,
         "years_active": 4,
         "first_cve_year": 2023,
         "last_cve_year": 2026,
         "first_cve_date": "2023-04-19T19:10:12.523Z",
-        "last_cve_date": "2026-09-06T12:00:30.969Z",
+        "last_cve_date": "2026-09-06T12:37:50.155Z",
         "days_since_last_cve": 0,
         "activity_status": "Active",
         "is_official": true,
@@ -1345,7 +1345,7 @@
         ],
         "cves_by_year": {
           "2025": 1073,
-          "2026": 5547,
+          "2026": 5549,
           "2023": 10,
           "2024": 38
         },
@@ -1370,7 +1370,7 @@
         "last_cve_year": 2026,
         "first_cve_date": "2007-11-08T02:00:00.000Z",
         "last_cve_date": "2026-09-02T16:14:32.732Z",
-        "days_since_last_cve": 3,
+        "days_since_last_cve": 4,
         "activity_status": "Active",
         "is_official": true,
         "cna_types": [
@@ -1406,7 +1406,7 @@
         "top_cwe_types": {},
         "kev_count": 95,
         "epss_high_count": 73,
-        "epss_elevated_count": 221,
+        "epss_elevated_count": 223,
         "top_cwes": [],
         "rank": 14
       },
@@ -1451,7 +1451,7 @@
         "top_cwe_types": {},
         "kev_count": 75,
         "epss_high_count": 17,
-        "epss_elevated_count": 125,
+        "epss_elevated_count": 123,
         "top_cwes": [],
         "rank": 15
       },
@@ -1527,7 +1527,7 @@
         "top_cwe_types": {},
         "kev_count": 14,
         "epss_high_count": 7,
-        "epss_elevated_count": 18,
+        "epss_elevated_count": 14,
         "top_cwes": [],
         "rank": 17
       },
@@ -1570,8 +1570,8 @@
         "severity_distribution": {},
         "top_cwe_types": {},
         "kev_count": 8,
-        "epss_high_count": 24,
-        "epss_elevated_count": 156,
+        "epss_high_count": 27,
+        "epss_elevated_count": 155,
         "top_cwes": [],
         "rank": 18
       },
@@ -1584,7 +1584,7 @@
         "last_cve_year": 2026,
         "first_cve_date": "2015-05-20T18:00:00.000Z",
         "last_cve_date": "2026-08-20T16:26:03.077Z",
-        "days_since_last_cve": 16,
+        "days_since_last_cve": 17,
         "activity_status": "Active",
         "is_official": true,
         "cna_types": [
@@ -1611,8 +1611,8 @@
         "severity_distribution": {},
         "top_cwe_types": {},
         "kev_count": 6,
-        "epss_high_count": 83,
-        "epss_elevated_count": 155,
+        "epss_high_count": 85,
+        "epss_elevated_count": 152,
         "top_cwes": [],
         "rank": 19
       },
@@ -1658,7 +1658,7 @@
         "top_cwe_types": {},
         "kev_count": 6,
         "epss_high_count": 8,
-        "epss_elevated_count": 20,
+        "epss_elevated_count": 21,
         "top_cwes": [],
         "rank": 20
       },
@@ -1671,7 +1671,7 @@
         "last_cve_year": 2026,
         "first_cve_date": "2005-03-08T05:00:00.000Z",
         "last_cve_date": "2026-09-01T13:40:05.952Z",
-        "days_since_last_cve": 4,
+        "days_since_last_cve": 5,
         "activity_status": "Active",
         "is_official": true,
         "cna_types": [
@@ -1708,8 +1708,8 @@
         "severity_distribution": {},
         "top_cwe_types": {},
         "kev_count": 7,
-        "epss_high_count": 61,
-        "epss_elevated_count": 224,
+        "epss_high_count": 66,
+        "epss_elevated_count": 229,
         "top_cwes": [],
         "rank": 21
       },
@@ -1722,7 +1722,7 @@
         "last_cve_year": 2026,
         "first_cve_date": "2017-04-06T19:00:00.000Z",
         "last_cve_date": "2026-08-04T15:07:24.305Z",
-        "days_since_last_cve": 32,
+        "days_since_last_cve": 33,
         "activity_status": "Active",
         "is_official": true,
         "cna_types": [
@@ -1791,7 +1791,7 @@
         "top_cwe_types": {},
         "kev_count": 12,
         "epss_high_count": 13,
-        "epss_elevated_count": 52,
+        "epss_elevated_count": 57,
         "top_cwes": [],
         "rank": 23
       },
@@ -1804,7 +1804,7 @@
         "last_cve_year": 2026,
         "first_cve_date": "2016-12-05T19:00:00.000Z",
         "last_cve_date": "2026-09-04T13:39:10.779Z",
-        "days_since_last_cve": 1,
+        "days_since_last_cve": 2,
         "activity_status": "Active",
         "is_official": true,
         "cna_types": [
@@ -1831,7 +1831,7 @@
         "top_cwe_types": {},
         "kev_count": 35,
         "epss_high_count": 184,
-        "epss_elevated_count": 333,
+        "epss_elevated_count": 337,
         "top_cwes": [],
         "rank": 24
       },
@@ -1871,7 +1871,7 @@
         "top_cwe_types": {},
         "kev_count": 2,
         "epss_high_count": 28,
-        "epss_elevated_count": 138,
+        "epss_elevated_count": 140,
         "top_cwes": [],
         "rank": 25
       }
@@ -3536,9 +3536,9 @@
       },
       {
         "date": "2026-09-06",
-        "value": 39,
-        "avg_cvss": 7.0,
-        "cvss_count": 38
+        "value": 63,
+        "avg_cvss": 6.6,
+        "cvss_count": 61
       }
     ]
   }
