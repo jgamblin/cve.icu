@@ -1,14 +1,14 @@
 {
   "stats": {
-    "total_cnas_in_analysis": 466,
+    "total_cnas_in_analysis": 468,
     "official_cna_registry_count": 544,
-    "exact_matches": 422,
+    "exact_matches": 424,
     "case_mismatches": 1,
     "org_name_matches": 6,
     "normalized_matches": 6,
     "partial_matches": 4,
     "unmatched": 27,
-    "exact_match_cves": 365147,
+    "exact_match_cves": 365270,
     "case_mismatch_cves": 168,
     "org_name_match_cves": 762,
     "normalized_match_cves": 1557,
@@ -22,7 +22,7 @@
       "cna_name": "mitre",
       "cve_count": 114723,
       "kev_count": 322,
-      "epss_high_count": 1733,
+      "epss_high_count": 1734,
       "official_short_name": "mitre",
       "official_org_name": "MITRE Corporation",
       "official_id": "CNA-1999-0001",
@@ -53,7 +53,7 @@
     },
     {
       "cna_name": "VulDB",
-      "cve_count": 16228,
+      "cve_count": 16255,
       "kev_count": 4,
       "epss_high_count": 33,
       "official_short_name": "VulDB",
@@ -86,7 +86,7 @@
     },
     {
       "cna_name": "redhat",
-      "cve_count": 11502,
+      "cve_count": 11511,
       "kev_count": 33,
       "epss_high_count": 187,
       "official_short_name": "redhat",
@@ -97,7 +97,7 @@
     },
     {
       "cna_name": "Wordfence",
-      "cve_count": 10966,
+      "cve_count": 10973,
       "kev_count": 0,
       "epss_high_count": 54,
       "official_short_name": "Wordfence",
@@ -152,7 +152,7 @@
     },
     {
       "cna_name": "VulnCheck",
-      "cve_count": 6670,
+      "cve_count": 6696,
       "kev_count": 19,
       "epss_high_count": 32,
       "official_short_name": "VulnCheck",
@@ -306,7 +306,7 @@
     },
     {
       "cna_name": "dell",
-      "cve_count": 2225,
+      "cve_count": 2247,
       "kev_count": 3,
       "epss_high_count": 12,
       "official_short_name": "dell",
@@ -405,7 +405,7 @@
     },
     {
       "cna_name": "INCIBE",
-      "cve_count": 1119,
+      "cve_count": 1120,
       "kev_count": 0,
       "epss_high_count": 1,
       "official_short_name": "INCIBE",
@@ -515,7 +515,7 @@
     },
     {
       "cna_name": "TR-CERT",
-      "cve_count": 780,
+      "cve_count": 783,
       "kev_count": 0,
       "epss_high_count": 0,
       "official_short_name": "TR-CERT",
@@ -539,7 +539,7 @@
       "cna_name": "CERTVDE",
       "cve_count": 707,
       "kev_count": 0,
-      "epss_high_count": 7,
+      "epss_high_count": 8,
       "official_short_name": "CERTVDE",
       "official_org_name": "CERT@VDE",
       "official_id": "CNA-2020-0010",
