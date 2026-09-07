@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-07T02:45:30.646829Z",
-  "data_as_of": "2026-09-07T02:38:49.411558Z",
+  "generated_at": "2026-09-07T08:00:35.151308Z",
+  "data_as_of": "2026-09-07T07:53:37.075028Z",
   "data_age_hours": 0.0,
   "source_last_run": "2026-09-07T01:45:06.964673+00:00",
   "source_cve_count": 386990,
@@ -820,7 +820,7 @@
         "last_cve_year": 2026,
         "first_cve_date": "1999-09-29T00:00:00.000Z",
         "last_cve_date": "2026-09-05T05:09:25.571Z",
-        "days_since_last_cve": 1,
+        "days_since_last_cve": 2,
         "activity_status": "Active",
         "is_official": true,
         "cna_types": [
@@ -943,12 +943,12 @@
       {
         "name": "VulDB",
         "assigner_org_id": "1af790b2-7ee1-4545-860a-a788eba489b5",
-        "count": 16207,
+        "count": 16228,
         "years_active": 5,
         "first_cve_year": 2022,
         "last_cve_year": 2026,
         "first_cve_date": "2022-03-28T18:00:15.000Z",
-        "last_cve_date": "2026-09-07T02:30:11.190Z",
+        "last_cve_date": "2026-09-07T07:45:09.352Z",
         "days_since_last_cve": 0,
         "activity_status": "Active",
         "is_official": true,
@@ -960,7 +960,7 @@
           "2024": 2930,
           "2022": 854,
           "2025": 5901,
-          "2026": 4591
+          "2026": 4612
         },
         "years_active_list": [
           2022,
@@ -1499,7 +1499,7 @@
         "last_cve_year": 2026,
         "first_cve_date": "2015-10-01T00:00:00.000Z",
         "last_cve_date": "2026-06-18T06:29:35.804Z",
-        "days_since_last_cve": 80,
+        "days_since_last_cve": 81,
         "activity_status": "Active",
         "is_official": true,
         "cna_types": [
@@ -1798,13 +1798,13 @@
       {
         "name": "apache",
         "assigner_org_id": "f0158376-9dc2-43b6-827c-5f631a4d8d09",
-        "count": 2473,
+        "count": 2474,
         "years_active": 11,
         "first_cve_year": 2016,
         "last_cve_year": 2026,
         "first_cve_date": "2016-12-05T19:00:00.000Z",
-        "last_cve_date": "2026-09-04T13:39:10.779Z",
-        "days_since_last_cve": 2,
+        "last_cve_date": "2026-09-07T07:41:54.077Z",
+        "days_since_last_cve": 0,
         "activity_status": "Active",
         "is_official": true,
         "cna_types": [
@@ -1815,7 +1815,7 @@
           "2017": 160,
           "2018": 166,
           "2016": 1,
-          "2026": 716,
+          "2026": 717,
           "2019": 137,
           "2020": 148,
           "2021": 185,
