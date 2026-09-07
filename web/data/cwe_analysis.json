@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-09-06T22:47:12.300311",
-  "total_cves_with_cwe": 264215,
+  "generated_at": "2026-09-07T02:43:23.713868",
+  "total_cves_with_cwe": 264224,
   "total_unique_cwes": 69,
   "top_cwes": [
     {
       "id": "79",
       "name": "CWE-79: Cross-site Scripting (XSS)",
-      "count": 53250,
+      "count": 53251,
       "description": "Cross-site Scripting (XSS)"
     },
     {
       "id": "89",
       "name": "CWE-89: SQL Injection",
-      "count": 24216,
+      "count": 24218,
       "description": "SQL Injection"
     },
     {
@@ -24,7 +24,7 @@
     {
       "id": "119",
       "name": "CWE-119: Buffer Overflow",
-      "count": 13733,
+      "count": 13734,
       "description": "Buffer Overflow"
     },
     {
@@ -48,7 +48,7 @@
     {
       "id": "125",
       "name": "CWE-125: Out-of-bounds Read",
-      "count": 10971,
+      "count": 10972,
       "description": "Out-of-bounds Read"
     },
     {
@@ -78,13 +78,13 @@
     {
       "id": "284",
       "name": "CWE-284",
-      "count": 6962,
+      "count": 6963,
       "description": "CWE-284"
     },
     {
       "id": "94",
       "name": "CWE-94: Code Injection",
-      "count": 6382,
+      "count": 6383,
       "description": "Code Injection"
     },
     {
@@ -114,7 +114,7 @@
     {
       "id": "74",
       "name": "CWE-74",
-      "count": 4018,
+      "count": 4020,
       "description": "CWE-74"
     },
     {
@@ -422,13 +422,13 @@
     {
       "id": "79",
       "name": "CWE-79: Cross-site Scripting (XSS)",
-      "count": 53250,
+      "count": 53251,
       "description": "Cross-site Scripting (XSS)"
     },
     {
       "id": "89",
       "name": "CWE-89: SQL Injection",
-      "count": 24216,
+      "count": 24218,
       "description": "SQL Injection"
     },
     {
@@ -440,7 +440,7 @@
     {
       "id": "119",
       "name": "CWE-119: Buffer Overflow",
-      "count": 13733,
+      "count": 13734,
       "description": "Buffer Overflow"
     },
     {
@@ -464,7 +464,7 @@
     {
       "id": "125",
       "name": "CWE-125: Out-of-bounds Read",
-      "count": 10971,
+      "count": 10972,
       "description": "Out-of-bounds Read"
     },
     {
@@ -494,13 +494,13 @@
     {
       "id": "284",
       "name": "CWE-284",
-      "count": 6962,
+      "count": 6963,
       "description": "CWE-284"
     },
     {
       "id": "94",
       "name": "CWE-94: Code Injection",
-      "count": 6382,
+      "count": 6383,
       "description": "Code Injection"
     },
     {
@@ -530,7 +530,7 @@
     {
       "id": "74",
       "name": "CWE-74",
-      "count": 4018,
+      "count": 4020,
       "description": "CWE-74"
     },
     {

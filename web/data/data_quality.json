@@ -8,7 +8,7 @@
     "normalized_matches": 6,
     "partial_matches": 4,
     "unmatched": 27,
-    "exact_match_cves": 365081,
+    "exact_match_cves": 365118,
     "case_mismatch_cves": 168,
     "org_name_match_cves": 762,
     "normalized_match_cves": 1557,
@@ -53,7 +53,7 @@
     },
     {
       "cna_name": "VulDB",
-      "cve_count": 16191,
+      "cve_count": 16207,
       "kev_count": 4,
       "epss_high_count": 33,
       "official_short_name": "VulDB",
@@ -438,7 +438,7 @@
     },
     {
       "cna_name": "MediaTek",
-      "cve_count": 1001,
+      "cve_count": 1019,
       "kev_count": 0,
       "epss_high_count": 0,
       "official_short_name": "MediaTek",
