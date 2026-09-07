@@ -902,7 +902,7 @@
     "vulnerability_status": [
       {
         "status": "Analyzed",
-        "count": 23659
+        "count": 23655
       },
       {
         "status": "Deferred",
@@ -910,7 +910,7 @@
       },
       {
         "status": "Modified",
-        "count": 6508
+        "count": 6512
       },
       {
         "status": "Undergoing Analysis",
@@ -1006,7 +1006,7 @@
     ]
   },
   "processing_stats": {
-    "processed_at": "2026-09-07T14:48:36.683698",
+    "processed_at": "2026-09-07T19:03:23.411344",
     "data_source": "data/cache/nvd.json"
   }
 }

@@ -1,11 +1,11 @@
 {
-  "last_run_iso": "2026-09-07T08:36:40.966637+00:00",
-  "cve_count": 387039,
-  "duration_seconds": 3495.526856,
+  "last_run_iso": "2026-09-07T18:59:52.481507+00:00",
+  "cve_count": 387222,
+  "duration_seconds": 308.303813,
   "commit_sha": "f1d07baef48a2ae4d402fdcfddd71190c89fc064",
   "degraded": false,
   "years_via_api": [],
-  "expected_total": 387057,
+  "expected_total": 387222,
   "completeness_ratio": 1.0,
   "year_counts": {
     "1999": 1579,
@@ -31,14 +31,14 @@
     "2019": 17623,
     "2020": 21075,
     "2021": 23468,
-    "2022": 27543,
+    "2022": 27552,
     "2023": 31404,
     "2024": 39236,
-    "2025": 45230,
-    "2026": 53432
+    "2025": 45233,
+    "2026": 53603
   },
   "schema_version": 2,
   "data_object_key": "nvd.json",
-  "bytes": 1818156666,
-  "sha256": "91ca71644e60fc8587e3302c8cd93322ebd85d8ba0c8b8d7f8f080cf9ad9bec5"
+  "bytes": 1818741218,
+  "sha256": "a2d79ef77f21b79a8502ff40d7a851e2bd76f4f3a2864625841c0db76f3424ee"
 }
