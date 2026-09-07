@@ -8,7 +8,7 @@
     "normalized_matches": 6,
     "partial_matches": 4,
     "unmatched": 27,
-    "exact_match_cves": 365317,
+    "exact_match_cves": 365338,
     "case_mismatch_cves": 168,
     "org_name_match_cves": 762,
     "normalized_match_cves": 1557,
@@ -130,7 +130,7 @@
     },
     {
       "cna_name": "adobe",
-      "cve_count": 7372,
+      "cve_count": 7373,
       "kev_count": 74,
       "epss_high_count": 117,
       "official_short_name": "adobe",
@@ -152,7 +152,7 @@
     },
     {
       "cna_name": "VulnCheck",
-      "cve_count": 6696,
+      "cve_count": 6707,
       "kev_count": 19,
       "epss_high_count": 32,
       "official_short_name": "VulnCheck",

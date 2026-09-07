@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "total_cves": 60043,
+  "total_cves": 60046,
   "date_data": {
     "monthly_distribution": {
       "1": 4302,
@@ -11,14 +11,14 @@
       "6": 7943,
       "7": 9770,
       "8": 12269,
-      "9": 2160,
+      "9": 2163,
       "10": 0,
       "11": 0,
       "12": 0
     },
     "daily_analysis": {
       "total_days": 248,
-      "avg_per_day": 242.11,
+      "avg_per_day": 242.12,
       "highest_day": {
         "date": "2026-07-21",
         "count": 1474
@@ -277,7 +277,7 @@
         "2026-09-04": 554,
         "2026-09-05": 143,
         "2026-09-06": 90,
-        "2026-09-07": 232
+        "2026-09-07": 235
       }
     }
   },
@@ -407,10 +407,10 @@
       }
     },
     "v3.1": {
-      "total": 54913,
+      "total": 54914,
       "severity_distribution": {
         "HIGH": 23315,
-        "CRITICAL": 6710,
+        "CRITICAL": 6711,
         "MEDIUM": 22681,
         "LOW": 2182,
         "NONE": 25
@@ -434,7 +434,7 @@
         "8.1": 2035,
         "7.1": 1728,
         "5.4": 1645,
-        "10.0": 383,
+        "10.0": 384,
         "5.9": 637,
         "6.5": 4112,
         "6.8": 418,
@@ -597,12 +597,12 @@
       }
     },
     "unknown": {
-      "total": 1168,
+      "total": 1170,
       "severity_distribution": {
-        "UNKNOWN": 1168
+        "UNKNOWN": 1170
       },
       "score_distribution": {
-        "0.0": 1168
+        "0.0": 1170
       }
     },
     "epss_summary": {
@@ -795,7 +795,7 @@
       },
       {
         "status": "Received",
-        "count": 5429
+        "count": 5432
       },
       {
         "status": "Modified",
@@ -883,7 +883,7 @@
     ]
   },
   "processing_stats": {
-    "processed_at": "2026-09-07T19:03:24.311360",
+    "processed_at": "2026-09-07T23:20:42.685157",
     "data_source": "data/cache/nvd.json"
   }
 }

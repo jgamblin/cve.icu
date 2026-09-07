@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-07T19:08:27.614846Z",
-  "data_as_of": "2026-09-07T19:02:04.002623Z",
+  "generated_at": "2026-09-07T23:25:35.532131Z",
+  "data_as_of": "2026-09-07T23:19:25.877004Z",
   "data_age_hours": 0.0,
-  "source_last_run": "2026-09-07T18:59:52.481507+00:00",
-  "source_cve_count": 387222,
+  "source_last_run": "2026-09-07T23:11:42.486605+00:00",
+  "source_cve_count": 387225,
   "current_year": 2026,
   "yearly_summary": {
     "years": {
@@ -117,7 +117,7 @@
       },
       "2026": {
         "year": 2026,
-        "total_cves": 60043
+        "total_cves": 60046
       }
     }
   },
@@ -341,11 +341,11 @@
       },
       {
         "year": 2026,
-        "cves": 60043,
+        "cves": 60046,
         "growth_rate": 87.4,
-        "growth_absolute": 28005,
+        "growth_absolute": 28008,
         "is_ytd": true,
-        "projected_full_year": 87662,
+        "projected_full_year": 87667,
         "ytd_vs_prev_full": 24.7,
         "ytd_vs_prev_ytd": 87.4,
         "prev_year_ytd_actual": 32038,
@@ -556,7 +556,7 @@
         "9.6": 1169,
         "6.7": 2450,
         "9.0": 648,
-        "10.0": 1224,
+        "10.0": 1225,
         "7.6": 1099,
         "9.3": 868,
         "4.9": 2107,
@@ -1015,7 +1015,7 @@
         "last_cve_year": 2026,
         "first_cve_date": "2005-04-13T04:00:00.000Z",
         "last_cve_date": "2026-09-03T22:59:17.956Z",
-        "days_since_last_cve": 3,
+        "days_since_last_cve": 4,
         "activity_status": "Active",
         "is_official": true,
         "cna_types": [
@@ -1152,7 +1152,7 @@
         "last_cve_year": 2026,
         "first_cve_date": "2008-10-14T21:00:00.000Z",
         "last_cve_date": "2026-08-26T19:57:04.287Z",
-        "days_since_last_cve": 11,
+        "days_since_last_cve": 12,
         "activity_status": "Active",
         "is_official": true,
         "cna_types": [
@@ -1238,13 +1238,13 @@
       {
         "name": "adobe",
         "assigner_org_id": "078d4453-3bcd-4900-85e6-15281da43538",
-        "count": 7372,
+        "count": 7373,
         "years_active": 18,
         "first_cve_year": 2009,
         "last_cve_year": 2026,
         "first_cve_date": "2009-10-13T10:00:00.000Z",
-        "last_cve_date": "2026-09-03T17:35:22.220Z",
-        "days_since_last_cve": 4,
+        "last_cve_date": "2026-09-07T20:17:16.761Z",
+        "days_since_last_cve": 0,
         "activity_status": "Active",
         "is_official": true,
         "cna_types": [
@@ -1265,7 +1265,7 @@
           "2023": 681,
           "2020": 349,
           "2021": 431,
-          "2026": 608,
+          "2026": 609,
           "2022": 460,
           "2024": 753,
           "2025": 829
@@ -1291,7 +1291,7 @@
         "last_cve_year": 2026,
         "first_cve_date": "2010-01-20T16:00:00.000Z",
         "last_cve_date": "2026-08-25T19:24:55.493Z",
-        "days_since_last_cve": 12,
+        "days_since_last_cve": 13,
         "activity_status": "Active",
         "is_official": true,
         "cna_types": [
@@ -1331,12 +1331,12 @@
       {
         "name": "VulnCheck",
         "assigner_org_id": "83251b91-4cc7-4094-a5c7-464a1b83ea10",
-        "count": 6696,
+        "count": 6707,
         "years_active": 4,
         "first_cve_year": 2023,
         "last_cve_year": 2026,
         "first_cve_date": "2023-04-19T19:10:12.523Z",
-        "last_cve_date": "2026-09-07T12:55:10.538Z",
+        "last_cve_date": "2026-09-07T23:03:21.458Z",
         "days_since_last_cve": 0,
         "activity_status": "Active",
         "is_official": true,
@@ -1345,7 +1345,7 @@
         ],
         "cves_by_year": {
           "2025": 1073,
-          "2026": 5575,
+          "2026": 5586,
           "2023": 10,
           "2024": 38
         },
@@ -1419,7 +1419,7 @@
         "last_cve_year": 2026,
         "first_cve_date": "2011-05-16T17:00:00.000Z",
         "last_cve_date": "2026-09-03T19:26:14.928Z",
-        "days_since_last_cve": 3,
+        "days_since_last_cve": 4,
         "activity_status": "Active",
         "is_official": true,
         "cna_types": [
@@ -1540,7 +1540,7 @@
         "last_cve_year": 2026,
         "first_cve_date": "2012-05-09T10:00:00.000Z",
         "last_cve_date": "2026-09-04T21:19:02.213Z",
-        "days_since_last_cve": 2,
+        "days_since_last_cve": 3,
         "activity_status": "Active",
         "is_official": true,
         "cna_types": [
@@ -1761,7 +1761,7 @@
         "last_cve_year": 2026,
         "first_cve_date": "2013-01-13T20:00:00.000Z",
         "last_cve_date": "2026-09-01T21:33:07.987Z",
-        "days_since_last_cve": 5,
+        "days_since_last_cve": 6,
         "activity_status": "Active",
         "is_official": true,
         "cna_types": [
@@ -1844,7 +1844,7 @@
         "last_cve_year": 2026,
         "first_cve_date": "2016-10-28T14:00:00.000Z",
         "last_cve_date": "2026-06-25T21:46:00.057Z",
-        "days_since_last_cve": 73,
+        "days_since_last_cve": 74,
         "activity_status": "Active",
         "is_official": true,
         "cna_types": [
@@ -3542,9 +3542,9 @@
       },
       {
         "date": "2026-09-07",
-        "value": 232,
+        "value": 235,
         "avg_cvss": 6.3,
-        "cvss_count": 201
+        "cvss_count": 202
       }
     ]
   }
