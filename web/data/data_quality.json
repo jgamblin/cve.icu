@@ -8,9 +8,9 @@
     "normalized_matches": 6,
     "partial_matches": 4,
     "unmatched": 27,
-    "exact_match_cves": 365446,
+    "exact_match_cves": 366548,
     "case_mismatch_cves": 168,
-    "org_name_match_cves": 763,
+    "org_name_match_cves": 764,
     "normalized_match_cves": 1557,
     "partial_match_cves": 72,
     "unmatched_cves": 1052,
@@ -20,7 +20,7 @@
   "exact_matches": [
     {
       "cna_name": "mitre",
-      "cve_count": 114723,
+      "cve_count": 114740,
       "kev_count": 322,
       "epss_high_count": 1734,
       "official_short_name": "mitre",
@@ -31,7 +31,7 @@
     },
     {
       "cna_name": "GitHub_M",
-      "cve_count": 19238,
+      "cve_count": 19243,
       "kev_count": 41,
       "epss_high_count": 178,
       "official_short_name": "GitHub_M",
@@ -53,7 +53,7 @@
     },
     {
       "cna_name": "VulDB",
-      "cve_count": 16267,
+      "cve_count": 16276,
       "kev_count": 4,
       "epss_high_count": 33,
       "official_short_name": "VulDB",
@@ -75,7 +75,7 @@
     },
     {
       "cna_name": "microsoft",
-      "cve_count": 13488,
+      "cve_count": 14443,
       "kev_count": 377,
       "epss_high_count": 557,
       "official_short_name": "microsoft",
@@ -130,7 +130,7 @@
     },
     {
       "cna_name": "adobe",
-      "cve_count": 7373,
+      "cve_count": 7376,
       "kev_count": 74,
       "epss_high_count": 117,
       "official_short_name": "adobe",
@@ -152,7 +152,7 @@
     },
     {
       "cna_name": "VulnCheck",
-      "cve_count": 6711,
+      "cve_count": 6745,
       "kev_count": 19,
       "epss_high_count": 32,
       "official_short_name": "VulnCheck",
@@ -163,7 +163,7 @@
     },
     {
       "cna_name": "cisco",
-      "cve_count": 6437,
+      "cve_count": 6438,
       "kev_count": 95,
       "epss_high_count": 73,
       "official_short_name": "cisco",
@@ -207,7 +207,7 @@
     },
     {
       "cna_name": "icscert",
-      "cve_count": 3743,
+      "cve_count": 3747,
       "kev_count": 8,
       "epss_high_count": 27,
       "official_short_name": "icscert",
@@ -240,7 +240,7 @@
     },
     {
       "cna_name": "certcc",
-      "cve_count": 3122,
+      "cve_count": 3124,
       "kev_count": 7,
       "epss_high_count": 66,
       "official_short_name": "certcc",
@@ -262,7 +262,7 @@
     },
     {
       "cna_name": "mozilla",
-      "cve_count": 2625,
+      "cve_count": 2626,
       "kev_count": 12,
       "epss_high_count": 13,
       "official_short_name": "mozilla",
@@ -273,7 +273,7 @@
     },
     {
       "cna_name": "apache",
-      "cve_count": 2474,
+      "cve_count": 2475,
       "kev_count": 35,
       "epss_high_count": 184,
       "official_short_name": "apache",
@@ -416,7 +416,7 @@
     },
     {
       "cna_name": "nvidia",
-      "cve_count": 1036,
+      "cve_count": 1038,
       "kev_count": 0,
       "epss_high_count": 0,
       "official_short_name": "nvidia",
@@ -427,7 +427,7 @@
     },
     {
       "cna_name": "fortinet",
-      "cve_count": 1027,
+      "cve_count": 1036,
       "kev_count": 29,
       "epss_high_count": 26,
       "official_short_name": "fortinet",
@@ -515,7 +515,7 @@
     },
     {
       "cna_name": "TR-CERT",
-      "cve_count": 783,
+      "cve_count": 785,
       "kev_count": 0,
       "epss_high_count": 0,
       "official_short_name": "TR-CERT",
@@ -640,7 +640,7 @@
     },
     {
       "cna_name": "SNOWFLAKE",
-      "cve_count": 18,
+      "cve_count": 19,
       "kev_count": 0,
       "epss_high_count": 0,
       "official_short_name": "SNOW",

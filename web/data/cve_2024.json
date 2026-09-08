@@ -891,11 +891,11 @@
     "vulnerability_status": [
       {
         "status": "Analyzed",
-        "count": 17754
+        "count": 17749
       },
       {
         "status": "Modified",
-        "count": 14426
+        "count": 14431
       },
       {
         "status": "Deferred",
@@ -987,7 +987,7 @@
     ]
   },
   "processing_stats": {
-    "processed_at": "2026-09-08T13:20:26.083521",
+    "processed_at": "2026-09-08T18:20:55.223556",
     "data_source": "data/cache/nvd.json"
   }
 }
