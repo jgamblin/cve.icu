@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-08T02:56:31.832903Z",
-  "data_as_of": "2026-09-08T02:50:39.094606Z",
+  "generated_at": "2026-09-08T07:56:04.070842Z",
+  "data_as_of": "2026-09-08T07:49:52.518967Z",
   "data_age_hours": 0.0,
   "source_last_run": "2026-09-08T02:03:59.454727+00:00",
   "source_cve_count": 387245,
@@ -820,7 +820,7 @@
         "last_cve_year": 2026,
         "first_cve_date": "1999-09-29T00:00:00.000Z",
         "last_cve_date": "2026-09-05T05:09:25.571Z",
-        "days_since_last_cve": 2,
+        "days_since_last_cve": 3,
         "activity_status": "Active",
         "is_official": true,
         "cna_types": [
@@ -908,13 +908,13 @@
       {
         "name": "Patchstack",
         "assigner_org_id": "21595511-bba5-4825-b968-b78d1f9984a3",
-        "count": 17900,
+        "count": 17910,
         "years_active": 6,
         "first_cve_year": 2021,
         "last_cve_year": 2026,
         "first_cve_date": "2021-09-09T11:18:20.862Z",
-        "last_cve_date": "2026-09-04T10:49:09.887Z",
-        "days_since_last_cve": 3,
+        "last_cve_date": "2026-09-08T07:26:40.367Z",
+        "days_since_last_cve": 0,
         "activity_status": "Active",
         "is_official": true,
         "cna_types": [
@@ -926,7 +926,7 @@
           "2023": 2146,
           "2024": 4564,
           "2025": 7006,
-          "2026": 3773
+          "2026": 3783
         },
         "years_active_list": [
           2021,
@@ -943,12 +943,12 @@
       {
         "name": "VulDB",
         "assigner_org_id": "1af790b2-7ee1-4545-860a-a788eba489b5",
-        "count": 16262,
+        "count": 16267,
         "years_active": 5,
         "first_cve_year": 2022,
         "last_cve_year": 2026,
         "first_cve_date": "2022-03-28T18:00:15.000Z",
-        "last_cve_date": "2026-09-08T02:45:09.281Z",
+        "last_cve_date": "2026-09-08T04:00:07.025Z",
         "days_since_last_cve": 0,
         "activity_status": "Active",
         "is_official": true,
@@ -960,7 +960,7 @@
           "2024": 2930,
           "2022": 854,
           "2025": 5901,
-          "2026": 4646
+          "2026": 4651
         },
         "years_active_list": [
           2022,
@@ -1499,7 +1499,7 @@
         "last_cve_year": 2026,
         "first_cve_date": "2015-10-01T00:00:00.000Z",
         "last_cve_date": "2026-06-18T06:29:35.804Z",
-        "days_since_last_cve": 81,
+        "days_since_last_cve": 82,
         "activity_status": "Active",
         "is_official": true,
         "cna_types": [
@@ -1804,7 +1804,7 @@
         "last_cve_year": 2026,
         "first_cve_date": "2016-12-05T19:00:00.000Z",
         "last_cve_date": "2026-09-07T07:41:54.077Z",
-        "days_since_last_cve": 0,
+        "days_since_last_cve": 1,
         "activity_status": "Active",
         "is_official": true,
         "cna_types": [
