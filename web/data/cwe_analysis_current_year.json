@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-07T23:23:47.470997",
+  "generated_at": "2026-09-08T02:54:44.697790",
   "year": 2026,
-  "total_cves_with_cwe": 38646,
+  "total_cves_with_cwe": 38658,
   "total_unique_cwes": 20,
   "top_cwes": [
     {
@@ -27,14 +27,14 @@
     },
     {
       "cwe": "CWE-862",
-      "count": 3089,
+      "count": 3091,
       "id": "862",
       "description": "Missing Authorization",
       "name": "CWE-862: Missing Authorization"
     },
     {
       "cwe": "CWE-22",
-      "count": 2192,
+      "count": 2196,
       "id": "22",
       "description": "Path Traversal",
       "name": "CWE-22: Path Traversal"
@@ -48,7 +48,7 @@
     },
     {
       "cwe": "CWE-78",
-      "count": 1652,
+      "count": 1653,
       "id": "78",
       "description": "OS Command Injection",
       "name": "CWE-78: OS Command Injection"
@@ -62,7 +62,7 @@
     },
     {
       "cwe": "CWE-918",
-      "count": 1537,
+      "count": 1539,
       "id": "918",
       "description": "CWE-918",
       "name": "CWE-918"
@@ -104,7 +104,7 @@
     },
     {
       "cwe": "CWE-863",
-      "count": 1366,
+      "count": 1368,
       "id": "863",
       "description": "Incorrect Authorization",
       "name": "CWE-863: Incorrect Authorization"
@@ -118,7 +118,7 @@
     },
     {
       "cwe": "CWE-306",
-      "count": 1273,
+      "count": 1274,
       "id": "306",
       "description": "CWE-306",
       "name": "CWE-306"
@@ -169,14 +169,14 @@
     },
     {
       "cwe": "CWE-862",
-      "count": 3089,
+      "count": 3091,
       "id": "862",
       "description": "Missing Authorization",
       "name": "CWE-862: Missing Authorization"
     },
     {
       "cwe": "CWE-22",
-      "count": 2192,
+      "count": 2196,
       "id": "22",
       "description": "Path Traversal",
       "name": "CWE-22: Path Traversal"
@@ -190,7 +190,7 @@
     },
     {
       "cwe": "CWE-78",
-      "count": 1652,
+      "count": 1653,
       "id": "78",
       "description": "OS Command Injection",
       "name": "CWE-78: OS Command Injection"
@@ -204,7 +204,7 @@
     },
     {
       "cwe": "CWE-918",
-      "count": 1537,
+      "count": 1539,
       "id": "918",
       "description": "CWE-918",
       "name": "CWE-918"
@@ -246,7 +246,7 @@
     },
     {
       "cwe": "CWE-863",
-      "count": 1366,
+      "count": 1368,
       "id": "863",
       "description": "Incorrect Authorization",
       "name": "CWE-863: Incorrect Authorization"
@@ -260,7 +260,7 @@
     },
     {
       "cwe": "CWE-306",
-      "count": 1273,
+      "count": 1274,
       "id": "306",
       "description": "CWE-306",
       "name": "CWE-306"
