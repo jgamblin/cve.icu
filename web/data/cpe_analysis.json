@@ -1,21 +1,21 @@
 {
-  "generated_at": "2026-09-08T18:24:10.679024",
-  "total_unique_cpes": 373101,
-  "total_cpe_entries": 2580065,
-  "total_cves_with_cpes": 313940,
-  "total_unique_vendors": 36575,
-  "total_unique_products": 114611,
+  "generated_at": "2026-09-08T23:17:00.472247",
+  "total_unique_cpes": 373157,
+  "total_cpe_entries": 2581295,
+  "total_cves_with_cpes": 314109,
+  "total_unique_vendors": 36576,
+  "total_unique_products": 114650,
   "top_cpes": [
     {
       "cpe": "cpe:2.3:o:linux:linux_kernel:*:*:*:*:*:*:*:*",
-      "count": 51879,
+      "count": 51967,
       "vendor": "linux",
       "product": "linux_kernel",
       "type": "Operating System"
     },
     {
       "cpe": "cpe:2.3:a:google:chrome:*:*:*:*:*:*:*:*",
-      "count": 6403,
+      "count": 6419,
       "vendor": "google",
       "product": "chrome",
       "type": "Application"
@@ -36,7 +36,7 @@
     },
     {
       "cpe": "cpe:2.3:o:microsoft:windows_server_2012:r2:*:*:*:*:*:*:*",
-      "count": 4018,
+      "count": 4020,
       "vendor": "microsoft",
       "product": "windows_server_2012",
       "type": "Operating System"
@@ -50,7 +50,7 @@
     },
     {
       "cpe": "cpe:2.3:o:microsoft:windows_server_2012:-:*:*:*:*:*:*:*",
-      "count": 3820,
+      "count": 3822,
       "vendor": "microsoft",
       "product": "windows_server_2012",
       "type": "Operating System"
@@ -141,14 +141,14 @@
     },
     {
       "cpe": "cpe:2.3:o:microsoft:windows_server_2022:*:*:*:*:*:*:*:*",
-      "count": 2270,
+      "count": 2271,
       "vendor": "microsoft",
       "product": "windows_server_2022",
       "type": "Operating System"
     },
     {
       "cpe": "cpe:2.3:o:microsoft:windows_server_2019:*:*:*:*:*:*:*:*",
-      "count": 2170,
+      "count": 2171,
       "vendor": "microsoft",
       "product": "windows_server_2019",
       "type": "Operating System"
@@ -176,7 +176,7 @@
     },
     {
       "cpe": "cpe:2.3:o:microsoft:windows_server_2016:*:*:*:*:*:*:*:*",
-      "count": 2031,
+      "count": 2032,
       "vendor": "microsoft",
       "product": "windows_server_2016",
       "type": "Operating System"
@@ -288,7 +288,7 @@
     },
     {
       "cpe": "cpe:2.3:o:microsoft:windows_10_1809:*:*:*:*:*:*:x64:*",
-      "count": 1672,
+      "count": 1674,
       "vendor": "microsoft",
       "product": "windows_10_1809",
       "type": "Operating System"
@@ -309,7 +309,7 @@
     },
     {
       "cpe": "cpe:2.3:o:microsoft:windows_10_1809:*:*:*:*:*:*:x86:*",
-      "count": 1617,
+      "count": 1619,
       "vendor": "microsoft",
       "product": "windows_10_1809",
       "type": "Operating System"
@@ -351,7 +351,7 @@
     },
     {
       "cpe": "cpe:2.3:o:microsoft:windows_10_1607:*:*:*:*:*:*:x64:*",
-      "count": 1524,
+      "count": 1526,
       "vendor": "microsoft",
       "product": "windows_10_1607",
       "type": "Operating System"
@@ -368,15 +368,15 @@
     },
     {
       "vendor": "linux",
-      "count": 163171
+      "count": 163280
     },
     {
       "vendor": "microsoft",
-      "count": 143913
+      "count": 144409
     },
     {
       "vendor": "adobe",
-      "count": 94149
+      "count": 94337
     },
     {
       "vendor": "apple",
@@ -392,7 +392,7 @@
     },
     {
       "vendor": "ibm",
-      "count": 73719
+      "count": 73792
     },
     {
       "vendor": "oracle",
@@ -400,7 +400,7 @@
     },
     {
       "vendor": "google",
-      "count": 64276
+      "count": 64293
     },
     {
       "vendor": "intel",
@@ -432,7 +432,7 @@
     },
     {
       "vendor": "apache",
-      "count": 21783
+      "count": 21784
     },
     {
       "vendor": "opera",
@@ -442,7 +442,7 @@
   "top_products": [
     {
       "product": "linux_kernel",
-      "count": 162933
+      "count": 163042
     },
     {
       "product": "ios",
@@ -462,7 +462,7 @@
     },
     {
       "product": "chrome",
-      "count": 36641
+      "count": 36657
     },
     {
       "product": "ios_xe",
@@ -524,13 +524,13 @@
   "cpe_type_distribution": [
     {
       "type": "Application",
-      "count": 1347053,
+      "count": 1347983,
       "percentage": 52.2
     },
     {
       "type": "Operating System",
-      "count": 1177911,
-      "percentage": 45.7
+      "count": 1178211,
+      "percentage": 45.6
     },
     {
       "type": "Hardware",

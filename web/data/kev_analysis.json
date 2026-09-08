@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-08T18:26:11.007290Z",
-  "catalog_version": "2026.09.04",
-  "total_kev_cves": 1695,
+  "generated_at": "2026-09-08T23:18:58.814879Z",
+  "catalog_version": "2026.09.08",
+  "total_kev_cves": 1699,
   "statistics": {
-    "added_last_30_days": 33,
-    "added_last_90_days": 78,
-    "ransomware_associated": 354
+    "added_last_30_days": 37,
+    "added_last_90_days": 82,
+    "ransomware_associated": 355
   },
   "by_year_added": {
     "2021": 311,
@@ -13,7 +13,7 @@
     "2023": 187,
     "2024": 186,
     "2025": 245,
-    "2026": 211
+    "2026": 215
   },
   "by_year_cve": {
     "2002": 1,
@@ -39,7 +39,7 @@
     "2023": 165,
     "2024": 164,
     "2025": 185,
-    "2026": 133
+    "2026": 137
   },
   "by_year_published": {
     "2002": 1,
@@ -65,7 +65,7 @@
     "2023": 165,
     "2024": 160,
     "2025": 195,
-    "2026": 141
+    "2026": 145
   },
   "timeline": {
     "2021-11": 291,
@@ -126,12 +126,12 @@
     "2026-06": 23,
     "2026-07": 26,
     "2026-08": 31,
-    "2026-09": 8
+    "2026-09": 12
   },
   "top_vendors": [
     [
       "Microsoft",
-      386
+      388
     ],
     [
       "Cisco",
@@ -143,7 +143,7 @@
     ],
     [
       "Adobe",
-      80
+      81
     ],
     [
       "Google",
@@ -213,7 +213,7 @@
   "top_products": [
     [
       "Microsoft - Windows",
-      170
+      172
     ],
     [
       "Apple - Multiple Products",
@@ -339,11 +339,15 @@
     ],
     [
       "CWE-284",
-      35
+      36
     ],
     [
       "CWE-79",
       33
+    ],
+    [
+      "CWE-122",
+      31
     ],
     [
       "CWE-89",
@@ -355,10 +359,6 @@
     ],
     [
       "CWE-77",
-      30
-    ],
-    [
-      "CWE-122",
       30
     ],
     [
@@ -375,6 +375,38 @@
     ]
   ],
   "recent_additions": [
+    {
+      "cve_id": "CVE-2026-75650",
+      "vendor": "Adobe",
+      "product": "Commerce and Magento",
+      "date_added": "2026-09-08",
+      "due_date": "2026-09-11",
+      "ransomware": "Unknown"
+    },
+    {
+      "cve_id": "CVE-2026-81963",
+      "vendor": "Microsoft",
+      "product": "Windows",
+      "date_added": "2026-09-08",
+      "due_date": "2026-09-22",
+      "ransomware": "Unknown"
+    },
+    {
+      "cve_id": "CVE-2026-86218",
+      "vendor": "N-able",
+      "product": "N-central",
+      "date_added": "2026-09-08",
+      "due_date": "2026-09-11",
+      "ransomware": "Unknown"
+    },
+    {
+      "cve_id": "CVE-2026-85880",
+      "vendor": "Microsoft",
+      "product": "Windows",
+      "date_added": "2026-09-08",
+      "due_date": "2026-09-22",
+      "ransomware": "Unknown"
+    },
     {
       "cve_id": "CVE-2026-85046",
       "vendor": "Google",
@@ -501,38 +533,6 @@
       "product": "Automatic Bug Reporting Tool",
       "date_added": "2026-08-26",
       "due_date": "2026-09-09",
-      "ransomware": "Unknown"
-    },
-    {
-      "cve_id": "CVE-2022-0995",
-      "vendor": "Linux",
-      "product": "Kernel",
-      "date_added": "2026-08-26",
-      "due_date": "2026-09-09",
-      "ransomware": "Unknown"
-    },
-    {
-      "cve_id": "CVE-2026-8452",
-      "vendor": "Citrix",
-      "product": "NetScaler ADC and NetScaler Gateway",
-      "date_added": "2026-08-26",
-      "due_date": "2026-08-29",
-      "ransomware": "Unknown"
-    },
-    {
-      "cve_id": "CVE-2019-1068",
-      "vendor": "Microsoft",
-      "product": "SQL Server",
-      "date_added": "2026-08-26",
-      "due_date": "2026-08-29",
-      "ransomware": "Unknown"
-    },
-    {
-      "cve_id": "CVE-2026-60004",
-      "vendor": "Gitea",
-      "product": "Gitea",
-      "date_added": "2026-08-25",
-      "due_date": "2026-08-28",
       "ransomware": "Unknown"
     }
   ]

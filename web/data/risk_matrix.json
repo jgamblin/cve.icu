@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-08T18:26:29.292334Z",
+  "generated_at": "2026-09-08T23:19:17.200295Z",
   "severity_bands": [
     "NONE",
     "LOW",
@@ -48,7 +48,7 @@
     {
       "severity": "LOW",
       "epss_bucket": "0-0.1",
-      "count": 15858,
+      "count": 15859,
       "kev_count": 4
     },
     {
@@ -78,7 +78,7 @@
     {
       "severity": "MEDIUM",
       "epss_bucket": "0-0.1",
-      "count": 163764,
+      "count": 163775,
       "kev_count": 79
     },
     {
@@ -108,7 +108,7 @@
     {
       "severity": "HIGH",
       "epss_bucket": "0-0.1",
-      "count": 129869,
+      "count": 129887,
       "kev_count": 274
     },
     {
@@ -138,8 +138,8 @@
     {
       "severity": "CRITICAL",
       "epss_bucket": "0-0.1",
-      "count": 40003,
-      "kev_count": 48
+      "count": 40012,
+      "kev_count": 50
     },
     {
       "severity": "CRITICAL",
@@ -167,7 +167,7 @@
     }
   ],
   "totals": {
-    "cves_in_matrix": 366945,
-    "kev_in_matrix": 1695
+    "cves_in_matrix": 366984,
+    "kev_in_matrix": 1697
   }
 }

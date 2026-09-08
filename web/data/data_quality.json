@@ -8,7 +8,7 @@
     "normalized_matches": 6,
     "partial_matches": 4,
     "unmatched": 27,
-    "exact_match_cves": 366548,
+    "exact_match_cves": 366890,
     "case_mismatch_cves": 168,
     "org_name_match_cves": 764,
     "normalized_match_cves": 1557,
@@ -20,7 +20,7 @@
   "exact_matches": [
     {
       "cna_name": "mitre",
-      "cve_count": 114740,
+      "cve_count": 114748,
       "kev_count": 322,
       "epss_high_count": 1734,
       "official_short_name": "mitre",
@@ -31,7 +31,7 @@
     },
     {
       "cna_name": "GitHub_M",
-      "cve_count": 19243,
+      "cve_count": 19266,
       "kev_count": 41,
       "epss_high_count": 178,
       "official_short_name": "GitHub_M",
@@ -53,7 +53,7 @@
     },
     {
       "cna_name": "VulDB",
-      "cve_count": 16276,
+      "cve_count": 16283,
       "kev_count": 4,
       "epss_high_count": 33,
       "official_short_name": "VulDB",
@@ -75,8 +75,8 @@
     },
     {
       "cna_name": "microsoft",
-      "cve_count": 14443,
-      "kev_count": 377,
+      "cve_count": 14453,
+      "kev_count": 379,
       "epss_high_count": 557,
       "official_short_name": "microsoft",
       "official_org_name": "Microsoft Corporation",
@@ -86,7 +86,7 @@
     },
     {
       "cna_name": "redhat",
-      "cve_count": 11518,
+      "cve_count": 11520,
       "kev_count": 33,
       "epss_high_count": 187,
       "official_short_name": "redhat",
@@ -118,24 +118,24 @@
       "confidence": "high"
     },
     {
+      "cna_name": "adobe",
+      "cve_count": 7540,
+      "kev_count": 75,
+      "epss_high_count": 117,
+      "official_short_name": "adobe",
+      "official_org_name": "Adobe Systems Incorporated",
+      "official_id": "CNA-2009-0001",
+      "match_type": "exact_short",
+      "confidence": "high"
+    },
+    {
       "cna_name": "ibm",
-      "cve_count": 7480,
+      "cve_count": 7482,
       "kev_count": 8,
       "epss_high_count": 19,
       "official_short_name": "ibm",
       "official_org_name": "IBM Corporation",
       "official_id": "CNA-2011-0007",
-      "match_type": "exact_short",
-      "confidence": "high"
-    },
-    {
-      "cna_name": "adobe",
-      "cve_count": 7376,
-      "kev_count": 74,
-      "epss_high_count": 117,
-      "official_short_name": "adobe",
-      "official_org_name": "Adobe Systems Incorporated",
-      "official_id": "CNA-2009-0001",
       "match_type": "exact_short",
       "confidence": "high"
     },
@@ -152,7 +152,7 @@
     },
     {
       "cna_name": "VulnCheck",
-      "cve_count": 6745,
+      "cve_count": 6747,
       "kev_count": 19,
       "epss_high_count": 32,
       "official_short_name": "VulnCheck",
@@ -184,6 +184,17 @@
       "confidence": "high"
     },
     {
+      "cna_name": "google_android",
+      "cve_count": 5230,
+      "kev_count": 14,
+      "epss_high_count": 7,
+      "official_short_name": "google_android",
+      "official_org_name": "Android (associated with Google Inc. or Open Handset Alliance)",
+      "official_id": "CNA-2011-0002",
+      "match_type": "exact_short",
+      "confidence": "high"
+    },
+    {
       "cna_name": "WPScan",
       "cve_count": 5223,
       "kev_count": 2,
@@ -191,17 +202,6 @@
       "official_short_name": "WPScan",
       "official_org_name": "WPScan",
       "official_id": "CNA-2021-0002",
-      "match_type": "exact_short",
-      "confidence": "high"
-    },
-    {
-      "cna_name": "google_android",
-      "cve_count": 5140,
-      "kev_count": 14,
-      "epss_high_count": 7,
-      "official_short_name": "google_android",
-      "official_org_name": "Android (associated with Google Inc. or Open Handset Alliance)",
-      "official_id": "CNA-2011-0002",
       "match_type": "exact_short",
       "confidence": "high"
     },
