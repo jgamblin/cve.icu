@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-08T23:16:05.722049",
+  "generated_at": "2026-09-09T02:53:57.427643",
   "source": "CVE V5 List (Authoritative)",
   "repository_stats": {
     "total_years": 28,
-    "total_cves": 370503,
+    "total_cves": 370766,
     "years_available": [
       1999,
       2000,
@@ -93,12 +93,12 @@
     {
       "name": "mitre",
       "assigner_org_id": "8254265b-2729-46b6-b9e3-3dfca2d5bfca",
-      "count": 114748,
+      "count": 114749,
       "years_active": 28,
       "first_cve_year": 1999,
       "last_cve_year": 2026,
       "first_cve_date": "1999-09-29T00:00:00.000Z",
-      "last_cve_date": "2026-09-08T00:00:00.000Z",
+      "last_cve_date": "2026-09-09T01:29:46.295Z",
       "days_since_last_cve": 0,
       "activity_status": "Active",
       "is_official": true,
@@ -133,7 +133,7 @@
         "2022": 7610,
         "2023": 6237,
         "2024": 5910,
-        "2026": 2943
+        "2026": 2944
       },
       "years_active_list": [
         1999,
@@ -150,12 +150,12 @@
     {
       "name": "GitHub_M",
       "assigner_org_id": "a0819718-46f1-4df5-94e2-005712e83aaa",
-      "count": 19266,
+      "count": 19269,
       "years_active": 8,
       "first_cve_year": 2019,
       "last_cve_year": 2026,
       "first_cve_date": "2019-09-30T21:39:38.000Z",
-      "last_cve_date": "2026-09-08T23:04:50.413Z",
+      "last_cve_date": "2026-09-08T23:36:13.668Z",
       "days_since_last_cve": 0,
       "activity_status": "Active",
       "is_official": true,
@@ -169,7 +169,7 @@
         "2021": 1065,
         "2024": 2120,
         "2023": 1771,
-        "2026": 9627,
+        "2026": 9630,
         "2025": 2866
       },
       "years_active_list": [
@@ -222,12 +222,12 @@
     {
       "name": "VulDB",
       "assigner_org_id": "1af790b2-7ee1-4545-860a-a788eba489b5",
-      "count": 16283,
+      "count": 16284,
       "years_active": 5,
       "first_cve_year": 2022,
       "last_cve_year": 2026,
       "first_cve_date": "2022-03-28T18:00:15.000Z",
-      "last_cve_date": "2026-09-08T20:00:11.314Z",
+      "last_cve_date": "2026-09-09T01:15:11.418Z",
       "days_since_last_cve": 0,
       "activity_status": "Active",
       "is_official": true,
@@ -239,7 +239,7 @@
         "2024": 2930,
         "2022": 854,
         "2025": 5901,
-        "2026": 4667
+        "2026": 4668
       },
       "years_active_list": [
         2022,
@@ -390,12 +390,12 @@
     {
       "name": "Wordfence",
       "assigner_org_id": "b15e7b5b-3da4-40ae-a43c-f7aa60e62599",
-      "count": 10981,
+      "count": 10987,
       "years_active": 6,
       "first_cve_year": 2021,
       "last_cve_year": 2026,
       "first_cve_date": "2021-07-07T12:20:58.388Z",
-      "last_cve_date": "2026-09-08T11:30:01.269Z",
+      "last_cve_date": "2026-09-09T02:27:36.017Z",
       "days_since_last_cve": 0,
       "activity_status": "Active",
       "is_official": true,
@@ -406,7 +406,7 @@
         "2024": 3524,
         "2025": 3450,
         "2023": 879,
-        "2026": 2805,
+        "2026": 2811,
         "2022": 169,
         "2021": 154
       },
@@ -692,13 +692,13 @@
     {
       "name": "Chrome",
       "assigner_org_id": "ebfee0ef-53dd-4cf3-9e2a-08a5bd7a7e28",
-      "count": 5981,
+      "count": 6211,
       "years_active": 16,
       "first_cve_year": 2011,
       "last_cve_year": 2026,
       "first_cve_date": "2011-05-16T17:00:00.000Z",
-      "last_cve_date": "2026-09-03T19:26:14.928Z",
-      "days_since_last_cve": 5,
+      "last_cve_date": "2026-09-09T00:10:07.385Z",
+      "days_since_last_cve": 0,
       "activity_status": "Active",
       "is_official": true,
       "cna_types": [
@@ -720,7 +720,7 @@
         "2023": 297,
         "2022": 357,
         "2025": 195,
-        "2026": 2506
+        "2026": 2736
       },
       "years_active_list": [
         2011,
@@ -1365,7 +1365,7 @@
       "last_cve_year": 2026,
       "first_cve_date": "2016-11-03T10:00:00.000Z",
       "last_cve_date": "2026-09-03T23:57:15.922Z",
-      "days_since_last_cve": 4,
+      "days_since_last_cve": 5,
       "activity_status": "Active",
       "is_official": true,
       "cna_types": [
@@ -1442,7 +1442,7 @@
       "last_cve_year": 2026,
       "first_cve_date": "2017-12-12T14:00:00.000Z",
       "last_cve_date": "2026-09-08T00:13:17.921Z",
-      "days_since_last_cve": 0,
+      "days_since_last_cve": 1,
       "activity_status": "Active",
       "is_official": true,
       "cna_types": [
@@ -1707,7 +1707,7 @@
       "last_cve_year": 2026,
       "first_cve_date": "2022-01-04T15:56:21.000Z",
       "last_cve_date": "2026-09-07T01:57:36.053Z",
-      "days_since_last_cve": 1,
+      "days_since_last_cve": 2,
       "activity_status": "Active",
       "is_official": true,
       "cna_types": [
@@ -1864,7 +1864,7 @@
       "last_cve_year": 2026,
       "first_cve_date": "2016-12-29T09:02:00.000Z",
       "last_cve_date": "2026-08-29T02:15:11.400Z",
-      "days_since_last_cve": 10,
+      "days_since_last_cve": 11,
       "activity_status": "Active",
       "is_official": true,
       "cna_types": [
@@ -2607,7 +2607,7 @@
       "last_cve_year": 2026,
       "first_cve_date": "2018-08-16T18:00:00.000Z",
       "last_cve_date": "2026-08-13T02:05:25.118Z",
-      "days_since_last_cve": 26,
+      "days_since_last_cve": 27,
       "activity_status": "Active",
       "is_official": true,
       "cna_types": [
@@ -3262,13 +3262,13 @@
     {
       "name": "Google",
       "assigner_org_id": "14ed7db2-1595-443d-9d34-6215bf890778",
-      "count": 274,
+      "count": 275,
       "years_active": 7,
       "first_cve_year": 2020,
       "last_cve_year": 2026,
       "first_cve_date": "2020-03-26T11:31:55.000Z",
-      "last_cve_date": "2026-08-26T14:50:50.604Z",
-      "days_since_last_cve": 13,
+      "last_cve_date": "2026-09-08T23:48:38.063Z",
+      "days_since_last_cve": 0,
       "activity_status": "Active",
       "is_official": true,
       "cna_types": [
@@ -3281,7 +3281,7 @@
         "2022": 53,
         "2024": 34,
         "2025": 47,
-        "2026": 29
+        "2026": 30
       },
       "years_active_list": [
         2020,
@@ -3672,7 +3672,7 @@
       "last_cve_year": 2025,
       "first_cve_date": "2023-05-24T12:16:36.342Z",
       "last_cve_date": "2025-11-01T02:42:50.698Z",
-      "days_since_last_cve": 311,
+      "days_since_last_cve": 312,
       "activity_status": "Active",
       "is_official": true,
       "cna_types": [
@@ -3906,7 +3906,7 @@
       "last_cve_year": 2026,
       "first_cve_date": "2018-01-17T17:00:00.000Z",
       "last_cve_date": "2026-02-27T02:01:12.377Z",
-      "days_since_last_cve": 193,
+      "days_since_last_cve": 194,
       "activity_status": "Active",
       "is_official": true,
       "cna_types": [
@@ -4439,7 +4439,7 @@
       "last_cve_year": 2026,
       "first_cve_date": "2021-07-02T10:29:07.000Z",
       "last_cve_date": "2026-08-04T02:28:53.719Z",
-      "days_since_last_cve": 35,
+      "days_since_last_cve": 36,
       "activity_status": "Active",
       "is_official": true,
       "cna_types": [
@@ -5888,7 +5888,7 @@
       "last_cve_year": 2026,
       "first_cve_date": "2024-10-14T08:17:01.686Z",
       "last_cve_date": "2026-09-04T01:53:55.981Z",
-      "days_since_last_cve": 4,
+      "days_since_last_cve": 5,
       "activity_status": "Active",
       "is_official": true,
       "cna_types": [
@@ -5985,6 +5985,37 @@
       "rank": 158
     },
     {
+      "name": "Tanium",
+      "assigner_org_id": "3938794e-25f5-4123-a1ba-5cbd7f104512",
+      "count": 79,
+      "years_active": 2,
+      "first_cve_year": 2025,
+      "last_cve_year": 2026,
+      "first_cve_date": "2025-11-19T02:44:55.622Z",
+      "last_cve_date": "2026-09-09T02:09:04.289Z",
+      "days_since_last_cve": 0,
+      "activity_status": "Active",
+      "is_official": true,
+      "cna_types": [
+        "Vendor"
+      ],
+      "cves_by_year": {
+        "2025": 1,
+        "2026": 78
+      },
+      "years_active_list": [
+        2025,
+        2026
+      ],
+      "severity_distribution": {},
+      "top_cwe_types": {},
+      "kev_count": 0,
+      "epss_high_count": 0,
+      "epss_elevated_count": 0,
+      "top_cwes": [],
+      "rank": 159
+    },
+    {
       "name": "Hitachi",
       "assigner_org_id": "50d0f415-c707-4733-9afc-8f6c0e9b3f82",
       "count": 78,
@@ -6016,7 +6047,7 @@
       "epss_high_count": 0,
       "epss_elevated_count": 0,
       "top_cwes": [],
-      "rank": 159
+      "rank": 160
     },
     {
       "name": "PSF",
@@ -6049,7 +6080,7 @@
       "epss_high_count": 0,
       "epss_elevated_count": 0,
       "top_cwes": [],
-      "rank": 160
+      "rank": 161
     },
     {
       "name": "Moxa",
@@ -6082,7 +6113,7 @@
       "epss_high_count": 0,
       "epss_elevated_count": 0,
       "top_cwes": [],
-      "rank": 161
+      "rank": 162
     },
     {
       "name": "ConcreteCMS",
@@ -6114,7 +6145,7 @@
       "epss_high_count": 0,
       "epss_elevated_count": 0,
       "top_cwes": [],
-      "rank": 162
+      "rank": 163
     },
     {
       "name": "TYPO3",
@@ -6145,7 +6176,7 @@
       "epss_high_count": 0,
       "epss_elevated_count": 0,
       "top_cwes": [],
-      "rank": 163
+      "rank": 164
     },
     {
       "name": "ASUS",
@@ -6156,7 +6187,7 @@
       "last_cve_year": 2026,
       "first_cve_date": "2024-12-04T01:20:10.965Z",
       "last_cve_date": "2026-09-08T02:04:26.991Z",
-      "days_since_last_cve": 0,
+      "days_since_last_cve": 1,
       "activity_status": "Active",
       "is_official": true,
       "cna_types": [
@@ -6177,7 +6208,7 @@
       "epss_high_count": 0,
       "epss_elevated_count": 1,
       "top_cwes": [],
-      "rank": 164
+      "rank": 165
     },
     {
       "name": "Gallagher",
@@ -6213,7 +6244,7 @@
       "epss_high_count": 0,
       "epss_elevated_count": 0,
       "top_cwes": [],
-      "rank": 165
+      "rank": 166
     },
     {
       "name": "cloudflare",
@@ -6249,7 +6280,7 @@
       "epss_high_count": 0,
       "epss_elevated_count": 0,
       "top_cwes": [],
-      "rank": 166
+      "rank": 167
     },
     {
       "name": "Octopus",
@@ -6284,7 +6315,7 @@
       "epss_high_count": 0,
       "epss_elevated_count": 0,
       "top_cwes": [],
-      "rank": 167
+      "rank": 168
     },
     {
       "name": "larry_cashdollar",
@@ -6321,7 +6352,7 @@
       "epss_high_count": 2,
       "epss_elevated_count": 8,
       "top_cwes": [],
-      "rank": 168
+      "rank": 169
     },
     {
       "name": "NLnet Labs",
@@ -6357,7 +6388,7 @@
       "epss_high_count": 0,
       "epss_elevated_count": 0,
       "top_cwes": [],
-      "rank": 169
+      "rank": 170
     },
     {
       "name": "NEC",
@@ -6368,7 +6399,7 @@
       "last_cve_year": 2026,
       "first_cve_date": "2021-06-07T13:25:26.000Z",
       "last_cve_date": "2026-09-07T00:48:01.015Z",
-      "days_since_last_cve": 1,
+      "days_since_last_cve": 2,
       "activity_status": "Active",
       "is_official": true,
       "cna_types": [
@@ -6392,7 +6423,7 @@
       "epss_high_count": 0,
       "epss_elevated_count": 0,
       "top_cwes": [],
-      "rank": 170
+      "rank": 171
     },
     {
       "name": "Citrix",
@@ -6426,7 +6457,7 @@
       "epss_high_count": 7,
       "epss_elevated_count": 15,
       "top_cwes": [],
-      "rank": 171
+      "rank": 172
     },
     {
       "name": "blackberry",
@@ -6466,7 +6497,7 @@
       "epss_high_count": 0,
       "epss_elevated_count": 0,
       "top_cwes": [],
-      "rank": 172
+      "rank": 173
     },
     {
       "name": "curl",
@@ -6498,7 +6529,7 @@
       "epss_high_count": 0,
       "epss_elevated_count": 2,
       "top_cwes": [],
-      "rank": 173
+      "rank": 174
     },
     {
       "name": "Foxit",
@@ -6529,7 +6560,7 @@
       "epss_high_count": 0,
       "epss_elevated_count": 0,
       "top_cwes": [],
-      "rank": 174
+      "rank": 175
     },
     {
       "name": "OpenVPN",
@@ -6565,7 +6596,7 @@
       "epss_high_count": 0,
       "epss_elevated_count": 1,
       "top_cwes": [],
-      "rank": 175
+      "rank": 176
     },
     {
       "name": "TML",
@@ -6576,7 +6607,7 @@
       "last_cve_year": 2026,
       "first_cve_date": "2022-10-31T20:05:35.055Z",
       "last_cve_date": "2026-07-27T02:23:23.674Z",
-      "days_since_last_cve": 43,
+      "days_since_last_cve": 44,
       "activity_status": "Active",
       "is_official": true,
       "cna_types": [
@@ -6599,7 +6630,7 @@
       "epss_high_count": 0,
       "epss_elevated_count": 0,
       "top_cwes": [],
-      "rank": 176
+      "rank": 177
     },
     {
       "name": "Deltaww",
@@ -6630,7 +6661,7 @@
       "epss_high_count": 0,
       "epss_elevated_count": 2,
       "top_cwes": [],
-      "rank": 177
+      "rank": 178
     },
     {
       "name": "ENISA",
@@ -6662,7 +6693,7 @@
       "epss_high_count": 0,
       "epss_elevated_count": 0,
       "top_cwes": [],
-      "rank": 178
+      "rank": 179
     },
     {
       "name": "Arm",
@@ -6695,7 +6726,7 @@
       "epss_high_count": 0,
       "epss_elevated_count": 0,
       "top_cwes": [],
-      "rank": 179
+      "rank": 180
     },
     {
       "name": "Absolute",
@@ -6728,7 +6759,7 @@
       "epss_high_count": 0,
       "epss_elevated_count": 0,
       "top_cwes": [],
-      "rank": 180
+      "rank": 181
     },
     {
       "name": "Honeywell",
@@ -6761,7 +6792,7 @@
       "epss_high_count": 0,
       "epss_elevated_count": 3,
       "top_cwes": [],
-      "rank": 181
+      "rank": 182
     },
     {
       "name": "CyberDanube",
@@ -6794,7 +6825,7 @@
       "epss_high_count": 1,
       "epss_elevated_count": 6,
       "top_cwes": [],
-      "rank": 182
+      "rank": 183
     },
     {
       "name": "M-Files Corporation",
@@ -6828,7 +6859,7 @@
       "epss_high_count": 0,
       "epss_elevated_count": 1,
       "top_cwes": [],
-      "rank": 183
+      "rank": 184
     },
     {
       "name": "SEL",
@@ -6860,7 +6891,7 @@
       "epss_high_count": 0,
       "epss_elevated_count": 0,
       "top_cwes": [],
-      "rank": 184
+      "rank": 185
     },
     {
       "name": "BlackDuck",
@@ -6895,7 +6926,7 @@
       "epss_high_count": 0,
       "epss_elevated_count": 4,
       "top_cwes": [],
-      "rank": 185
+      "rank": 186
     },
     {
       "name": "pivotal",
@@ -6927,7 +6958,7 @@
       "epss_high_count": 3,
       "epss_elevated_count": 5,
       "top_cwes": [],
-      "rank": 186
+      "rank": 187
     },
     {
       "name": "PandoraFMS",
@@ -6960,37 +6991,6 @@
       "kev_count": 0,
       "epss_high_count": 2,
       "epss_elevated_count": 3,
-      "top_cwes": [],
-      "rank": 187
-    },
-    {
-      "name": "Tanium",
-      "assigner_org_id": "3938794e-25f5-4123-a1ba-5cbd7f104512",
-      "count": 58,
-      "years_active": 2,
-      "first_cve_year": 2025,
-      "last_cve_year": 2026,
-      "first_cve_date": "2025-11-19T02:44:55.622Z",
-      "last_cve_date": "2026-08-19T21:05:20.781Z",
-      "days_since_last_cve": 20,
-      "activity_status": "Active",
-      "is_official": true,
-      "cna_types": [
-        "Vendor"
-      ],
-      "cves_by_year": {
-        "2025": 1,
-        "2026": 57
-      },
-      "years_active_list": [
-        2025,
-        2026
-      ],
-      "severity_distribution": {},
-      "top_cwe_types": {},
-      "kev_count": 0,
-      "epss_high_count": 0,
-      "epss_elevated_count": 0,
       "top_cwes": [],
       "rank": 188
     },
@@ -7543,7 +7543,7 @@
       "last_cve_year": 2026,
       "first_cve_date": "2023-05-11T00:00:00.000Z",
       "last_cve_date": "2026-08-02T23:32:44.893Z",
-      "days_since_last_cve": 36,
+      "days_since_last_cve": 37,
       "activity_status": "Active",
       "is_official": true,
       "cna_types": [
@@ -7576,7 +7576,7 @@
       "last_cve_year": 2026,
       "first_cve_date": "2025-08-12T09:13:42.770Z",
       "last_cve_date": "2026-08-08T00:59:40.512Z",
-      "days_since_last_cve": 31,
+      "days_since_last_cve": 32,
       "activity_status": "Active",
       "is_official": true,
       "cna_types": [
@@ -7707,7 +7707,7 @@
       "last_cve_year": 2022,
       "first_cve_date": "2021-06-21T11:10:32.776Z",
       "last_cve_date": "2022-10-12T00:00:00.000Z",
-      "days_since_last_cve": 1427,
+      "days_since_last_cve": 1428,
       "activity_status": "Inactive",
       "is_official": true,
       "cna_types": [
@@ -8014,7 +8014,7 @@
       "last_cve_year": 2026,
       "first_cve_date": "2022-12-16T00:00:00.000Z",
       "last_cve_date": "2026-08-21T02:02:23.070Z",
-      "days_since_last_cve": 18,
+      "days_since_last_cve": 19,
       "activity_status": "Active",
       "is_official": true,
       "cna_types": [
@@ -8281,7 +8281,7 @@
       "last_cve_year": 2026,
       "first_cve_date": "2026-05-08T05:57:22.797Z",
       "last_cve_date": "2026-08-17T02:16:49.131Z",
-      "days_since_last_cve": 22,
+      "days_since_last_cve": 23,
       "activity_status": "Active",
       "is_official": true,
       "cna_types": [
@@ -8311,7 +8311,7 @@
       "last_cve_year": 2026,
       "first_cve_date": "2023-06-07T02:25:27.974Z",
       "last_cve_date": "2026-06-23T23:54:21.635Z",
-      "days_since_last_cve": 76,
+      "days_since_last_cve": 77,
       "activity_status": "Active",
       "is_official": true,
       "cna_types": [
@@ -8736,7 +8736,7 @@
       "last_cve_year": 2026,
       "first_cve_date": "2022-01-21T18:17:30.000Z",
       "last_cve_date": "2026-07-30T01:50:16.571Z",
-      "days_since_last_cve": 40,
+      "days_since_last_cve": 41,
       "activity_status": "Active",
       "is_official": true,
       "cna_types": [
@@ -8901,7 +8901,7 @@
       "last_cve_year": 2026,
       "first_cve_date": "2023-12-01T06:12:03.581Z",
       "last_cve_date": "2026-06-23T00:53:43.698Z",
-      "days_since_last_cve": 77,
+      "days_since_last_cve": 78,
       "activity_status": "Active",
       "is_official": true,
       "cna_types": [
@@ -9131,7 +9131,7 @@
       "last_cve_year": 2026,
       "first_cve_date": "2021-07-13T17:47:37.000Z",
       "last_cve_date": "2026-08-19T01:19:34.960Z",
-      "days_since_last_cve": 20,
+      "days_since_last_cve": 21,
       "activity_status": "Active",
       "is_official": true,
       "cna_types": [
@@ -9363,7 +9363,7 @@
       "last_cve_year": 2026,
       "first_cve_date": "2023-08-24T16:03:36.347Z",
       "last_cve_date": "2026-01-03T00:28:24.506Z",
-      "days_since_last_cve": 248,
+      "days_since_last_cve": 249,
       "activity_status": "Active",
       "is_official": true,
       "cna_types": [
@@ -9750,7 +9750,7 @@
       "last_cve_year": 2026,
       "first_cve_date": "2024-04-15T07:56:07.521Z",
       "last_cve_date": "2026-08-05T01:47:16.191Z",
-      "days_since_last_cve": 34,
+      "days_since_last_cve": 35,
       "activity_status": "Active",
       "is_official": true,
       "cna_types": [
@@ -9782,7 +9782,7 @@
       "last_cve_year": 2026,
       "first_cve_date": "2025-06-11T00:25:17.737Z",
       "last_cve_date": "2026-09-03T02:25:11.241Z",
-      "days_since_last_cve": 5,
+      "days_since_last_cve": 6,
       "activity_status": "Active",
       "is_official": true,
       "cna_types": [
@@ -9941,7 +9941,7 @@
       "last_cve_year": 2025,
       "first_cve_date": "2022-05-25T14:49:30.000Z",
       "last_cve_date": "2025-02-18T02:34:44.846Z",
-      "days_since_last_cve": 567,
+      "days_since_last_cve": 568,
       "activity_status": "Inactive",
       "is_official": true,
       "cna_types": [
@@ -10430,7 +10430,7 @@
       "last_cve_year": 2026,
       "first_cve_date": "2024-07-01T20:46:40.163Z",
       "last_cve_date": "2026-09-06T02:15:28.824Z",
-      "days_since_last_cve": 2,
+      "days_since_last_cve": 3,
       "activity_status": "Active",
       "is_official": true,
       "cna_types": [
@@ -10529,7 +10529,7 @@
       "last_cve_year": 2026,
       "first_cve_date": "2022-11-03T19:20:41.897Z",
       "last_cve_date": "2026-06-17T01:48:39.408Z",
-      "days_since_last_cve": 83,
+      "days_since_last_cve": 84,
       "activity_status": "Active",
       "is_official": true,
       "cna_types": [
@@ -10916,7 +10916,7 @@
       "last_cve_year": 2026,
       "first_cve_date": "2025-04-07T06:02:06.218Z",
       "last_cve_date": "2026-08-20T23:57:34.475Z",
-      "days_since_last_cve": 18,
+      "days_since_last_cve": 19,
       "activity_status": "Active",
       "is_official": true,
       "cna_types": [
@@ -11010,7 +11010,7 @@
       "last_cve_year": 2026,
       "first_cve_date": "2025-06-23T18:41:18.771Z",
       "last_cve_date": "2026-08-29T23:58:31.289Z",
-      "days_since_last_cve": 9,
+      "days_since_last_cve": 10,
       "activity_status": "Active",
       "is_official": true,
       "cna_types": [
@@ -11103,7 +11103,7 @@
       "last_cve_year": 2026,
       "first_cve_date": "2026-02-18T22:59:55.491Z",
       "last_cve_date": "2026-08-26T02:11:01.673Z",
-      "days_since_last_cve": 13,
+      "days_since_last_cve": 14,
       "activity_status": "Active",
       "is_official": true,
       "cna_types": [
@@ -11231,7 +11231,7 @@
       "last_cve_year": 2026,
       "first_cve_date": "2024-04-09T23:55:43.501Z",
       "last_cve_date": "2026-02-19T01:37:22.018Z",
-      "days_since_last_cve": 201,
+      "days_since_last_cve": 202,
       "activity_status": "Active",
       "is_official": true,
       "cna_types": [
@@ -11549,7 +11549,7 @@
       "last_cve_year": 2022,
       "first_cve_date": "2021-06-04T19:39:00.000Z",
       "last_cve_date": "2022-10-17T00:00:00.000Z",
-      "days_since_last_cve": 1422,
+      "days_since_last_cve": 1423,
       "activity_status": "Inactive",
       "is_official": true,
       "cna_types": [
@@ -11800,7 +11800,7 @@
       "last_cve_year": 2025,
       "first_cve_date": "2022-02-09T22:05:16.000Z",
       "last_cve_date": "2025-01-15T00:48:07.959Z",
-      "days_since_last_cve": 601,
+      "days_since_last_cve": 602,
       "activity_status": "Inactive",
       "is_official": true,
       "cna_types": [
@@ -11928,7 +11928,7 @@
       "last_cve_year": 2026,
       "first_cve_date": "2025-07-29T23:31:31.305Z",
       "last_cve_date": "2026-09-01T00:13:03.935Z",
-      "days_since_last_cve": 7,
+      "days_since_last_cve": 8,
       "activity_status": "Active",
       "is_official": true,
       "cna_types": [
@@ -13023,7 +13023,7 @@
       "last_cve_year": 2023,
       "first_cve_date": "2023-05-30T00:00:00.000Z",
       "last_cve_date": "2023-05-30T00:00:00.000Z",
-      "days_since_last_cve": 1197,
+      "days_since_last_cve": 1198,
       "activity_status": "Inactive",
       "is_official": true,
       "cna_types": [
@@ -13150,7 +13150,7 @@
       "last_cve_year": 2026,
       "first_cve_date": "2024-03-11T19:39:03.280Z",
       "last_cve_date": "2026-09-02T02:19:00.114Z",
-      "days_since_last_cve": 6,
+      "days_since_last_cve": 7,
       "activity_status": "Active",
       "is_official": true,
       "cna_types": [
@@ -13363,7 +13363,7 @@
       "last_cve_year": 2024,
       "first_cve_date": "2023-01-24T15:51:17.731Z",
       "last_cve_date": "2024-06-25T01:34:56.567Z",
-      "days_since_last_cve": 805,
+      "days_since_last_cve": 806,
       "activity_status": "Inactive",
       "is_official": true,
       "cna_types": [
@@ -13769,7 +13769,7 @@
       "last_cve_year": 2026,
       "first_cve_date": "2026-06-23T23:49:44.591Z",
       "last_cve_date": "2026-08-04T00:03:23.278Z",
-      "days_since_last_cve": 35,
+      "days_since_last_cve": 36,
       "activity_status": "Active",
       "is_official": true,
       "cna_types": [
@@ -13986,7 +13986,7 @@
       "last_cve_year": 2026,
       "first_cve_date": "2025-03-27T04:00:55.276Z",
       "last_cve_date": "2026-04-13T02:27:53.206Z",
-      "days_since_last_cve": 148,
+      "days_since_last_cve": 149,
       "activity_status": "Active",
       "is_official": true,
       "cna_types": [
@@ -14931,7 +14931,7 @@
       "last_cve_year": 2025,
       "first_cve_date": "2025-04-21T05:27:06.090Z",
       "last_cve_date": "2025-11-17T02:48:25.684Z",
-      "days_since_last_cve": 295,
+      "days_since_last_cve": 296,
       "activity_status": "Active",
       "is_official": true,
       "cna_types": [
@@ -15441,7 +15441,7 @@
       "last_cve_year": 2025,
       "first_cve_date": "2025-09-02T02:06:20.806Z",
       "last_cve_date": "2025-09-02T02:06:20.806Z",
-      "days_since_last_cve": 371,
+      "days_since_last_cve": 372,
       "activity_status": "Inactive",
       "is_official": true,
       "cna_types": [
@@ -15621,7 +15621,7 @@
       "last_cve_year": 2026,
       "first_cve_date": "2026-02-23T01:24:47.676Z",
       "last_cve_date": "2026-02-23T01:24:47.676Z",
-      "days_since_last_cve": 197,
+      "days_since_last_cve": 198,
       "activity_status": "Active",
       "is_official": true,
       "cna_types": [
@@ -15887,12 +15887,12 @@
     {
       "name": "mitre",
       "assigner_org_id": "8254265b-2729-46b6-b9e3-3dfca2d5bfca",
-      "count": 114748,
+      "count": 114749,
       "years_active": 28,
       "first_cve_year": 1999,
       "last_cve_year": 2026,
       "first_cve_date": "1999-09-29T00:00:00.000Z",
-      "last_cve_date": "2026-09-08T00:00:00.000Z",
+      "last_cve_date": "2026-09-09T01:29:46.295Z",
       "days_since_last_cve": 0,
       "activity_status": "Active",
       "is_official": true,
@@ -15927,7 +15927,7 @@
         "2022": 7610,
         "2023": 6237,
         "2024": 5910,
-        "2026": 2943
+        "2026": 2944
       },
       "years_active_list": [
         1999,
@@ -15944,12 +15944,12 @@
     {
       "name": "GitHub_M",
       "assigner_org_id": "a0819718-46f1-4df5-94e2-005712e83aaa",
-      "count": 19266,
+      "count": 19269,
       "years_active": 8,
       "first_cve_year": 2019,
       "last_cve_year": 2026,
       "first_cve_date": "2019-09-30T21:39:38.000Z",
-      "last_cve_date": "2026-09-08T23:04:50.413Z",
+      "last_cve_date": "2026-09-08T23:36:13.668Z",
       "days_since_last_cve": 0,
       "activity_status": "Active",
       "is_official": true,
@@ -15963,7 +15963,7 @@
         "2021": 1065,
         "2024": 2120,
         "2023": 1771,
-        "2026": 9627,
+        "2026": 9630,
         "2025": 2866
       },
       "years_active_list": [
@@ -16016,12 +16016,12 @@
     {
       "name": "VulDB",
       "assigner_org_id": "1af790b2-7ee1-4545-860a-a788eba489b5",
-      "count": 16283,
+      "count": 16284,
       "years_active": 5,
       "first_cve_year": 2022,
       "last_cve_year": 2026,
       "first_cve_date": "2022-03-28T18:00:15.000Z",
-      "last_cve_date": "2026-09-08T20:00:11.314Z",
+      "last_cve_date": "2026-09-09T01:15:11.418Z",
       "days_since_last_cve": 0,
       "activity_status": "Active",
       "is_official": true,
@@ -16033,7 +16033,7 @@
         "2024": 2930,
         "2022": 854,
         "2025": 5901,
-        "2026": 4667
+        "2026": 4668
       },
       "years_active_list": [
         2022,
@@ -16184,12 +16184,12 @@
     {
       "name": "Wordfence",
       "assigner_org_id": "b15e7b5b-3da4-40ae-a43c-f7aa60e62599",
-      "count": 10981,
+      "count": 10987,
       "years_active": 6,
       "first_cve_year": 2021,
       "last_cve_year": 2026,
       "first_cve_date": "2021-07-07T12:20:58.388Z",
-      "last_cve_date": "2026-09-08T11:30:01.269Z",
+      "last_cve_date": "2026-09-09T02:27:36.017Z",
       "days_since_last_cve": 0,
       "activity_status": "Active",
       "is_official": true,
@@ -16200,7 +16200,7 @@
         "2024": 3524,
         "2025": 3450,
         "2023": 879,
-        "2026": 2805,
+        "2026": 2811,
         "2022": 169,
         "2021": 154
       },
@@ -16486,13 +16486,13 @@
     {
       "name": "Chrome",
       "assigner_org_id": "ebfee0ef-53dd-4cf3-9e2a-08a5bd7a7e28",
-      "count": 5981,
+      "count": 6211,
       "years_active": 16,
       "first_cve_year": 2011,
       "last_cve_year": 2026,
       "first_cve_date": "2011-05-16T17:00:00.000Z",
-      "last_cve_date": "2026-09-03T19:26:14.928Z",
-      "days_since_last_cve": 5,
+      "last_cve_date": "2026-09-09T00:10:07.385Z",
+      "days_since_last_cve": 0,
       "activity_status": "Active",
       "is_official": true,
       "cna_types": [
@@ -16514,7 +16514,7 @@
         "2023": 297,
         "2022": 357,
         "2025": 195,
-        "2026": 2506
+        "2026": 2736
       },
       "years_active_list": [
         2011,
@@ -17159,7 +17159,7 @@
       "last_cve_year": 2026,
       "first_cve_date": "2016-11-03T10:00:00.000Z",
       "last_cve_date": "2026-09-03T23:57:15.922Z",
-      "days_since_last_cve": 4,
+      "days_since_last_cve": 5,
       "activity_status": "Active",
       "is_official": true,
       "cna_types": [
@@ -17236,7 +17236,7 @@
       "last_cve_year": 2026,
       "first_cve_date": "2017-12-12T14:00:00.000Z",
       "last_cve_date": "2026-09-08T00:13:17.921Z",
-      "days_since_last_cve": 0,
+      "days_since_last_cve": 1,
       "activity_status": "Active",
       "is_official": true,
       "cna_types": [
@@ -17501,7 +17501,7 @@
       "last_cve_year": 2026,
       "first_cve_date": "2022-01-04T15:56:21.000Z",
       "last_cve_date": "2026-09-07T01:57:36.053Z",
-      "days_since_last_cve": 1,
+      "days_since_last_cve": 2,
       "activity_status": "Active",
       "is_official": true,
       "cna_types": [
@@ -17658,7 +17658,7 @@
       "last_cve_year": 2026,
       "first_cve_date": "2016-12-29T09:02:00.000Z",
       "last_cve_date": "2026-08-29T02:15:11.400Z",
-      "days_since_last_cve": 10,
+      "days_since_last_cve": 11,
       "activity_status": "Active",
       "is_official": true,
       "cna_types": [
@@ -18401,7 +18401,7 @@
       "last_cve_year": 2026,
       "first_cve_date": "2018-08-16T18:00:00.000Z",
       "last_cve_date": "2026-08-13T02:05:25.118Z",
-      "days_since_last_cve": 26,
+      "days_since_last_cve": 27,
       "activity_status": "Active",
       "is_official": true,
       "cna_types": [
@@ -19056,13 +19056,13 @@
     {
       "name": "Google",
       "assigner_org_id": "14ed7db2-1595-443d-9d34-6215bf890778",
-      "count": 274,
+      "count": 275,
       "years_active": 7,
       "first_cve_year": 2020,
       "last_cve_year": 2026,
       "first_cve_date": "2020-03-26T11:31:55.000Z",
-      "last_cve_date": "2026-08-26T14:50:50.604Z",
-      "days_since_last_cve": 13,
+      "last_cve_date": "2026-09-08T23:48:38.063Z",
+      "days_since_last_cve": 0,
       "activity_status": "Active",
       "is_official": true,
       "cna_types": [
@@ -19075,7 +19075,7 @@
         "2022": 53,
         "2024": 34,
         "2025": 47,
-        "2026": 29
+        "2026": 30
       },
       "years_active_list": [
         2020,
@@ -19466,7 +19466,7 @@
       "last_cve_year": 2025,
       "first_cve_date": "2023-05-24T12:16:36.342Z",
       "last_cve_date": "2025-11-01T02:42:50.698Z",
-      "days_since_last_cve": 311,
+      "days_since_last_cve": 312,
       "activity_status": "Active",
       "is_official": true,
       "cna_types": [
@@ -19700,7 +19700,7 @@
       "last_cve_year": 2026,
       "first_cve_date": "2018-01-17T17:00:00.000Z",
       "last_cve_date": "2026-02-27T02:01:12.377Z",
-      "days_since_last_cve": 193,
+      "days_since_last_cve": 194,
       "activity_status": "Active",
       "is_official": true,
       "cna_types": [
@@ -20233,7 +20233,7 @@
       "last_cve_year": 2026,
       "first_cve_date": "2021-07-02T10:29:07.000Z",
       "last_cve_date": "2026-08-04T02:28:53.719Z",
-      "days_since_last_cve": 35,
+      "days_since_last_cve": 36,
       "activity_status": "Active",
       "is_official": true,
       "cna_types": [
@@ -21682,7 +21682,7 @@
       "last_cve_year": 2026,
       "first_cve_date": "2024-10-14T08:17:01.686Z",
       "last_cve_date": "2026-09-04T01:53:55.981Z",
-      "days_since_last_cve": 4,
+      "days_since_last_cve": 5,
       "activity_status": "Active",
       "is_official": true,
       "cna_types": [
@@ -21779,6 +21779,37 @@
       "rank": 158
     },
     {
+      "name": "Tanium",
+      "assigner_org_id": "3938794e-25f5-4123-a1ba-5cbd7f104512",
+      "count": 79,
+      "years_active": 2,
+      "first_cve_year": 2025,
+      "last_cve_year": 2026,
+      "first_cve_date": "2025-11-19T02:44:55.622Z",
+      "last_cve_date": "2026-09-09T02:09:04.289Z",
+      "days_since_last_cve": 0,
+      "activity_status": "Active",
+      "is_official": true,
+      "cna_types": [
+        "Vendor"
+      ],
+      "cves_by_year": {
+        "2025": 1,
+        "2026": 78
+      },
+      "years_active_list": [
+        2025,
+        2026
+      ],
+      "severity_distribution": {},
+      "top_cwe_types": {},
+      "kev_count": 0,
+      "epss_high_count": 0,
+      "epss_elevated_count": 0,
+      "top_cwes": [],
+      "rank": 159
+    },
+    {
       "name": "Hitachi",
       "assigner_org_id": "50d0f415-c707-4733-9afc-8f6c0e9b3f82",
       "count": 78,
@@ -21810,7 +21841,7 @@
       "epss_high_count": 0,
       "epss_elevated_count": 0,
       "top_cwes": [],
-      "rank": 159
+      "rank": 160
     },
     {
       "name": "PSF",
@@ -21843,7 +21874,7 @@
       "epss_high_count": 0,
       "epss_elevated_count": 0,
       "top_cwes": [],
-      "rank": 160
+      "rank": 161
     },
     {
       "name": "Moxa",
@@ -21876,7 +21907,7 @@
       "epss_high_count": 0,
       "epss_elevated_count": 0,
       "top_cwes": [],
-      "rank": 161
+      "rank": 162
     },
     {
       "name": "ConcreteCMS",
@@ -21908,7 +21939,7 @@
       "epss_high_count": 0,
       "epss_elevated_count": 0,
       "top_cwes": [],
-      "rank": 162
+      "rank": 163
     },
     {
       "name": "TYPO3",
@@ -21939,7 +21970,7 @@
       "epss_high_count": 0,
       "epss_elevated_count": 0,
       "top_cwes": [],
-      "rank": 163
+      "rank": 164
     },
     {
       "name": "ASUS",
@@ -21950,7 +21981,7 @@
       "last_cve_year": 2026,
       "first_cve_date": "2024-12-04T01:20:10.965Z",
       "last_cve_date": "2026-09-08T02:04:26.991Z",
-      "days_since_last_cve": 0,
+      "days_since_last_cve": 1,
       "activity_status": "Active",
       "is_official": true,
       "cna_types": [
@@ -21971,7 +22002,7 @@
       "epss_high_count": 0,
       "epss_elevated_count": 1,
       "top_cwes": [],
-      "rank": 164
+      "rank": 165
     },
     {
       "name": "Gallagher",
@@ -22007,7 +22038,7 @@
       "epss_high_count": 0,
       "epss_elevated_count": 0,
       "top_cwes": [],
-      "rank": 165
+      "rank": 166
     },
     {
       "name": "cloudflare",
@@ -22043,7 +22074,7 @@
       "epss_high_count": 0,
       "epss_elevated_count": 0,
       "top_cwes": [],
-      "rank": 166
+      "rank": 167
     },
     {
       "name": "Octopus",
@@ -22078,7 +22109,7 @@
       "epss_high_count": 0,
       "epss_elevated_count": 0,
       "top_cwes": [],
-      "rank": 167
+      "rank": 168
     },
     {
       "name": "larry_cashdollar",
@@ -22115,7 +22146,7 @@
       "epss_high_count": 2,
       "epss_elevated_count": 8,
       "top_cwes": [],
-      "rank": 168
+      "rank": 169
     },
     {
       "name": "NLnet Labs",
@@ -22151,7 +22182,7 @@
       "epss_high_count": 0,
       "epss_elevated_count": 0,
       "top_cwes": [],
-      "rank": 169
+      "rank": 170
     },
     {
       "name": "NEC",
@@ -22162,7 +22193,7 @@
       "last_cve_year": 2026,
       "first_cve_date": "2021-06-07T13:25:26.000Z",
       "last_cve_date": "2026-09-07T00:48:01.015Z",
-      "days_since_last_cve": 1,
+      "days_since_last_cve": 2,
       "activity_status": "Active",
       "is_official": true,
       "cna_types": [
@@ -22186,7 +22217,7 @@
       "epss_high_count": 0,
       "epss_elevated_count": 0,
       "top_cwes": [],
-      "rank": 170
+      "rank": 171
     },
     {
       "name": "Citrix",
@@ -22220,7 +22251,7 @@
       "epss_high_count": 7,
       "epss_elevated_count": 15,
       "top_cwes": [],
-      "rank": 171
+      "rank": 172
     },
     {
       "name": "blackberry",
@@ -22260,7 +22291,7 @@
       "epss_high_count": 0,
       "epss_elevated_count": 0,
       "top_cwes": [],
-      "rank": 172
+      "rank": 173
     },
     {
       "name": "curl",
@@ -22292,7 +22323,7 @@
       "epss_high_count": 0,
       "epss_elevated_count": 2,
       "top_cwes": [],
-      "rank": 173
+      "rank": 174
     },
     {
       "name": "Foxit",
@@ -22323,7 +22354,7 @@
       "epss_high_count": 0,
       "epss_elevated_count": 0,
       "top_cwes": [],
-      "rank": 174
+      "rank": 175
     },
     {
       "name": "OpenVPN",
@@ -22359,7 +22390,7 @@
       "epss_high_count": 0,
       "epss_elevated_count": 1,
       "top_cwes": [],
-      "rank": 175
+      "rank": 176
     },
     {
       "name": "TML",
@@ -22370,7 +22401,7 @@
       "last_cve_year": 2026,
       "first_cve_date": "2022-10-31T20:05:35.055Z",
       "last_cve_date": "2026-07-27T02:23:23.674Z",
-      "days_since_last_cve": 43,
+      "days_since_last_cve": 44,
       "activity_status": "Active",
       "is_official": true,
       "cna_types": [
@@ -22393,7 +22424,7 @@
       "epss_high_count": 0,
       "epss_elevated_count": 0,
       "top_cwes": [],
-      "rank": 176
+      "rank": 177
     },
     {
       "name": "Deltaww",
@@ -22424,7 +22455,7 @@
       "epss_high_count": 0,
       "epss_elevated_count": 2,
       "top_cwes": [],
-      "rank": 177
+      "rank": 178
     },
     {
       "name": "ENISA",
@@ -22456,7 +22487,7 @@
       "epss_high_count": 0,
       "epss_elevated_count": 0,
       "top_cwes": [],
-      "rank": 178
+      "rank": 179
     },
     {
       "name": "Arm",
@@ -22489,7 +22520,7 @@
       "epss_high_count": 0,
       "epss_elevated_count": 0,
       "top_cwes": [],
-      "rank": 179
+      "rank": 180
     },
     {
       "name": "Absolute",
@@ -22522,7 +22553,7 @@
       "epss_high_count": 0,
       "epss_elevated_count": 0,
       "top_cwes": [],
-      "rank": 180
+      "rank": 181
     },
     {
       "name": "Honeywell",
@@ -22555,7 +22586,7 @@
       "epss_high_count": 0,
       "epss_elevated_count": 3,
       "top_cwes": [],
-      "rank": 181
+      "rank": 182
     },
     {
       "name": "CyberDanube",
@@ -22588,7 +22619,7 @@
       "epss_high_count": 1,
       "epss_elevated_count": 6,
       "top_cwes": [],
-      "rank": 182
+      "rank": 183
     },
     {
       "name": "M-Files Corporation",
@@ -22622,7 +22653,7 @@
       "epss_high_count": 0,
       "epss_elevated_count": 1,
       "top_cwes": [],
-      "rank": 183
+      "rank": 184
     },
     {
       "name": "SEL",
@@ -22654,7 +22685,7 @@
       "epss_high_count": 0,
       "epss_elevated_count": 0,
       "top_cwes": [],
-      "rank": 184
+      "rank": 185
     },
     {
       "name": "BlackDuck",
@@ -22689,7 +22720,7 @@
       "epss_high_count": 0,
       "epss_elevated_count": 4,
       "top_cwes": [],
-      "rank": 185
+      "rank": 186
     },
     {
       "name": "pivotal",
@@ -22721,7 +22752,7 @@
       "epss_high_count": 3,
       "epss_elevated_count": 5,
       "top_cwes": [],
-      "rank": 186
+      "rank": 187
     },
     {
       "name": "PandoraFMS",
@@ -22754,37 +22785,6 @@
       "kev_count": 0,
       "epss_high_count": 2,
       "epss_elevated_count": 3,
-      "top_cwes": [],
-      "rank": 187
-    },
-    {
-      "name": "Tanium",
-      "assigner_org_id": "3938794e-25f5-4123-a1ba-5cbd7f104512",
-      "count": 58,
-      "years_active": 2,
-      "first_cve_year": 2025,
-      "last_cve_year": 2026,
-      "first_cve_date": "2025-11-19T02:44:55.622Z",
-      "last_cve_date": "2026-08-19T21:05:20.781Z",
-      "days_since_last_cve": 20,
-      "activity_status": "Active",
-      "is_official": true,
-      "cna_types": [
-        "Vendor"
-      ],
-      "cves_by_year": {
-        "2025": 1,
-        "2026": 57
-      },
-      "years_active_list": [
-        2025,
-        2026
-      ],
-      "severity_distribution": {},
-      "top_cwe_types": {},
-      "kev_count": 0,
-      "epss_high_count": 0,
-      "epss_elevated_count": 0,
       "top_cwes": [],
       "rank": 188
     },
@@ -23337,7 +23337,7 @@
       "last_cve_year": 2026,
       "first_cve_date": "2023-05-11T00:00:00.000Z",
       "last_cve_date": "2026-08-02T23:32:44.893Z",
-      "days_since_last_cve": 36,
+      "days_since_last_cve": 37,
       "activity_status": "Active",
       "is_official": true,
       "cna_types": [
@@ -23370,7 +23370,7 @@
       "last_cve_year": 2026,
       "first_cve_date": "2025-08-12T09:13:42.770Z",
       "last_cve_date": "2026-08-08T00:59:40.512Z",
-      "days_since_last_cve": 31,
+      "days_since_last_cve": 32,
       "activity_status": "Active",
       "is_official": true,
       "cna_types": [
@@ -23501,7 +23501,7 @@
       "last_cve_year": 2022,
       "first_cve_date": "2021-06-21T11:10:32.776Z",
       "last_cve_date": "2022-10-12T00:00:00.000Z",
-      "days_since_last_cve": 1427,
+      "days_since_last_cve": 1428,
       "activity_status": "Inactive",
       "is_official": true,
       "cna_types": [
@@ -23808,7 +23808,7 @@
       "last_cve_year": 2026,
       "first_cve_date": "2022-12-16T00:00:00.000Z",
       "last_cve_date": "2026-08-21T02:02:23.070Z",
-      "days_since_last_cve": 18,
+      "days_since_last_cve": 19,
       "activity_status": "Active",
       "is_official": true,
       "cna_types": [
@@ -24075,7 +24075,7 @@
       "last_cve_year": 2026,
       "first_cve_date": "2026-05-08T05:57:22.797Z",
       "last_cve_date": "2026-08-17T02:16:49.131Z",
-      "days_since_last_cve": 22,
+      "days_since_last_cve": 23,
       "activity_status": "Active",
       "is_official": true,
       "cna_types": [
@@ -24105,7 +24105,7 @@
       "last_cve_year": 2026,
       "first_cve_date": "2023-06-07T02:25:27.974Z",
       "last_cve_date": "2026-06-23T23:54:21.635Z",
-      "days_since_last_cve": 76,
+      "days_since_last_cve": 77,
       "activity_status": "Active",
       "is_official": true,
       "cna_types": [
@@ -24530,7 +24530,7 @@
       "last_cve_year": 2026,
       "first_cve_date": "2022-01-21T18:17:30.000Z",
       "last_cve_date": "2026-07-30T01:50:16.571Z",
-      "days_since_last_cve": 40,
+      "days_since_last_cve": 41,
       "activity_status": "Active",
       "is_official": true,
       "cna_types": [
@@ -24695,7 +24695,7 @@
       "last_cve_year": 2026,
       "first_cve_date": "2023-12-01T06:12:03.581Z",
       "last_cve_date": "2026-06-23T00:53:43.698Z",
-      "days_since_last_cve": 77,
+      "days_since_last_cve": 78,
       "activity_status": "Active",
       "is_official": true,
       "cna_types": [
@@ -24925,7 +24925,7 @@
       "last_cve_year": 2026,
       "first_cve_date": "2021-07-13T17:47:37.000Z",
       "last_cve_date": "2026-08-19T01:19:34.960Z",
-      "days_since_last_cve": 20,
+      "days_since_last_cve": 21,
       "activity_status": "Active",
       "is_official": true,
       "cna_types": [
@@ -25157,7 +25157,7 @@
       "last_cve_year": 2026,
       "first_cve_date": "2023-08-24T16:03:36.347Z",
       "last_cve_date": "2026-01-03T00:28:24.506Z",
-      "days_since_last_cve": 248,
+      "days_since_last_cve": 249,
       "activity_status": "Active",
       "is_official": true,
       "cna_types": [
@@ -25544,7 +25544,7 @@
       "last_cve_year": 2026,
       "first_cve_date": "2024-04-15T07:56:07.521Z",
       "last_cve_date": "2026-08-05T01:47:16.191Z",
-      "days_since_last_cve": 34,
+      "days_since_last_cve": 35,
       "activity_status": "Active",
       "is_official": true,
       "cna_types": [
@@ -25576,7 +25576,7 @@
       "last_cve_year": 2026,
       "first_cve_date": "2025-06-11T00:25:17.737Z",
       "last_cve_date": "2026-09-03T02:25:11.241Z",
-      "days_since_last_cve": 5,
+      "days_since_last_cve": 6,
       "activity_status": "Active",
       "is_official": true,
       "cna_types": [
@@ -25735,7 +25735,7 @@
       "last_cve_year": 2025,
       "first_cve_date": "2022-05-25T14:49:30.000Z",
       "last_cve_date": "2025-02-18T02:34:44.846Z",
-      "days_since_last_cve": 567,
+      "days_since_last_cve": 568,
       "activity_status": "Inactive",
       "is_official": true,
       "cna_types": [
@@ -26224,7 +26224,7 @@
       "last_cve_year": 2026,
       "first_cve_date": "2024-07-01T20:46:40.163Z",
       "last_cve_date": "2026-09-06T02:15:28.824Z",
-      "days_since_last_cve": 2,
+      "days_since_last_cve": 3,
       "activity_status": "Active",
       "is_official": true,
       "cna_types": [
@@ -26323,7 +26323,7 @@
       "last_cve_year": 2026,
       "first_cve_date": "2022-11-03T19:20:41.897Z",
       "last_cve_date": "2026-06-17T01:48:39.408Z",
-      "days_since_last_cve": 83,
+      "days_since_last_cve": 84,
       "activity_status": "Active",
       "is_official": true,
       "cna_types": [
@@ -26710,7 +26710,7 @@
       "last_cve_year": 2026,
       "first_cve_date": "2025-04-07T06:02:06.218Z",
       "last_cve_date": "2026-08-20T23:57:34.475Z",
-      "days_since_last_cve": 18,
+      "days_since_last_cve": 19,
       "activity_status": "Active",
       "is_official": true,
       "cna_types": [
@@ -26804,7 +26804,7 @@
       "last_cve_year": 2026,
       "first_cve_date": "2025-06-23T18:41:18.771Z",
       "last_cve_date": "2026-08-29T23:58:31.289Z",
-      "days_since_last_cve": 9,
+      "days_since_last_cve": 10,
       "activity_status": "Active",
       "is_official": true,
       "cna_types": [
@@ -26897,7 +26897,7 @@
       "last_cve_year": 2026,
       "first_cve_date": "2026-02-18T22:59:55.491Z",
       "last_cve_date": "2026-08-26T02:11:01.673Z",
-      "days_since_last_cve": 13,
+      "days_since_last_cve": 14,
       "activity_status": "Active",
       "is_official": true,
       "cna_types": [
@@ -27025,7 +27025,7 @@
       "last_cve_year": 2026,
       "first_cve_date": "2024-04-09T23:55:43.501Z",
       "last_cve_date": "2026-02-19T01:37:22.018Z",
-      "days_since_last_cve": 201,
+      "days_since_last_cve": 202,
       "activity_status": "Active",
       "is_official": true,
       "cna_types": [
@@ -27343,7 +27343,7 @@
       "last_cve_year": 2022,
       "first_cve_date": "2021-06-04T19:39:00.000Z",
       "last_cve_date": "2022-10-17T00:00:00.000Z",
-      "days_since_last_cve": 1422,
+      "days_since_last_cve": 1423,
       "activity_status": "Inactive",
       "is_official": true,
       "cna_types": [
@@ -27594,7 +27594,7 @@
       "last_cve_year": 2025,
       "first_cve_date": "2022-02-09T22:05:16.000Z",
       "last_cve_date": "2025-01-15T00:48:07.959Z",
-      "days_since_last_cve": 601,
+      "days_since_last_cve": 602,
       "activity_status": "Inactive",
       "is_official": true,
       "cna_types": [
@@ -27722,7 +27722,7 @@
       "last_cve_year": 2026,
       "first_cve_date": "2025-07-29T23:31:31.305Z",
       "last_cve_date": "2026-09-01T00:13:03.935Z",
-      "days_since_last_cve": 7,
+      "days_since_last_cve": 8,
       "activity_status": "Active",
       "is_official": true,
       "cna_types": [
@@ -28817,7 +28817,7 @@
       "last_cve_year": 2023,
       "first_cve_date": "2023-05-30T00:00:00.000Z",
       "last_cve_date": "2023-05-30T00:00:00.000Z",
-      "days_since_last_cve": 1197,
+      "days_since_last_cve": 1198,
       "activity_status": "Inactive",
       "is_official": true,
       "cna_types": [
@@ -28944,7 +28944,7 @@
       "last_cve_year": 2026,
       "first_cve_date": "2024-03-11T19:39:03.280Z",
       "last_cve_date": "2026-09-02T02:19:00.114Z",
-      "days_since_last_cve": 6,
+      "days_since_last_cve": 7,
       "activity_status": "Active",
       "is_official": true,
       "cna_types": [
@@ -29157,7 +29157,7 @@
       "last_cve_year": 2024,
       "first_cve_date": "2023-01-24T15:51:17.731Z",
       "last_cve_date": "2024-06-25T01:34:56.567Z",
-      "days_since_last_cve": 805,
+      "days_since_last_cve": 806,
       "activity_status": "Inactive",
       "is_official": true,
       "cna_types": [
@@ -29563,7 +29563,7 @@
       "last_cve_year": 2026,
       "first_cve_date": "2026-06-23T23:49:44.591Z",
       "last_cve_date": "2026-08-04T00:03:23.278Z",
-      "days_since_last_cve": 35,
+      "days_since_last_cve": 36,
       "activity_status": "Active",
       "is_official": true,
       "cna_types": [
@@ -29780,7 +29780,7 @@
       "last_cve_year": 2026,
       "first_cve_date": "2025-03-27T04:00:55.276Z",
       "last_cve_date": "2026-04-13T02:27:53.206Z",
-      "days_since_last_cve": 148,
+      "days_since_last_cve": 149,
       "activity_status": "Active",
       "is_official": true,
       "cna_types": [
@@ -30725,7 +30725,7 @@
       "last_cve_year": 2025,
       "first_cve_date": "2025-04-21T05:27:06.090Z",
       "last_cve_date": "2025-11-17T02:48:25.684Z",
-      "days_since_last_cve": 295,
+      "days_since_last_cve": 296,
       "activity_status": "Active",
       "is_official": true,
       "cna_types": [
@@ -31235,7 +31235,7 @@
       "last_cve_year": 2025,
       "first_cve_date": "2025-09-02T02:06:20.806Z",
       "last_cve_date": "2025-09-02T02:06:20.806Z",
-      "days_since_last_cve": 371,
+      "days_since_last_cve": 372,
       "activity_status": "Inactive",
       "is_official": true,
       "cna_types": [
@@ -31415,7 +31415,7 @@
       "last_cve_year": 2026,
       "first_cve_date": "2026-02-23T01:24:47.676Z",
       "last_cve_date": "2026-02-23T01:24:47.676Z",
-      "days_since_last_cve": 197,
+      "days_since_last_cve": 198,
       "activity_status": "Active",
       "is_official": true,
       "cna_types": [

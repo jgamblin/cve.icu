@@ -8,19 +8,19 @@
     "normalized_matches": 6,
     "partial_matches": 4,
     "unmatched": 27,
-    "exact_match_cves": 366890,
+    "exact_match_cves": 367153,
     "case_mismatch_cves": 168,
     "org_name_match_cves": 764,
     "normalized_match_cves": 1557,
     "partial_match_cves": 72,
     "unmatched_cves": 1052,
-    "exact_match_pct": 99.02,
-    "issues_pct": 0.98
+    "exact_match_pct": 99.03,
+    "issues_pct": 0.97
   },
   "exact_matches": [
     {
       "cna_name": "mitre",
-      "cve_count": 114748,
+      "cve_count": 114749,
       "kev_count": 322,
       "epss_high_count": 1734,
       "official_short_name": "mitre",
@@ -31,7 +31,7 @@
     },
     {
       "cna_name": "GitHub_M",
-      "cve_count": 19266,
+      "cve_count": 19269,
       "kev_count": 41,
       "epss_high_count": 178,
       "official_short_name": "GitHub_M",
@@ -53,7 +53,7 @@
     },
     {
       "cna_name": "VulDB",
-      "cve_count": 16283,
+      "cve_count": 16284,
       "kev_count": 4,
       "epss_high_count": 33,
       "official_short_name": "VulDB",
@@ -97,7 +97,7 @@
     },
     {
       "cna_name": "Wordfence",
-      "cve_count": 10981,
+      "cve_count": 10987,
       "kev_count": 0,
       "epss_high_count": 54,
       "official_short_name": "Wordfence",
@@ -174,7 +174,7 @@
     },
     {
       "cna_name": "Chrome",
-      "cve_count": 5981,
+      "cve_count": 6211,
       "kev_count": 75,
       "epss_high_count": 17,
       "official_short_name": "Chrome",

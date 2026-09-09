@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-08T23:17:21.983477",
+  "generated_at": "2026-09-09T02:55:14.547584",
   "year": 2026,
   "total_unique_cpes": 16499,
-  "total_cpe_entries": 163368,
-  "total_cves_with_cpes": 31494,
+  "total_cpe_entries": 163376,
+  "total_cves_with_cpes": 31502,
   "total_unique_vendors": 2819,
   "total_unique_products": 7956,
   "top_cpes": [
@@ -350,7 +350,7 @@
     },
     {
       "type": "Application",
-      "count": 75023,
+      "count": 75031,
       "percentage": 45.9
     },
     {
