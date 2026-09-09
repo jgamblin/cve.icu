@@ -8,19 +8,19 @@
     "normalized_matches": 6,
     "partial_matches": 4,
     "unmatched": 27,
-    "exact_match_cves": 367153,
+    "exact_match_cves": 367228,
     "case_mismatch_cves": 168,
     "org_name_match_cves": 764,
-    "normalized_match_cves": 1557,
+    "normalized_match_cves": 1586,
     "partial_match_cves": 72,
     "unmatched_cves": 1052,
-    "exact_match_pct": 99.03,
-    "issues_pct": 0.97
+    "exact_match_pct": 99.02,
+    "issues_pct": 0.98
   },
   "exact_matches": [
     {
       "cna_name": "mitre",
-      "cve_count": 114749,
+      "cve_count": 114756,
       "kev_count": 322,
       "epss_high_count": 1734,
       "official_short_name": "mitre",
@@ -86,7 +86,7 @@
     },
     {
       "cna_name": "redhat",
-      "cve_count": 11520,
+      "cve_count": 11521,
       "kev_count": 33,
       "epss_high_count": 187,
       "official_short_name": "redhat",
@@ -97,7 +97,7 @@
     },
     {
       "cna_name": "Wordfence",
-      "cve_count": 10987,
+      "cve_count": 11010,
       "kev_count": 0,
       "epss_high_count": 54,
       "official_short_name": "Wordfence",
@@ -184,6 +184,17 @@
       "confidence": "high"
     },
     {
+      "cna_name": "WPScan",
+      "cve_count": 5251,
+      "kev_count": 2,
+      "epss_high_count": 36,
+      "official_short_name": "WPScan",
+      "official_org_name": "WPScan",
+      "official_id": "CNA-2021-0002",
+      "match_type": "exact_short",
+      "confidence": "high"
+    },
+    {
       "cna_name": "google_android",
       "cve_count": 5230,
       "kev_count": 14,
@@ -191,17 +202,6 @@
       "official_short_name": "google_android",
       "official_org_name": "Android (associated with Google Inc. or Open Handset Alliance)",
       "official_id": "CNA-2011-0002",
-      "match_type": "exact_short",
-      "confidence": "high"
-    },
-    {
-      "cna_name": "WPScan",
-      "cve_count": 5223,
-      "kev_count": 2,
-      "epss_high_count": 36,
-      "official_short_name": "WPScan",
-      "official_org_name": "WPScan",
-      "official_id": "CNA-2021-0002",
       "match_type": "exact_short",
       "confidence": "high"
     },
@@ -306,7 +306,7 @@
     },
     {
       "cna_name": "dell",
-      "cve_count": 2261,
+      "cve_count": 2262,
       "kev_count": 3,
       "epss_high_count": 12,
       "official_short_name": "dell",
@@ -328,7 +328,7 @@
     },
     {
       "cna_name": "huawei",
-      "cve_count": 2197,
+      "cve_count": 2208,
       "kev_count": 0,
       "epss_high_count": 1,
       "official_short_name": "huawei",
@@ -471,7 +471,7 @@
     },
     {
       "cna_name": "twcert",
-      "cve_count": 903,
+      "cve_count": 904,
       "kev_count": 3,
       "epss_high_count": 1,
       "official_short_name": "twcert",
@@ -653,7 +653,7 @@
   "normalized_matches": [
     {
       "cna_name": "SamsungMobile",
-      "cve_count": 1363,
+      "cve_count": 1392,
       "kev_count": 13,
       "epss_high_count": 0,
       "official_short_name": "Samsung_Mobile",

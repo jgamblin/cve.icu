@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-09T02:57:10.843641Z",
-  "data_as_of": "2026-09-09T02:50:14.986345Z",
+  "generated_at": "2026-09-09T08:00:09.268763Z",
+  "data_as_of": "2026-09-09T07:52:42.373458Z",
   "data_age_hours": 0.0,
   "source_last_run": "2026-09-09T02:07:34.510017+00:00",
   "source_cve_count": 388816,
@@ -814,12 +814,12 @@
       {
         "name": "mitre",
         "assigner_org_id": "8254265b-2729-46b6-b9e3-3dfca2d5bfca",
-        "count": 114749,
+        "count": 114756,
         "years_active": 28,
         "first_cve_year": 1999,
         "last_cve_year": 2026,
         "first_cve_date": "1999-09-29T00:00:00.000Z",
-        "last_cve_date": "2026-09-09T01:29:46.295Z",
+        "last_cve_date": "2026-09-09T04:21:37.602Z",
         "days_since_last_cve": 0,
         "activity_status": "Active",
         "is_official": true,
@@ -854,7 +854,7 @@
           "2022": 7610,
           "2023": 6237,
           "2024": 5910,
-          "2026": 2944
+          "2026": 2951
         },
         "years_active_list": [
           1999,
@@ -914,7 +914,7 @@
         "last_cve_year": 2026,
         "first_cve_date": "2021-09-09T11:18:20.862Z",
         "last_cve_date": "2026-09-08T07:26:40.367Z",
-        "days_since_last_cve": 0,
+        "days_since_last_cve": 1,
         "activity_status": "Active",
         "is_official": true,
         "cna_types": [
@@ -1060,12 +1060,12 @@
       {
         "name": "redhat",
         "assigner_org_id": "53f830b8-0a3f-465b-8143-3b8a9948e749",
-        "count": 11520,
+        "count": 11521,
         "years_active": 22,
         "first_cve_year": 2005,
         "last_cve_year": 2026,
         "first_cve_date": "2005-02-07T05:00:00.000Z",
-        "last_cve_date": "2026-09-08T23:07:39.510Z",
+        "last_cve_date": "2026-09-09T07:03:35.684Z",
         "days_since_last_cve": 0,
         "activity_status": "Active",
         "is_official": true,
@@ -1094,7 +1094,7 @@
           "2023": 446,
           "2024": 306,
           "2025": 300,
-          "2026": 825
+          "2026": 826
         },
         "years_active_list": [
           2005,
@@ -1111,12 +1111,12 @@
       {
         "name": "Wordfence",
         "assigner_org_id": "b15e7b5b-3da4-40ae-a43c-f7aa60e62599",
-        "count": 10987,
+        "count": 11010,
         "years_active": 6,
         "first_cve_year": 2021,
         "last_cve_year": 2026,
         "first_cve_date": "2021-07-07T12:20:58.388Z",
-        "last_cve_date": "2026-09-09T02:27:36.017Z",
+        "last_cve_date": "2026-09-09T07:40:56.856Z",
         "days_since_last_cve": 0,
         "activity_status": "Active",
         "is_official": true,
@@ -1127,7 +1127,7 @@
           "2024": 3524,
           "2025": 3450,
           "2023": 879,
-          "2026": 2811,
+          "2026": 2834,
           "2022": 169,
           "2021": 154
         },
@@ -1456,6 +1456,41 @@
         "rank": 15
       },
       {
+        "name": "WPScan",
+        "assigner_org_id": "1bfdd5d7-9bf6-4a53-96ea-42e2716d7a81",
+        "count": 5251,
+        "years_active": 6,
+        "first_cve_year": 2021,
+        "last_cve_year": 2026,
+        "first_cve_date": "2021-03-18T14:57:47.000Z",
+        "last_cve_date": "2026-09-09T06:25:07.194Z",
+        "days_since_last_cve": 0,
+        "activity_status": "Active",
+        "is_official": true,
+        "cna_types": [
+          "Vendor"
+        ],
+        "cves_by_year": {
+          "2021": 747,
+          "2025": 595,
+          "2024": 773,
+          "2022": 1144,
+          "2023": 935,
+          "2026": 1057
+        },
+        "years_active_list": [
+          2021,
+          2026
+        ],
+        "severity_distribution": {},
+        "top_cwe_types": {},
+        "kev_count": 2,
+        "epss_high_count": 36,
+        "epss_elevated_count": 150,
+        "top_cwes": [],
+        "rank": 16
+      },
+      {
         "name": "google_android",
         "assigner_org_id": "baff130e-b8d5-4e15-b3d3-c3cf5d5545c6",
         "count": 5230,
@@ -1493,41 +1528,6 @@
         "kev_count": 14,
         "epss_high_count": 7,
         "epss_elevated_count": 14,
-        "top_cwes": [],
-        "rank": 16
-      },
-      {
-        "name": "WPScan",
-        "assigner_org_id": "1bfdd5d7-9bf6-4a53-96ea-42e2716d7a81",
-        "count": 5223,
-        "years_active": 6,
-        "first_cve_year": 2021,
-        "last_cve_year": 2026,
-        "first_cve_date": "2021-03-18T14:57:47.000Z",
-        "last_cve_date": "2026-09-06T09:36:35.180Z",
-        "days_since_last_cve": 2,
-        "activity_status": "Active",
-        "is_official": true,
-        "cna_types": [
-          "Vendor"
-        ],
-        "cves_by_year": {
-          "2021": 747,
-          "2025": 595,
-          "2024": 773,
-          "2022": 1144,
-          "2023": 935,
-          "2026": 1029
-        },
-        "years_active_list": [
-          2021,
-          2026
-        ],
-        "severity_distribution": {},
-        "top_cwe_types": {},
-        "kev_count": 2,
-        "epss_high_count": 36,
-        "epss_elevated_count": 150,
         "top_cwes": [],
         "rank": 17
       },
