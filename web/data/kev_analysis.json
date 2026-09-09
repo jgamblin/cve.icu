@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-09T13:30:31.911181Z",
-  "catalog_version": "2026.09.08",
+  "generated_at": "2026-09-09T18:25:12.100928Z",
+  "catalog_version": "2026.09.09",
   "total_kev_cves": 1699,
   "statistics": {
     "added_last_30_days": 37,
     "added_last_90_days": 82,
-    "ransomware_associated": 355
+    "ransomware_associated": 358
   },
   "by_year_added": {
     "2021": 311,

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09T13:30:52.475901Z",
+  "generated_at": "2026-09-09T18:25:28.638779Z",
   "severity_bands": [
     "NONE",
     "LOW",
@@ -18,7 +18,7 @@
     {
       "severity": "NONE",
       "epss_bucket": "0-0.1",
-      "count": 85,
+      "count": 86,
       "kev_count": 0
     },
     {
@@ -48,7 +48,7 @@
     {
       "severity": "LOW",
       "epss_bucket": "0-0.1",
-      "count": 15856,
+      "count": 15870,
       "kev_count": 4
     },
     {
@@ -78,13 +78,13 @@
     {
       "severity": "MEDIUM",
       "epss_bucket": "0-0.1",
-      "count": 163778,
+      "count": 164341,
       "kev_count": 79
     },
     {
       "severity": "MEDIUM",
       "epss_bucket": "0.1-0.3",
-      "count": 2632,
+      "count": 2630,
       "kev_count": 46
     },
     {
@@ -108,19 +108,19 @@
     {
       "severity": "HIGH",
       "epss_bucket": "0-0.1",
-      "count": 129886,
-      "kev_count": 274
+      "count": 130809,
+      "kev_count": 275
     },
     {
       "severity": "HIGH",
       "epss_bucket": "0.1-0.3",
-      "count": 3878,
-      "kev_count": 158
+      "count": 3876,
+      "kev_count": 159
     },
     {
       "severity": "HIGH",
       "epss_bucket": "0.3-0.5",
-      "count": 945,
+      "count": 946,
       "kev_count": 89
     },
     {
@@ -138,19 +138,19 @@
     {
       "severity": "CRITICAL",
       "epss_bucket": "0-0.1",
-      "count": 40012,
+      "count": 40119,
       "kev_count": 50
     },
     {
       "severity": "CRITICAL",
       "epss_bucket": "0.1-0.3",
-      "count": 3701,
+      "count": 3702,
       "kev_count": 63
     },
     {
       "severity": "CRITICAL",
       "epss_bucket": "0.3-0.5",
-      "count": 1162,
+      "count": 1161,
       "kev_count": 33
     },
     {
@@ -162,12 +162,12 @@
     {
       "severity": "CRITICAL",
       "epss_bucket": "0.7+",
-      "count": 1169,
+      "count": 1170,
       "kev_count": 419
     }
   ],
   "totals": {
-    "cves_in_matrix": 366983,
-    "kev_in_matrix": 1697
+    "cves_in_matrix": 368589,
+    "kev_in_matrix": 1699
   }
 }

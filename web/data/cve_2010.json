@@ -568,11 +568,11 @@
         "count": 90
       },
       {
-        "name": "Opensuse",
+        "name": "Suse",
         "count": 72
       },
       {
-        "name": "Suse",
+        "name": "Opensuse",
         "count": 72
       },
       {
@@ -757,7 +757,7 @@
     ]
   },
   "processing_stats": {
-    "processed_at": "2026-09-09T13:26:02.491640",
+    "processed_at": "2026-09-09T18:20:23.870763",
     "data_source": "data/cache/nvd.json"
   }
 }

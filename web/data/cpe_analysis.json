@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-09T13:28:21.291121",
-  "total_unique_cpes": 373179,
-  "total_cpe_entries": 2581752,
-  "total_cves_with_cpes": 314138,
+  "generated_at": "2026-09-09T18:23:29.088148",
+  "total_unique_cpes": 373183,
+  "total_cpe_entries": 2584087,
+  "total_cves_with_cpes": 314256,
   "total_unique_vendors": 36576,
-  "total_unique_products": 114667,
+  "total_unique_products": 114669,
   "top_cpes": [
     {
       "cpe": "cpe:2.3:o:linux:linux_kernel:*:*:*:*:*:*:*:*",
@@ -36,7 +36,7 @@
     },
     {
       "cpe": "cpe:2.3:o:microsoft:windows_server_2012:r2:*:*:*:*:*:*:*",
-      "count": 4020,
+      "count": 4031,
       "vendor": "microsoft",
       "product": "windows_server_2012",
       "type": "Operating System"
@@ -50,7 +50,7 @@
     },
     {
       "cpe": "cpe:2.3:o:microsoft:windows_server_2012:-:*:*:*:*:*:*:*",
-      "count": 3822,
+      "count": 3833,
       "vendor": "microsoft",
       "product": "windows_server_2012",
       "type": "Operating System"
@@ -141,14 +141,14 @@
     },
     {
       "cpe": "cpe:2.3:o:microsoft:windows_server_2022:*:*:*:*:*:*:*:*",
-      "count": 2271,
+      "count": 2302,
       "vendor": "microsoft",
       "product": "windows_server_2022",
       "type": "Operating System"
     },
     {
       "cpe": "cpe:2.3:o:microsoft:windows_server_2019:*:*:*:*:*:*:*:*",
-      "count": 2171,
+      "count": 2202,
       "vendor": "microsoft",
       "product": "windows_server_2019",
       "type": "Operating System"
@@ -158,6 +158,13 @@
       "count": 2070,
       "vendor": "apple",
       "product": "tvos",
+      "type": "Operating System"
+    },
+    {
+      "cpe": "cpe:2.3:o:microsoft:windows_server_2016:*:*:*:*:*:*:*:*",
+      "count": 2063,
+      "vendor": "microsoft",
+      "product": "windows_server_2016",
       "type": "Operating System"
     },
     {
@@ -173,13 +180,6 @@
       "vendor": "oracle",
       "product": "mysql",
       "type": "Application"
-    },
-    {
-      "cpe": "cpe:2.3:o:microsoft:windows_server_2016:*:*:*:*:*:*:*:*",
-      "count": 2032,
-      "vendor": "microsoft",
-      "product": "windows_server_2016",
-      "type": "Operating System"
     },
     {
       "cpe": "cpe:2.3:a:adobe:acrobat_dc:*:*:*:*:continuous:*:*:*",
@@ -280,18 +280,18 @@
       "type": "Operating System"
     },
     {
+      "cpe": "cpe:2.3:o:microsoft:windows_10_1809:*:*:*:*:*:*:x64:*",
+      "count": 1705,
+      "vendor": "microsoft",
+      "product": "windows_10_1809",
+      "type": "Operating System"
+    },
+    {
       "cpe": "cpe:2.3:a:mozilla:thunderbird:*:*:*:*:*:*:*:*",
       "count": 1692,
       "vendor": "mozilla",
       "product": "thunderbird",
       "type": "Application"
-    },
-    {
-      "cpe": "cpe:2.3:o:microsoft:windows_10_1809:*:*:*:*:*:*:x64:*",
-      "count": 1674,
-      "vendor": "microsoft",
-      "product": "windows_10_1809",
-      "type": "Operating System"
     },
     {
       "cpe": "cpe:2.3:a:apple:safari:*:*:*:*:*:*:*:*",
@@ -301,18 +301,18 @@
       "type": "Application"
     },
     {
+      "cpe": "cpe:2.3:o:microsoft:windows_10_1809:*:*:*:*:*:*:x86:*",
+      "count": 1650,
+      "vendor": "microsoft",
+      "product": "windows_10_1809",
+      "type": "Operating System"
+    },
+    {
       "cpe": "cpe:2.3:a:f5:big-ip_application_security_manager:*:*:*:*:*:*:*:*",
       "count": 1623,
       "vendor": "f5",
       "product": "big-ip_application_security_manager",
       "type": "Application"
-    },
-    {
-      "cpe": "cpe:2.3:o:microsoft:windows_10_1809:*:*:*:*:*:*:x86:*",
-      "count": 1619,
-      "vendor": "microsoft",
-      "product": "windows_10_1809",
-      "type": "Operating System"
     },
     {
       "cpe": "cpe:2.3:o:microsoft:windows_server_2022_23h2:*:*:*:*:*:*:*:*",
@@ -326,6 +326,13 @@
       "count": 1560,
       "vendor": "google",
       "product": "android",
+      "type": "Operating System"
+    },
+    {
+      "cpe": "cpe:2.3:o:microsoft:windows_10_1607:*:*:*:*:*:*:x64:*",
+      "count": 1557,
+      "vendor": "microsoft",
+      "product": "windows_10_1607",
       "type": "Operating System"
     },
     {
@@ -348,13 +355,6 @@
       "vendor": "f5",
       "product": "big-ip_local_traffic_manager",
       "type": "Application"
-    },
-    {
-      "cpe": "cpe:2.3:o:microsoft:windows_10_1607:*:*:*:*:*:*:x64:*",
-      "count": 1526,
-      "vendor": "microsoft",
-      "product": "windows_10_1607",
-      "type": "Operating System"
     }
   ],
   "top_vendors": [
@@ -372,11 +372,11 @@
     },
     {
       "vendor": "microsoft",
-      "count": 144495
+      "count": 145439
     },
     {
       "vendor": "adobe",
-      "count": 94337
+      "count": 95636
     },
     {
       "vendor": "apple",
@@ -392,7 +392,7 @@
     },
     {
       "vendor": "ibm",
-      "count": 73792
+      "count": 73824
     },
     {
       "vendor": "oracle",
@@ -432,7 +432,7 @@
     },
     {
       "vendor": "apache",
-      "count": 21784
+      "count": 21786
     },
     {
       "vendor": "opera",
@@ -524,13 +524,13 @@
   "cpe_type_distribution": [
     {
       "type": "Application",
-      "count": 1348077,
+      "count": 1349841,
       "percentage": 52.2
     },
     {
       "type": "Operating System",
-      "count": 1178574,
-      "percentage": 45.7
+      "count": 1179145,
+      "percentage": 45.6
     },
     {
       "type": "Hardware",
