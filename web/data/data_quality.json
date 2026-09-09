@@ -1,14 +1,14 @@
 {
   "stats": {
     "total_cnas_in_analysis": 468,
-    "official_cna_registry_count": 544,
+    "official_cna_registry_count": 548,
     "exact_matches": 424,
     "case_mismatches": 1,
     "org_name_matches": 6,
     "normalized_matches": 6,
     "partial_matches": 4,
     "unmatched": 27,
-    "exact_match_cves": 367453,
+    "exact_match_cves": 367516,
     "case_mismatch_cves": 168,
     "org_name_match_cves": 764,
     "normalized_match_cves": 1586,
@@ -20,7 +20,7 @@
   "exact_matches": [
     {
       "cna_name": "mitre",
-      "cve_count": 114758,
+      "cve_count": 114789,
       "kev_count": 322,
       "epss_high_count": 1734,
       "official_short_name": "mitre",
@@ -31,7 +31,7 @@
     },
     {
       "cna_name": "GitHub_M",
-      "cve_count": 19273,
+      "cve_count": 19292,
       "kev_count": 41,
       "epss_high_count": 178,
       "official_short_name": "GitHub_M",
@@ -53,7 +53,7 @@
     },
     {
       "cna_name": "VulDB",
-      "cve_count": 16284,
+      "cve_count": 16288,
       "kev_count": 4,
       "epss_high_count": 33,
       "official_short_name": "VulDB",
@@ -164,7 +164,7 @@
     {
       "cna_name": "cisco",
       "cve_count": 6438,
-      "kev_count": 95,
+      "kev_count": 96,
       "epss_high_count": 73,
       "official_short_name": "cisco",
       "official_org_name": "Cisco Systems, Inc.",
@@ -175,7 +175,7 @@
     {
       "cna_name": "Chrome",
       "cve_count": 6211,
-      "kev_count": 75,
+      "kev_count": 76,
       "epss_high_count": 17,
       "official_short_name": "Chrome",
       "official_org_name": "Chrome",
@@ -383,7 +383,7 @@
     },
     {
       "cna_name": "hpe",
-      "cve_count": 1418,
+      "cve_count": 1423,
       "kev_count": 2,
       "epss_high_count": 18,
       "official_short_name": "hpe",
@@ -428,7 +428,7 @@
     {
       "cna_name": "fortinet",
       "cve_count": 1036,
-      "kev_count": 29,
+      "kev_count": 30,
       "epss_high_count": 26,
       "official_short_name": "fortinet",
       "official_org_name": "Fortinet, Inc.",

@@ -614,7 +614,7 @@
     }
   },
   "kev": {
-    "kev_count": 145
+    "kev_count": 149
   },
   "vendors": {
     "cna_assigners": [],
@@ -885,7 +885,7 @@
     ]
   },
   "processing_stats": {
-    "processed_at": "2026-09-09T18:20:30.282649",
+    "processed_at": "2026-09-09T22:58:47.026134",
     "data_source": "data/cache/nvd.json"
   }
 }

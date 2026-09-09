@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-09T18:25:31.523907Z",
-  "data_as_of": "2026-09-09T18:19:11.626748Z",
+  "generated_at": "2026-09-09T23:04:27.928154Z",
+  "data_as_of": "2026-09-09T22:57:11.910597Z",
   "data_age_hours": 0.0,
   "source_last_run": "2026-09-09T18:13:18.398698+00:00",
   "source_cve_count": 389355,
@@ -691,7 +691,7 @@
         "4.2": 1
       }
     },
-    "kev_global_count": 1699
+    "kev_global_count": 1703
   },
   "epss_analysis": {
     "statistics": {
@@ -706,8 +706,8 @@
   },
   "kev_analysis": {
     "statistics": {
-      "added_last_30_days": 37,
-      "added_last_90_days": 82,
+      "added_last_30_days": 41,
+      "added_last_90_days": 86,
       "ransomware_associated": 358
     },
     "by_year_added": {
@@ -716,7 +716,7 @@
       "2023": 187,
       "2024": 186,
       "2025": 245,
-      "2026": 215
+      "2026": 219
     },
     "by_year_published": {
       "2002": 1,
@@ -742,7 +742,7 @@
       "2023": 165,
       "2024": 160,
       "2025": 195,
-      "2026": 145
+      "2026": 149
     }
   },
   "cwe_analysis": {
@@ -814,7 +814,7 @@
       {
         "name": "mitre",
         "assigner_org_id": "8254265b-2729-46b6-b9e3-3dfca2d5bfca",
-        "count": 114758,
+        "count": 114789,
         "years_active": 28,
         "first_cve_year": 1999,
         "last_cve_year": 2026,
@@ -854,7 +854,7 @@
           "2022": 7610,
           "2023": 6237,
           "2024": 5910,
-          "2026": 2953
+          "2026": 2984
         },
         "years_active_list": [
           1999,
@@ -871,12 +871,12 @@
       {
         "name": "GitHub_M",
         "assigner_org_id": "a0819718-46f1-4df5-94e2-005712e83aaa",
-        "count": 19273,
+        "count": 19292,
         "years_active": 8,
         "first_cve_year": 2019,
         "last_cve_year": 2026,
         "first_cve_date": "2019-09-30T21:39:38.000Z",
-        "last_cve_date": "2026-09-09T16:06:40.283Z",
+        "last_cve_date": "2026-09-09T21:40:06.412Z",
         "days_since_last_cve": 0,
         "activity_status": "Active",
         "is_official": true,
@@ -890,7 +890,7 @@
           "2021": 1065,
           "2024": 2120,
           "2023": 1771,
-          "2026": 9634,
+          "2026": 9653,
           "2025": 2866
         },
         "years_active_list": [
@@ -943,12 +943,12 @@
       {
         "name": "VulDB",
         "assigner_org_id": "1af790b2-7ee1-4545-860a-a788eba489b5",
-        "count": 16284,
+        "count": 16288,
         "years_active": 5,
         "first_cve_year": 2022,
         "last_cve_year": 2026,
         "first_cve_date": "2022-03-28T18:00:15.000Z",
-        "last_cve_date": "2026-09-09T01:15:11.418Z",
+        "last_cve_date": "2026-09-09T22:45:13.045Z",
         "days_since_last_cve": 0,
         "activity_status": "Active",
         "is_official": true,
@@ -960,7 +960,7 @@
           "2024": 2930,
           "2022": 854,
           "2025": 5901,
-          "2026": 4668
+          "2026": 4672
         },
         "years_active_list": [
           2022,
@@ -1015,7 +1015,7 @@
         "last_cve_year": 2026,
         "first_cve_date": "2005-04-13T04:00:00.000Z",
         "last_cve_date": "2026-09-08T18:39:44.434Z",
-        "days_since_last_cve": 0,
+        "days_since_last_cve": 1,
         "activity_status": "Active",
         "is_official": true,
         "cna_types": [
@@ -1152,7 +1152,7 @@
         "last_cve_year": 2026,
         "first_cve_date": "2008-10-14T21:00:00.000Z",
         "last_cve_date": "2026-08-26T19:57:04.287Z",
-        "days_since_last_cve": 13,
+        "days_since_last_cve": 14,
         "activity_status": "Active",
         "is_official": true,
         "cna_types": [
@@ -1200,7 +1200,7 @@
         "last_cve_year": 2026,
         "first_cve_date": "2009-10-13T10:00:00.000Z",
         "last_cve_date": "2026-09-08T20:31:14.326Z",
-        "days_since_last_cve": 0,
+        "days_since_last_cve": 1,
         "activity_status": "Active",
         "is_official": true,
         "cna_types": [
@@ -1247,7 +1247,7 @@
         "last_cve_year": 2026,
         "first_cve_date": "2012-01-18T20:00:00.000Z",
         "last_cve_date": "2026-09-08T20:18:52.521Z",
-        "days_since_last_cve": 0,
+        "days_since_last_cve": 1,
         "activity_status": "Active",
         "is_official": true,
         "cna_types": [
@@ -1291,7 +1291,7 @@
         "last_cve_year": 2026,
         "first_cve_date": "2010-01-20T16:00:00.000Z",
         "last_cve_date": "2026-08-25T19:24:55.493Z",
-        "days_since_last_cve": 14,
+        "days_since_last_cve": 15,
         "activity_status": "Active",
         "is_official": true,
         "cna_types": [
@@ -1404,7 +1404,7 @@
         ],
         "severity_distribution": {},
         "top_cwe_types": {},
-        "kev_count": 95,
+        "kev_count": 96,
         "epss_high_count": 73,
         "epss_elevated_count": 223,
         "top_cwes": [],
@@ -1449,7 +1449,7 @@
         ],
         "severity_distribution": {},
         "top_cwe_types": {},
-        "kev_count": 75,
+        "kev_count": 76,
         "epss_high_count": 17,
         "epss_elevated_count": 123,
         "top_cwes": [],
@@ -1499,7 +1499,7 @@
         "last_cve_year": 2026,
         "first_cve_date": "2015-10-01T00:00:00.000Z",
         "last_cve_date": "2026-09-08T19:20:33.261Z",
-        "days_since_last_cve": 0,
+        "days_since_last_cve": 1,
         "activity_status": "Active",
         "is_official": true,
         "cna_types": [
@@ -1844,7 +1844,7 @@
         "last_cve_year": 2026,
         "first_cve_date": "2016-10-28T14:00:00.000Z",
         "last_cve_date": "2026-06-25T21:46:00.057Z",
-        "days_since_last_cve": 75,
+        "days_since_last_cve": 76,
         "activity_status": "Active",
         "is_official": true,
         "cna_types": [
