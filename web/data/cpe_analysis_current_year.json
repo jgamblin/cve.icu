@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-09T07:57:52.453713",
+  "generated_at": "2026-09-09T13:28:45.136429",
   "year": 2026,
-  "total_unique_cpes": 16499,
-  "total_cpe_entries": 163376,
-  "total_cves_with_cpes": 31502,
+  "total_unique_cpes": 16528,
+  "total_cpe_entries": 163825,
+  "total_cves_with_cpes": 31523,
   "total_unique_vendors": 2819,
-  "total_unique_products": 7956,
+  "total_unique_products": 7976,
   "top_cpes": [
     {
       "cpe": "cpe:2.3:o:linux:linux_kernel:*:*:*:*:*:*:*:*",
@@ -221,7 +221,7 @@
   "top_vendors": [
     {
       "vendor": "microsoft",
-      "count": 24815
+      "count": 24901
     },
     {
       "vendor": "linux",
@@ -345,12 +345,12 @@
   "cpe_type_distribution": [
     {
       "type": "Operating System",
-      "count": 88297,
-      "percentage": 54.0
+      "count": 88660,
+      "percentage": 54.1
     },
     {
       "type": "Application",
-      "count": 75031,
+      "count": 75117,
       "percentage": 45.9
     },
     {

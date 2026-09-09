@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-09T07:57:27.423804",
-  "total_unique_cpes": 373157,
-  "total_cpe_entries": 2581303,
-  "total_cves_with_cpes": 314117,
+  "generated_at": "2026-09-09T13:28:21.291121",
+  "total_unique_cpes": 373179,
+  "total_cpe_entries": 2581752,
+  "total_cves_with_cpes": 314138,
   "total_unique_vendors": 36576,
-  "total_unique_products": 114650,
+  "total_unique_products": 114667,
   "top_cpes": [
     {
       "cpe": "cpe:2.3:o:linux:linux_kernel:*:*:*:*:*:*:*:*",
@@ -372,7 +372,7 @@
     },
     {
       "vendor": "microsoft",
-      "count": 144409
+      "count": 144495
     },
     {
       "vendor": "adobe",
@@ -524,13 +524,13 @@
   "cpe_type_distribution": [
     {
       "type": "Application",
-      "count": 1347991,
+      "count": 1348077,
       "percentage": 52.2
     },
     {
       "type": "Operating System",
-      "count": 1178211,
-      "percentage": 45.6
+      "count": 1178574,
+      "percentage": 45.7
     },
     {
       "type": "Hardware",

@@ -8,7 +8,7 @@
     "normalized_matches": 6,
     "partial_matches": 4,
     "unmatched": 27,
-    "exact_match_cves": 367228,
+    "exact_match_cves": 367320,
     "case_mismatch_cves": 168,
     "org_name_match_cves": 764,
     "normalized_match_cves": 1586,
@@ -86,7 +86,7 @@
     },
     {
       "cna_name": "redhat",
-      "cve_count": 11521,
+      "cve_count": 11522,
       "kev_count": 33,
       "epss_high_count": 187,
       "official_short_name": "redhat",
@@ -97,7 +97,7 @@
     },
     {
       "cna_name": "Wordfence",
-      "cve_count": 11010,
+      "cve_count": 11013,
       "kev_count": 0,
       "epss_high_count": 54,
       "official_short_name": "Wordfence",
@@ -152,7 +152,7 @@
     },
     {
       "cna_name": "VulnCheck",
-      "cve_count": 6747,
+      "cve_count": 6768,
       "kev_count": 19,
       "epss_high_count": 32,
       "official_short_name": "VulnCheck",
@@ -273,7 +273,7 @@
     },
     {
       "cna_name": "apache",
-      "cve_count": 2475,
+      "cve_count": 2484,
       "kev_count": 35,
       "epss_high_count": 184,
       "official_short_name": "apache",
@@ -306,7 +306,7 @@
     },
     {
       "cna_name": "dell",
-      "cve_count": 2262,
+      "cve_count": 2307,
       "kev_count": 3,
       "epss_high_count": 12,
       "official_short_name": "dell",
@@ -515,7 +515,7 @@
     },
     {
       "cna_name": "TR-CERT",
-      "cve_count": 785,
+      "cve_count": 789,
       "kev_count": 0,
       "epss_high_count": 0,
       "official_short_name": "TR-CERT",
