@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-09-10T13:25:57.527724Z",
-  "total_cves_with_epss": 370894,
+  "generated_at": "2026-09-10T18:11:16.358406Z",
+  "total_cves_with_epss": 371256,
   "statistics": {
-    "average_score": 0.027703,
-    "gt_0_1": 17364,
-    "gt_0_3": 7063,
-    "gt_0_5": 4342,
+    "average_score": 0.027685,
+    "gt_0_1": 17365,
+    "gt_0_3": 7065,
+    "gt_0_5": 4344,
     "gt_0_7": 2479,
-    "gt_0_9": 799
+    "gt_0_9": 798
   },
   "score_buckets": {
-    "very_low": 225262,
-    "low": 128268,
-    "medium": 10300,
+    "very_low": 225566,
+    "low": 128325,
+    "medium": 10299,
     "high": 2722,
-    "very_high": 1863,
+    "very_high": 1865,
     "critical": 2479
   },
   "percentile_distribution": {
-    "0": 37086,
-    "1": 37089,
-    "2": 37090,
-    "3": 37089,
-    "4": 37089,
-    "5": 37090,
-    "6": 37089,
-    "7": 37089,
-    "8": 37089,
-    "9": 37094
+    "0": 37122,
+    "1": 37126,
+    "2": 37125,
+    "3": 37126,
+    "4": 37125,
+    "5": 37126,
+    "6": 37125,
+    "7": 37126,
+    "8": 37125,
+    "9": 37130
   },
   "year_coverage": {
     "1999": {
@@ -128,19 +128,19 @@
     },
     "2023": {
       "total": 0,
-      "with_epss": 30609
+      "with_epss": 30616
     },
     "2024": {
       "total": 0,
-      "with_epss": 38448
+      "with_epss": 38451
     },
     "2025": {
       "total": 0,
-      "with_epss": 43464
+      "with_epss": 43467
     },
     "2026": {
       "total": 0,
-      "with_epss": 54732
+      "with_epss": 55081
     }
   },
   "high_risk_cves": [
@@ -510,12 +510,12 @@
       "epss_percentile": 0.99981
     },
     {
-      "cve_id": "CVE-2024-1709",
-      "epss_score": 0.9998,
+      "cve_id": "CVE-2025-22457",
+      "epss_score": 0.99981,
       "epss_percentile": 0.99981
     },
     {
-      "cve_id": "CVE-2025-22457",
+      "cve_id": "CVE-2024-1709",
       "epss_score": 0.9998,
       "epss_percentile": 0.99981
     },

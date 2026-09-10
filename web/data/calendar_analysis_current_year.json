@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-10T13:25:56.817477",
+  "generated_at": "2026-09-10T18:11:15.671069",
   "statistics": {
     "year": 2026,
-    "total_cves": 62311,
+    "total_cves": 62365,
     "total_days_with_data": 251,
-    "average_per_day": 248.25,
+    "average_per_day": 248.47,
     "peak_day": {
       "date": "2026-09-08",
       "count": 1560
@@ -1246,7 +1246,7 @@
       "date": "2026-07-27",
       "value": 440,
       "avg_cvss": 7.3,
-      "cvss_count": 397
+      "cvss_count": 398
     },
     {
       "date": "2026-07-28",
@@ -1510,13 +1510,13 @@
       "date": "2026-09-09",
       "value": 655,
       "avg_cvss": 6.3,
-      "cvss_count": 517
+      "cvss_count": 520
     },
     {
       "date": "2026-09-10",
-      "value": 35,
-      "avg_cvss": 6.7,
-      "cvss_count": 20
+      "value": 89,
+      "avg_cvss": 6.9,
+      "cvss_count": 59
     }
   ],
   "metadata": {

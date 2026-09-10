@@ -515,7 +515,7 @@
       }
     },
     "epss_summary": {
-      "epss_gt_0_1": 558,
+      "epss_gt_0_1": 557,
       "epss_gt_0_5": 122,
       "epss_gt_0_9": 11
     }
@@ -780,7 +780,7 @@
     ]
   },
   "processing_stats": {
-    "processed_at": "2026-09-10T13:21:35.527819",
+    "processed_at": "2026-09-10T18:06:16.398172",
     "data_source": "data/cache/nvd.json"
   }
 }

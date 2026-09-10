@@ -8,7 +8,7 @@
     "normalized_matches": 6,
     "partial_matches": 4,
     "unmatched": 27,
-    "exact_match_cves": 367665,
+    "exact_match_cves": 367784,
     "case_mismatch_cves": 168,
     "org_name_match_cves": 764,
     "normalized_match_cves": 1586,
@@ -20,9 +20,9 @@
   "exact_matches": [
     {
       "cna_name": "mitre",
-      "cve_count": 114789,
+      "cve_count": 114793,
       "kev_count": 322,
-      "epss_high_count": 1734,
+      "epss_high_count": 1735,
       "official_short_name": "mitre",
       "official_org_name": "MITRE Corporation",
       "official_id": "CNA-1999-0001",
@@ -31,7 +31,7 @@
     },
     {
       "cna_name": "GitHub_M",
-      "cve_count": 19292,
+      "cve_count": 19321,
       "kev_count": 41,
       "epss_high_count": 178,
       "official_short_name": "GitHub_M",
@@ -42,7 +42,7 @@
     },
     {
       "cna_name": "Patchstack",
-      "cve_count": 17910,
+      "cve_count": 17937,
       "kev_count": 0,
       "epss_high_count": 12,
       "official_short_name": "Patchstack",
@@ -53,9 +53,9 @@
     },
     {
       "cna_name": "VulDB",
-      "cve_count": 16292,
+      "cve_count": 16293,
       "kev_count": 4,
-      "epss_high_count": 33,
+      "epss_high_count": 32,
       "official_short_name": "VulDB",
       "official_org_name": "VulDB",
       "official_id": "CNA-2001-0063",
@@ -77,7 +77,7 @@
       "cna_name": "microsoft",
       "cve_count": 14453,
       "kev_count": 379,
-      "epss_high_count": 557,
+      "epss_high_count": 558,
       "official_short_name": "microsoft",
       "official_org_name": "Microsoft Corporation",
       "official_id": "CNA-2005-0005",
@@ -86,7 +86,7 @@
     },
     {
       "cna_name": "redhat",
-      "cve_count": 11535,
+      "cve_count": 11536,
       "kev_count": 33,
       "epss_high_count": 187,
       "official_short_name": "redhat",
@@ -152,7 +152,7 @@
     },
     {
       "cna_name": "VulnCheck",
-      "cve_count": 6877,
+      "cve_count": 6898,
       "kev_count": 19,
       "epss_high_count": 32,
       "official_short_name": "VulnCheck",
@@ -165,7 +165,7 @@
       "cna_name": "cisco",
       "cve_count": 6438,
       "kev_count": 96,
-      "epss_high_count": 73,
+      "epss_high_count": 74,
       "official_short_name": "cisco",
       "official_org_name": "Cisco Systems, Inc.",
       "official_id": "CNA-2007-0001",
@@ -306,7 +306,7 @@
     },
     {
       "cna_name": "dell",
-      "cve_count": 2333,
+      "cve_count": 2340,
       "kev_count": 3,
       "epss_high_count": 12,
       "official_short_name": "dell",
@@ -350,7 +350,7 @@
     },
     {
       "cna_name": "hackerone",
-      "cve_count": 1739,
+      "cve_count": 1743,
       "kev_count": 27,
       "epss_high_count": 71,
       "official_short_name": "hackerone",
@@ -515,7 +515,7 @@
     },
     {
       "cna_name": "TR-CERT",
-      "cve_count": 795,
+      "cve_count": 798,
       "kev_count": 0,
       "epss_high_count": 0,
       "official_short_name": "TR-CERT",
