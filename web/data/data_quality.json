@@ -8,7 +8,7 @@
     "normalized_matches": 6,
     "partial_matches": 4,
     "unmatched": 27,
-    "exact_match_cves": 367784,
+    "exact_match_cves": 367897,
     "case_mismatch_cves": 168,
     "org_name_match_cves": 764,
     "normalized_match_cves": 1586,
@@ -20,7 +20,7 @@
   "exact_matches": [
     {
       "cna_name": "mitre",
-      "cve_count": 114793,
+      "cve_count": 114807,
       "kev_count": 322,
       "epss_high_count": 1735,
       "official_short_name": "mitre",
@@ -31,7 +31,7 @@
     },
     {
       "cna_name": "GitHub_M",
-      "cve_count": 19321,
+      "cve_count": 19344,
       "kev_count": 41,
       "epss_high_count": 178,
       "official_short_name": "GitHub_M",
@@ -130,7 +130,7 @@
     },
     {
       "cna_name": "ibm",
-      "cve_count": 7482,
+      "cve_count": 7531,
       "kev_count": 8,
       "epss_high_count": 19,
       "official_short_name": "ibm",
@@ -152,7 +152,7 @@
     },
     {
       "cna_name": "VulnCheck",
-      "cve_count": 6898,
+      "cve_count": 6899,
       "kev_count": 19,
       "epss_high_count": 32,
       "official_short_name": "VulnCheck",

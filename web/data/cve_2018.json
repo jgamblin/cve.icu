@@ -551,10 +551,10 @@
       }
     },
     "v3.1": {
-      "total": 1852,
+      "total": 1853,
       "severity_distribution": {
         "HIGH": 872,
-        "MEDIUM": 628,
+        "MEDIUM": 629,
         "CRITICAL": 331,
         "LOW": 21
       },
@@ -582,7 +582,7 @@
         "4.4": 8,
         "3.3": 6,
         "7.2": 23,
-        "4.3": 24,
+        "4.3": 25,
         "8.0": 5,
         "9.0": 5,
         "9.9": 32,
@@ -817,7 +817,7 @@
     "reference_tags": [
       {
         "tag": "Third Party Advisory",
-        "count": 62916
+        "count": 62915
       },
       {
         "tag": "VDB Entry",
@@ -853,11 +853,11 @@
       },
       {
         "tag": "US Government Resource",
-        "count": 1141
+        "count": 1140
       },
       {
         "tag": "Mitigation",
-        "count": 1138
+        "count": 1137
       },
       {
         "tag": "Permissions Required",
@@ -890,7 +890,7 @@
     ]
   },
   "processing_stats": {
-    "processed_at": "2026-09-10T18:06:17.742044",
+    "processed_at": "2026-09-10T23:00:01.835537",
     "data_source": "data/cache/nvd.json"
   }
 }
