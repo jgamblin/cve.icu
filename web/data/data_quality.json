@@ -1,14 +1,14 @@
 {
   "stats": {
-    "total_cnas_in_analysis": 468,
+    "total_cnas_in_analysis": 469,
     "official_cna_registry_count": 548,
-    "exact_matches": 424,
+    "exact_matches": 425,
     "case_mismatches": 1,
     "org_name_matches": 6,
     "normalized_matches": 6,
     "partial_matches": 4,
     "unmatched": 27,
-    "exact_match_cves": 367524,
+    "exact_match_cves": 367570,
     "case_mismatch_cves": 168,
     "org_name_match_cves": 764,
     "normalized_match_cves": 1586,
@@ -86,7 +86,7 @@
     },
     {
       "cna_name": "redhat",
-      "cve_count": 11528,
+      "cve_count": 11530,
       "kev_count": 33,
       "epss_high_count": 187,
       "official_short_name": "redhat",
@@ -97,7 +97,7 @@
     },
     {
       "cna_name": "Wordfence",
-      "cve_count": 11015,
+      "cve_count": 11025,
       "kev_count": 0,
       "epss_high_count": 54,
       "official_short_name": "Wordfence",
@@ -185,7 +185,7 @@
     },
     {
       "cna_name": "WPScan",
-      "cve_count": 5251,
+      "cve_count": 5259,
       "kev_count": 2,
       "epss_high_count": 36,
       "official_short_name": "WPScan",
@@ -229,7 +229,7 @@
     },
     {
       "cna_name": "jpcert",
-      "cve_count": 3178,
+      "cve_count": 3180,
       "kev_count": 6,
       "epss_high_count": 8,
       "official_short_name": "jpcert",
@@ -273,7 +273,7 @@
     },
     {
       "cna_name": "apache",
-      "cve_count": 2484,
+      "cve_count": 2495,
       "kev_count": 35,
       "epss_high_count": 184,
       "official_short_name": "apache",
@@ -515,7 +515,7 @@
     },
     {
       "cna_name": "TR-CERT",
-      "cve_count": 790,
+      "cve_count": 791,
       "kev_count": 0,
       "epss_high_count": 0,
       "official_short_name": "TR-CERT",
