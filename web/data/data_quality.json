@@ -8,7 +8,7 @@
     "normalized_matches": 6,
     "partial_matches": 4,
     "unmatched": 27,
-    "exact_match_cves": 367570,
+    "exact_match_cves": 367665,
     "case_mismatch_cves": 168,
     "org_name_match_cves": 764,
     "normalized_match_cves": 1586,
@@ -86,7 +86,7 @@
     },
     {
       "cna_name": "redhat",
-      "cve_count": 11530,
+      "cve_count": 11535,
       "kev_count": 33,
       "epss_high_count": 187,
       "official_short_name": "redhat",
@@ -97,7 +97,7 @@
     },
     {
       "cna_name": "Wordfence",
-      "cve_count": 11025,
+      "cve_count": 11027,
       "kev_count": 0,
       "epss_high_count": 54,
       "official_short_name": "Wordfence",
@@ -152,7 +152,7 @@
     },
     {
       "cna_name": "VulnCheck",
-      "cve_count": 6838,
+      "cve_count": 6877,
       "kev_count": 19,
       "epss_high_count": 32,
       "official_short_name": "VulnCheck",
@@ -493,7 +493,7 @@
     },
     {
       "cna_name": "snyk",
-      "cve_count": 868,
+      "cve_count": 869,
       "kev_count": 2,
       "epss_high_count": 4,
       "official_short_name": "snyk",
@@ -515,7 +515,7 @@
     },
     {
       "cna_name": "TR-CERT",
-      "cve_count": 791,
+      "cve_count": 795,
       "kev_count": 0,
       "epss_high_count": 0,
       "official_short_name": "TR-CERT",

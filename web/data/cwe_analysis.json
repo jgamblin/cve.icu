@@ -1,24 +1,24 @@
 {
-  "generated_at": "2026-09-10T07:57:31.002354",
-  "total_cves_with_cwe": 265867,
+  "generated_at": "2026-09-10T13:24:45.149332",
+  "total_cves_with_cwe": 265895,
   "total_unique_cwes": 69,
   "top_cwes": [
     {
       "id": "79",
       "name": "CWE-79: Cross-site Scripting (XSS)",
-      "count": 53438,
+      "count": 53446,
       "description": "Cross-site Scripting (XSS)"
     },
     {
       "id": "89",
       "name": "CWE-89: SQL Injection",
-      "count": 24270,
+      "count": 24271,
       "description": "SQL Injection"
     },
     {
       "id": "787",
       "name": "CWE-787: Out-of-bounds Write",
-      "count": 17128,
+      "count": 17129,
       "description": "Out-of-bounds Write"
     },
     {
@@ -36,13 +36,13 @@
     {
       "id": "22",
       "name": "CWE-22: Path Traversal",
-      "count": 11457,
+      "count": 11459,
       "description": "Path Traversal"
     },
     {
       "id": "200",
       "name": "CWE-200: Information Exposure",
-      "count": 11252,
+      "count": 11253,
       "description": "Information Exposure"
     },
     {
@@ -54,13 +54,13 @@
     {
       "id": "862",
       "name": "CWE-862: Missing Authorization",
-      "count": 10478,
+      "count": 10481,
       "description": "Missing Authorization"
     },
     {
       "id": "416",
       "name": "CWE-416: Use After Free",
-      "count": 10233,
+      "count": 10234,
       "description": "Use After Free"
     },
     {
@@ -72,7 +72,7 @@
     {
       "id": "78",
       "name": "CWE-78: OS Command Injection",
-      "count": 7663,
+      "count": 7664,
       "description": "OS Command Injection"
     },
     {
@@ -84,7 +84,7 @@
     {
       "id": "94",
       "name": "CWE-94: Code Injection",
-      "count": 6412,
+      "count": 6414,
       "description": "Code Injection"
     },
     {
@@ -114,7 +114,7 @@
     {
       "id": "74",
       "name": "CWE-74",
-      "count": 4049,
+      "count": 4050,
       "description": "CWE-74"
     },
     {
@@ -132,7 +132,7 @@
     {
       "id": "121",
       "name": "CWE-121",
-      "count": 2859,
+      "count": 2860,
       "description": "CWE-121"
     },
     {
@@ -162,7 +162,7 @@
     {
       "id": "306",
       "name": "CWE-306",
-      "count": 1796,
+      "count": 1801,
       "description": "CWE-306"
     },
     {
@@ -192,7 +192,7 @@
     {
       "id": "639",
       "name": "CWE-639",
-      "count": 1367,
+      "count": 1368,
       "description": "CWE-639"
     },
     {
@@ -422,19 +422,19 @@
     {
       "id": "79",
       "name": "CWE-79: Cross-site Scripting (XSS)",
-      "count": 53438,
+      "count": 53446,
       "description": "Cross-site Scripting (XSS)"
     },
     {
       "id": "89",
       "name": "CWE-89: SQL Injection",
-      "count": 24270,
+      "count": 24271,
       "description": "SQL Injection"
     },
     {
       "id": "787",
       "name": "CWE-787: Out-of-bounds Write",
-      "count": 17128,
+      "count": 17129,
       "description": "Out-of-bounds Write"
     },
     {
@@ -452,13 +452,13 @@
     {
       "id": "22",
       "name": "CWE-22: Path Traversal",
-      "count": 11457,
+      "count": 11459,
       "description": "Path Traversal"
     },
     {
       "id": "200",
       "name": "CWE-200: Information Exposure",
-      "count": 11252,
+      "count": 11253,
       "description": "Information Exposure"
     },
     {
@@ -470,13 +470,13 @@
     {
       "id": "862",
       "name": "CWE-862: Missing Authorization",
-      "count": 10478,
+      "count": 10481,
       "description": "Missing Authorization"
     },
     {
       "id": "416",
       "name": "CWE-416: Use After Free",
-      "count": 10233,
+      "count": 10234,
       "description": "Use After Free"
     },
     {
@@ -488,7 +488,7 @@
     {
       "id": "78",
       "name": "CWE-78: OS Command Injection",
-      "count": 7663,
+      "count": 7664,
       "description": "OS Command Injection"
     },
     {
@@ -500,7 +500,7 @@
     {
       "id": "94",
       "name": "CWE-94: Code Injection",
-      "count": 6412,
+      "count": 6414,
       "description": "Code Injection"
     },
     {
@@ -530,7 +530,7 @@
     {
       "id": "74",
       "name": "CWE-74",
-      "count": 4049,
+      "count": 4050,
       "description": "CWE-74"
     },
     {
