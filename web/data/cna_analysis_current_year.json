@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09T23:01:24.848885",
+  "generated_at": "2026-09-10T02:55:34.949294",
   "source": "CVE V5 List (Authoritative)",
   "year": 2026,
   "total_cnas": 371,
@@ -172,10 +172,10 @@
     {
       "name": "VulDB",
       "assigner_org_id": "1af790b2-7ee1-4545-860a-a788eba489b5",
-      "count": 4672,
+      "count": 4676,
       "rank": 4,
       "first_cve_date": "2026-01-01T09:02:10.684Z",
-      "last_cve_date": "2026-09-09T22:45:13.045Z",
+      "last_cve_date": "2026-09-10T00:15:08.473Z",
       "years_active": 5,
       "first_cve_year": 2022,
       "last_cve_year": 2026,
@@ -185,17 +185,17 @@
         "Security Researcher"
       ],
       "severity_distribution": {
-        "Medium": 2762,
-        "Critical": 675,
-        "High": 1151,
+        "Medium": 2763,
+        "Critical": 676,
+        "High": 1153,
         "Low": 84
       },
       "top_cwe_types": {
-        "CWE-74": 1322,
-        "CWE-89": 965,
-        "CWE-119": 755,
+        "CWE-74": 1323,
+        "CWE-89": 966,
+        "CWE-119": 757,
         "CWE-77": 581,
-        "CWE-94": 470
+        "CWE-94": 471
       },
       "kev_count": 0,
       "epss_high_count": 0,
@@ -203,15 +203,15 @@
       "top_cwes": [
         [
           "CWE-74",
-          1322
+          1323
         ],
         [
           "CWE-89",
-          965
+          966
         ],
         [
           "CWE-119",
-          755
+          757
         ],
         [
           "CWE-77",
@@ -219,7 +219,7 @@
         ],
         [
           "CWE-94",
-          470
+          471
         ]
       ]
     },
@@ -388,10 +388,10 @@
     {
       "name": "Wordfence",
       "assigner_org_id": "b15e7b5b-3da4-40ae-a43c-f7aa60e62599",
-      "count": 2837,
+      "count": 2839,
       "rank": 8,
       "first_cve_date": "2026-01-01T16:19:30.690Z",
-      "last_cve_date": "2026-09-09T08:28:23.237Z",
+      "last_cve_date": "2026-09-10T02:28:56.048Z",
       "years_active": 6,
       "first_cve_year": 2021,
       "last_cve_year": 2026,
@@ -401,13 +401,13 @@
         "Security Researcher"
       ],
       "severity_distribution": {
-        "Critical": 168,
-        "Medium": 2004,
+        "Critical": 169,
+        "Medium": 2005,
         "High": 652,
         "Low": 13
       },
       "top_cwe_types": {
-        "CWE-79": 1056,
+        "CWE-79": 1057,
         "CWE-862": 538,
         "CWE-89": 242,
         "CWE-352": 187,
@@ -419,7 +419,7 @@
       "top_cwes": [
         [
           "CWE-79",
-          1056
+          1057
         ],
         [
           "CWE-862",
@@ -1789,10 +1789,10 @@
     {
       "name": "jpcert",
       "assigner_org_id": "ede6fdc4-6654-4307-a26d-3331c018e2ce",
-      "count": 191,
+      "count": 193,
       "rank": 34,
       "first_cve_date": "2026-01-06T06:34:11.329Z",
-      "last_cve_date": "2026-09-04T09:04:08.947Z",
+      "last_cve_date": "2026-09-10T02:15:36.298Z",
       "years_active": 17,
       "first_cve_year": 2010,
       "last_cve_year": 2026,
@@ -1802,8 +1802,8 @@
         "CERT"
       ],
       "severity_distribution": {
-        "Medium": 81,
-        "High": 93,
+        "Medium": 82,
+        "High": 94,
         "Critical": 16,
         "Low": 1
       },
@@ -18172,10 +18172,10 @@
     {
       "name": "VulDB",
       "assigner_org_id": "1af790b2-7ee1-4545-860a-a788eba489b5",
-      "count": 4672,
+      "count": 4676,
       "rank": 4,
       "first_cve_date": "2026-01-01T09:02:10.684Z",
-      "last_cve_date": "2026-09-09T22:45:13.045Z",
+      "last_cve_date": "2026-09-10T00:15:08.473Z",
       "years_active": 5,
       "first_cve_year": 2022,
       "last_cve_year": 2026,
@@ -18185,17 +18185,17 @@
         "Security Researcher"
       ],
       "severity_distribution": {
-        "Medium": 2762,
-        "Critical": 675,
-        "High": 1151,
+        "Medium": 2763,
+        "Critical": 676,
+        "High": 1153,
         "Low": 84
       },
       "top_cwe_types": {
-        "CWE-74": 1322,
-        "CWE-89": 965,
-        "CWE-119": 755,
+        "CWE-74": 1323,
+        "CWE-89": 966,
+        "CWE-119": 757,
         "CWE-77": 581,
-        "CWE-94": 470
+        "CWE-94": 471
       },
       "kev_count": 0,
       "epss_high_count": 0,
@@ -18203,15 +18203,15 @@
       "top_cwes": [
         [
           "CWE-74",
-          1322
+          1323
         ],
         [
           "CWE-89",
-          965
+          966
         ],
         [
           "CWE-119",
-          755
+          757
         ],
         [
           "CWE-77",
@@ -18219,7 +18219,7 @@
         ],
         [
           "CWE-94",
-          470
+          471
         ]
       ]
     },
@@ -18388,10 +18388,10 @@
     {
       "name": "Wordfence",
       "assigner_org_id": "b15e7b5b-3da4-40ae-a43c-f7aa60e62599",
-      "count": 2837,
+      "count": 2839,
       "rank": 8,
       "first_cve_date": "2026-01-01T16:19:30.690Z",
-      "last_cve_date": "2026-09-09T08:28:23.237Z",
+      "last_cve_date": "2026-09-10T02:28:56.048Z",
       "years_active": 6,
       "first_cve_year": 2021,
       "last_cve_year": 2026,
@@ -18401,13 +18401,13 @@
         "Security Researcher"
       ],
       "severity_distribution": {
-        "Critical": 168,
-        "Medium": 2004,
+        "Critical": 169,
+        "Medium": 2005,
         "High": 652,
         "Low": 13
       },
       "top_cwe_types": {
-        "CWE-79": 1056,
+        "CWE-79": 1057,
         "CWE-862": 538,
         "CWE-89": 242,
         "CWE-352": 187,
@@ -18419,7 +18419,7 @@
       "top_cwes": [
         [
           "CWE-79",
-          1056
+          1057
         ],
         [
           "CWE-862",
@@ -19789,10 +19789,10 @@
     {
       "name": "jpcert",
       "assigner_org_id": "ede6fdc4-6654-4307-a26d-3331c018e2ce",
-      "count": 191,
+      "count": 193,
       "rank": 34,
       "first_cve_date": "2026-01-06T06:34:11.329Z",
-      "last_cve_date": "2026-09-04T09:04:08.947Z",
+      "last_cve_date": "2026-09-10T02:15:36.298Z",
       "years_active": 17,
       "first_cve_year": 2010,
       "last_cve_year": 2026,
@@ -19802,8 +19802,8 @@
         "CERT"
       ],
       "severity_distribution": {
-        "Medium": 81,
-        "High": 93,
+        "Medium": 82,
+        "High": 94,
         "Critical": 16,
         "Low": 1
       },

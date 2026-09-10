@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09T23:03:39.923182",
+  "generated_at": "2026-09-10T02:57:23.520454",
   "growth_data": [
     {
       "year": 1999,
@@ -219,15 +219,15 @@
     },
     {
       "year": 2026,
-      "cves": 62160,
-      "growth_rate": 91.4,
-      "growth_absolute": 29679,
+      "cves": 62276,
+      "growth_rate": 91.2,
+      "growth_absolute": 29699,
       "is_ytd": true,
-      "projected_full_year": 90033,
-      "ytd_vs_prev_full": 29.1,
-      "ytd_vs_prev_ytd": 91.4,
-      "prev_year_ytd_actual": 32481,
-      "growth_rate_3yr_avg": 91.4
+      "projected_full_year": 89844,
+      "ytd_vs_prev_full": 29.3,
+      "ytd_vs_prev_ytd": 91.2,
+      "prev_year_ytd_actual": 32577,
+      "growth_rate_3yr_avg": 91.2
     }
   ],
   "avg_annual_growth": 21.1,
@@ -249,14 +249,14 @@
   },
   "current_year_ytd": {
     "year": 2026,
-    "cves": 62160,
-    "growth_rate": 91.4,
-    "growth_absolute": 29679,
+    "cves": 62276,
+    "growth_rate": 91.2,
+    "growth_absolute": 29699,
     "is_ytd": true,
-    "projected_full_year": 90033,
-    "ytd_vs_prev_full": 29.1,
-    "ytd_vs_prev_ytd": 91.4,
-    "prev_year_ytd_actual": 32481,
-    "growth_rate_3yr_avg": 91.4
+    "projected_full_year": 89844,
+    "ytd_vs_prev_full": 29.3,
+    "ytd_vs_prev_ytd": 91.2,
+    "prev_year_ytd_actual": 32577,
+    "growth_rate_3yr_avg": 91.2
   }
 }

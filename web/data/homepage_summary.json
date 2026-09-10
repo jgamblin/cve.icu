@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-09T23:04:27.928154Z",
-  "data_as_of": "2026-09-09T22:57:11.910597Z",
+  "generated_at": "2026-09-10T02:58:01.850047Z",
+  "data_as_of": "2026-09-10T02:52:01.653834Z",
   "data_age_hours": 0.0,
-  "source_last_run": "2026-09-09T18:13:18.398698+00:00",
-  "source_cve_count": 389355,
+  "source_last_run": "2026-09-10T02:41:41.165401+00:00",
+  "source_cve_count": 389479,
   "current_year": 2026,
   "yearly_summary": {
     "years": {
@@ -117,7 +117,7 @@
       },
       "2026": {
         "year": 2026,
-        "total_cves": 62160
+        "total_cves": 62276
       }
     }
   },
@@ -341,15 +341,15 @@
       },
       {
         "year": 2026,
-        "cves": 62160,
-        "growth_rate": 91.4,
-        "growth_absolute": 29679,
+        "cves": 62276,
+        "growth_rate": 91.2,
+        "growth_absolute": 29699,
         "is_ytd": true,
-        "projected_full_year": 90033,
-        "ytd_vs_prev_full": 29.1,
-        "ytd_vs_prev_ytd": 91.4,
-        "prev_year_ytd_actual": 32481,
-        "growth_rate_3yr_avg": 91.4
+        "projected_full_year": 89844,
+        "ytd_vs_prev_full": 29.3,
+        "ytd_vs_prev_ytd": 91.2,
+        "prev_year_ytd_actual": 32577,
+        "growth_rate_3yr_avg": 91.2
       }
     ]
   },
@@ -357,13 +357,13 @@
     "score_distribution": {
       "v2.0": {
         "10.0": 9013,
-        "5.0": 26788,
-        "7.5": 26926,
+        "5.0": 26789,
+        "7.5": 26928,
         "4.6": 5463,
         "5.1": 1168,
         "3.7": 152,
         "0.0": 17,
-        "6.4": 2731,
+        "6.4": 2732,
         "7.2": 6194,
         "4.9": 2056,
         "2.1": 6845,
@@ -459,7 +459,7 @@
         "9.1": 489,
         "7.2": 777,
         "8.8": 5648,
-        "9.9": 158,
+        "9.9": 159,
         "8.5": 156,
         "8.7": 42,
         "6.9": 18,
@@ -517,67 +517,67 @@
         "0.0": 4
       },
       "v3.1": {
-        "7.3": 5269,
-        "7.5": 22099,
-        "9.8": 20449,
-        "8.2": 2294,
-        "7.8": 20381,
-        "5.5": 16077,
-        "7.1": 6700,
-        "8.8": 18098,
-        "5.3": 10301,
-        "9.1": 3274,
+        "7.3": 5271,
+        "7.5": 22109,
+        "9.8": 20454,
+        "8.2": 2295,
+        "7.8": 20385,
+        "5.5": 16085,
+        "7.1": 6702,
+        "8.8": 18103,
+        "5.3": 10317,
+        "9.1": 3276,
         "3.3": 1828,
-        "6.5": 17631,
-        "6.1": 10063,
-        "4.8": 2919,
+        "6.5": 17649,
+        "6.1": 10067,
+        "4.8": 2921,
         "7.0": 1605,
-        "5.9": 3633,
+        "5.9": 3634,
         "8.4": 1441,
-        "3.7": 1090,
-        "4.7": 2097,
-        "7.4": 1218,
+        "3.7": 1092,
+        "4.7": 2100,
+        "7.4": 1219,
         "4.5": 238,
-        "4.3": 11187,
-        "5.0": 851,
+        "4.3": 11231,
+        "5.0": 852,
         "6.3": 5837,
         "5.6": 423,
-        "8.1": 5261,
-        "7.2": 4710,
-        "5.4": 10662,
+        "8.1": 5267,
+        "7.2": 4713,
+        "5.4": 10684,
         "4.6": 984,
-        "6.8": 2057,
-        "4.4": 1918,
+        "6.8": 2061,
+        "4.4": 1920,
         "9.9": 1349,
         "5.8": 618,
-        "7.7": 1147,
+        "7.7": 1149,
         "5.7": 748,
-        "6.0": 630,
-        "9.6": 1203,
-        "6.7": 2462,
+        "6.0": 632,
+        "9.6": 1205,
+        "6.7": 2463,
         "9.0": 655,
         "10.0": 1227,
-        "7.6": 1101,
-        "9.3": 871,
+        "7.6": 1102,
+        "9.3": 872,
         "4.9": 2119,
-        "4.2": 591,
-        "4.0": 646,
-        "3.4": 122,
-        "8.0": 1330,
+        "4.2": 599,
+        "4.0": 648,
+        "3.4": 128,
+        "8.0": 1331,
         "5.1": 393,
-        "6.6": 719,
+        "6.6": 720,
         "6.4": 4018,
-        "8.6": 1454,
+        "8.6": 1457,
         "6.2": 1083,
-        "4.1": 403,
+        "4.1": 404,
         "2.5": 257,
         "7.9": 173,
         "8.9": 99,
-        "2.7": 613,
+        "2.7": 614,
         "2.4": 760,
-        "3.5": 2354,
+        "3.5": 2357,
         "8.3": 1011,
-        "3.1": 845,
+        "3.1": 860,
         "3.8": 340,
         "1.9": 51,
         "2.6": 174,
@@ -585,7 +585,7 @@
         "2.8": 99,
         "9.4": 267,
         "5.2": 167,
-        "8.7": 553,
+        "8.7": 554,
         "2.1": 17,
         "8.5": 877,
         "2.2": 121,
@@ -596,28 +596,28 @@
         "1.8": 29,
         "2.0": 101,
         "2.9": 153,
-        "3.0": 80,
+        "3.0": 81,
         "3.2": 93,
         "1.7": 2,
         "0.0": 42,
         "9.2": 9
       },
       "v4.0": {
-        "7.1": 1420,
-        "8.7": 3019,
+        "7.1": 1422,
+        "8.7": 3021,
         "10.0": 350,
         "7.3": 483,
-        "9.3": 1758,
-        "8.6": 1020,
+        "9.3": 1761,
+        "8.6": 1022,
         "6.9": 3223,
         "5.9": 262,
-        "5.1": 2114,
-        "8.8": 714,
+        "5.1": 2115,
+        "8.8": 715,
         "5.3": 3268,
-        "2.1": 2789,
-        "9.2": 402,
+        "2.1": 2790,
+        "9.2": 403,
         "6.3": 720,
-        "5.5": 2390,
+        "5.5": 2393,
         "5.2": 79,
         "9.1": 99,
         "2.0": 929,
@@ -627,12 +627,12 @@
         "8.2": 443,
         "9.4": 423,
         "1.9": 742,
-        "9.0": 69,
+        "9.0": 72,
         "1.0": 50,
-        "8.5": 960,
+        "8.5": 961,
         "7.5": 162,
         "8.9": 349,
-        "5.7": 173,
+        "5.7": 174,
         "7.0": 383,
         "7.7": 377,
         "6.7": 122,
@@ -640,7 +640,7 @@
         "4.6": 232,
         "8.1": 44,
         "1.8": 59,
-        "8.4": 512,
+        "8.4": 513,
         "6.4": 105,
         "1.3": 191,
         "6.0": 349,
@@ -707,7 +707,7 @@
   "kev_analysis": {
     "statistics": {
       "added_last_30_days": 41,
-      "added_last_90_days": 86,
+      "added_last_90_days": 85,
       "ransomware_associated": 358
     },
     "by_year_added": {
@@ -750,25 +750,25 @@
       {
         "id": "79",
         "name": "CWE-79: Cross-site Scripting (XSS)",
-        "count": 53423,
+        "count": 53438,
         "description": "Cross-site Scripting (XSS)"
       },
       {
         "id": "89",
         "name": "CWE-89: SQL Injection",
-        "count": 24260,
+        "count": 24270,
         "description": "SQL Injection"
       },
       {
         "id": "787",
         "name": "CWE-787: Out-of-bounds Write",
-        "count": 17126,
+        "count": 17128,
         "description": "Out-of-bounds Write"
       },
       {
         "id": "20",
         "name": "CWE-20: Improper Input Validation",
-        "count": 13583,
+        "count": 13586,
         "description": "Improper Input Validation"
       },
       {
@@ -780,25 +780,25 @@
       {
         "id": "22",
         "name": "CWE-22: Path Traversal",
-        "count": 11455,
+        "count": 11457,
         "description": "Path Traversal"
       },
       {
         "id": "200",
         "name": "CWE-200: Information Exposure",
-        "count": 11243,
+        "count": 11252,
         "description": "Information Exposure"
       },
       {
         "id": "125",
         "name": "CWE-125: Out-of-bounds Read",
-        "count": 11155,
+        "count": 11158,
         "description": "Out-of-bounds Read"
       },
       {
         "id": "862",
         "name": "CWE-862: Missing Authorization",
-        "count": 10467,
+        "count": 10478,
         "description": "Missing Authorization"
       },
       {
@@ -943,12 +943,12 @@
       {
         "name": "VulDB",
         "assigner_org_id": "1af790b2-7ee1-4545-860a-a788eba489b5",
-        "count": 16288,
+        "count": 16292,
         "years_active": 5,
         "first_cve_year": 2022,
         "last_cve_year": 2026,
         "first_cve_date": "2022-03-28T18:00:15.000Z",
-        "last_cve_date": "2026-09-09T22:45:13.045Z",
+        "last_cve_date": "2026-09-10T00:15:08.473Z",
         "days_since_last_cve": 0,
         "activity_status": "Active",
         "is_official": true,
@@ -960,7 +960,7 @@
           "2024": 2930,
           "2022": 854,
           "2025": 5901,
-          "2026": 4672
+          "2026": 4676
         },
         "years_active_list": [
           2022,
@@ -1111,12 +1111,12 @@
       {
         "name": "Wordfence",
         "assigner_org_id": "b15e7b5b-3da4-40ae-a43c-f7aa60e62599",
-        "count": 11013,
+        "count": 11015,
         "years_active": 6,
         "first_cve_year": 2021,
         "last_cve_year": 2026,
         "first_cve_date": "2021-07-07T12:20:58.388Z",
-        "last_cve_date": "2026-09-09T08:28:23.237Z",
+        "last_cve_date": "2026-09-10T02:28:56.048Z",
         "days_since_last_cve": 0,
         "activity_status": "Active",
         "is_official": true,
@@ -1127,7 +1127,7 @@
           "2024": 3524,
           "2025": 3450,
           "2023": 879,
-          "2026": 2837,
+          "2026": 2839,
           "2022": 169,
           "2021": 154
         },
@@ -1419,7 +1419,7 @@
         "last_cve_year": 2026,
         "first_cve_date": "2011-05-16T17:00:00.000Z",
         "last_cve_date": "2026-09-09T00:10:07.385Z",
-        "days_since_last_cve": 0,
+        "days_since_last_cve": 1,
         "activity_status": "Active",
         "is_official": true,
         "cna_types": [
@@ -1619,13 +1619,13 @@
       {
         "name": "jpcert",
         "assigner_org_id": "ede6fdc4-6654-4307-a26d-3331c018e2ce",
-        "count": 3176,
+        "count": 3178,
         "years_active": 17,
         "first_cve_year": 2010,
         "last_cve_year": 2026,
         "first_cve_date": "2010-06-25T18:00:00.000Z",
-        "last_cve_date": "2026-09-04T09:04:08.947Z",
-        "days_since_last_cve": 5,
+        "last_cve_date": "2026-09-10T02:15:36.298Z",
+        "days_since_last_cve": 0,
         "activity_status": "Active",
         "is_official": true,
         "cna_types": [
@@ -1648,7 +1648,7 @@
           "2022": 217,
           "2025": 270,
           "2024": 281,
-          "2026": 191
+          "2026": 193
         },
         "years_active_list": [
           2010,
@@ -1888,7 +1888,7 @@
       },
       {
         "cpe": "cpe:2.3:a:google:chrome:*:*:*:*:*:*:*:*",
-        "count": 6419,
+        "count": 6568,
         "vendor": "google",
         "product": "chrome",
         "type": "Application"
@@ -1909,7 +1909,7 @@
       },
       {
         "cpe": "cpe:2.3:o:microsoft:windows_server_2012:r2:*:*:*:*:*:*:*",
-        "count": 4031,
+        "count": 4038,
         "vendor": "microsoft",
         "product": "windows_server_2012",
         "type": "Operating System"
@@ -1923,7 +1923,7 @@
       },
       {
         "cpe": "cpe:2.3:o:microsoft:windows_server_2012:-:*:*:*:*:*:*:*",
-        "count": 3833,
+        "count": 3840,
         "vendor": "microsoft",
         "product": "windows_server_2012",
         "type": "Operating System"
@@ -2014,14 +2014,14 @@
       },
       {
         "cpe": "cpe:2.3:o:microsoft:windows_server_2022:*:*:*:*:*:*:*:*",
-        "count": 2302,
+        "count": 2311,
         "vendor": "microsoft",
         "product": "windows_server_2022",
         "type": "Operating System"
       },
       {
         "cpe": "cpe:2.3:o:microsoft:windows_server_2019:*:*:*:*:*:*:*:*",
-        "count": 2202,
+        "count": 2210,
         "vendor": "microsoft",
         "product": "windows_server_2019",
         "type": "Operating System"
@@ -2035,7 +2035,7 @@
       },
       {
         "cpe": "cpe:2.3:o:microsoft:windows_server_2016:*:*:*:*:*:*:*:*",
-        "count": 2063,
+        "count": 2070,
         "vendor": "microsoft",
         "product": "windows_server_2016",
         "type": "Operating System"
@@ -3394,7 +3394,7 @@
         "date": "2026-08-13",
         "value": 611,
         "avg_cvss": 7.1,
-        "cvss_count": 564
+        "cvss_count": 570
       },
       {
         "date": "2026-08-14",
@@ -3519,14 +3519,14 @@
       {
         "date": "2026-09-03",
         "value": 349,
-        "avg_cvss": 7.1,
-        "cvss_count": 283
+        "avg_cvss": 7.2,
+        "cvss_count": 286
       },
       {
         "date": "2026-09-04",
         "value": 554,
         "avg_cvss": 6.9,
-        "cvss_count": 336
+        "cvss_count": 347
       },
       {
         "date": "2026-09-05",
@@ -3550,13 +3550,13 @@
         "date": "2026-09-08",
         "value": 1560,
         "avg_cvss": 7.2,
-        "cvss_count": 1394
+        "cvss_count": 1406
       },
       {
         "date": "2026-09-09",
-        "value": 539,
-        "avg_cvss": 6.9,
-        "cvss_count": 328
+        "value": 655,
+        "avg_cvss": 6.3,
+        "cvss_count": 517
       }
     ]
   }
